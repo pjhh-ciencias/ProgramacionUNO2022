@@ -1,0 +1,1244 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 1 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 1 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+          <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> § Semana  2 </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"></h1>
+
+
+       
+    <div class="nota-box">
+
+      <h1 class="number-subtitle"> Tablas</h1>     
+  
+     <p>
+      Una <b>tabla</b> está formada por <b>celdas</b>, agrupadas por <b>filas</b> y <b>columnas</b>. 
+     </p>
+  
+     <p>
+      Las tablas permiten organizar la información en filas y columnas, de forma que se pueden realizar operaciones y 
+      tratamientos sobre los datos. Por ejemplo, obtener el valor medio de una columna u ordenar una lista de nombres.
+     </p>
+  
+     <p>
+      <b>Observación:</b>
+      Las tablas son una forma de organizar los datos mucho más potente que utilizando las tabulaciones u otros métodos.
+     </p>
+  
+     <h2 class="number-title"> Crear tablas  </h2>
+     <p>
+      Para crear una tabla accedemos siempre desde la pestaña <b>Insertar</b> > grupo <b>Tablas</b> > botón <b>Tabla</b>.
+      Allí encontraremos las tres posibles formas de crear tablas:
+     </p>
+  
+     <p>
+      <ul>
+        <li>
+          Una de las formas es utilizar la cuadrícula que simula una tabla. Cada cuadrado representa una celda y al pasar}
+          el ratón sobre ella se coloreará en naranja la selección que realicemos. Al hacer clic confirmamos que la selección
+          se ha realizado y se inserta la tabla en el documento.
+        </li>
+  
+        <li>
+          La segunda opción es haciendo clic en Insertar Tabla. Se abre una ventana que permite especificar el número de 
+          filas y columnas para la tabla.
+        </li>
+        
+        <li>
+          La tercera opción es usar el vínculo Dibujar Tabla. El cursor tomará forma de lápiz y simplemente iremos 
+          dibujando las líneas que la formarán. Esta opción es más lenta, pero puede resultar muy útil para crear tablas
+          irregulares o para retocar tablas ya existentes.
+        </li>
+      </ul>
+     </p>
+  
+  <!-- <h2 class="number-title"> Formato de tabla</h2> -->
+  
+  <h2 class="number-title"> Estilos</h2>
+    <p>
+      Para darle formato a una tabla  debemos activarla dando clic sobre ella, de esta manera se dispondra de la 
+      pestaña de <b>Herramientas de tabla</b>. 
+    </p>
+  
+    <p>
+      <div class="flexbox">
+      <img src="../Imagenes/S1/Pestana_diseno_tabla.JPG" alt="", width="100%" height="auto">
+      </div>
+    </p>
+  
+      <p>
+      Podemos aplicar estilos predefinidos con un sólo clic, eligiéndolos en la pestaña Diseño > grupo Estilos de tabla.
+       </p>
+  
+     <p>
+      <div class="flexbox">
+      <img src="../Imagenes/S1/Opcion_estilo_tabla.JPG" alt="", width="80%" height="auto">
+    </div>
+    </p>
+  
+    <h2 class="number-title"> Bordes</h2>
+  
+    <p>
+      Al pasar el ratón sobre ellos verás cómo cambia el formato de la tabla. Para aplicarlo definitivamente haremos 
+      clic sobre él
+    </p>
+  
+    
+    <p>
+      En su pestaña <b>Diseño</b> > grupo <b>Bordes</b>, encontraremos las herramientas que nos ayudarán a dar el diseño
+      deseado a la tabla.
+      </p>
+   
+    <p>
+      Podemos elegir el estilo, grosor y color del borde y el cursor tomará forma de pluma para que modifiquemos el diseño 
+      de los bordes de la tabla.
+     </p>
+  
+  
+    <h2 class="number-title"> Modificar la estructura de la tabla</h2>
+  
+     <p>
+      Si quremos modificar la estructura de la tabla iremos a la pestaña de Herramientas de <b>tabla</b> > <b>Presentación</b> >
+      <b>grupo Dibujar</b>, y a continuación pulsar sobre Dibujar tabla Dibujar tabla
+     </p>
+  
+     <p>
+     Si nos equivocamos podemos utilizar la herramienta Borrador, que cambiará el dibujo del cursor y nos permitirá eliminar 
+     cualquier línea de la tabla simplemente haciendo clic sobre ella.
+     </p>
+  
+  
+  
+     <h2 class="number-title"> Anidar tablas</h2>
+     Una característica de las tablas es que se pueden anidar. Es decir, se puede crear una tabla dentro de otra. 
+     De esta forma podremos configurar una de forma independiente a la otra. Lo único que deberemos tener en cuenta es que, 
+     si eliminamos la tabla principal, también se eliminará su contenido, y ésto incluye las tablas anidadas que podamos
+     haber creado.
+  
+     <!-- <h2 class="number-title"> Estilo de tabla</h2>
+  
+     <h2 class="number-title"> Ajustar la tabla  </h2>
+     -->
+     <h2 class="number-title"> Tratamiento de datos </h2>
+  
+  <p>
+     Las herramientas que veremos a continuación se encuentran en la pestaña Presentación > grupo Datos.
+  </p>
+  
+  <ul>
+    <li><h3>Ordenar</h3>
+    <p>
+      Una de las principales ventajas de que disponemos es la capacidad de ordenar sus datos.
+     No importa si los datos son alfabéticos, numéricos o de tipo fecha, la herramienta es válida para todos 
+     ellos. Además, podremos escoger si hacerlo de forma ascendente o descendente.
+    </p>
+     <ul>
+      <li> Escoger la columna por la que ordenar los datos. Si habíamos utilizado encabezados de columna en la 
+        tabla detectará los nombre automáticamente.</li>
+      <li>Especificar el tipo de datos (texto, número o fecha) de la columna en cuestión.</li>
+      <li>Elegir si ordenar de forma ascendente o descendente.</li>
+    </ul>
+    <p>
+      Podemos utilizar más de un criterio de ordenación.
+    </p>
+    </li>
+    <li><h3> Repetir filas de título.</h3>
+      <p>
+        En caso de que una tabla ocupe más de una hoja, suele presentarse el típico problema de que los encabezados
+       quedan únicamente en la primera y a veces puede resultar molesto tener que "adivinar" a qué equivale cada 
+       una de las  columnas.
+      </p>
+       <p>
+        La solución al problema es activar el botón Repetir filas de título Repetir filas de título. De esta forma,
+         el encabezado se mostrará en todas las hojas que ocupe la tabla.
+       </p>
+    </li>
+    <li><h3>Convertir texto a tablas </h3></li><!-- https://www.aulaclic.es/word-2010/a_10_4_1.htm</b>.-->
+      <p>
+        Frecuentemente ocurre que ya disponemos de los datos y lo que queremos hacer es situarlos dentro de una tabla. Word 2010 dispone de una potente herramienta capaz de pasar datos estructurados (por ejemplo mediante tabulaciones) a tablas. Si los datos están bien organizados la facilidad para pasarlos a tabla es sorprendente.
+      </p>
+      <p>
+        También es posible realizar el proceso contrario. Es decir, pasar los datos contenidos en una tabla a texto.
+    
+      </li>
+    <li><h3> Fórmula.</h3>
+    <p>En los casos de las tablas que contienen datos numéricos es muy frecuente el uso de filas o columnas
+    de totales. Word es capaz de calcular estos totales de forma automática, a través de una fórmula.
+    Lo único que deberemos hacer es colocar el cursor en la celda que queramos que contenga el resultado 
+    y pulsar el botón Fórmula. Se abrirá una ventana donde podremos configurar algunos parámetros. 
+    Por defecto se utilizará la SUMA, pero en el desplegable Pegar función podremos elegir otras fórmulas, 
+    al igual que también podremos elegir qué formato utilizar para mostrar el resultado.
+    </p>
+  
+  
+    <p><h3>Observaciones:</h3>
+      <ul>
+        <li>Podemos especificar qué celdas se calcularán, pudiendo escoger entre las que se encuentren arriba (ABOVE),
+           abajo (BELOW), a la derecha (RIGHT) o a la izquierda (LEFT) de la celda que contenga la fórmula.
+           Por tanto, la sintaxis será =FORMULA(POSICION)
+          </li>
+          <li>
+            A la hora de calcular con valores numéricos el sistema suele ignorar los encabezados de tabla de tipo
+             texto. Sin embargo, si utilizamos otras fórmulas como pueden ser COUNT (para contar) sobre valores de 
+             tipo texto, es posible que sí que considere el encabezado como un valor más a contar. Debemos tener
+              cuidado con este comportamiento.
+          </li>
+          <li>
+            El resultado de la fórmula no se recalcula si cambia alguno de los valores que se han incluido en el 
+            cálculo. Deberemos volverla a ejecutar.
+          </li>
+      </ul>
+  </li>
+    
+  </ul>
+  </p>
+    </div>
+       
+  
+    <div class="nota-box">
+
+      <h1 class="number-subtitle"> Ilustraciones, objetos, etc</h1>
+  
+     <p>
+      En la mayoría de casos, es conveniete  incorporar fotografías, gráficos 
+      y cualquier otro objeto que apoye de manera visual el contenido teorico de nuestro documento. 
+    </p>
+  <p>En la pestaña <b>Insertar</b> > grupo <b>Ilustraciones</b>, podemos encontrar la clase de ilustraciones 
+    de  los que dipone word:
+  </p>
+  
+  
+    <p>
+      <ul>
+        <li><b>Imágenes prediseñadas:</b>
+          Son imágenes que incorpora Word en una librería organizada por categorías. Estas imágenes en su 
+          mayoría están construidas utilizando vectores, lo que permite hacerlas más grandes o pequeñas
+          sin perder resolución. 
+        </li>
+        <li><b> Imágenes de mapa de bits</b>
+          Imágenes fotográficas procedentes de cámaras digitales, de Internet, de programas como Photoshop,
+          Gimp, etc. Suelen ser de tipo JPG o GIF. Sobre estas imágenes se pueden realizar
+          algunas operaciones como cambiar el tamaño, el brillo, etc, pero no se pueden desagrupar en los elementos 
+          que las forman. Están formadas por puntos o pixels que tienen cada uno un color y una posición pero 
+          no están relacionados unos con otros. Estas imágenes admiten cambios de tamaños, pero en ocasiones,
+          si las reducimos y posteriormente intentamos ampliarlas de nuevo pueden perder resolución.
+      
+        </li>
+        <li><b>Dibujos creados con Word.</b>
+           Mediante autoformas, líneas, rectángulos, elipses, etc. Estos gráficos también son vectoriales.
+        </li>
+        <li><b>SmartArt</b>
+          Representación de datos en forma de organigramas.
+        </li>
+        <li><b>Gráficos.</b>
+          Representación de datos en forma gráfica. </li>
+      </ul>
+    </p>
+  
+  
+    <p>
+      Sobre las imágenes y los gráficos podemos realizar multiples  operaciones, tales como
+      <b>mover</b>, <b>copiar</b>, <b>cambiar el tamaño</b>, <b>variar la intensidad</b>, etc. Todas estas
+      herramientas las podemos encontrar en la pestaña <b>Formato</b> para las imágenes y las pestañas <b>Diseño</b> y 
+      <b>Presentación</b> para los gráficos. 
+    </p>
+
+    
+  
+   <h2 class="number-title"> Tipos de archivos</h2> 
+  
+  <p>
+    Entre los formatos gráficos más utilizados, se encuentran: 
+  </p>
+  <ul>
+    <li> <b>JPG o JPEG:</b> Es un formato que permite distintos niveles de compresión. Se utiliza mucho en 
+      Internet, sobre todo para imágenes fotográficas con muchos tonos. </li>
+  
+  <li><b>GIF:</b>
+   También se utiliza bastante en Internet, permite una buena compresión con imágenes de pocos tonos, tipo
+   iconos y botones. También permite crear gráficos animados.
+  </li>
+  <li><b>BMP:</b>
+    No admite compresión por lo que estas imágenes ocupan mucho espacio. Se utiliza, por ejemplo, en la 
+    imagen tapiz de Windows.
+  </li>
+  <li><b>PNG:</b>
+     Moderno formato que permite compresión. Se suele utilizar en internet como alternativa al GIF, porque también permite transparencias.</li>
+  <li><b>WMF:</b>
+    Formato de la mayoría de imágenes prediseñadas de Word, normalmente de las vectoriales.
+  </li>
+  </ul>
+  
+  <h2 class="number-title"> Imagenes prediseñadas</h2>
+  <p>
+    Si hacemos clic en <b>Imágenes prediseñadas</b> <img src="../Imagenes/" alt="Boton imagen prediseñadas", width="auto" height="auto"> 
+    aparece el <b>panel lateral Imágenes prediseñadas</b>.
+    </p>
+  
+    <p>
+    En el cuadro <b>Buscar</b> introduciremos las palabras que describan lo que buscamos, si lo dejamos en blanco,
+    aparecerán todas la imágenes disponibles. Para insertar una imagen en el documento basta hacer clic sobre ella.
+    </p>
+  
+    <p>
+    Podemos <b>filtrar el tipo de resultados</b> que se mostrarán, para seleccionar uno o varios tipos de archivos
+    en concreto, de entre las ilustraciones, fotografías e incluso vídeos y audio.
+    </p>
+  
+    <p>
+      Si disponemos de conexión a internet y la casilla Incluir contenido de Office.com está marcada, 
+      se listarán imágenes que no vienen incluidas con la instalación de Word, sino que constantemente se van
+      actualizando e incluyendo en su página web.
+    </p>
+    
+  <h2 class="number-title"> Imágenes desde archivo</h2>
+  <p>
+    En este caso haremos clic en la opción <b>Imagen</b><img src="../Imagenes/" alt="Boton imagen prediseñadas", width="auto" height="auto">.
+    Se abrirá una ventana similar a la que se nos muestra cuando queremos abrir un documento Word,
+    y que ya conocemos. Puede venirte bien pulsar el botón que permite mostrar un panel de vista
+    previa en la ventana para ir viendo las imágenes sin tener que abrirlas, simplemente seleccionándolas.
+  </p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto" height="auto">
+  </div>
+  
+  <p>
+  Una vez seleccionado el archivo que queremos importar hacenos clic en el boton <b>Insertar</b> y la imagen se 
+  copiará en nuestro documento. En ocasiones no nos interesará que se inserte una copia de la imagen,
+  sino <b>vincularla</b> para que cuando se realice un cambio en la imagen original quede automáticamente 
+  actualizada en el documento de Word. Para ello, pulsamos en la pequeña flecha en forma de triángulo 
+  que hay en el lateral del botón Insertar y seleccionar la opción Vincular al archivo.
+  </p>
+  
+  <h2 class="number-title">  Otras opciones para insertar imagenes</h2>
+  
+  <h3>Incluir imágenes de internet</h3>
+  
+  <p>
+  En word tenemos la opcion de  incluir en nuestro  documento una imagen de Internet. Para ello,  lo único que
+  deberemos aprender es a guardar la imagen en el <em> disco duro</em> para poder utilizarla como haríamos con
+  cualquier otra imagen.
+  </p>
+  
+  <p>
+  Cuando estamos navegando por la red y vemos una imagen que nos interesa conservar, podemos hacer clic con el
+   botón derecho del ratón en ella y elegir la opción <b>Guardar imagen como...</b> del menú contextual.
+   En la ventana que se mostrará,  podemos decidir  dónde guardarla y con qué nombre.
+  </p>
+  
+  <h3>Incluir imágenes desde portapapeles</h3>
+  
+  <p>
+    Seleccionando y copiando una imagen que estamos utilizando en otro programa, como Paint o Photoshop,
+     la podremos Pegar en Word, utilizabdo el portapapeles.
+  </p>
+  
+  <h2 class="number-title"> Formato de imagenes</h2>
+  
+  <p>
+    Para <b>modificar una imagen</b> primero hay que seleccionarla haciendo clic en ella. La imagen quedará enmarcada 
+    por unos pequeños iconos y veremos que disponemos de las Herramientas de imagen agrupadas en la pestaña 
+    Formato.
+  </p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto" height="auto">
+  </div>
+  
+  <ul>
+    <li><h3>Tamaño</h3></li>
+    <p>
+    Los círculos que apreciamos al seleccionar la imagen, situados en las esquinas, se pueden arrastrar para 
+    modificar simultáneamente la altura y anchura de la imagen. Los cuadrados situados entre cada uno de los
+    círculos sirven para modificar únicamente la altura o la anchura, dependiendo de cuál arrastremos.
+    </p>
+  
+    <p>
+      Otra forma de modificar el tamaño es desde la pestaña Formato. Lo haremos estableciendo la altura y la
+      anchura en centímetros.
+    </p>
+  
+    <div class="flexbox">
+      <img src="../Imagenes/" alt="", width="auto" height="auto">
+    </div>
+  
+    <p>
+      Si lo que queremos no es redimensionarla, sino <b>recortarla</b> para quedarnos con sólo una parte de la
+      imagen, también lo podremos hacer desde aquí con la <b>herramienta Recortar</b>. Al hacer clic sobre ella
+      se dibujará un borde negro que rodea la imagen. Lo único que debemos hacer es acercar el cursor al borde y 
+      hacer clic e ir arrastrando. Veremos sombreada la zona que se va a eliminar y al hacer clic fuera de la 
+      imagen se aplicará el recorte. En cualquier momento podremos recuperar zonas de la imagen inicial haciendo 
+      más amplia la zona de recorte utilizando de nuevo la herramienta Recortar.
+    </p>
+  <li><h3> Estilos</h3>
+    <p>
+      En el grupo Estilo dispondremos de un conjunto de Estilos rápidos para dotar a la imagen de un contorno vistoso que puede 
+      simular un marco de fotografía o aplicar sombreados y relieves.
+    </p>
+    <div class="flexbox">
+      <img src="../Imagenes/" alt="", width="auto%" height="auto">
+    </div>
+  <p>
+      Para ver el listado completo de estilos, haremos clic en el botón <b>Más</b> situado justo en la esquina inferior 
+      derecha de la muestra que hay en la cinta. Con los botones Contorno, Efectos y Diseño de imagen podremos
+      crear un estilo personalizado o modificar el aspecto del que hayamos aplicado.
+  </p>
+  </li>
+  
+  <li><h3> Ajustes</h3>
+  <p>
+    Hemos visto diversas formas de modificar sustancialmente una imagen, pero en ocasiones con unos pequeños
+    retoques será suficiente. En el caso de las fotografías las Correcciones nos permiten ajustar la nitidez,
+    brillo y contraste de una forma intuitiva. En vez de tener que ir jugando con distintos valores, Word lo 
+    que hace es mostrar un conjunto de previsualizaciones entre las que elegiremos cuál nos gusta más.
+  </p>
+  
+  <p>Para modificar el Color, disponemos de opciones de saturación y tono, así como la opción de colorear la imagen, 
+    también con el mismo sistema de previsualización.</p>
+  </li>
+  
+  <li><h3> Organizar</h3>
+  <p>Desde el grupo Organizar podremos acceder a las herramientas que nos permiten posicionar, voltear, alinear y ajustar la imagen a su contexto</p>
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  <p> 
+    En la opción <b>Posición</b>  se ajusta la imagen respecto a la página. En cambio, <b>Ajustar texto:</b> 
+    Ajusta la imagen respecto del texto que la rodea.
+  </p>
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  <p>
+  También contamos con la opción <b>Girar</b>. Muestra un menú con diferentes opciones de giro y volteo
+  aplicables a la imagen.
+  </p>
+  <p>
+  Las opciones de <b>organización</b> son especialmente útiles cuando trabajamos con más de una imagen a la vez ya
+  que  Podemos agruparlas para trabajar con ellas como si fuesen una única imagen, alinearlas o definir cuál estará
+  encima de cuál con las herramientas <b>Traer al frente</b> y <b>Enviar al fondo</b>. <br>
+  
+   No importa cuántos cambios realicemos sobre las imágenes, siempre dispondremos de las opciones Restablecer imagen y Restablecer imagen y tamaño para devolver a la imagen su aspecto original.
+  </p>
+  </li>
+  </ul>
+  
+  <h2 class="number-title"> Formas y dibujar</h2>
+  
+  <p>
+    Word también dispone de herramientas que nos permiten realizar nuestros propios dibujos.
+  </p>
+  
+  <p>
+  Existen varias formas predefinidas entre las que escoger. También dispondrás de rectas, curvas ajustables
+  y dibujo a mano alzada para que puedas dar rienda suelta a tu imaginación.
+  </p>
+  
+  <p>
+    Para utilizarlas deberemos tienes que hacer clic en la <b>pestaña Insertar</b> >  botón <b>Formas</b>.
+    Luego, selecciona la que más apropiada a tus necesidades y haz clic sobre ella.
+    Enseguida podrás volver al documento y ajustar sus características a tu antojo.
+  </p>
+  
+  <p>
+    Existe una forma llamada <b>Cuadro de texto</b>, permite insertar texto en su interior.
+    Solía utilizarse para incorporar texto en otra forma, creándolo sobre ella y agrupando después los objetos. 
+  </p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="ejemplo", width="auto%" height="auto">
+  </div>
+  <p>
+    A diferencia de WordArt bserva  el texto introducido mediante un cuadro de texto  es considerado como tal,
+    y es revisado por el corrector ortográfico, situación  que no ocurre si utilizamos WordArt.
+  </p>
+  
+   
+  <h3>Tamaño, posición y forma</h3>
+  
+  <p>
+    Los gráficos y formas, admiten multitud de modificaciones como giros y cambios de tamaño y proporciones.
+    Para modificar un gráfico lo primero que hay que hacer es seleccionarlo, para ello hacer clic sobre él y
+    aparecerán unos puntos de control a su alrededor.
+  </p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="ejemplo tamaño,posicion de formas ", width="auto%" height="auto">
+  </div>
+  
+  <p>
+    Para girar el gráfico, lo seleccionamos y hacemos clic sobre el círculo verde que vemos en la parte superior 
+    central de la imagen.
+    
+  </p>
+  
+  <h3>Formato</h3>
+  
+  <p>
+  Desde la pestaña Formato podemos modificar aspectos estéticos como el color de su contorno o relleno, 
+  sombra o añadir efectos 3D. Además de la mayoría de opciones de organización y ajuste de tamaño que ya 
+  hemos visto anteriormente.
+  </p>
+  
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt=" ", width="auto%" height="auto">
+  </div>
+  
+  <h2 class="number-title"> Organigramas y diagramas </h2>
+  <p>
+    Al igual que en Word podemos insertar imágenes, dibujos y otros tipos de elementos gráficos. Un organigrama 
+    es un elemento gráfico que representa una organización, normalmente jerárquica, por ejemplo la organización 
+    de cargos en una empresa.
+  </p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt=" ", width="auto%" height="auto">
+  </div>
+  
+  <p>
+    Un <b>diagrama</b> es una representación gráfica que no tiene porqué ser obligatoriamente una 
+    organización jerárquica, puede representar desde un grupo de elementos relacionados entre sí, hasta un 
+    diagrama de secuencias donde por medio de la representación gráfica se explica los pasos o componentes
+    con una secuencia lógica
+  </p>
+  
+  <p>
+    Un <b>organigrama</b>, para Word, es un tipo de diagrama con unas características específicas en cuanto a
+    la estructura y elementos que lo forman.
+  </p>
+  
+  <h3>Diseño</h3>
+  
+  <p>
+  El botón <b>Diseño</b> sirve para modificar el diseño del organigrama. Podemos seleccionar entre diversos
+  diseños que modifican la estructura de colocación de los recuadros. Tenemos las siguientes opciones:
+  </p>
+  
+  <ul>
+    <li><b>Estándar:</b>
+    <p>
+    Es el diseño que por defecto se crea para los organigramas. Tiene el aspecto que vemos en la imagen.
+    </p>
+    <div class="flexbox">
+      <img src="../Imagenes/" alt="", width="auto%" height="auto">
+    </div>
+  </li>
+  
+  <li><b>Dependientes a ambos lados:</b> 
+  <p>
+    Al seleccionar este tipo de diseño la organización se basa en una línea vertical desde el recuadro principal 
+  y el resto se sitúan o bien a la izquierda o bien a la derecha.
+  </p>
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  </li>
+  
+  <li><b> Dependientes a la izquierda:</b>
+  <p>
+    Al seleccionar este tipo de diseño la organización se basa en una línea vertical desde el recuadro principal y el resto de recuadros se sitúan a la derecha salvo los ayudantes.
+  </p>
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  </li>
+  </ul>
+  
+  <p>
+  Tambien se cuenta con la opcion <b>Autodiseño</b> con la cual  podemos seleccionar el recuadro
+  que deseemos y moverlo dentro del recuadro del organigrama. Es tan fácil como hacer clic, 
+  arrastrar y soltar.
+  </p>
+  
+  <h3>Orden de los elementos</h3>
+  
+  <p><b>De izquierda a derecha.</b> Sirve para invertir el orden de los subordinados de un elemento de 
+    derecha a izquierda. Con esta función podemos cambiar el aspecto de nuestro organigrama con un solo clic.
+  </p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  
+  
+  <h3>Diseño</h3>
+  
+  <p>
+    Debido a que Word organiza los diagramas en categorías, podemos intercambiar el diseño de nuestro diagrama
+    por uno de su misma categoría con un solo clic. Podemos realizarlo,desde la pestaña <b>Diseño</b> > <b>grupo Diseño</b>
+  </p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  <p>
+    Bastará con que seleccionemos uno de ellos. El cambio se efectuará automáticamente. También podemos 
+    seleccionar la opción Más diseños para abrir el cuadro de dialogo de Elegir un gráfico SmartArt.
+  </p>
+  
+  <p>
+    Ten en cuenta que cuando cambiamos de categoría de diagrama, la estructura puede que no sea la misma, 
+    obviamente debido a que no todos los diagramas coinciden en ella. Lo que se tomará en cuenta a la hora de 
+    convertir un diagrama en otro será su estructura en el Panel de texto.
+  </p>
+  
+  <h3> El Panel de texto</h3>
+  
+  <p>Con este botón podemos mostrar el panel de texto correspondiente a nuestro diagrama. Además de añadir
+     las formas como hemos visto hasta ahora también podemos editarlo utilizando este panel.
+  </p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  <p>
+    Para modificar el texto de un elemento podemos seleccionarlo de la lista en el panel y cambiar sus
+    propiedades desde la pestaña Inicio. Como veremos más adelante también podrás cambiar su aspecto.
+    Para añadir nuevos elementos sitúate en el lugar que quieras insertarlo y pulsa <b>INTRO</b>. Se creará un nuevo 
+    elemento, utiliza la tecla <b>Tabulador</b> para subordinarlo, o las teclas <b>Shift</b> + <b>Tabulador para moverlo</b> 
+    a un nivel superior.
+  </p>
+  
+  <h3>Estilo del diagrama</h3>
+  
+  <p>
+    Modificar el aspecto de los diagramas es muy sencillo, estas opciones los tenemos en la pestaña
+   <b>Diseño</b>.
+  </p>
+  
+  
+  <p>
+   <b>SmartArt</b> ofrece, además de muchas formas de estructuras, un rango muy amplio de diferentes estilos
+   y colores para cada una de ellas. Para modificar esto utilizaremos las opciones que se encuentran en la
+   sección Estilos SmartArt:
+  </p>
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  
+  <p>
+    Podemos escoger una combinación de colores preestablecida para nuestro gráfico, para ello, simplemente despliega el menú Cambiar colores y selecciona el que más te guste.
+  
+    Verás que a medida que vas pasando el ratón por cada una de las opciones, tu gráfico mostrará la previsualización de cómo quedaría si aceptases esa opción.
+    
+    Estos colores estan clasificados por diferentes categorías, por lo que lo más recomendable es que en un mismo documento todos los gráficos que introduzcas sigan la misma línea para conseguir un aspecto más homogéneo.
+    
+    Más adelante veremos que podemos modificar estos colores de forma personalizada.
+  </p>
+  
+  <p>
+    a segunda opción que nos será más útil todavía es la de los estilos de gráfico predefinido.
+  
+  Estos no cambian los colores del gráfico, sino que modifican la forma en que se visualizan.
+  
+  Existen diferentes formas de visualización para cada uno de los gráficos, de hecho hay algunos que tienen un número sorprendente de posibilidades, y lo mejor de todo: en esta última edición de Word, los gráficos 3D tienen una calidad impresionante.
+  
+  Para seleccionar un tipo de visualización despliega la lista y del mismo modo que antes selecciona uno. Mientras vayas pasando con el ratón verás la previsualización en tu gráfico.
+  </p>
+  
+  <p>
+    En cualquier momento puedes hacer clic en la opción Restablecer gráfico Restablecer gráfico de la pestaña Diseño para devolver el diagrama a su configuración inicial. La información se mantendrá, pero se eliminarán los cambios en la estructura y el estilo.
+  </p>
+  
+  <p>En la pestaña Formato también encontraremos opciones para configurar la estética del diagrama.</p>
+  
+  <div class="flexbox">
+    <img src="../Imagenes/" alt="", width="auto%" height="auto">
+  </div>
+  
+  
+  <p>
+    En los casos en que hayamos seleccionado una visualización en 3D podremos seleccionar el modo Editar en 2D para pasar el gráfico temporalmente a 2 dimensiones y poder trabajar con más comodidad.
+  
+  Cuando hayas temirminado vuelve a hacer clic sobre ese botón y el gráfico tomará de nuevo la apariencia 3D.
+  </p>
+  
+  <p>Los otros tres botones que se encuentran en la sección Formas nos ayudarán a diferentes tareas:</p>
+  <ul>
+    <li>Los otros tres botones que se encuentran en la sección Formas nos ayudarán a diferentes tareas:</li>
+    <li> Menor. Estre botón disminuye el tamaño de la forma en el organigrama. Cuantas más veces lo pulses más pequeño se hará.</li>
+    <li>Cambiar forma. Este botón despliega un menú desde donde podrás cambiar la forma de un elemento cualquiera del diagrama, 
+      bastará con seleccionarlo, desplegar este menú y seleccionar la forma que quieres que tome. Podrás escoger entre todas
+      las autoformas disponibles en Word.
+    </li>
+  </ul>
+
+  <!-- <h3>Estilos de forma.</h3> -->
+  </div>
+  
+       
+
+  
+  
+  
+  <div class="nota-box">
+    <h1 class="number-subtitle"> Configuracion de impresión </h1> 
+
+   <p>
+    Antes de imprimir es interesante echar un vistazo al aspecto general del documento para ver si está todo correcto.
+  </p> 
+
+  <p>
+    Para ello nos aseguraremos de que estamos viendo el documento en vista de impresión. En la pestaña Vista deberá
+    estar seleccionado Diseño de impresión, o bien deberemos comprobar que en la barra de estado esté marcada esta 
+    opción Barra de estado  <img src="../Imagenes/S1/Barra_estado_Vistas.JPG" alt="", width="auto" height="auto">.
+      Esta vista presenta la página tal y como se imprimirá, con gráficos, imágenes,
+    encabezados y pies de página, etc.
+  </p>
+  
+  <p>
+    En la <b>pestaña Vista</b> > <b>grupo  Zoom</b>. Se tienen opciones muy interesantes:
+  <img src="../Imagenes/S1/Pestaña_vista_grupo_zoom.JPG" alt="", width="auto" height="auto">.
+
+  <ul>
+    <li>
+      El botón Una página ajustará la página al espacio que tenga en la pantalla, para que quepa completamente. 
+      Lo mismo sucede con Dos páginas, pero con dos de ellas, una junto a la otra.
+    </li>
+  </ul>
+  </p>
+
+  <p>
+    Si contamos ocon  más páginas ¿Y si queremos ver mas alla de 10, 100 o más páginas que tiene el documento?
+  </p>
+
+  <p>
+  Para hacerlo, deberemos pulsar el botón Zoom <img src="../Imagenes/S1/Boton_zoom.JPG" alt="", width="auto" height="auto">.
+  </p>
+
+  <p>Se abrirá una ventana con la opción: <b>Varias páginas.</b></p>
+
+  <div class="flexbox">
+    <img src="../Imagenes/S1/Ventana_varias_paginas.JPG" alt="", width="auto" height="auto">
+   </div>
+
+  <p>
+    Haciendo clic en el botón con forma de monitor, se desplegará un submenú donde podremos seleccionar cuántas
+    páginas queremos ver y cómo deberán estar organizadas.
+  </p>
+  <p><h4>Ejemplo:</h4>
+  </p>
+ 
+  
+  <p>
+    Desde esta vista podremos apreciar y corregir mejor los detalles. Por ejemplo, si una página contiene 
+    sólo una o dos líneas de texto, lo ideal sería intentar ajustar el texto de forma que quepa en la anterior,
+    y así ahorrar un papel. También veremos de forma más rápida y cómoda si los gráficos o imágenes del documento
+    están bien centrados, etc.
+  </p>
+
+  <h3>Opción ancho de página</h3>
+    <p>
+      La opción Ancho de página ajusta la página al ancho de la ventana de Word.
+    </p>
+  <h3>Opción 100 %  </h3>  
+    <p>
+      La opción 100% muestra el tamaño original de la página, sea cual sea el tamaño de la ventana de Word.
+    </p>
+  </ul>
+
+<h2 class="number-title"> Imprimir</h2>  
+
+<p>
+  Para imprimir un documento podemos pulsar las teclas <b>CTRL+P</b> o bien ir a la pestaña <b>Archivo</b> y seleccionar Imprimir.
+  En la pantalla verás las opciones de impresión, tal y como se muestra en la siguiente imagen.
+</p>
+
+<div class="flexbox">
+  <img src="../Imagenes/S1/Ventana_imprimir.JPG" alt="", width="auto" height="auto">
+</div>
+
+<p>
+  A la derecha podrás ver una vista previa del documento tal y como se imprimirá. Si te gusta el resultado será
+  suficiente con pulsar el botón Imprimir. Así también, disponemos de una serie de opciones de configuración que nos ayudarán 
+  a lograr el resultado deseado.
+</p>
+
+<h3>Ventana de impresión</h3>
+<p>
+en la zona de la derecha vemos la vista previa de la página. En caso de tener más de una página,
+podremos cambiar la página a visualizar:
+</p>
+
+<p>
+  En la zona izquierda de la ventana dispondremos de una serie de opciones de configuración de la impresión, 
+  que nos permitirán:
+<ul>
+  <li>
+    Elegir cuántas copias imprimir del documento.
+  </li>
+  <li>
+    Escoger qué impresora queremos utilizar en la impresión del documento, en caso de que no queramos utilizar 
+    la predeterminada que viene seleccionada por defecto. También podremos modificar las Propiedades de impresora 
+    seleccionada, para por ejemplo imprimir en blanco y negro.
+  </li>
+  <li>
+    Opciones de Configuración como:
+    <ul>
+      <li>Qué hojas imprimir: Las hojas activas, todo el libro, o bien la selección realizada.</li>
+      <li>La intercalación. Cuando imprimimos varias copias sin intercalación se imprime X veces cada página, 
+       por ejemplo: 1,1,1    2,2,2    3,3,3    4,4,4 sería la impresión de tres copias de un documento que ocupa
+       cuatro páginas. En cambio, si utilizamos el intercalado, se imprime el trabajo completo, una vez tras otra. 
+       El mismo ejemplo sería: 1,2,3,4    1,2,3,4     1,2,3,4
+      </li>
+      <li>
+        La orientación y el tamaño del papel.
+      </li>
+      <li>
+        Modificar los márgenes.
+      </li>
+      <li>
+        Escoger cuántas páginas se incluirán en cada hoja impresa.
+      </li>
+      <li>
+        Acceder a la Configuración de página.
+      </li>
+    </ul>
+  </li>
+</ul>
+</p>
+
+<p>Podemos tambien acceder a todas estas opciones en haciendo clic en la esquina inferior izquierda
+  del grupo <b>Configurar página</b> en la  pestaña <b>Diseño de página</b>
+</p>
+<p><div class="flexbox">
+  <img src="../Imagenes/S1/Opcion_Configurar_pagina.JPG" alt="", width="auto" height="auto">
+</div>
+</p>
+<p>
+  Se abrirá la siguiente ventana:
+</p>
+<p>
+  <div class="flexbox">
+  <img src="../Imagenes/S1/Ventana_configurar_pagina.JPG" alt="", width="auto" height="auto">
+</div>
+</p>
+
+<p>
+  Las opciones están clasificadas en las pestañas <b>Márgenes</b>, <b>Papel</b> y <b>Diseño</b>
+</p>
+
+<p>
+  <ul>
+    <li>
+      La opción <b>Aplicar a</b>. Esta opción nos permite mezclar configuraciones en la impresión de un único documento.
+      <p><b>Ejemplo</b><br>
+        Imagina que quieres imprimir el vertical las primeras 5 páginas y en horizontal el resto. Así también, podríamos modificar 
+        los márgenes o cualquier otra opción configurable en el cuadro de diálogo.
+      </p>
+    </li>
+    <li>
+      Si normalmente imprimimos siempre con los mismos parámetros (márgenes, orientación, tipo de papel, etc.),
+      lo ideal es pulsar el botón Establecer como predeterminado tras haber configurado la impresión. De esta forma se imprimirá 
+      siempre así por defecto.
+    </li>
+  </ul>
+</p>
+
+<h2 class="number-title"> Otras opciones de impresión</h2>
+<p>
+  La configuración de Word también afecta a la impresión, aunque a veces no seamos conscientes de ello. existen algunos
+  elementos que por defecto no se imprimen, como los colores e imágenes de fondo. Normalmente está configurado así para
+  ahorrar tinta en las copias impresas, pero podemos cambiarlo.
+</p>
+
+<p>
+  En <b>Archivo</b> > <b>Opciones</b> abrimos la ventana de Opciones de Word. Deberemos situarnos en la opción Mostrar del menú que se
+  encuentra en el lateral izquierdo y ahí es donde encontraremos una serie de Opciones de impresión que podremos activar
+  o desactivar según nuestras necesidades.
+</p>
+
+<p>
+  <div class="flexbox">
+  <img src="../Imagenes/S1/Ventana_opciones_word.JPG" alt="", width="auto" height="auto">
+</div>
+</p>
+
+<h2 class="number-title"> Impresora virtual</h2>
+<p>
+  En la ventana de impresión, podemos seleccionar la impresora de entre las que tenemos instaladas. Frecuentemente se cuenta 
+  con una <b>impresora virtual</b>. Existen impresoras virtuales que imprimen en PDF.
+</p>
+
+<p>
+  <div class="flexbox">
+  <img src="../Imagenes/S1/Impresora_Virtual.JPG" alt="", width="auto" height="auto">
+</div>
+</p>
+
+<p>
+  La impresora virtual es una impresora que realmente no existe físicamente. Es una especie de "engaño" al sistema. 
+  Se trata de un programa que se hace pasar por impresora, pero en vez de enviar la información que se imprime a la 
+  bandeja de impresión, lo que hace es imprimirlo como un archivo. Es decir, que aparecerá un cuadro de diálogo 
+  preguntándonos dónde guardar el archivo. Siempre disponemos de la impresora virtual que incluye Windows, llamada 
+  <b>Microsoft XPS Document Writer</b>, que imprime un archivo de formato .xps.
+</p>
+
+
+<p>
+<h4>Observación:</h4>También podemos guardar un documento Word en formato PDF desde <b>Guardar como</b> ... eligiendo 
+el tipo PDF, lo que equivale a imprimirlo en una impresora virtual.
+</p>
+
+</div>
+
+  
+  
+
+
+
+
+<div class="nota-box">
+  <h1 class="number-subtitle"> Referencias</h1>
+
+  <!-- 
+  <h2 class="number-title"> Tablas de contenido</h2>  
+
+  <h2 class="number-title"> Tablas de ilustraciones </h2>  
+
+
+  <h2 class="number-title"> Tablas de índices</h2>  
+
+  
+-->
+  
+
+  
+   <h2 class="number-title"> Marcadores</h2>  
+   
+   <p>
+    Un marcador  <img src="../Imagenes/Boton_marcador_.JPG" alt="", width="auto" height="auto"> en Word funciona 
+    como un marcador que puede colocar en un libro: marca un lugar que desea encontrar fácilmente. Puede escribir 
+    tantos marcadores como desee en el documento
+   </p>
+   
+   <h3>Agregar marcador en una ubicación</h3>
+
+   <ol>
+    <li>Para agregar un marcador, primero debe marcar la ubicación del marcador en el documento.</li>
+    <li>Luego, hacer clic en la pestaña  <b>Insertar</b> > Grupo  <b>Vinculos</b> > seleccionar <b>Marcador</b>.  <img src="../Imagenes/Boton_marcador.JPG" alt="", width="auto" height="auto"> 
+    o bien presionar la siguiente combinacion de teclas:   <b>Ctrl</b> + <b>Mayús</b> + <b>F5</b>.</li>
+    <li>En <b>Nombre del marcador</b>,escriba un nombre y haga clic en Agregar.</li>
+   </ol>
+   <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Ventana_marcador.JPG" alt="", width="auto" height="auto">
+    </div>
+   </p>
+
+   <p>
+    <b>Observación:</b>  Los nombres de marcador tienen que comenzar por una letra. Pueden incluir números y letras, 
+      pero no espacios. Si tiene que separar palabras, puede usar un carácter de subrayado ( _ )—por ejemplo, Primer_título.
+   </p>
+
+   <h3>Ir a la ubicación de marcador</h3>
+
+
+   <p>Después de crear los marcadores, puede agregarles vínculos dentro del documento o saltar a ellos en cualquier momento.</p>
+
+   <h3>Saltar a un marcador</h3>
+
+   <ul>
+    <li>Presione la combinacion de teclas  <b>Ctrl</b>+<b>G</b> para abrir la pestaña <b>Ir a</b> en el cuadro <b>Buscar y reemplazar</b>.</li>
+    <li>En la pestaña <b>inicio</b>> grupo <b>edición</b> <img src="../Imagenes/Grupo_edicion_pestaña_inicio.JPG" alt="", width="auto" height="auto">
+       >  <b>buscar</b> <img src="../Imagenes/Boton_buscar.JPG" alt="", width="auto" height="auto"> > <b>Ir a...</b> <img src="../Imagenes/Boton_buscar.JPG" alt="", width="auto" height="auto"> ><b> Marcador</b>. 
+       Escriba o seleccione el nombre del marcador y, a continuación, haga clic en Ir a.</li>
+    </ul>
+    <p>
+      <div class="flexbox">
+        <img src="../Imagenes/Ventana_ir_a.JPG" alt="", width="auto" height="auto">
+      </div>
+     </p>
+
+     <h3>Vínculo a un marcador</h3>
+
+     <p>También puede agregar hipervínculos que le llevará a una ubicación con marcadores en el mismo documento.</p>
+
+     <ol>
+      <li>Seleccione el texto u objeto que desea usar como hipervínculo.</li>
+      <li>Haga clic con el botón derecho y, a continuación, haga clic en <b>Hipervínculo</b> <img src="../Imagenes/Clic_derecho_hipervinculo.JPG" alt="", width="auto" height="auto"></li>
+      <li>En <b>Vincular a</b>, haga clic en <b>Lugar de este documento</b>.</li>
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/Ventana_huipervinculos.JPG" alt="", width="auto" height="auto">
+        </div>
+      </p>
+      <li>En la lista, seleccione el encabezado o marcador al que desea vincular.</li>
+      <li>Para finalizar haga clic en Aceptar.</li>
+     </ol>
+
+     <p><b>Observación:</b>  Para personalizar la información en pantalla que aparece cuando mantiene el cursor sobre el hipervínculo, 
+      haga clic en <b>Información en pantalla</b>, y luego escriba el texto que quiere.</p>
+
+      <h3>Eliminar un marcador</h3>
+
+      <ol>
+        <li>Hacer clic en la pestaña  <b>Insertar</b> > Grupo  <b>Vinculos</b> > seleccionar <b>Marcador</b>.  <img src="../Imagenes/Boton_marcador.JPG" alt="", width="auto" height="auto"></li>
+        <li>Haga clic en <b>Nombre</b> o <b>Ubicación</b> para ordenar la lista de marcadores del documento.</li>
+        <li>Haga clic en el nombre del marcador que desea eliminar y, a continuación, haga clic en <b>Eliminar.</b></li>
+        <li>Si ha insertado un hipervínculo al marcador eliminado, haga clic con el botón derecho en el texto vinculado y, a continuación, haga clic en Quitar hipervínculo.</li>
+      </ol>
+
+     <h3>mostrar marcadores en nuestro documento</h3>
+
+     <p>Normalmente los marcadores <b>permanecen ocultos</b>, a no ser que activemos la opción para <b>mostrar Marcadores ocultos</b>.
+      Lo haremos desde el menú <b>Archivo</b> > <b>Opciones</b>. Una vez abierto el cuadro de diálogo deberemos seleccionar la
+      categoría <b>Avanzadas</b>, en la lista de la izquierdaubicar las opciones relativas a <b>Mostrar contenido de documento</b>,
+      ahí marcaremos la opción <b>Mostrar marcadores</b>.<br>
+
+      Cuando pulsemos Aceptar y se cierre el diálogo Opciones veremos en nuestro documento aquellos marcadores que hemos incluido.
+     </p>
+
+  
+    <h2 class="number-title"> Notas al pie y al final</h2>
+
+   
+   <p>
+    Las <b>notas al pie y las notas al final</b> son utiles para explicar, comentar o proporcionar referencias a un elemento
+    de un documento. Normalmente, las notas al pie aparecen en la parte inferior de la página, mientras que las notas al final 
+    se encuentren al final del documento o de la sección.
+   </p>
+
+   <h3> Agregar una nota al pie</h3>
+   <ol>
+    <li>Primero tenemos que hacer clic en el lugar donde desee agregar la nota al pie. </li>
+    <li>Luego hacer clic en la pestaña <b>Referencias</b>> Grupo <b>Notas al pie </b>  <img src="../Imagenes/Grupo_notas_al_pie.JPG" alt="", width="auto" height="auto">> 
+      <b> Insertar nota al pie</b>  <img src="../Imagenes/Opcion_notas_al_pie.JPG" alt="", width="auto" height="auto">. 
+      Entonces, Word inserta una marca de referencia en el texto <img src="../Imagenes/Marca_notas_pie_pagina.JPG" alt="", width="10%" height="auto">
+      y agrega la marca de la nota al pie en la parte inferior de la página <img src="../Imagenes/Marca_notas_pie_pagina_.JPG" alt="", width="auto" height="auto">.</li>
+    <li>Escriba el texto de la nota al pie.<img src="../Imagenes/Ejemplo_nota_al_pie_pagina.JPG" alt="", width="auto" height="auto"></li>
+   </ol>
+  
+   <h3> Agregar una nota al final</h3>
+
+   <ol>
+    <li>Haga clic en el lugar donde desee agregar la <b>nota al final</b>.</li>
+    <li>Haga clic en la pestaña <b>Referencias</b>> Grupo <b>Notas al pie </b> 
+      <img src="../Imagenes/Grupo_notas_al_pie.JPG" alt="", width="auto" height="auto"> > <b>Insertar Nota al final</b> <img src="../Imagenes/Opcion_notas_al_final.JPG" alt="", width="auto" height="auto">.
+       Word insertará una <b>marca de referencia</b> en el texto y agrega la marca de la nota <b>al final</b> en la parte final del documento.</li>
+    <li>Escriba el texto de la nota al final.</li>
+   </ol>
+
+   <h3> Personalizar las notas al pie y notas al final</h3>
+
+   <p>Para personalizar una nota al pie o nota al final, podemos seguir los siguientes pasos:</p>
+
+   <ol>
+    <li>
+      Haga clic en la marca numérica de referencia o en el cuerpo del texto o hacer clic en la pestaña 
+      <b>Referencias</b>> Grupo <b>Notas al pie </b> (para las notas al final, haga clic en la pestaña <b>Referencias</b>
+       > <b>Mostrar notas al final)</b>.
+      </li>
+      <li>
+      En la vista de notas al pie o notas al final, haga clic en dar formato a las notas al pie o dar formato a notas al 
+      final para mostrar el cuadro de diálogo Opciones de formato , donde puede cambiar el tamaño, la fuente y la sangría
+      de una o de todas las notas al pie o notas al final.
+      </li>
+    
+   </ol>
+
+
+
+
+   <h2 class="number-title"> Referencias cruzadas</h2>  
+
+   <p>
+    Una <b>referencia cruzada</b>  <img src="../Imagenes/Opcion_referencias_cruzadas.JPG" alt="", width="auto" height="auto"> le permite vincular a otras partes del mismo documento. Por ejemplo, puede usar una referencia
+    cruzada para crear un vínculo a un gráfico que aparece en otra parte del documento. La referencia cruzada aparece como
+    un vínculo que lleva al lector al elemento al que se hace referencia.
+  </p>
+
+  
+  <p><b>Observación:</b> No puede hacer referencias cruzadas a algo que no existe, por lo que es preciso asegurarse de crear 
+    el gráfico, título, número de página, etc., antes de intentar vincularlo. Al insertar la referencia cruzada, verá un
+    cuadro de diálogo que enumera todo lo que está disponible para vincular. Aquí tiene un ejemplo.</p>
+
+   <h3>Insertar la referencia cruzada </h3>
+
+   <ol>
+    <li>Podemos acceder a esta herramienta en la pestaña <b>Referencia</b> > Grupo <b> Títulos</b> <img src="../Imagenes/Grupo_titulos.JPG" alt="", width="auto" height="auto"> </li>
+    <li>Una vez en la <b>ventana Referencia cruzada</b>. En el cuadro <b>Tipo de referencia</b> <img src="../Imagenes/Ventana_referencia_cruzada_tipo.JPG" alt="", width="auto" height="auto">, 
+      haga clic en la lista desplegable para elegir lo que desea vincular. La lista de los elementos que están disponibles depende del tipo de elemento 
+      (título, número de página, etc.) que esté vinculando.</li>
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/Ventana_referencia_cruzada.JPG" alt="", width="auto" height="auto">
+        </div>
+      </p>
+      <li>En el cuadro <b>Insertar referencia en</b> <img src="../Imagenes/Ventana_referencia_cruzada_referencia_a.JPG" alt="", width="auto" height="auto">, 
+        haga clic en la información que desea insertar en el documento. Las opciones dependen de lo que eligió en el paso 3.</li>
+        <li>En el cuadro <b>Para qué</b>, haga clic en el elemento específico que desea hacer referencia, como "Insertar la referencia cruzada".</li>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Ventana_referencia_cruzada_para_que.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>
+        <li>Para permitir a los usuarios que vayan al elemento al que se hace referencia, seleccione 
+          la casilla <b>Insertar como hipervínculo</b><img src="../Imagenes/Ventana_referencia_cruzada_casilla1.JPG" alt="", width="auto" height="auto">.</li>
+
+        <li>Si la casilla <b>Incluir por debajo/por encima</b><img src="../Imagenes/Ventana_referencia_cruzada_casilla2.JPG" alt="", width="auto" height="auto"> está disponible, compruébela para incluir la posición relativa
+           específica del elemento al que se hace referencia.</li>
+        
+        <li>Finalmente hagamos clic en <b>Insertar</b>.</li>
+   </ol>
+
+   <h3>Observación: Las referencias cruzadas se insertan como campos</h3>
+   <p>
+    Las referencias cruzadas se insertan en el documento como campos. Un <b>campos</b> es un conjunto de información que indica 
+    a Word que inserte texto, gráficos, números de página y otros materiales en un documento de forma automática.<br>
+
+    Por ejemplo, el <b>campo DATE</b> inserta la fecha actual. La ventaja de usar campos es que el contenido que se inserta 
+    (fecha, número de página, gráficos, etc.) se actualiza siempre que exista un cambio. Por ejemplo, si está escribiendo
+    un documento durante un período de días, la fecha cambiará cada día al abrir y guardar el documento. De forma
+    similar, si actualiza un gráfico que está almacenado en otro lugar pero al que se hace referencia en el campo, 
+    la actualización se detectará automáticamente sin tener que volver a insertar el gráfico.<br>
+
+    Si ha insertado una referencia cruzada con una apariencia similar a {REF _Ref249586 \* MERGEFORMAT}, Word muestra los
+    códigos de campo en lugar de los resultados de los campos. Al imprimir el documento u ocultar códigos de campo,
+    los resultados de campo reemplazan a los códigos de campo. Para ver los resultados de campo en lugar de los códigos de 
+    campo, presione ALT + F9, o haga clic con el botón derecho en el código de campo y, luego, haga clic en Activar o desactivar 
+    códigos de campo en el menú contextual.
+   </p>
+    
+         
+  <!--  <h3 >Referencias cruzadas a  ilustraciones</h3>
+
+  <h2 class="number-title"> Bibliografia y citas</h2>  
+   
+  -->
+  </div>
+
+  
+
+  <div class="nota-box">
+    <h1 class="number-subtitle"> Combinaciones de correspondencia</h2>
+
+ <p>
+   La combinación de correspondencia le permite crear un lote de documentos personalizados para cada destinatario. 
+   Por ejemplo, una carta puede personalizarse para dirigirse a cada destinatario por su nombre. Los orígenes de datos, 
+   como las listas, hojas de cálculo o bases de datos, están asociados al documento. Los marcadores de posición 
+   (denominados campos de combinación) indican a Word en qué parte del documento incluir información del origen de datos.
+ </p>
+
+ <p>
+  El primer paso para configurar la combinación de correspondencia consiste en seleccionar el origen de datos que usará para 
+  la información personalizada. Las hojas de cálculo de Excel y las listas de contactos de Outlook son los orígenes de datos
+  más comunes, pero se puede usar cualquier base de datos que se pueda conectar a Word. Si aún no tiene un origen de datos, 
+  puede incluso escribirlo en Word como parte del proceso de combinación de correspondencia.
+ </p>
+
+  <p>
+  La <b>combinación de correspondencia</b>  es una de las herramientas más utilizadas en Word. Este proceso es muy utilizado
+  en muchos sectores, tanto para que una secretaria  cree invitaciones para un evento, un administrativo envíe cartas a sus
+  clientes en sus cumpleaños, o que un banco envíe diferentes recordatorios a los deudores con cuentas pendientes o los
+  famosos estados de cuentas de las diferentes tarjetas de créditos que recibimos mes a mes. De ahí que esta herramienta puede
+  resumir todo el trabajo de una jornada completa en pocos minutos.  
+  </p>
+
+  <!-- 
+  <p>
+    Word ofrece herramientas para incorporar los datos en los siguientes tipos de documentos 
+  </p>
+  <h3>Cartas</h3>
+  <p>
+    La combinación de correspondencia le permite crear un lote de cartas personalizadas en las que cada letra es idéntica 
+    en diseño, formato, texto y gráficos, excepto para partes personalizadas como el saludo.
+  </p>
+
+  <p>Primero que nada, tenemos que preparar la carta:  </p>
+  <ul>
+  <li><b>Correspondencia</b> > <b>Iniciar combinación de correspondencia</b> > <b>cartas</b></li>
+  <li>Escriba el cuerpo de la carta que desea enviar a la lista de distribución de correo.</li>
+  </ul>
+  <h3>Correo electrónico</h3>
+
+  <h3>Sobres o etiquetas</h3>
+
+  <h3>Directorio </h3>
+    </div>
+
+  -->
+
+
+  </body>

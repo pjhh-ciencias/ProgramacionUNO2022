@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+          <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction( )">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> § Semana  6 </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Funciones de fecha y hora</h1>
+
+    
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Fechas en Excel</h1>
+      <p>Excel almacena una fecha como si fuera un número entero. Al utilizar un sistema como éste,
+         Excel puede sumar, restar y comparar fácilmente las fechas sin necesidad de hacer alguna 
+         conversión ni cálculo especial.
+      <p>
+
+      <p>Por ejemplo, la fecha 1/1/2000 está representada por el número de serie 36526 y la fecha
+         05/10/2000 tiene asignado el valor 36804. Como puedes imaginar, al realizar una operación 
+         con fechas se utiliza su número de serie para facilitar las operaciones</p>
+
+      <h2 class="number-title">  El primer y último dia de Excel</h2>   
+
+      <p>Excel reconoce todas las fechas posteriores a 1/1/1900. Es por eso que <b>el primer día del año 
+        1900</b> tiene asignado el número 1. Por el contrario, <b>el último día que Excel reconoce</b> es el 31/12/9999
+        el cual tiene asignado el número 2958465.</p>
+
+
+      <h2 class="number-title">  Valor númerico de una fecha</h2>
+      <p>Es realmente sencillo conocer el valor numérico de una fecha, solamente cambia el formato de la 
+        celda que contiene una fecha a un formato <b>General</b> y Excel desplegará su valor numérico.</p> 
+
+
+        <div class="flexbox">  
+          <img src="../Imagenes/Excel/fechas-en-excel-01.png" alt="",height="auto",width="auto"> 
+        </div>  
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función FECHA </h1>
+    
+     
+    <p>La función  <b>FECHA( año ; mes ; día )</b> devuelve el número de serie que pertenece a una fecha especificada.</p>
+
+    <h2 class="number-title">  Sintaxis</h2>
+
+    <p><center><b>FECHA( año ; mes ; día )</center></b></p>
+
+      <p>
+        <ul>
+        <li><b>año</b> Obligatorio. Número que representa el año de la fecha.</li>
+        <li><b>mes</b> Obligatorio. Número que representa el mes de la fecha.</li>
+        <li><b>día</b> Obligatorio. Número que representa el día de la fecha.</li>
+        </ul>
+      </p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función VALFECHA </h1>
+         <p>La función  <b>VALFECHA( " dd / mm / aa " )</b> convierte una fecha escrita entre comillas (en formato numérico,
+          ejemplo: “5/2/70”) en número de serie.</p>
+       </div>
+  
+        
+        <div class="nota-box">
+        <h1 class="number-subtitle">  Función VALHORA </h1>
+          <p>La función  <b>VALHORA( " hh : mm " )</b> convierte una hora escrita entre comillas (con formato numérico,
+              ejemplo: “15:00”) en número de serie.</p>
+        </div>
+  
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función HOY</h1>
+       <p>La función  <b>HOY( )</b> devuelve el número de serie de la fecha actual.</p>
+      </div>
+  
+      
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función AHORA </h1>
+      <p>La función <b>AHORA( )</b> devuelve el número de serie de la fecha y hora actuales. </p>
+      </div>
+  
+
+  
+
+   
+    
+    <div class="nota-box">
+    <h1 class="number-subtitle">  Función AÑO </h1>
+    
+    <p>La función  <b>AÑO( numero_serie )</b> convierte un número de serie en un año. El número puede ser una fecha
+      entre comillas (por ejemplo, “29/05/68” devolvería 1968).   
+    </p>
+    </div>
+
+  
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función MES</h1>
+      <p>La función  <b>MES( numero_serie )</b> dado un número de serie, se devuelve el número de día del mes correspondiente. 
+        El número puede ser una fecha entre comillas   </p>
+    </div>
+
+    
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función DIA </h1>
+    
+    <p>La función  <b>DIA( numero_serie )</b>, dado un número de serie, devuelve el correspondiente día del mes.
+      El número puede ser una fecha entre comillas.   </p>
+
+    </div>
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función DIASEM</h1>
+    
+    <p>La función  <b>DIASEM( num_serie ; tipo )</b> convierte un número de serie de una fecha en un día de la semana
+      (su número). Devuelve el día como un número entero entre 1 (domingo) y 7 (sábado). El segundo parámetro establece el tipo de semana (1 = semana inglesa; 2 =
+      semana española; 3 = el primer día de la semana es el cero).</p>
+      
+      
+      <p><b>Ejemplo:</b> La función <b>=DIASEM( " 24 / 12 / 89 " ; 2 )"</b> devuelve el valor 7,
+      que corresponde a Domingo según el tipo de semana española.   </p>
+
+      <p><b>Tipo:</b><br>
+        <p><table class="banded">
+          <thead>
+            <tr>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Tipo</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Número devuelto</b>
+                </p>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>1 u omitido</p>
+              </td>
+              <td>
+                <p>Números del 1 (domingo) al 7 (sábado). Igual que en versiones anteriores de Microsoft Excel.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>2</p>
+              </td>
+              <td>
+                <p>Números del 1 (lunes) al 7 (domingo).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>3</p>
+              </td>
+              <td>
+                <p>Números del 0 (lunes) al 6 (domingo).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>11</p>
+              </td>
+              <td>
+                <p>Números del 1 (lunes) al 7 (domingo).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>1,2</p>
+              </td>
+              <td>
+                <p>Números del 1 (martes) al 7 (lunes).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>1,3</p>
+              </td>
+              <td>
+                <p>Números del 1 (miércoles) al 7 (martes).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>14</p>
+              </td>
+              <td>
+                <p>Números del 1 (jueves) al 7 (miércoles).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>15</p>
+              </td>
+              <td>
+                <p>Números del 1 (viernes) al 7 (jueves).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>16</p>
+              </td>
+              <td>
+                <p>Números del 1 (sábado) al 7 (viernes).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>17</p>
+              </td>
+              <td>
+                <p>Números del 1 (domingo) al 7 (sábado).</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+      </p>
+
+      <p><b>Ejemplo:</b><br>
+        <p>
+          <table class="banded">
+            <thead>
+              <tr>
+                <td>
+                  <p>
+                    <b class="ocpLegacyBold">Datos</b>
+                  </p>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>14/2/2008</p>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <b class="ocpLegacyBold">Fórmula</b>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <b class="ocpLegacyBold">Descripción (resultado)</b>
+                  </p>
+                </td>
+                <td>
+                  <p id="__goback">
+                    <b class="ocpLegacyBold">Resultado</b>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>=DIASEM(A2)</p>
+                </td>
+                <td>
+                  <p>Día de la semana, con los números 1 (domingo) a 7 (sábado) (5)</p>
+                </td>
+                <td>
+                  <p>5</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>=DIASEM(A2; 2)</p>
+                </td>
+                <td>
+                  <p>Día de la semana, con los números 1 (lunes) a 7 (domingo) (4)</p>
+                </td>
+                <td>
+                  <p>4</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>=DIASEM(A2; 3)</p>
+                </td>
+                <td>
+                  <p>Día de la semana, con los números 0 (lunes) a 6 (domingo) (3)</p>
+                </td>
+                <td>
+                  <p>3</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+        </p>
+
+
+    </div>
+
+    
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función TIEMPO</h1>
+      <p>La función  <b>TIEMPO( hora ; minuto ; segundo )</b> devuelve el número de serie que pertenece a la hora especificada   </p>
+    </div>
+
+
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función HORA</h1>
+    
+    <p>La función  <b>HORA( numero_serie )</b> devuelve la hora de un número de serie. 
+    La hora se expresa como número entero, comprendido entre 0 (12:00 a.m.) y 23 (11:00 p.m.).</p>
+
+    <h2 class="number-title">  Sintaxis</h2>
+
+     <p><center> <b>HORA( numero_serie )</b></center></p>
+
+     <p>
+      La sintaxis de la función HORA tiene los siguientes argumentos:<br>
+    <ul>
+      <li><b> numero_serie </b> Obligatorio. Es el valor de hora que contiene la hora que desea obtener. 
+        Puede escribir las horas como cadenas de texto entre comillas (por ejemplo, "6:45 p.m.", 
+        como números decimales (por ejemplo, 0,78125, que representa las 6:45 p.m.), o bien como 
+        resultado de otras fórmulas o funciones, por ejemplo VALHORA("6:45 p.m.")).</li>
+    </ul>
+     </p>
+
+     <p><b>Observación: </b> Los valores de hora son parte de un valor de fecha y se representan mediante un número decimal
+       (por ejemplo, 0,5 representa las 12:00 p.m. porque es la mitad de un día).</p>
+    </div>
+
+
+
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función MINUTO </h1>
+    <p>La función  <b>MINUTO( numero_serie )</b> dado un número de serie, Devuelve los minutos de un valor de hora. 
+    Los minutos se expresan como números enteros comprendidos entre 0 y 59.
+     El número  puede ser una hora entre comillas.</p>
+
+     <h2 class="number-title">  Sintaxis</h2>
+
+     <p><center> <b>MINUTO( numero_serie )</b></center></p>
+
+     <p>
+      La sintaxis de la función MINUTO tiene los siguientes argumentos:<br>
+    
+    <ul>
+      <li><b> numero_serie </b> es el valor de hora que contiene el minuto que se desea obtener.
+       Los valores de hora se pueden especificar como cadenas de texto entre comillas (por ejemplo, "6:45 p.m."), 
+       como números decimales (por ejemplo, 0,78125, que representa 6:45 p.m.), o bien, como el resultado de otras fórmulas 
+       o funciones (por ejemplo, VALHORA("6:45 p.m.")).</li>
+    </ul>
+    </p>
+
+
+    <p>  <table class="banded">
+      <thead>
+        <tr>
+          <td>
+            <p>
+              <b class="ocpLegacyBold">Fórmula</b>
+            </p>
+          </td>
+          <td>
+            <p>
+              <b class="ocpLegacyBold">Descripción (Resultado)</b>
+            </p>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p>=MINUTO("4:48:00 p.m.")</p>
+          </td>
+          <td>
+            <p>Minutos del valor de hora (48)</p>
+          </td>
+        </tr>
+      </tbody>
+    </table></p>
+
+    </div>
+
+
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función SEGUNDO </h1>
+    
+    <p>La función  <b>SEGUNDO( numero )</b>Devuelve los segundos de un valor de hora. 
+      El segundo se expresa como número entero comprendido entre 0 (cero) y 59. </p>
+
+    <h2 class="number-title">  Sintaxis</h2>
+
+    <p><center> <b>SEGUNDO( numero_serie )</b></center></p>
+
+    <p>
+     La sintaxis de la función SEGUNDO tiene el siguiente argumento:<br>
+   <ul>
+     <li><b> numero_serie </b> es el valor de hora que contiene los segundos que se desea obtener.
+       Los valores de hora se pueden especificar como cadenas de texto entre comillas (por ejemplo, "6:45 p.m."),
+      como números decimales (por ejemplo, 0,78125, que representa 6:45 p.m.), o bien, como el resultado de otras fórmulas
+       o funciones (por ejemplo, HORAVAL("6:45 p.m.")). </li>
+   </ul>
+    </p>
+
+
+      <p>
+        <table class="banded">
+          <thead>
+            <tr>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Fórmula</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Descripción (Resultado)</b>
+                </p>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>=SEGUNDO("4:48:18 p.m.")</p>
+              </td>
+              <td>
+                <p>Segundos del valor de hora (18)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>=SEGUNDO("4:48 p.m.")</p>
+              </td>
+              <td>
+                <p>Segundos del valor de hora (0)</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      
+      </p>
+    </div>
+
+
+<!--   <h2 class="number-title">  Sintaxis</h2>
+
+    <p><center> <b></b></center></p>
+
+    <p>
+     La sintaxis de la función tiene los siguientes argumentos:<br>
+   <ul>
+     <li><b></b> </li>
+   </ul>
+    </p>
+
+    <p><b>Observación:</b></p>-->
+
+   
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función DIA.LAB </h1>
+
+      <p>Para Excel, cada semana tiene cinco días laborables. La función DIA.LAB, excluye los 
+        fines de semana y cuenta solo los días laborables, esta una función de gran ayuda para saber
+        exactamente la fecha en la que habrás consumido una determanada cantidad días.
+        Por ejemplo, esto es muy útil para determinar plazos de entrega, sólo tienes que definir
+        una fecha de inicio y después el número de días laborables. Si incluyes en la fórmula
+        los días festivos, la función puede calcular la fecha real.</p>
+
+
+
+
+       <h2 class="number-title"> Sintaxis</h2>
+       <p>
+        <p><center><b>DIA.LAB( fecha_inicial , dias , [fin_de_semana], [días_no_laborables] )</b> </center></p>
+       </p>
+
+       <ul>
+        <li><b>fecha_inicial</b> Obligatorio. La fecha en la que se inicia el conteo.  </li>
+        <li><b>dias </b> Obligatorio. Es el número de días laborables antes o después de la fecha_inicial. Un valor positivo da como resultado una fecha futura; un valor negativo proporciona una fecha pasada; un valor de cero proporciona la fecha_inicial. El desplazamiento de días se trunca a entero.</li>
+        <li><b>fin_de_semana</b> Indica los días de la semana que corresponden a días de la semana y no se consideran días laborables. Fin_de_semana es un número de fin de semana o cadena que especifica cuándo ocurren los fines de semana.</li>
+        <li><b>Días_no_laborables</b>    Opcional. Un conjunto opcional de una o más fechas que se deben excluir del calendario de días laborables. Los días festivos deben estar en el rango de celdas que contienen las fechas o una constante de matriz de los valores seriales que representan esas fechas. El orden de las fechas o los valores seriales de los días festivos puede ser arbitrario.</li>
+       </ul>
+
+       <p><b>Atencion:</b> Si también deseas excluir los días de vacaciones, podrás usar el 3er parámetro de la 
+        función para indicar un rango de celdas que incluya las fechas.
+      </p>
+
+      <p><b>Ejemplo:</b><br>
+        <p><center><b> =DIA.LAB( " 01 / 01 / 2011 " , 20 ) = 40571, </b> </center></p>
+        que representa la fecha  28/01/2011
+      </p>
+
+
+      <p>Los valores numéricos de fin de semana indican los siguientes días de fin de semana:</p>
+      <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">número de fin de semana</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Días de fin de semana</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>1 u omitido</p>
+            </td>
+            <td>
+              <p>Sábado, domingo</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>2</p>
+            </td>
+            <td>
+              <p>Domingo, lunes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>3</p>
+            </td>
+            <td>
+              <p>Lunes, martes </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>4</p>
+            </td>
+            <td>
+              <p>Martes, miércoles </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>5</p>
+            </td>
+            <td>
+              <p>Miércoles, jueves</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>6</p>
+            </td>
+            <td>
+              <p>Jueves, viernes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>7</p>
+            </td>
+            <td>
+              <p>Viernes, sábado </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>11</p>
+            </td>
+            <td>
+              <p>Solo domingo</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>1,2</p>
+            </td>
+            <td>
+              <p>Solo lunes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>1,3</p>
+            </td>
+            <td>
+              <p>Solo martes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>14</p>
+            </td>
+            <td>
+              <p>Solo miércoles</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>15</p>
+            </td>
+            <td>
+              <p>Solo jueves</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>16</p>
+            </td>
+            <td>
+              <p>Solo viernes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>17</p>
+            </td>
+            <td>
+              <p>Solo sábado</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p><b>Observación:</b><br>
+      <p>
+      <ol>
+        <li>Los valores de cadena de fin de semana tienen siete caracteres de largo y cada carácter de la cadena 
+        representa un día de la semana, comenzando por el lunes. <b class="ocpLiteral">1</b> representa un día no laborable 
+        y <b class="ocpLiteral">0</b> representa un día laborable. Solo los caracteres <b class="ocpLiteral"><b class="ocpLiteral">1</b></b>
+        y 0 están permitidos en la cadena. 1111111 no es una cadena válida.</li>
+      <li>Por ejemplo, <b class="ocpLiteral">0000011</b> daría como resultado un fin de semana que es sábado y domingo.</li>
+      </ol>
+      </p>
+
+
+      
+  </div>
+    
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función DIAS.LAB</h1>
+      
+      
+      <p>La función DIAS.LAB( fecha_inicial ; fecha_final ; [vacaciones] ) devuelve el 
+        número de días laborables entre fecha_inicial y fecha_final, 
+        excluyendo los fines de semana y cuenta solo los días laborables.     
+      </p> 
+
+      <h2 class="number-title"> Sintaxis</h2>
+
+      <center>
+      <b>=DIAS.LAB( fecha_inicial ; fecha_final ; [vacaciones] )</b>
+      </center>
+
+      <ul>
+        <li> <b>fecha_inicial</b>  Obligatorio. La fecha en la que se inicia el conteo.  </li>
+        <li> <b>fecha_final</b> Obligatorio. La fecha donde termina el conteo.</li>
+        <li> <b>vacaciones</b> Opcional.  Un rango donde están especificados días festivos que serán excluidos
+          del conteo.</li>
+      </ul>
+
+
+      <p><b> Observación:</b>
+       Es importante tener en cuenta que Excel no contabiliza la fecha de inicio como día laborable.
+       Es decir: si estableces el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, 
+       esto implicaría solo un día de trabajo y no dos.
+      </p>
+      
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Fecha</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Descripción</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>01/10/2012</p>
+            </td>
+            <td>
+              <p>Fecha inicial de un proyecto</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>01/03/2013</p>
+            </td>
+            <td>
+              <p>Fecha final de un proyecto</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>22/11/2012</p>
+            </td>
+            <td>
+              <p>Días no laborables</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>04/12/2012</p>
+            </td>
+            <td>
+              <p>Días no laborables</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>21/01/2013</p>
+            </td>
+            <td>
+              <p>Días no laborables</p>
+            </td>
+          </tr>
+        </tr>
+      </tbody>
+      </table>
+    </p>
+
+    <p>
+      <table class="info">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Descripción </b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Resultado</b>
+              </p>
+            </td>
+        </tr>
+          
+       </thead>
+        <tbody>
+          <tr></tr>
+            <td>
+              <p>=DIAS.LAB(A2;A3)</p>
+            </td>
+            <td>
+              <p>Número de días laborables entre la fecha inicial (01/10/2012) y la fecha final (01/03/2013).</p>
+            </td>
+            <td>
+              <p>110</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=DIAS.LAB(A2;A3;A4)</p>
+            </td>
+            <td>
+              <p>Número de días laborables entre la fecha inicial (01/10/2012) y la fecha final (01/03/2013), con el festivo del 22/11/2012 como día no laborable.</p>
+            </td>
+            <td>
+              <p>109</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=DIAS.LAB(A2;A3;A4:A6)</p>
+            </td>
+            <td>
+              <p>Número de días laborables entre la fecha inicial (01/10/2012) y la fecha final (01/03/2013), con los tres festivos como días no laborables.</p>
+            </td>
+            <td>
+              <p>107</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    
+    </div>
+
+ 
+    <!--
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  DIA.LAB.INTL  </h1>
+
+      <p>La función <b>DIA.LAB</b> funciona correctamente siempre y cuando se parta de que la semana tiene 5 días laborables y
+        el fin de semana corresponde al sábado y al domingo. Sin embargo, en algunos sectores esto no es así.
+        Para todos los que necesiten más flexibilidad en la creación de sus días laborables, Excel ofrece la 
+        función ampliada <b>DIA.LAB.INTL</b>, con esta función se  tendrá otro parámetro disponible.</p>
+
+        <p>
+          En la versión internacional se puede ajustar la duración del fin de semana y también determinar 
+          qué días de la semana deben considerarse como días laborables. Para ello, Excel pone a tu
+          disposición dos opciones distintas. Puedes utilizar bien un número de fin de semana bien una 
+          cadena determinada.</p>
+
+        <h2 class="number-title"> Sintaxis</h2>
+
+        <center><b>=DIA.LAB.INTL( fecha_inicial ; días ; [fin_de_semana] ; [vacaciones] )</b></center>
+
+        <p>El parámetro adicional y opcional "<b>fin_de_semana</b>"  diferencia a esta función de DIA.LAB.</p>
+
+       
+
+          <p><b>Los números de fin de semana los determina Excel</b>. Cada número corresponde a un día de la semana 
+            o a una combinación de días de la semana:<br>
+            <ol>
+            <li>Sábado, domingo</li>
+            <li>Domingo, lunes</li>
+            <li>Lunes, martes</li>
+            <li>Martes, miércoles</li> 
+            <li>Miércoles, jueves</li>
+            <li>Jueves, viernes</li>
+            <li>Viernes, sábado</li>
+            <li>Domingo</li>
+            <li>Lunes</li>
+            <li>Martes</li> 
+            <li>Miércoles</li>
+            <li>Jueves</li>
+            <li>Viernes</li>
+            <li>Sábado</li>
+            </ol>
+          </p>
+
+          <p><b>Observaciones:</b><br>
+            <ul>
+              <li> Si el argumento se deja vacío, Excel utiliza automáticamente la combinación de sábado y domingo.</li>
+              <li>Si, por lo contrario, <b>decides utilizar una secuencia</b>, debes seguir un esquema relativamente sencillo: 
+                la cadena consta de 7 cifras, una por cada día de la semana, comenzando por el lunes. 
+                Si se coloca un 0 en una cifra, se considerará ese día como día laborable. Si se coloca un 1,
+                será un día libre. Por lo tanto, 1000001 se correspondería a un fin de semana de domingo y lunes. 
+                La ventaja de esta función es que puedes establecer más de dos días libres que no sean los 
+                habituales. Sin embargo, no es posible colocar un 1 en todas las cifras. Es importante tener presente que 
+                la secuencia ha de poner  entre comillas.</li>
+            </ul>
+            </p>
+    
+        <p><b>Ejemplo:</b>
+           Si quieres calcular un plazo de entrega y la semana laboral va de martes 
+           a sábado, existen dos posibilidades para determinarlo con la función DIA.LAB.INTL:</p>
+
+              <ul>
+                <li><b>=DIA.LAB.INTL( FECHA( 2020 ; 04 ; 06 ) ; 10 ; 2 )</b></li>
+                <li><b>=DIA.LAB.INTL(FECHA( 2020 ; 4 ; 6 ) ; 10 ; " 1000001")</b></li>
+              </ul>
+
+          <p>Las dos fórmulas dan el mismo resultado. Aquí también se pueden tener en cuenta días festivos mediante referencias.</p>
+        </div>
+      </body>
+-->
+
+<!--
+
+    
+-->    
+
+<!-- 
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Observación </h1>
+    
+    <p><ol>Las dos funciones anteriores pueden funcionar de forma incorrecta si en las fechas
+      que se indiquen hay fiestas entre lunes y viernes.</ol>   </p>
+
+    </div>
+-->
+
+ 
+
+    <!-- 
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Observación</h1>
+    
+    <p>En algunos países como el Reino Unido o Estados Unidos, el primer día de la semana
+      es el domingo en lugar del lunes, de ahí que sea necesario especificar el tipo de día de
+      la semana en la función anterior.   </p>
+
+    </div>
+
+
+    
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> La función  FIN.MES</h1>
+
+      
+      
+    <p>La función  <b>FIN.MES(fecha;número_meses)</b> devuelve el número de serie del último día del mes, pasado
+      o futuro, relativo a la fecha inicial de referencia según sea positivo o negativo el número
+      meses. Esta función necesita la macro automática Herramientas para análisis. Por ejemplo,
+      si se desea saber cuál es el último día del mes en el que se encuentre (28, 29, 30 ó 31), se
+      escribe la fórmula =FIN.MES(fecha_de_hoy;0), donde fecha de hoy es la fecha actual escrita
+      entrecomillada (en formato numérico, ejemplo: “14/02/95”). Si desea conocer el último día
+      del mes siguiente, sustituya el 0 (cero) por un 1 (uno) en la anterior función de ejemplo, y si
+      desea conocer el último día del mes anterior escriba -1 en lugar de 0. Puede utilizar para este
+      dato números superiores a 1, tanto positivos como negativos (por ejemplo -2 sería dos meses
+      antes).   </p>
+      <p>Obtiene el número de serie del último día de mes.</p>
+
+      <h2 class="number-title"> SINTAXIS</h2>
+      <p><b>FIN.MES(fecha_inicial, meses)</b></p>
+
+      <p>
+        <ul>
+        <li>fecha_inicial (obligatorio): Fecha inicial de la cual se obtendrá el fin de mes.</li>
+        <li>meses (obligatorio): Meses a sumar o restar de la fecha inicial antes de obtener el fin de mes.</li>
+        </ul>
+      </p>
+
+    </div>
+
+          -->
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  SIFECHA</h1>
+
+
+      <p>La función <b>SIFECHA( fecha_inicio , fecha_fin , periodo )</b> calcula el número de días, meses o años entre dos 
+        fechas.</p>
+
+      <h2 class="number-title"> Sintaxis</h2> 
+
+      <p><center><b>=SIFECHA( fecha_inicio , fecha_fin , periodo )</b></center></p>
+
+
+      <p>
+        <ul>
+          <li><b>fecha Inicio</b> Obligatorio. Indica la fecha a partir de donde se inicia la cuenta.
+          <li><b>fecha Fin</b> Obligatorio. Marca el día final de la cuenta</li>
+          <li><b>periodo</b> Sirve para indicar el periodo de medición. Para establecer el periodo de tiempo a medir,
+             debemos indicar "y" para años, "m" para meses 
+            y "d" para días en este último parámetro.</li>
+        </ul>
+      </p>
+
+<p>
+  
+  <table class="info">
+    <tbody>
+    <tr class="Titulo">
+    <td valign="top" width="54"><strong>Valor</strong></td>
+    <td valign="top" width="208"><strong>Significado</strong></td>
+    <td valign="top" width="336"><strong>Descripción</strong></td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“d”</td>
+    <td valign="top" width="208">Días</td>
+    <td valign="top" width="336">Número de días entre la fecha1 y la fecha2</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“m”</td>
+    <td valign="top" width="208">Meses</td>
+    <td valign="top" width="336">Número de meses entre la fecha1 y la fecha2</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“y”</td>
+    <td valign="top" width="208">Años</td>
+    <td valign="top" width="336">Número de años entre la fecha1 y la fecha2</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“yd”</td>
+    <td valign="top" width="208">Días excluyendo años</td>
+    <td valign="top" width="336">Número de días entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo año.</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“ym”</td>
+    <td valign="top" width="208">Meses excluyendo años</td>
+    <td valign="top" width="336">Número de meses entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo año.</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“md”</td>
+    <td valign="top" width="208">Días excluyendo meses y años</td>
+    <td valign="top" width="336">Número de días entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo mes y el mismo año.</td>
+    </tr>
+    </tbody>
+    </table>  
+</p>
+
+<p><b>Observaciones:</b> <br>
+  <ol>
+      <li>Está fórmula en muy útil cuando necesitamos encontrar el periodo de tiempo 
+        que ha pasado entre dos fecha, es decir, años, fechas o días.</li>
+     <li>No se encuentra visible en el catálogo de fórmulas en Excel, así que ten fe y verás cómo funciona.</li>
+      <li>Así que gracias a la fórmula SIFECHA podremos, por ejemplo, encontrar la edad de 
+        una persona a partir de su fecha de nacimiento o la antigüedad de un empleado en el empresa.</li>
+
+      <!-- <p>=SIFECHA("05/12/1995","01/06/2020","y")</p>-->
+
+      </ol>
+
+    
+    <p><b>Ejemplos:</b><br>
+      <p>
+        <table class="banded">
+          <thead>
+            <tr>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Fecha_inicial</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Fecha_final</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Fórmula</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Descripción (resultado)</b>
+                </p>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>01/01/2001</p>
+              </td>
+              <td>
+                <p>01/01/2003</p>
+              </td>
+              <td>
+                <p>=SIFECHA(fecha_inicial;fecha_final;"Y")</p>
+              </td>
+              <td>
+                <p>Dos años completos en el periodo (2)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>01/06/2001</p>
+              </td>
+              <td>
+                <p>15/08/2002</p>
+              </td>
+              <td>
+                <p>=SIFECHA(fecha_inicial;fecha_final;"D")</p>
+              </td>
+              <td>
+                <p>440 días entre el 1 de junio de 2001 y el 15 de agosto de 2002 (440)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>01/06/2001</p>
+              </td>
+              <td>
+                <p>15/08/2002</p>
+              </td>
+              <td>
+                <p>=SIFECHA(fecha_inicial;fecha_final;"YD")</p>
+              </td>
+              <td>
+                <p>75 días entre el 1 de junio y el 15 de agosto, pasando por alto los años de las fechas (75)</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+    </p>
+    </div>
+
+  </body>

@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+          <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> § Semana  6 </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Funciones Logicas y de Información </h1>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Caracteres Comodín </h1>
+      <p>Los comodines en Excel son caracteres o símbolos en Excel que remplazan uno o varios caracteres
+         con el fin de aplicar búsqueda o filtros es más potentes en combinación de otras funciones de Excel.
+         Los comodines en Excel se pueden implementar en los argumentos de las funciones con el fin de 
+         buscar coincidencias a partir del dato ingresado.</p>
+      <p> Hay tres caracteres comodín en Excel. </p>
+
+
+      <table class="info">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b>Caracter</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b>Resultado</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p> Signo de interrogación (<b>?</b>) </p>
+            </td>
+            <td>
+              <p>Este comodín se utiliza para buscar cualquier carácter.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p> Asterisco (<b>*</b>) </p>
+            </td>
+            <td>
+              <p>Este comodín se utiliza para buscar cualquier número de caracteres que precedan o sigan a cualquier carácter.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>  Tilde (<b>~</b>) </p>
+            </td>
+            <td>
+              <p> Este comodín es un carácter de escape que se utiliza antes del signo de interrogación (?) O del asterisco (*). 
+                Por ejemplo si quisiéramos buscar textos que contengan un signo de interrogación o un asterisco, entonces
+                esta indicación se confundiría con el uso que ya tienen estos dos caracteres por ello es que este tercer
+                carácter es útil, es decir permite identificar un signo de interrogación , asterisco o tilde como parte 
+                del patrón de identificación de los textos.  Así, para buscar:<br>
+              <ul>
+                <li>Un asterisco *, deberás escribir ~*,</li>
+                <li>Un signo de interrogación ?, escribe ~?,</li>
+                <li>el signo de tilde ~, escribe ~~.</li>
+              </ul>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    <p><b>Observación:</b>No todas las funciones pueden ejecutar comodines con funciones de Excel.
+      Aquí hay una lista de funciones que aceptan comodines.<br>
+    <ol>
+      <li>SUMAR.SI.CONJUNTO</li>
+      <li>CONTAR.SI.CONJUNTO</li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol></p>
+    </div>
+    
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función SI  </h1>
+    
+    <p>Existen varios tipos  de funciones en Excel. Por ejemplo, podemos trabajar
+      con <b>funciones lógicas</b>. Veamos un ejemplo más: la función <b>SI
+      </b> es una función lógica que mostrará un dato u otro en la celda
+      dependiendo de una condición:</p>
+
+
+      <center><b>SI (Condición;Verdadero;Falso)</b></center>
+
+
+      <p>En esta función se empieza tecleando una condición consistente en comparar dos
+        datos.</p>
+        
+        
+        
+      <p><b>Ejemplos:</b>
+        <ol>
+          <li>SI (B5 < 0;... (si B5 es menor que cero).</li>
+          <li>SI (C7 <> B8;... (si C7 es distinto de B8).</li>
+        </ol>
+      </p>
+
+    <p>Para realizar estas condiciones se pueden emplear los siguientes <b>operadores de
+      comparación</b>:</p>
+
+    <p>
+      <ol>
+        <li><b>=</b>  es igual a</li>
+        <li><b>< </b> es menor que</li>
+        <li><b>> </b> es mayor que</li>
+        <li><b> < =</b>es menor o igual que </li>
+        <li><b> >= </b> es mayor o igual que</li>
+        <li><b> < > </b>es distinto de</li>
+      </ol>
+    </p>
+
+    <p>Después de teclear la condición en la función SI, debemos indicar lo que debe aparecer
+      en la celda <b>si esa condición se cumple</b> y, por último, separándolo con otro punto y coma,
+      indicar lo que debe aparecer <b>si la condición no se cumple</b>.</p>
+      
+      
+    <p><b>Ejemplo</b>
+
+    
+    <center><b>=SI( B5 < 0 ; "El valor es negativo" ; "El valor es positivo" )</b></center>
+
+  </p>
+
+    <p>Esta función implica que si B5 es menor que cero deberá aparecer el mensaje "El
+      valor es negativo" y, de lo contrario, aparecerá "El valor es positivo".</p>
+
+    <p>Aún se puede completar más el caso: ¿y si el valor de B5 es cero? Para tenerlo en
+      cuenta podemos incluir una función SI dentro de otra:</p>
+
+    <center><b>=SI(B5<0;”El valor es negativo”;SI(B5>0;”El valor es positivo”;”El valor es cero”))</b></center>
+
+    <p>Esta función se complementa con otras que igualmente juegan con los valores
+      lógicos verdadero y falso:</p>
+  
+   </div>
+
+   
+   
+   <div class="nota-box">
+    <h1 class="number-subtitle"> Función O  </h1>
+
+    <p>La función <b>O(condición 1;condición 2;...;condición n)</b> devuelve verdadero cuando al menos una de las
+      condiciones entre los paréntesis lo es.</p>
+
+   </div>
+   
+   
+   
+   <div class="nota-box">
+    <h1 class="number-subtitle"> Función Y  </h1>
+
+    <p>La función <b>Y(condición 1;condición 2;...;condición n)</b> devuelve verdadero cuando todas las condiciones
+      entre los paréntesis lo son.</p>
+
+   </div>
+
+
+   
+   
+   <div class="nota-box">
+    <h1 class="number-subtitle"> Función ESBLANCO  </h1>
+
+    <p>La función <b>ESBLANCO(celda o expresión)</b> devuelve verdadero cuando la celda o la expresión entre
+      los paréntesis está vacía.</p>
+
+   </div>
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Funcion ESERROR </h1>  
+    <p>La función <b>ESERROR(celda o expresión)</b> devuelve verdadero cuando la celda o la expresión entre los
+      paréntesis genera un error.</p>
+
+    </div>
+
+    
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Funcion ESNUMERO </h1>
+    <p>La función  <b>ESNUMERO(celda o expresión)</b> devuelve verdadero cuando la celda o la expresión entre
+      los paréntesis contiene un dato numérico.</p>
+
+    </div>
+
+
+    
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Funcion ESTEXTO  </h1>
+
+    <p>La función <b>ESTEXTO(celda o expresión)</b> devuelve verdadero cuando la celda o la expresión entre los
+      paréntesis contiene un dato de texto.</p>
+    
+    </div>
+
+
+    <!--
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Funcion SI.CONJUNTO  </h1>
+
+    <p>La función <b>SI.CONJUNTO</b> comprueba si se cumplen
+       una o varias condiciones y devuelve un valor que corresponde a la primera condición TRUE</p>
+    
+      <h2 class="number-title">Sintaxis</h2>
+
+      <p>La sintaxis de la función SI.CONJUNTO es la siguiente:<br>
+
+        
+     <p><center><b>=SI.CONJUNTO(prueba_lógica1, valor_si_verdadero1, [ prueba_lógica2 , valor_si_verdadero2 ] , … )</b></center><br>
+      
+      <ul>
+        <li><b>prueba_lógica1</b> es la primera condición que debe evaluarse como VERDADERA o FALSA.</li>
+        <li><b>valor_si_verdadero1</b> es el valor que devuelve si la variable prueba_lógica1 es VERDADERO.</li>
+        <li><b>prueba_lógica2, valor_si_verdadero2, ...</b> son condiciones y valores adicionales a devolver.
+           Estos argumentos son opcionales. Puede consultar hasta 127 condiciones.</li>
+      </ul>
+      
+      <p>
+      
+  
+
+     <p><b>Observacion:</b> Tenga en cuenta que la función SI.CONJUNTO le permite probar hasta 127 condiciones diferentes.
+      Sin embargo, no es recomendable anidar demasiadas condiciones con las instrucciones SI o SI.CONJUNTO. El motivo 
+      de ello es que varias condiciones deben especificarse en el orden correcto y pueden ser muy difíciles de generar,
+      probar y actualizar.</p>
+    </div>
+
+-->
+
+
+
+   <!--- 
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Observación  </h1>
+    
+    <p>Puede colocarse una función dentro de otra si esto resulta provechoso. Por
+      ejemplo, una media aritmética puede devolver un resultado con decimales, y
+      dichos decimales pueden eliminarse mediante otra función. Ejemplo:
+    <p>
+    <center>
+    <b>
+      =ENTERO(PROMEDIO (B1:B10))
+    </b>
+    </center>
+    </p>
+      La función entero quita los decimales de lo que tiene entre sus paréntesis, que es
+      la media aritmética de los datos contenidos entre B1 y B10.
+      También puede incluir una función (o varias) dentro de una fórmula. Por ejemplo, si
+      necesita hallar la mitad del resultado de una suma, podría hacerlo de la siguiente
+      forma:
+      <p>
+      <center>
+        <b>
+        =SUMA(B1:B10)/2 </p>
+        </b>
+      </center>
+      </p>
+
+      -->
+    </div>
+
+ 
+  </body>

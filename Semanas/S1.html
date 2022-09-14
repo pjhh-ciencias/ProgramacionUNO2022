@@ -1,0 +1,2525 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+         <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> § Semana  1 </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"></h1>
+  
+    <div class="nota-box">
+        <h1 class="number-subtitle"> La ventana de Microsoft Word</h1>  
+
+        <div class="flexbox">
+            <img src="../Imagenes/S1/VentanaMSWord.JPG" alt="Ventana_Word", width="100%" height="auto">
+            </div>
+
+    <ul>
+        <li><h3>Barra de herramientas de acceso rápido:</h3></li> Contiene las opciones que más
+        frecuentemente se utilizan. El primer botón no pertenece realmente a esta barra y al pulsarlo abre
+        un desplegable con más opciones para personalizar la barra de acceso rápido. Los siguientes 
+        botones son Guardar, Deshacer (para deshacer la última acción realizada) y Rehacer (para recuperar 
+        la acción que hemos deshecho). 
+        
+        <li><h3>Barra de título:</h3></li>  Contiene el nombre del documento abierto sobre el que estamos 
+        trabajando, además del nombre del programa y los botones para mimimizar, maximizar o cerrar el programa.
+
+        <li><h3>Cinta de opciones: </h3></li> Es el elemento más importante de todos, ya que se trata de una 
+        franja que contiene las herramientas y utilidades necesarias para realizar acciones en Word. Se organiza
+        en pestañas que engloban herramientas por categorías. Para cada pestaña hay una cinta de opciones diferente.
+        
+        <li><h3>Barras de desplazamiento:</h3></li> permiten la visualización del contenido que no cabe en la
+        ventana. Hay una para desplazar el documento de forma vertical y otra de forma horizontal.
+        
+        <li><h3> Zoom</h3></li> Al modificar el zoom, podremos alejar o acercar el punto de vista, para apreciar
+        en mayor detalle o ver una vista general del resultado.
+        <ul>
+        
+          <li>Puedes pulsar directamente el valor porcentual (que normalmente de entrada será el tamaño real, 100%). 
+            Se abrirá una ventana donde ajustar el zoom deseado.</li>
+        <li>O bien puedes deslizar el marcador hacia los botones - o + que hay justo al lado, arrastrándolo.</li>
+        </ul>
+        
+        <li><h3>Vistas del documento:</h3></li> definen la forma en que se visualizará la hoja del documento. 
+        Por defecto se suele mostrar en Vista de impresión. Esto significa que veremos el formato de la hoja
+        tal cual se imprimirá. Otros modos son para leer y para diseño web.</li>
+         
+         <li><h3>Barra de estado:</h3></li> Muestra información del estado del documento, como el número de 
+         páginas y palabras, o el idioma en que se está redactando. Podremos modificar esta información
+         si hacemos clic sobre ella, ya que normalmente son realmente botones.
+    </ul>
+
+    </div>
+    <div class="nota-box">
+     <h1 class="number-subtitle"> Cinta de opciones </h1>   
+
+<p>La <b>cinta de opciones</b> es la barra más importante de Word, porque contiene todas las opciones que se
+   pueden realizar con los documentos.</p>
+   <p>
+<div class="flexbox">
+    <img src="../Imagenes/S1/CintaOpciones.JPG" alt="", width="100%" height="auto">
+    </div>
+</p>
+    <ul>
+        <li>Las herramientas están organizadas en <b>pestañas</b> o <b>fichas</b> (Inicio, Insertar, Vista...), 
+        que a su vez están divididas en <b>grupos</b></li>
+        <li> Algunos grupos de herramientas de la cinta disponen de un pequeño botón en su esquina inferior derecha:
+          <p>
+            <div class="flexbox">
+                <img src="../Imagenes/S1/Boton_Grupos_Cinta.JPG" alt="", width="auto" height="auto">
+                </div>
+            </p>
+             Este botón abre un panel o cuadro de diálogo con más opciones relacionadas con el grupo en cuestión.</li>
+        
+    </ul>
+    <p><h3>Observaciones:</h3>
+        <ul>
+        <li>Las pestañas pueden estar disponibles o no. La cinta tiene un comportamiento "inteligente", que consiste en
+            mostrar determinadas pestañas únicamente cuando son útiles, de forma que el usuario no se vea abrumado por una
+            gran cantidad de opciones. Por ejemplo, la ficha Herramientas de tabla no estará visible de entrada, únicamente 
+            se mostrará si insertamos una tabla en nuestro documento y la seleccionamos.
+            </li>
+       <li>Ésta función permite una mayor comodidad a la hora de trabajar, pero si en algún momento queremos
+         ocultar o inhabilitar alguna de ficha de forma manual, podremos hacerlo desde el menú Archivo > Opciones >Personalizar Cinta de opciones, 
+         o pulsando con el botón derecho sobre la cinta de opciones y elegiendo Personalizar Cinta de opciones.
+       </li> 
+       <li>Pulsando la tecla ALT entraremos en el modo de acceso por teclado. De esta forma aparecerán pequeños
+         recuadros junto a las pestañas y opciones indicando la tecla (o conjunto de teclas) que deberás pulsar para 
+         acceder a esa opción sin la necesidad del ratón.
+       <p> <div class="flexbox">
+            <img src="../Imagenes/S1/Alt.JPG" alt="", width="auto" height="auto">
+        </div>
+    </p>
+       </li>
+       </ul>
+        </p>   
+        
+     <h2 class="number-title" class="number-title"> Mostrar/Ocultar la cinta de opciones.</h2>   
+
+     <p>Si haces doble clic sobre cualquiera de las pestañas, la barra se ocultará, para disponer de más espacio de
+        trabajo. Las opciones volverán a mostrarse en el momento en el que vuelvas a hacer clic en cualquier pestaña.
+     </p> 
+      También puedes mostrar u ocultar las cintas desde el botón ocultar y mostrar pestañas de la zona derecha
+         superior que abirá la ventana que se muestra a continuación, con tres opciones:
+    </p>   
+         <p> <div class="flexbox">
+         <img src="../Imagenes/S1/Boton_presentacion_cinta1.JPG" alt="", width="auto" height="auto">
+        </div>
+     </p>
+
+<h2 class="number-title"> Ficha archivo</h2>
+
+<p>La pestaña <b>Archivo</b> se encuentra destacada en color azul. Porque, a diferencia del resto de pestañas,
+     no contiene herramientas para la modificación y tratamiento del contenido del documento, sino más bien 
+     opciones referentes a la aplicación y al archivo resultante. Al situarnos en esta pestaña, se cubre el documento
+    con un panel de opciones, es por ello que Microsoft ha llamado a esta vista la <b>Vista Backstage.</b>
+</p>
+<p>
+    <div class="flexbox">
+        <img src="../Imagenes/S1/Vista_Back_Stage.JPG" alt="", width="100%" height="auto">
+       </div>
+</p>
+
+<p>
+<ul>
+    <li> La principal característica de la ficha Archivo es que para cada comando de la parte izquierda aparecen unas 
+    opciones en la parte central, y a su vez, para cada una de estas opciones aparecen otras opciones más en la parte
+    derecha de la pantalla. Por ejemplo, en la imagen vemos como el comando Abrir genera las opciones Documentos 
+    recientes, SkyDrive, ... y al seleccionar Documentos recientes aparece una lista con varios documentos recientes.
+    </li>
+    <li>Otra particularidad es la presencia del botón botón atrás <img src="../Imagenes/S1/Boton_atras_menu_Achivo.JPG" alt="", width="auto" height="5%">
+          para volver atrás que sólo aparece en la ficha Archivo.
+    </li>
+</ul>
+</p>
+</div>
+
+
+  
+  
+  <div class="nota-box">
+  <h1 class="number-subtitle"> Pestaña Vista</h1>    
+  
+  <h2 class="number-title"> Ver varios documentos a la vez</h2>
+  <ul>
+  <li>
+  <p>En la pestaña <b>Vista</b> encontramos el <b>grupo Ventanas</b>, que nos ayudará a decidir cómo organizar las
+       ventanas de Word en caso de que estemos trabajando con más de un documento a la vez.</p>
+      <p>
+          <div class="flexbox">
+            <img src="../Imagenes/S1/Vista_grupo_ventana.JPG" alt="Vista_diseno_web", width="auto" height="auto">
+          </div> 
+        </p>
+  </li> 
+  <li>
+  <p>El <b>botón Cambiar ventanas</b> despliega un menú con el nombre de cada uno de los documentos abiertos, permitiéndonos
+       elegir cuál queremos ver en primer plano.</p>
+       <p>
+          <div class="flexbox">
+            <img src="../Imagenes/S1/Boton_cambiar_ventanas.JPG" alt="Boton cambiar ", width="auto" height="auto">
+          </div> 
+        </p>
+      </li>    
+  <li>
+  <p> Al pulsar el botón <b>Organizar todo</b> se situará un documento sobre el otro, permitiéndote ver los dos de forma simultánea. 
+      Solo una de las ventanas es la ventana activa: la que tiene la barra de título más coloreada.
+  </p>
+  
+  <p>
+      <div class="flexbox">
+        <img src="../Imagenes/S1/" alt="Organizar_ventanas", width="auto" height="auto">
+      </div> 
+    </p>
+  
+  <p>Para hacer que una ventana se convierta en la ventana activa basta con hacer clic dentro del área de la ventana.</p>
+  <ul>
+  <li>Podemos variar el tamaño y la posición de cada ventana a nuestro gusto.
+  <li>Para modificar el tamaño hay que situar el cursor en el borde de la ventana y arrastrarlo cuando tome forma de 
+     flecha bidireccional. Los bordes superior e inferior alterarán la altura, los bordes laterales la anchura y las esquinas ambas.
+  <li>Para cambiar la posición, arrastra la ventana desde su barra de título.</li>
+  </ul>
+  </li>
+  
+  </ul>
+  
+  <h2 class="number-title"> Dividir pantalla  </h2>
+  
+  <p>
+     Podemos crear una línea de separación dentro de un mismo documento, pudiendo utilizar la zona superior y la inferior de
+     forma independiente y trabajar con ellas como si de un duplicado se tratase. Esta opción es especialmente útil en documentos
+     extensos en que necesitamos ver dos partes del mismo a la vez constantemente, pero que distan mucho entre sí.  Así nos
+     evitamos tener que ir cambiando de página una y otra vez.
+  </p>
+  
+  <li>
+  Encontraremos esta herramienta en <b>pestaña Vista</b> > <b>grupo Ventanas</b> > <b>Dividir</b>
+  </li>
+  
+  <p>
+      <div class="flexbox">
+        <img src="../Imagenes/S1/" alt="Dividir_documento ", width="auto" height="auto">
+      </div> 
+  </p>
+  
+   <p>
+    Cuando hayamos incluido una división, el botón se convertirá en <b>Quitar división</b> y al pulsarlo de nuevo 
+    la podremos eliminar.
+  </p>
+
+
+  <h1 class="number-subtitle"> Vistas </h2>
+   
+    <p>
+      Con la barra inferior puedes cambiar la forma en que visualizas el documento, o lo que es lo mismo, 
+      <b>la vista</b> <img src="../Imagenes/S1/Barra_estado_Vistas.JPG" alt="Barra_estado_vistas", width="auto" height="auto">. Desde esta barra tenemos acceso a las vistas <b>Modo lectura</b>, <b>Diseño de impresión</b> 
+      y <b>Diseño web</b>.
+    </p>
+  
+    <p>Para acceder a todas las vistas: pestaña <b>Vista</b> > grupo <b>Vistas de documento</b>.</p>
+      
+   <h2> Diseño de impresión</h2> 
+  
+   <p>
+    Es la vista predeterminada. El documento se ve tal y como se imprimirá, con gráficos, imágenes, encabezados 
+    y pies de página, etc.
+   </p>
+  
+    
+    
+    <div class="flexbox">
+      <img src="../Imagenes/S1/" alt="Vista_diseño_impresion", width="auto" height="auto">
+    </div>
+  
+    <h2> Modo lectura</h2>
+  
+    <p>Esta vista permite visualizar la página de una forma muy limpia, con pocos elementos para 
+      facilitar la lectura. Si el espacio de la pantalla lo permite, muestra dos páginas por pantalla.
+      En esta vista no se ven los encabezados y pies de página.</p>
+    
+      <div class="flexbox">
+        <img src="../Imagenes/S1/" alt="Vista_modo_lectura", width="auto" height="auto">
+      </div>  
+  
+      <p>
+        Esta pantalla de lectura tiene las siguientes tres características:  
+      </p>
+  
+      <ol>
+      <li>Cuando tenemos la pantalla maximizada, ocupando todo el espacio, se mantiene una pantalla 
+      con los mínimos elementos para que la lectura sea más cómoda.</li>
+      <li>En la parte izquierda y derecha tiene unas flechas para retroceder y avanzar página. 
+      <img src="../Imagenes/S1/Modo_lectura_flecha_atras.JPG" alt="Boton_flechas_modo_lectura", width="auto" height="auto">
+      <img src="../Imagenes/S1/Modo_lectura_flecha_adelante.JPG" alt="Boton_flechas_modo_lectura", width="auto" height="auto">
+    </li>
+  
+      <li>En la parte inferior la barra de estado cambia el diseño como muestra la siguiente imagen:</li>
+      <div class="flexbox">
+        <img src="../Imagenes/S1/" alt="Vista_modo_lectura_barra_estado", width="auto" height="auto">
+      </div>  
+      Tiene un botón blanco que permite desplazarse rápidamente por todo el documento y en la barra 
+      de estado desaparecen las indicaciones del idioma y del número de palabras.
+      </ol>
+  
+      <p><h4>Observación:</h4> Cuando cerramos un documento en modo lectura y lo volvemos a abrir más 
+      tarde, Word nos muestra un aviso por si queremos volver al punto exacto donde dejamos el documento.</p>
+     <p>
+      <div class="flexbox">
+        <img src="../Imagenes/S1/" alt="Punto_ultima_lectura", width="auto" height="auto">
+      </div> 
+     </p>
+  
+     <p>
+      Basta con hacer clic en <img src="../Imagenes/S1/" alt="icono_punto_ultima_lectura", width="auto" height="auto">
+      para ir al punto donde habíamos dejado la lectura la última vez. Pasados unos segundos, el aviso se hace
+      más pequeño <img src="../Imagenes/S1/" alt="icono_pequeno_punto_ultima_lectura", width="auto" height="auto">.
+      Si no haces clic en el aviso, este desaparece al poco tiempo.
+    </p>
+      <h2> Diseño Web</h2>
+  
+      <p>Se utiliza para ver el aspecto de un documento Web tal y como se vería desde un navegador como Internet 
+        Explorer o Firefox si lo publicáramos.</p>
+  
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/S1/" alt="Vista_diseno_web", width="auto" height="auto">
+          </div> 
+        </p>
+  
+      <h2> Esquema</h2>
+  
+    <p> En esta vista se puede observar y editar la jerarquía de los apartados que conforman el 
+     documento. Profundizaremos en esta vista a lo largo del curso.</p>
+  
+  
+     <h2> Borrador</h2>
+     <p>En esta vista se optimiza el tamaño de la hoja y de las fuentes, para facilitar la lectura en pantalla.
+      Se muestra con la misma longitud de línea que en la versión impresa, pero elimina elementos como los encabezados o pies 
+      de página, que suelen ser más retoques para la publicación que contenido útil en un borrador.</p>
+
+
+  </div>
+  
+
+<div class="nota-box"> 
+    <h1 class="number-subtitle"> Guardar,  abrir   y cerrar documentos</h1>
+    
+    <h2 class="number-title"> Guardar documentos</h2>
+    
+    <p>Lo que se escribe se va almacenando en la memoria de tu ordenador; si  el ordenador se apagara accidentalmente,
+    se perdería y no lo podrías recuperar. Con el comando <b>Guardar</b> quedará grabado en el disco duro del ordenador (o en un dispositivo externo, como una memoria usb) de forma permanente.</p>
+    
+    <p>Haz clic en el icono Guardar <img src="../Imagenes/S1/Boton_guardar.JPG" alt="", width="auto" height="auto"> de la zona superior izquierda o pulsa las teclas <b>CTRL+G</b> y aparecerá una ventana similar a esta.</p>
+    <div class="flexbox">
+        <img src="../Imagenes/S1/Guardar.JPG" alt="", width="100%" height="auto">
+        </div>
+    <p>Aquí debes elegir en qué unidad guardas el archivo, para guardarlo en el disco duro de tu ordenador selecciona <b>Equipo</b>  y pulsa el botón <b>Examinar</b> para que se abra un cuadro de diálogo como el siguiente.</p>
+    <div class="flexbox">
+        <img src="../Imagenes/S1/Carpeta_guardar.JPG" alt="", width="auto" height="auto">
+        </div>
+    
+        <p>
+            Para guardar un documento debes indicar el nombre con el que lo quieres guardar, el tipo de documento que estás guardando
+            y la carpeta que contendrá tu documento:
+        
+            <ul>
+            <li> El <b>nombre</b> lo indicamos en el campo Nombre de archivo.</li>  
+            <li> El <b>tipo del documento</b> para los documentos Word será Documento de Word, que ya viene escrito por
+                 defecto.</li>
+            </ul>
+        </p>
+        <p><h4>Observación:</h4> Los documentos dentro del disco duro están organizados en carpetas. Por defecto normalmente 
+            se guardarán en la carpeta Mis documentos. Pero siempre podrás elegir otra carpeta o incluso, como comentábamos,
+             guardarlo en un disco extraíble.   </p>
+    
+        <p>
+            Una vez hayas definido los tres aspectos, deberás hacer clic en el botón Guardar. La barra de título indicará 
+            el nombre que le hayas dado en lugar de Documento1.
+        </p>
+    
+        <h2 class="number-title"> Cerrar documentos</h2>
+    
+        <p>Después de guardar un documento, Este continúa en nuestra pantalla y podemos seguir trabajando con él. Una vez
+        que hemos acabado de trabajar con un documento debemos cerrarlo.</p>
+    
+        <p>Para cerrar un documento hacer clic en el botón Archivo , y luego hacer clic en Cerrar. Si hemos hecho alguna 
+            modificación en el documento desde la última vez que lo guardamos, nos preguntará si queremos guardar los 
+            cambios; contestar que Sí. Al cerrar el documento veremos cómo este desaparece de la pantalla y vemos el fondo
+            gris de la ventana Word. El programa sigue abierto, permitiéndonos crear un nuevo documento o abrir uno 
+            existente.</p>
+    
+    
+    
+       <h2 class="number-title"> Abrir un documento</h2>   
+    
+         <p>Para utilizar un documento que tenemos guardado debemos abrirlo. Para ello hacer clic en la pestaña Archivo 
+            <img src="../Imagenes/S1/Boton_archivo.JPG" alt="", width="auto" height="auto">
+            y seleccionar la opción Abrir, o bien pulsar las teclas CTRL+A. Aparecerá una ventana similar a la que 
+            vemos aquí.</p>
+    
+            <div class="flexbox">
+                <img src="../Imagenes/S1/Ventana_abrir.JPG" alt="", width="100%" height="auto">
+            </div>
+          <p>Para abrir un documento de los que se muestran en la columna <b>Documentos Recientes</b>, basta con hacer clic 
+            sobre él. Si el documento que queremos abrir no se encuentra en esa lista podemos hacer clic en <b>Equipo</b>.
+            Ahí podremos hacer clic en una de las carpetas que se muestran o hacer doble clic sobre el documento que 
+            deseamos abrir.
+        </p>      
+    
+        <p>
+            Para abrir un archivo de los que aparecen en la ventana lo hemos de seleccionar haciendo clic sobre él
+            (quedará marcado de color azul) y luego pulsar en el botón Abrir. Otra forma más rápida de abrir el documento
+            es haciendo doble clic sobre él. Inmediatamente el documento aparecerá en nuestra pantalla.
+        </p>
+        
+        <h2 class="number-title"> Cerrar Microsoft Word</h2>
+        
+        Una vez hemos acabado de trabajar con Word debemos cerrarlo. Para ello, podemos realizar cualquiera de 
+        las siguients acciones:
+        <ul>
+        <li> Hacer clic en  el botón <b>Archivo</b> y eligir la opción <b>Cerrar</b>, como se puede 
+            apreciar en la siguiente imagen:
+            <p>
+           <div class="flexbox">
+            <img src="../Imagenes/S1/Boton_cerrarMSWord.PNG" alt="", width="auto" height="20%">
+           </div>
+          </p>
+        </li>
+         <li>Utilizar la combinación de teclas rapida para cerrar la aplicación: <b>ALT+F4</b>.</li>
+         <li>La forma más usual de cerrar el programa es la misma que con la mayoría de ventanas en Windows, 
+             presionar <img src="../Imagenes/S1/BotonX.JPG" alt="", width="auto" height="auto">
+              en la esquina superior derecha del programa: <img src="../Imagenes/S1/Boton_cerrarMSWord2.JPG" alt="", width="auto" height="auto">
+            
+            </li>
+        </ul>
+        </div>
+
+        <div class="nota-box">
+          <h1 class="number-subtitle">  Edición de documentos en Microsoft Word</h2>
+      
+            
+      
+          <h2 class="number-title"> Punto de inserción y  cursor (puntero)</h2>
+          <ul>
+              <li> El  <b>punto de inserción</b> es una pequeña barra vertical parpadeante  <img src="../Imagenes/S1/Punto_insercion.JPG" alt="", width="auto" height="auto"> que 
+              marca tu posición en el texto y donde esté situada es donde se introducirá el texto que teclees. Va avanzando 
+              conforme vayas  escribiendo. El <b>cursor</b> tiene esta forma cuando está dentro del área de texto, la cual esta delimitada por 
+              las reglas.
+              </li>
+              
+              <li>El cursor por otro lado aparece cuando se está encima de los menús, o fuera del area las reglas.</li>
+          </ul>
+          
+          <p><h3>Observaciones:</h3> 
+          <ul>
+              <li>No confundas el punto de inserción con el puntero del ratón.</li>
+              <li>Cuando mueves el ratón, lo que estás moviendo es el puntero; cuando pulsas las teclas de dirección del teclado, 
+              mueves el punto de inserción.</li>
+              <li>Escribir un primer documento en Word básicamente se trata de teclear el texto y controlar siempre dónde está
+                  situado el punto de inserción.</li>
+          </ul>
+          </p>
+      
+      
+           
+      
+      
+        <h2 class="number-title"> Dezplazamiento</h2>
+      
+        <p>
+            Cuando estamos viendo un documento Word que no cabe en una pantalla, necesitaremos movernos por el documento para colocarnos en la parte que nos interese.   
+        </p>
+      <h3>Desplazamientos cortos dentro de una misma pantalla:</h3>
+       <ul>
+        <li><h4>Ratón:</h4> Desplazar el cursor del ratón hasta el punto elegido y hacer clic, el punto de inserción se 
+            colocará en ese lugar.</li>
+        <li><h4>Teclas de dirección:</h4> Las teclas <b>izquierda</b>/<b>derecha</b> desplazan el punto de inserción una posición a la 
+            <b>izquierda</b>/<b>derecha</b>, y las teclas <b>arriba</b>/<b>abajo</b> desplazan el punto de inserción una línea arriba/abajo. 
+            La tecla <b>FIN</b>  nos lleva al final de la línea y la tecla <b>INICIO</b> al principio de la línea.
+             <p>
+                <div class="flexbox">
+                <img src="../Imagenes/S1/Teclas_desplazamiento.JPG" alt="", width="auto" height="auto">
+                </div>
+            </p>
+        </ul>
+            <table class="info">
+                <tr>
+                  <th> Para desplazarse</th>
+                  <th> Presione las teclas</th>
+                </tr>
+                <tr>
+                  <td>Una palabra a la izquierda</td>
+                  <td>CTRL + flecha izquierda</td>
+                </tr>
+                <tr>
+                  <td>Una palabra a la derecha</td>
+                  <td>CTRL + flecha derecha</td>
+                </tr>
+                <tr>
+                  <td>Un  p&aacute;rrafo arriba</td>
+                  <td>CTRL + flecha arriba</td>
+                </tr>
+                <tr>
+                  <td>Un p&aacute;rrafo         abajo</td>
+                  <td>CTRL + flecha abajo</td>
+                </tr>
+              </table>
+            </li>
+        
+      <h3> Desplazamientos a lo largo de todo el documento:</h3>
+       
+      
+        <p>
+            Teclas <b>AvPág</b> y <b>RePág</b>. Estas teclas avanzan y retroceden una pantalla completa. Observad que no es lo mismo una 
+            pantalla que una página. El tamaño de la pantalla lo limita el monitor mientras que la longitud de la página 
+            la definimos nosotros.
+        </p>
+        <p>
+        <table>
+            <tr>
+              <th> Para desplazarse</th>
+              <th> Presione las teclas</th>
+            </tr>
+            <tr>
+              <td> Una p&aacute;gina adelante</td>
+              <td> CTRL + AvP&aacute;g.</td>
+            </tr>
+            <tr>
+              <td>Una p&aacute;gina atr&aacute;s</td>
+              <td>CTRL + ReP&aacute;g.</td>
+            </tr>
+            <tr>
+              <td>Al principio del documento</td>
+              <td>CTRL + Inicio</td>
+            </tr>
+            <tr>
+              <td>Al final del documento</td>
+              <td>CTRL + Fin</td>
+            </tr>
+            <tr> </tr>
+          </table>
+       </p>
+       
+      <h3>Mediante las Barras de desplazamiento</h3>  
+      
+      <p>Las barras de desplazamiento permiten movernos a lo largo y ancho del documento de forma gráfica. 
+        La longitud de barra de desplazamiento vertical representa la longitud del documento y el cuadrado
+        pequeño que hay en su interior representa la posición actual del punto de inserción.</p>
+      
+        <ul>
+            <li><b>Haciendo clic</b> en cualquier posición por encima/debajo del cuadro nos desplazaremos una pantalla 
+                hacia arriba/debajo del documento.
+            </li>
+            <li><b>Arrastrando el cuadro</b> nos desplazaremos proporcionalmente a la posición en la que lo movamos.</li>
+            
+            <li><b>Mediante las flechas</b>. Si hacemos clic en la flecha o triángulo de la parte  
+              <img src="../Imagenes/S1/Desplazamiento_arriba.JPG" alt="", width="auto" height="auto">Subir superior/inferior 
+              Bajar <img src="../Imagenes/S1/Desplazamiento_abajo.JPG" alt="", width="auto" height="auto">
+              nos desplazaremos una línea hacia arriba/abajo. Si mantenemos pulsada la flecha nos desplazaremos línea 
+              a línea de forma rápida hasta que la soltemos.
+            </li>
+        </ul>
+      
+        <p><b>Las barras de desplazamiento horizontal</b>. Permiten movernos de forma similar a como acabamos de ver con la barra
+            vertical pero en sentido horizontal, es decir, permiten desplazar el documento hacia la derecha y hacia la izquierda.
+             Se utilizan menos porque es menos frecuente que el documento sea más ancho de lo que cabe en una pantalla.
+       </p>
+      
+      <h3> Panel de navegación</h3>   
+      
+      <p>
+        En la barra de estado, al hacer clic sobre la zona de la izquierda, donde aparece el número de página, se abre un <b>panel 
+        de Navegación</b> similar a la que puedes ver en esta imagen.
+      </p>
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/S1/Ventana_navegacion.JPG" alt="", width="auto" height="auto">
+            </div>
+      </p>
+      Tiene tres pestañas para navegar por:
+      <ul>
+      <li><b>El índice con los títulos</b> que se generan automáticamente al insertar títulos en el documento.
+        Haciendo clic en un apartado de ese índice nos desplazaremos a la parte del documento que lo contiene.
+        </li>
+        <li>Por miniaturas de las <b>páginas</b>. </li>
+        <li> Por <b>resultados</b> de la búsqueda que hemos realizado utilizando la caja de búsqueda que hay justo encima.</li>
+      </ul>
+      
+      <p>También podemos abrir el panel de navegación desde la pestaña Vista, opción Panel de navegación, como se muestra en la imagen.</p>
+      
+      
+      </p>
+      <h3> Ir a.</h3>
+      
+      <p>
+      Cuando el documento es muy extenso, puede resultar incómodo realizar el desplazamiento de las formas 
+      que hemos visto. Imagina que estás trabajando con un documento de 500 páginas y quieres ir a la página
+      50. Sería una pérdida de tiempo ir página a página. En esas ocasiones resulta resulta muy practico 
+      utilizar la opción <b>Ir a</b>. Esta opción se encuentra en:  
+      </p>
+      
+      <p>
+      Pestaña <b>Inicio</b> > grupo <b>Edición</b> > menú <b>Buscar</b> > <b>Ir a</b>  <img src="../Imagenes/S1/Boton_ir_a.JPG" alt="Imagen boton buscar", width="auto" height="auto">. 
+      </p>
+      
+      <p>
+      Tambien podemos emplear la combinación de teclas <b>CTRL</b> + <b>I</b> o bien haciendo clic 
+      en  <b>Página ##</b> de <b>##</b> en la barra de estado
+      </p>
+      
+      <p>
+      <div class="flexbox">
+        <img src="../Imagenes/S1/Boton_buscar_reemplazar.JPG" alt="Imagen boton buscar", width="auto" height="auto">
+        </div>
+      </p>
+      
+      
+      <p>
+      A la izquierda puedes seleccionar dónde quieres ir, y a la derecha especificar el valor.
+      Por ejemplo <b>Página</b>, elegir un  <b>Título</b>, un <b>Comentario</b>, etc.
+      </p>
+      
+      
+      <h2 class="number-title"> Selección</h2>
+      
+      <p>
+      Muy frecuentemente en Word es necesario  realizar acciones como: copiar, cambiar el formato, etc.,
+      y para ello tenemos que "decirle" a Word sobre qué parte de texto tiene que actuar; esto es tenemos que  
+      <b>seleccionar</b> el texto.
+      </p>
+      
+      <p>Las dos maneras mas directas de seleccionar texto es  con el ratón y con el teclado:</p>
+      
+      <h3>Ratón</h3>
+      <p>Para seleccionar con el ratón hay dos métodos:</p>
+      <ul>
+      <li><b>Arrastrando:</b> Colocar el cursor al principio de la selección, presionar el botón izquierdo y, 
+      sin soltar el botón, mover el cursor hasta el final de la selección.
+      </li>
+      
+      <li><b>Haciendo clic's:</b></li> 
+      <ul>
+      <li>Colocar el cursor en una palabra y hacer doble clic: la palabra completa quedará seleccionada.</li>
+      <li>
+        Colocar el cursor justo al inicio de la línea, veremos que el cursor cambia de forma y se convierte 
+        en una flecha , hacer clic y la línea completa quedará seleccionada; si hacemos doble clic, el párrafo 
+        completo quedará seleccionado.
+      </li>
+      <li>Para seleccionar un gráfico o una imagen basta con hacer clic encima, el gráfico quedará enmarcado
+         por un recuadro negro.</li>
+      </ul>
+      </ul>
+      
+      <h3>Teclado</h3>
+      
+      <table class="info">
+      <tr>
+        <th > Para seleccionar </th>
+        <th > Presione las teclas</th>
+      </tr>
+      <tr>
+        <td> Un car&aacute;cter a la derecha</td>
+        <td> May&uacute;s. + flecha derecha</td>
+      </tr>
+      <tr>
+        <td>Un car&aacute;cter a la izquierda</td>
+        <td>May&uacute;s. + flecha izquierda</td>
+      </tr>
+      <tr>
+        <td>Palabra a la derecha</td>
+        <td>Ctrl + May&uacute;s.+ flecha derecha</td>
+      </tr>
+      <tr>
+        <td>Palabra a la izquierda</td>
+        <td>Ctrl + May&uacute;s.+ flecha izquierda</td>
+      </tr>
+      <tr>
+        <td>Hasta el final de la l&iacute;nea.</td>
+        <td>May&uacute;s. + Fin</td>
+      </tr>
+      <tr>
+        <td>Hasta el principio de la l&iacute;nea.</td>
+        <td>May&uacute;s. + Inicio</td>
+      </tr>
+      <tr>
+        <td>Una l&iacute;nea abajo</td>
+        <td>May&uacute;s. + flecha abajo</td>
+      </tr>
+      <tr>
+        <td>Una l&iacute;nea arriba</td>
+        <td>May&uacute;s. + flecha arriba</td>
+      </tr>
+      <tr>
+        <td>Hasta el final del p&aacute;rrafo</td>
+        <td>Ctrl + May&uacute;s. + flecha abajo</td>
+      </tr>
+      <tr>
+        <td>Hasta el principio del p&aacute;rrafo</td>
+        <td>Ctrl + May&uacute;s. + flecha arriba</td>
+      </tr>
+      <tr>
+        <td>Una pantalla abajo</td>
+        <td>May&uacute;s. + AvP&aacute;g</td>
+      </tr>
+      <tr>
+        <td>Una pantalla arriba</td>
+        <td>May&uacute;s. + ReP&aacute;g</td>
+      </tr>
+      <tr>
+        <td>Todo els documento</td>
+        <td>Ctrl + E</td>
+      </tr>
+      <tr> </tr>
+      </table>
+      
+      <h3>Opción Seleccionar.</h3>
+      
+      <p>
+      En la pestaña <b>Inicio</b> > grupo <b>Edición</b> > opción <b>Seleccionar</b>.  <img src="../Imagenes/S1/" alt="Boton_seleccionar", width="20%" height="auto">
+      
+      <div class="flexbox">
+        <img src="../Imagenes/S1/Boton_seleccionar.JPG" alt="Imagen boton buscar", width="auto" height="auto">
+        </div>
+    
+      </p>
+      
+      <h2 class="number-title"> Eliminar </h2>
+      <p>Para borrar o eliminar lo seleccionado basta con presionar la tecla SUPR, otra forma de borrar sin seleccionar previamente
+         es utilizando las teclas, como se indica en la siguiente tabla:</p>  
+      
+         <table class="info">
+          <tr>
+            <th> Para borrar </th>
+            <th> Presione las teclas</th>
+          </tr>
+          <tr>
+            <td>Un car&aacute;cter a la izquierda</td>
+            <td>Retroceso (BackSpace)</td>
+          </tr>
+          <tr>
+            <td>Una palabra a la izquierda</td>
+            <td>Ctrl + Retroceso</td>
+          </tr>
+          <tr>
+            <td>Un         car&aacute;cter a la derecha</td>
+            <td>Supr</td>
+          </tr>
+          <tr>
+            <td>Una palabra a la         derecha</td>
+            <td>Ctrl + Supr</td>
+          </tr>
+        </table>
+      
+        <p><h4>Observación:</h4>Para borrar una palabra errónea basta con hacer doble clic sobre ella
+         para seleccionarla y pulsar la primera letra de la palabra correcta, automáticamente se borrará la 
+         palabra seleccionada y podremos seguir escribiendo en su lugar la palabra correcta.</p>
+      
+
+         <h3> Teclas retroceso y suprimir</h3>
+
+
+          <ul>
+          <li>Cuando cometas un error, y te des cuenta inmediatamente, pulsa la tecla RETROCESO 
+              <img src="../Imagenes/S1/Tecla_retroceso.JPG" alt="", width="auto" height="4%">
+               una vez para que retroceda una posición borrando la última 
+              letra tecleada. Si mantienes la tecla pulsada, seguirá borrando letra tras letra hasta que la sueltes, así que utilízala con cierto cuidado 
+              para controlar su efecto.
+          </li>
+          <li>Es posible que no te des cuenta del error hasta después de haber escrito unas cuantas letras más. En ese caso no sería factible que borraras
+              toda la frase por un error que está al principio de la misma. Lo normal es que desplaces el punto de inserción hasta el error y una vez te 
+              hayas situado, utilices el RETROCESO.
+          </li>
+          <li> Si te das cuenta del error cuando tienes el punto de inserción lejos de él, lo mejor es hacer clic tras la letra que queremos borrar.</li>
+          </ul>
+          <p>La tecla <b>suprimir</b> (DEL o SUPR) <img src="../Imagenes/S1/Tecla_suprimir.JPG" alt="", width="auto" height="5%"> también se borra una letra, pero la que queda a la derecha del punto de inserción.</p>
+          <p>
+            Una de las ventajas que han aportado los procesadores de texto es la facilidad para modificar y corregir. El primer paso en ese proceso es colocarnos en el lugar donde vamos a efectuar la modificación.
+        </p>
+      
+
+        <h2 class="number-title"> Deshacer y rehacer</h2>
+
+
+        <h3>La última acción realizada.</h3>
+
+        <p>
+        Para deshacer la última acción realizada, pulsar el icono Deshacer, deshacer de la barra de acceso rápido. 
+        </p>
+        <p>Otra forma más de deshacer es pulsar <b>CTRL</b> + <b>Z</b>.</p>
+      
+        <h3>Las últimas acciones realizadas.</h3>
+
+        <p>
+          Si hacemos clic en el triángulo que hay a la derecha del icono deshacer deshacer, aparecerá una lista con últimas 
+          acciones para deshacer, colocando el cursor en esa lista podremos deshacer varias acciones a la vez. 
+          Por ejemplo, al colocar el cursor en la tercera línea de la lista desharemos tres acciones.
+        </p>
+      
+        <h3>Rehacer.</h3>
+
+        <p>
+          Utilizando el icono Rehacer, de la misma forma, podemos rehacer las acciones que acabamos de deshacer. Por ejemplo, 
+          si ponemos en cursiva un párrafo y deshacemos la acción porque pensamos que no queda bien en cursiva
+          pero al cabo de un momento pensamos que sí queda mejor en cursiva podemos rehacer la acción y volver a dejarlo en cursiva.
+        </p>
+
+        <p>
+          Otra forma de rehacer es pulsar <b>CTRL</b>+ <b>Y</b>.
+        </p>
+
+
+        <h3>Repetir formato.</h3>
+
+      <p>Cuando el botón Rehacer no está activo, en su lugar aparece el botón Repetit formato repetir formato que permite repetir 
+        la última acción de formato realizada.</p>
+
+        
+        <h2 class="number-title"> Copiar, cortar y pegar</h2>
+
+      <h3>Mediante el ratón y los iconos en el grupo Portapapeles de la pestaña Inicio</h3>  
+
+      <ol>
+        <li>Seleccionar el elemento (carácter, palabra, párrafo,..) a copiar o cortar.</li>
+        <li>Hacer clic en el icono copiar o cortar, <img src="../Imagenes/S1/" alt="Boton_Copiar", width="auto" height="5%"> </li>
+        <li>Colocar el cursor en el punto de destino y hacer clic en el icono pegar <img src="../Imagenes/S1/" alt="Boton_Pegar", width="auto" height="5%"></li>
+     
+      </ol>
+      
+      <h3>Ratón</h3>
+      Se tienen un par de  métodos:
+      <ol>
+        <li>
+          Seleccionar con doble clic, presionar el botón derecho, elegir  copiar o cortar, en el menú 
+          contextual ir a la posición donde vamos a copiar o pegar, presionar botón derecho y elegir pegar.
+        </li>
+        <li>
+          Seleccionar con doble clic, presionar el botón derecho, cuando aparezca un pequeño cuadrado debajo
+          del cursor, sin soltar, ir a la posición donde vamos a copiar, soltar el botón y aparecerá un menú: 
+          elegir la opción copiar  aquí.
+        </li>
+      </ol>
+      
+      
+      <h3>Teclado</h3>
+      
+      <p>
+       Primero, seleccionar el texto utilizando la combinación de teclas: <b>MAY</b> + <b>flechas</b>. Luego, 
+       copiamos con la combinación <b>Ctrl</b>+ <b>C</b>. Y por último, vamos  a la posición donde vamos
+      a pegar y pulsamos <b>Ctrl</b>+ <b>V</b>.
+      </p>
+    
+
+    <p><b>Observación:</b>
+      Cuando copiamos o cortamos, Word lo almacena en  el <b>Portapapeles</b>, de esta manera disponemos de los 
+      últimas  elementos que hemos copiado y en cualquier momento podemos volver a copiar una de ellas. 
+    </p>
+     
+    
+    <h3>Portapapeles</h3>
+    <p>El Office portapapeles almacena texto y gráficos que copia o corta desde cualquier lugar y le permite pegar
+      los elementos almacenados  en cualquier otro documento de Office. Por ejemplo, puede copiar texto de un mensaje de correo electrónico,
+      datos de un libro u hoja de datos y un gráfico de una presentación y luego pegarlos todos en un documento.
+      
+      <p>
+        Al usar el Portapapeles de Office, puede organizar los elementos copiados de la forma que desee en el documento.
+      </p>
+ 
+
+      <h3>Opciones para pegar texto</h3>
+
+      <p>
+        Cada vez que pegamos se copia el texto tal y como lo copiamos, con el formato que tenía.
+        Sin embargo, en ocasiones puede interesarnos que no se copie el formato</p>
+
+      <p>Debajo del icono Pegar aparece una flecha. Si hacemos clic en ella se despliega una lista con las opciones que tenemos 
+        diponibles:
+      </p>
+      
+
+      <p>
+        De izquierda a derecha, las opciones permiten:
+        <ul>
+          <li> Mantener el formato de origen (opción predeterminada).</li>
+          <li> Combinar formato.</li>
+          <li> Mantener sólo texto, que copiará el texto, pero sin los estilos que tenga.</li>
+        </ul>
+      </p>
+
+      <p>Al hacer clic en Pegado especial..., se abre una ventana como la que se observa a continuación.</p>
+
+
+      <p>
+        En ella te permite elegir cómo pegar el elemento de entre distintos formatos. Por ejemplo, podrías convertir un texto que hayas copiado a objeto de tipo imagen.
+        Desde el apartado Resultado puedes consultar la descripción de la acción que realizará cada tipo de pegado, simplemente seleccionándolo en la lista superior.
+      </p>
+    
+        <h3> Copiar formato</h3>
+   
+        <p>
+         En la pestaña <b>Inicio</b> > <b>grupo Portapapeles</b>, tenemos disponible el icono para <b>Copiar formato</b>
+         <img src="../Imagenes/S1/Boton_copiar_formato.JPG" alt="", width="auto" height="auto">. Este icono permite 
+         copiar las características de formato de un texto para aplicarlas a otros textos. Podemos copiarlo una o varias veces:
+         <ul>
+           <li>
+            <b> Una vez:</b> Hacer clic sobre la palabra de la cual queremos copiar el formato, ir a la barra de herramientas 
+             y hacer clic en Copiar formato Copiar formato, el cursor tomará la forma de brocha, colocarlo sobre la
+             palabra en la que queremos copiar el formato, y hacer clic sobre ella.
+           </li>
+           <li>
+             <b>Varias:</b>
+             Hacer clic sobre la palabra de la cual queremos copiar el formato, hacer doble clic en Copiar formato Copiar formato, 
+             el cursor tomará la forma de brocha, a continuación hacer clic sobre tantas palabras como se desee, y para acabar volver
+             a hacer clic en el icono de copiar formato.
+           </li>
+         </ul>
+       </p>
+       <p>
+         En ambos casos, si queremos copiar el formato sobre un conjunto de palabras o líneas, una vez el cursor tome la forma
+         de brocha, seleccionar las palabras o líneas y el nuevo formato se copiará sobre ellas. Copiar formato,
+         copia tanto el formato caracter como el formato párrafo.
+       </p>
+   
+
+
+
+
+
+
+      <!-- <h2 class="number-title"> Buscar y reemplazar</h2>-->
+      
+      </div>
+   
+    
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Nota</h1>
+      
+      <p>A veces Word realiza acciones  sin previo aviso ni autorización. Por ejemplo:</p>
+      
+      <ul>
+      <li>
+          Si intentas escribir una nota en el texto y empiezas un párrafo con el asterisco "*"" y a continuación un espacio y texto: 
+      </li>
+      <p>
+      <div class="flexbox">
+      <img src="../Imagenes/S1/Intento_nota.JPG" alt="", width="auto" height="auto">
+      </div>
+      </p>
+      
+      <li>
+      Word automáticamente dará por sentado que lo que quieres hacer es crear una lista, y que estás utilizando el asterisco 
+      como viñeta:
+      <p>
+          <div class="flexbox">
+          <img src="../Imagenes/S1/Intento_nota2.JPG" alt="", width="auto" height="auto">
+          </div>
+      </p>
+      <p>Podemos pulsar el pequeño icono flotante
+           en forma de rayo que aparece junto al texto. Al hacerlo se desplegará
+          un menú que nos permitirá deshacer la acción de Word si va en contra de nuestros intereses.</p>
+      <p>
+          <div class="flexbox">
+          <img src="../Imagenes/S1/Intento_nota3.JPG" alt="", width="auto" height="auto">
+          </div>
+      </p>
+      </li>
+      </ul>
+      <p><h4>Observación:</h4>
+          Es imporartante aclara que  Word no sirve únicamente para introducir texto. Se puede insertar imagenes, tablas,
+           gráficos y muchos otros objetos que enriquecerán el documento.</p>
+      
+      </div>
+
+        
+  
+  <div class="nota-box">
+  <h1 class="number-subtitle">  Formato del documento</h1>
+
+
+
+  <p>
+    Cuando hablamos del formato de un documento nos estamos refiriendo a las cuestiones que tienen que ver con su aspecto,
+    con la forma de presentarlo. El contenido en sí seguirá siendo el mismo.
+  </p>
+  
+  <p>
+  La presentación del documento es importante. No sólo por elegancia, sino también para facilitar y motivar su lectura.
+  Afortunadamente, Word facilita mucho esta tarea y con poco trabajo se consiguen resultados espectaculares.
+  </p>
+  
+
+  <h2 class="number-title">  Títulos, subtítulos y  párrafos </h2>
+              
+          
+  <ul>
+  
+      <li>En el documento podemos definir qué texto es el <b>título</b>, cuál el <b>subtítulo</b>, y cuál los <b>párrafos
+          de contenido</b>. Ésta distinción no es únicamente estética, sino que ayuda a Word a hacerse una idea de la 
+          estructura del documento y esto a la larga nos ayudará en nuestro trabajo. Un documento bien estructurado
+          siempre es más sencillo de manejar, facilitando por ejemplo la posterior creación de índices.
+      </li>
+      
+      <p>En la pestaña <b>Inicio</b> > <b>Estilos</b>, encontramos un cuadro que nos permite elegir el tipo de texto que vamos
+          a introducir.
+          <div class="flexbox">
+              <img src="../Imagenes/S1/Estilos.JPG" alt="", width="auto" height="auto">
+             </div>
+      </p>
+      <p>
+             <div class="flexbox">
+              <img src="../Imagenes/S1/Estilos2.JPG" alt="", width="auto" height="auto">
+             </div>
+      </p>
+  
+      <li>
+          Si pulsas <b>Título 1</b> y a continuación escribes algo, se considerará que el texto introducido es un título. 
+          De alguna forma es como etiquetar cada uno de los elementos del archivo.
+      </li>
+  
+      <li>
+          Al pulsar <b>Enter</b>, Word asumirá que quieres cambiar de elemento y pasará al formato Normal. Pero siempre puedes
+           cambiarlo, por ejemplo, para elegir insertar un <b>Título 2</b> (que supone un nivel más bajo en la jerarquía estructural) para incluir un subtítulo.
+      </li>
+      
+  </ul>
+
+  <!-- 
+  <p>
+      <ul>
+      <li>Temas</li>
+      <li>incluir una portada y cambiar el color de página.</li>
+      <li>modificar el formato del texto.</li>
+      <li>Modificar el formato de parrafos</li>
+    </ul>
+  </p>
+  -->
+    <h2 class="number-title">  Temas  </h2>
+    <p>
+      Un <b>tema</b> es la aplicación de distintos formatos sobre cada uno de los estilos y elementos que componen el documento. 
+      En un tema, por ejemplo, se define que todos los títulos serán de un determinado color, con un determinado tamaño y
+      una determinada tipografía. Y así con todos los estilos. De este modo que no importa lo extenso que sea el documento, 
+      porque si hemos aplicado correctamente los estilos se cambiará su formato por completo con un único clic.
+    </p>
+  
+    <p>
+    <div class="flexbox">
+      <img src="../Imagenes/S1/Ventana_temas.JPG" alt="Pestana_revision_grupo_revisar",height="auto",width="auto">
+   </div> 
+  </p>
+  
+    <p>
+      Existen varios temas predeterminados, puedes encontrarlos en <b>pestaña Diseño</b> > <b>grupo Formato del documento</b> > 
+      opción <b>Temas</b>.
+    </p>
+  
+    <p>
+     Por defecto se utiliza el tema Office, sin embargo si no hay ninguno que sea de tu agrado, puedes crear <b>temas personalizados</b>.
+     Para esto, debemos elegir el tema que más se aproxime a lo que buscamos, y utilizar los botones <b>Colores</b>, <b>Fuentes</b> 
+     y <b>Efectos</b> que hay a la derecha del botón Temas.
+    </p>
+  
+    <h2 class="number-title"> Portada</h2>
+  
+    <p>En ocasiones el tipo de documentos que realizamos necesitan de una portada: proyectos, memorándums, informes...
+       Word  facilita mucho esta tarea, ya que pone a nuestra disposición una serie de portadas predefinidas.
+    </p>
+  
+    <p>Para incluir una portada debemos ir a la pestaña <b>Insertar</b> > <b>grupo Páginas</b> > <b>Portada</b> </p>
+    
+    <p>
+     <div class="flexbox">  
+        <img src="../Imagenes/S1/Opcion_portada.JPG" alt="Pestana_revision_grupo_revisar",height="auto",width="auto"> </p>
+     </div>
+    </p>
+    
+    <p>
+      Se desplegará un menú con varios diseños. Haciendo clic en uno de ellos se insertará una nueva página 
+      al principio del documento con el aspecto elegido.
+    </p>
+    <p>
+      <div class="flexbox">  
+         <img src="../Imagenes/S1/Ventana_portada.JPG" alt="Pestana_revision_grupo_revisar",height="auto",width="auto"> </p>
+      </div>
+     </p>
+  
+     <p>
+     La portada suele incluir cuadros que deben rellenarse con los datos adecuados, como el <b>título</b>, el <b>subtítulo</b>,
+     la <b>fecha</b> o el <b>nombre del autor</b>. De entrada, estos campos se muestran con texto entre corchetes: 
+     [Escribir el título ...]. Al hacer clic sobre él se muestra un cuadro de edición, donde hay que indicar el nuevo texto.
+     </p>
+  
+     <p>
+     Las portadas, al igual que el resto del documento, se ven influenciadas por el tema aplicado 
+     al documento. Es decir, que el aspecto variará ligeramente para adaptarse a los colores y fuentes del tema en 
+     cuestión y así dar un aspecto al conjunto más homogéneo.
+     </p>
+  
+  
+     <h2 class="number-title"> Fondo de página</h2>
+     <p>
+      Otro detalle que nos ayudará con los últimos retoques del documento es cambiar el fondo de las páginas. Por defecto
+      las páginas se muestran blancas, porque es el color más normal del papel de impresión y por tanto dejarlo así 
+      supone un menor gasto de tinta en la impresión.
+     </p>
+  
+     <p>
+      En <b>pestaña Diseño</b> > <b>grupo Fondo de página</b>.
+     </p>
+     <p>
+      <div class="flexbox">  
+         <img src="../Imagenes/S1/Boton_fondo_pagina.JPG" alt="Pestana_revision_grupo_revisar",height="auto",width="auto"> </p>
+      </div>
+     </p>
+  
+     <h3 > Marca de agua</h3>
+  
+     <p>
+      Normalmente es un texto que se ve al fondo de la página, por ejemplo Confidencial, No copiar, Borrador, Ejemplo y Urgente. 
+      Al hacer clic se desplegará el menú siguiente que te permitirá elegir el que quieras del listado:
+     </p>
+  
+     <p>
+      <div class="flexbox">  
+         <img src="../Imagenes/S1/Boton_marca_agua.JPG" alt="",height="auto",width="auto"> </p>
+      </div>
+     </p>
+  
+     <p>
+      Para quitar la marca de agua de un documento deberás pulsar la opción <b>Quitar marca de agua</b>. Si  ningún texto se adapta a 
+      tus necesidades o quieres que la marca de agua sea una imagen (por ejemplo el logo de tu empresa), puedes personalizarla.
+      </p>
+  
+  
+     <h3>Color de página</h3>
+  
+     <p>
+      Al hacer clic, un menú te permite elegir el color en una paleta de colores.
+     </p>
+  
+     <p>
+      <div class="flexbox">  
+         <img src="../Imagenes/S1/Boton_color_pagina.JPG" alt="",height="auto",width="auto"> </p>
+      </div>
+     </p>
+  
+     <p>
+      Para recuperar el color blanco, elige la opción <b>Sin color</b>. Y si no encuentras el que quieres en la paleta, 
+      pulsa <b>Más colores....</b> También puedes crear fondos más complejos, que no sean simplemente de un color sino 
+      que utilicen degradados, texturas y tramas.
+     </p>
+  
+     <h3>Bordes y sombreado</h3>
+  
+     <p>Al pulsar esta opción se abre un cuadro de diálogo como el siguiente:</p>
+  
+     <p>
+      <div class="flexbox">  
+         <img src="../Imagenes/S1/Ventana_bordes_sombreado.JPG" alt="",height="auto",width="auto"> </p>
+      </div>
+     </p>
+     
+     <p>
+      La forma de aplicar el borde es ir escogiendo las opciones de izquierda a derecha.
+     </p>
+  
+     <p>
+      <ul>
+        <li>
+          Primero selecciona el valor para el borde: Ninguno, Cuadro, Sombra, 3D o Personalizado.
+        </li>
+        <li>
+          Luego, selecciona el estilo de línea que quieres aplicar:
+          <ul>
+            <li>
+              Si eliges un <b>Estilo de línea</b>, podrás especificar su color y ancho.
+            </li>
+            <li>
+              En cambio, si escoges un <b>Arte</b>, el borde será un motivo realizado por una consecuencia de dibujos. 
+              Por lo tanto sólo podrás establecer un ancho, y en algunos casos el color (cuando el programa lo permita) 
+              porque el color y forma son características propias del dibujo:
+              <p>
+                <div class="flexbox">  
+                  <img src="../Imagenes/S1/Opcion_arte_borde.JPG" alt="",height="auto",width="auto"> </p>
+               </div>
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Por último, elige en la vista previa qué bordes quieres aplicar. De forma predeterminada se muestran bordes
+          en los cuatro lados, pero activando y desactivando los botones que hay a su lado podrás decidir cuáles mostrar.
+          También podrás decidir qué ámbito de aplicación tendrán: todo el documento, sólo la primera página, todas excepto la primera...
+          <p>
+            <div class="flexbox">  
+              <img src="../Imagenes/S1/Boton_aplicar_a.JPG" alt="",height="auto",width="auto"> </p>
+           </div>
+          </p>
+        </li>
+  
+      </ul>
+     </p>
+  
+     <p>
+      <h4>Observación: </h4> Estas tres opciones: marga de agua, color de fondo y bordes, son compatibles. Podrás utilizar
+      las tres a la vez en un mismo documento, pero ten en cuenta que la marca de agua suele tener un color muy claro y 
+      es posible que no se aprecie con según qué colores de fondo.
+     </p>
+     
+  
+    <h2 class="number-title"> Fuente</h2>  
+    
+  
+    <p>
+     Cuando hablamos de fuente nos referimos a la forma en que se representan cada una de las letras, números y signos de
+     puntuación que se escriben como texto.
+    </p>
+  
+     <p>
+      Como hemos visto se puede dar un estilo diferente a las fuentes del documento a través de los temas y estilos.
+      Pero en este apartado aprenderemos a realizar estos cambios de forma manual y precisa, para poder, por ejemplo,
+      aplicar un formato distinto a un texto en concreto.
+    </p>
+    
+    <p>Podemos modificar la fuente desde la pestaña <b>Inicio</b> grupo <b>Fuente</b>.</p>
+  
+    <p>
+      <div class="flexbox">  
+        <img src="../Imagenes/S1/Pestaña_inicio_grupo_fuentes.JPG" alt="",height="auto",width="auto"> </p>
+     </div>
+    </p>
+  
+    <p>Otra opcion es mediante las <b>herramientas de formato</b>, las cuales aparecen automáticamente 
+      al seleccionar una palabra o frase.</p>
+  
+    <p>
+      <div class="flexbox">  
+        <img src="../Imagenes/S1/Boton_fuentes.JPG" alt="",height="auto",width="auto"> </p>
+     </div>
+    </p>
+  
+  
+   <h3> Fuente/Tipos de letra</h3>
+
+   <p>Cuando decimos que vamos a <b>cambiar la fuente</b> o <b>aplicar una fuente</b> nos referiremos a elegir la <em>tipografía</em></p>
+
+   <p>Por ejemplo en la siguiente imagen se aprecia que  la tipografía de fuente actual seleccionada para el cuerpo es
+    <em>Rockwell</em>. Haciendo clic sobre el pequeño triángulo que hay a su derecha se despliega el listado de fuentes
+    disponibles en nuestro equipo.
+    
+    <div class="flexbox">  
+      <img src="../Imagenes/S1/Boton_fuente.JPG" alt="",height="auto",width="auto"> </p>
+   </div>
+   
+  </p>
+
+  <p>
+    La lista se divide en tres zonas: <b>Fuentes del tema</b>, <b>Fuentes utilizadas recientemente</b> y <b>Todas las fuentes</b>.
+    De esta manera,  si estás utilizando una fuente la encuentraras fácilmente entre las primeras posiciones de la lista.
+  </p>
+
+  <p><h4>Observaciones:</h4> 
+    <ol>
+    <li>El propio nombre de la fuente está representado en ese tipo de fuente, de forma que podemos ver el
+     aspecto que tiene antes de aplicarlo.
+    </li>
+    <li>
+    Si conoces el nombre no será necesario que busques la fuente en la lista, puedes escribirlo directamente 
+    en la caja de texto que contiene el nombre de la fuente actual, ya que se trata de un cuadro editable. 
+    A medida que escribes el cuadro se va autorellenando con la fuente que cree que buscas, de modo que es 
+    posible que al introducir únicamente dos o tres letras, ya se muestre la que te interesa.
+    </li>
+    </ol>
+  </p>
+
+
+   <h3>Tamaño de la fuente</h3>
+   <p>
+   <div class="flexbox">  
+    <img src="../Imagenes/S1/Boton_tamaño_fuente.JPG" alt="",height="auto",width="auto"> 
+   </div>
+  </p>
+  
+  <p>
+    De forma similar podemos cambiar el tamaño de la fuente. Seleccionar el texto y hacer clic en el triángulo
+    para buscar el tamaño que deseemos, o escribirlo directamente en la caja de texto.
+  </p>
+
+  <div class="flexbox">  
+    <img src="../Imagenes/S1/Boton_tamaño_fuente_lista.JPG" alt="",height="auto",width="auto"> 
+  </div>
+
+  <p>
+    La unidad de medida es el <b>punto</b> (72 puntos = 1 pulgada = 2.54 cm), los tamaños más utilizados son 10 y 12 puntos.
+  </p>
+
+  <p>
+    Junto al desplegable de tamaño de fuente veremos dos botones:  <img src="../Imagenes/S1/Boton_A_Mas.JPG" alt="",height="auto",width="auto"> <img src="../Imagenes/S1/Boton_A_Menos.JPG" alt="",height="auto",width="auto">  
+    que también nos permiten seleccionar el tamaño de fuente, pero esta vez de forma relativa. Cada uno de ellos 
+    tiene una flecha triangular: el de la flecha hacia arriba <b>aumenta el tamaño</b>, y el que apunta hacia abajo <b>disminuye el tamaño</b>.
+  </p>
+  
+
+
+   <h3>Efectos básicos</h3>
+
+   <p>
+    Existen herramientas de estilo que nos permiten realizar cambios sobre un texto.
+   </p>
+
+   <div class="flexbox">  
+    <img src="../Imagenes/S1/Boton_efectos_basicos.JPG" alt="",height="auto",width="auto"> 
+   </div>
+
+   <p>
+   Basta seleccionar el texto y hacer clic en el botón correspondiente. Al activarse la opción se muestra el fondo anaranjado 
+   (o azul version 2013). Para desactivarlo se sigue el mismo proceso. Se pueden activar varios a la vez <img src="../Imagenes/S1/Boton_efectos_basicos_activados.JPG" alt="",height="auto",width="auto"> 
+   </p>
+
+   <ul>
+    <li>  <b>Negrita</b> (teclas <b>CTRL</b>+ <b>N</b>): Aumenta el grosor de la línea que dibuja los caracteres. </li>
+    <li>  <b>Cursiva</b> (teclas <b>CTRL</b>+ <b>K</b>): Inclina el texto ligeramente hacia la derecha.</li>
+    <li>  <b>Subrayado</b> (teclas <b>CTRL</b>+<b>S</b>): Dibuja una línea simple bajo el texto. Si pulsas la pequeña flecha
+      triangular de su derecha se despliega un menú que te permite cambiar el estilo de la línea, pudiendo elegir entre
+      líneas onduladas, discontinuas, dobles, gruesas, etc.</li>
+    <li>  <b>Tachado</b>: Dibuja una línea sobre el texto.</li>
+    <li>  <b>Subíndice</b> (teclas <b>CTRL</b>+ <b>=</b>): Reduce el tamaño del texto y lo sitúa más abajo que el resto del texto.</li>
+    <li>  <b>Superíndice</b> (teclas <b>CTRL</b>+ <b>+</b>): Reduce el tamaño del texto y lo sitúa más arriba que el resto del texto.</li>
+   </ul>
+
+   <p>
+    Subíndice y superíndice son los únicos estilos que no se pueden aplicar a la vez. Porque, obviamente, el texto se
+     posiciona arriba o abajo, pero no en ambos sitios a la vez.
+   </p>
+  
+    <h3>Mayúsculas y minúsculas</h3>
+
+    <p>
+      En la pestaña <b>Inicio</b> > grupo <b>Fuente</b> > opción <b>Cambiar a mayúsculas y minúsculas</b>...  podemos desplegar un menú desde 
+      la pequeña flecha triangular que nos permite <b>cambiar el formato de mayúsculas a minúsculas en el texto seleccionado</b>. 
+      Las opciones son:
+      <ul>
+        <li><b>Tipo oración</b>. La primera letra después de cada punto en mayúsculas el resto en minúsculas.</li>
+        <li><b>minúsculas</b>. Todas las letras en minúsculas.</li>
+        <li><b>MAYÚSCULAS</b>. Todas la letras en mayúsculas.</li>
+        <li><b>Poner en mayúsculas cada palabra</b>. La primera letra de cada palabra en mayúscula y el resto de la palabra en minúsculas.</li>
+        <li><b>Alternar MAY/min</b>. Cambia las mayúsculas por minúsculas y viceversa.</li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Observación:</b> Si seleccionamos texto y  presionamos la combinación de teclas: <b>MAYÚS</b>+<b>F3</b>, 
+      las palabras del texto seleccionado cambian alternativamente a las tres formas: mayúsculas, minúsculas y tipo oración.
+    </p>
+  
+   <!-- <h3> Color y efectos de texto </h3>-->
+  
+  </div>
+
+    
+  
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Formato de párrafo</h1>
+   
+    <p>
+      Los párrafos son unidades dentro del documento Word que tienen sus propias características de formato, 
+      pudiendo ser diferentes de un párrafo a otro. Las características más importante de formato de párrafo 
+      son la <b>alineación</b> y la <b>sangría</b>,  ambas están disponibles en la pestaña Inicio.
+    </p>
+
+
+
+    <div class="flexbox">  
+      <img src="../Imagenes/S1/Grupo_parrafo.JPG" alt="",height="auto",width="auto"> 
+    </div>
+  
+    <p>
+      Para cambiar las características de formato de un párrafo, basta con seleccionarlo y modificar las características 
+      que queramos.
+    </p>
+  
+        
+  
+    <h2 class="number-title"> Alineación   </h2>
+    
+    <table class="info">
+      <tr>
+        <th> Izquierda</th>
+        <th> Centrada</th>
+        <th> Derecha</th>
+        <th> Justificada</th>
+      </tr>
+      <tr>
+        <td style="text-align:left;">Este   p&aacute;rrafo tiene establecida alineaci&oacute;n izquierda.</td>
+        <td style="text-align:center;">Este p&aacute;rrafo tiene establecida la alineaci&oacute;n       centrada.</td>
+        <td style="text-align:right;">Este p&aacute;rrafo tiene       establecida alineaci&oacute;n derecha.</td>
+        <td style="text-align:justify;">Este p&aacute;rrafo       tiene una alineaci&oacute;n justificada.</td>
+      </tr>
+    </table>
+    <p>
+      Cuando hablamos de alinear un párrafo nos referimos, normalmente, a su alineación respecto de los márgenes
+       de la página, pero también podemos alinear el texto respecto de los bordes de las celdas si el texto se encuentra en una tabla.
+    </p>
+       
+  
+    <h2 class="number-title"> Sangría y espaciado   </h2>
+    <h3>Sangria</h3>
+      
+    <p>
+      Aplicar una sangría a un párrafo es desplazar un poco el párrafo hacia la derecha o izquierda. Se realiza seleccionando el párrafo
+      y haciendo clic en uno de estos botones: <img src="../Imagenes/S1/Boton_disminuir_sangria.JPG" alt="",height="auto",width="auto">
+      <img src="../Imagenes/S1/Boton_disminuir_sangria.JPG" alt="",height="auto",width="auto">   de la pestaña <b>Inicio</b> > grupo <b>Párrafo</b>, 
+      según queramos desplazar hacia la izquierda o hacia la derecha. De esta manera  desplazamos el párrafo 1,25 cm. cada vez que hacemos clic en el botón,
+       pero también se puede desplazar otro valor que deseemos
+    </p>
+
+   <p>
+    En la cinta de opciones disponemos de las herramientas más comunes de párrafo, dentro de la pestaña <b>Inicio</b> > grupo <b>Párrafo</b>.
+    Pero si queremos acceder a todas ellas, debemos abrir el cuadro de diálogo pulsando el botón de la esquina inferior del grupo. Al hacer clic 
+    en el inicializador del cuadro de diálogo Párrafo, veremos la pestaña Sangría y espacio. En ella encontramos las opciones para configurar la
+     Alineación, el Espaciado o el Interlineado, entre otras. 
+   </p>
+
+   <div class="flexbox">  
+    <img src="../Imagenes/S1/Ventana_parrafo.JPG" alt="",height="auto",width="auto"> 
+  </div>
+
+
+  <p>
+    Podemos fijar los centímetros que queremos que se desplace el párrafo tanto a la izquierda como a la derecha rellenando los campos Izquierda 
+    y/o Derecho.
+  </p>
+  
+  <p>
+  También podemos indicar uno de los dos tipos de <b>sangría Especial</b> disponibles en la ventana que se despliega al hacer clic en el botón de la derecha.
+  <ul>
+    <li><b>Primera línea</b>: desplaza la primera línea del párrafo un poco a la derecha.</li>
+    <li><b>Francesa</b>: desplaza todas las líneas del párrafo hacia la derecha excepto la primera línea.</li>
+  </ul>
+</p>  
+<h3> Espaciado  </h3>
+  <p>
+    Aquí podemos fijar el espacio vertical que quedará entre el párrafo que hemos seleccionado y el párrafo anterior y posterior.
+  </p>
+        
+  <h3> Interlineado</h3>
+  <p>
+    El interlineado es el espacio vertical que separa las líneas, podemos modificarlo mediante la ventana de Interlineado 
+    que nos ofrece las siguiente posibilidades:
+    <ul>
+      <li><b>Sencillo</b>, es el establecido por defecto.</li>
+
+      <li><b>1.5 líneas.</b></li>
+        
+      <li><b>Doble</b>. Dos líneas.</li>
+        
+      <li><b>Mínimo</b>, al elegir esta opción podemos especificar en el recuadro "En" de la derecha los puntos deseados pero hasta
+         un valor mínimo para que no se superpongan las líneas.</li>
+        
+      <li><b>Exacto</b>, como la opción anterior pero permitiendo la superposición de las líneas.</li>
+        
+      <li><b>Múltiple</b>, en el recuadro "En" de la derecha podremos poner un número de líneas, incluso con decimales.</li>
+    </ul>
+  </p>
+
+  
+  <p>
+    <b>Observación:</b> Al final de la ventana contamos con el  botón <b>Establecer como predeterminado</b>, que guardará la configuración realizada y la utilizará
+     por defecto en cada nuevo párrafo de cada documento.
+  </p>
+
+
+  <h2 class="number-title"> Líneas y saltos de página</h2>
+
+  <p>
+    Como sabes, al llegar al final de la página se produce un salto de página. 
+  </p>
+
+  <p>
+    <ul>
+      <li>
+      Es posible que en un momento dado no quieras que un párrafo quede dividido en dos páginas.
+      Para conseguir esto debemos activar la casilla <b>Conservar líneas juntas</b> que se encuentra en
+      el cuadro de diálogo <b>Párrafo </b> > pestaña <b>Líneas y saltos de página</b>.
+    </li>
+    <li>
+      En ocasiones nos interesará que Word divida una palabra en dos líneas, o bien que dos palabras no sean separadas en distintas líneas.
+      Por ello, haremos una especial mención las funciones de guión y espacio de no separación en el siguiente avanzado
+    </li>
+    </ul>
+  </p>
+
+  <p>
+    De igual manera en la pestaña <b>Líneas y saltos de página</b> de la siguiente ventana, podemos controlar como se comportan
+    los saltos de página respecto de los párrafos.
+    
+    <div class="flexbox">  
+      <img src="../Imagenes/S1/Ventana_parrafo.JPG" alt="",height="auto",width="auto"> 
+    </div>
+
+    <ol>
+      <li><b>Control de líneas viudas y huérfanas.</b> Si activamos esta casilla impediremos que por un salto de página automático quede la última
+         línea de un párrafo en la primera línea de una página (línea viuda). También evitaremos que quede la primera línea de un párrafo como última
+          línea de una página (línea huérfana).</li> 
+      <Activando><b>Conservar con el siguiente.</b> Activando esta casilla impediremos que el párrafo seleccionado y el siguiente sean separados por un salto de página.</li>
+      <li><b>Conservar líneas juntas.</b> Al activar esta casilla impediremos que un salto de página reparta entre dos páginas el párrafo seleccionado.</li>
+      <li><b>Salto de página anterior.</b> Si activamos esta casilla se insertará un salto de página delante del párrafo seleccionado, por lo que el párrafo 
+      seleccionado será el primer párrafo de la página.</li>
+      <li><b>Suprimir números de línea.</b> Esta casilla activada evitará que aparezcan los números de línea, si los hubiere, al lado del párrafo seleccionado.</li>
+      <li><b>No dividir con guiones.</b> Así evitaremos que, en el párrafo seleccionado, las palabras sean divididas con guiones al final de la línea, si es que esta opción se encuentra activada.</li>
+    </ol>
+
+    <p>
+      <b>Observación:</b> Al final de la ventana contamos con el  botón <b>Establecer como predeterminado</b>, que guardará la configuración realizada y la utilizará
+       por defecto en cada nuevo párrafo de cada documento.
+    </p>
+
+
+  </p>
+
+  <h2 class="number-title"> Tabulaciones</h2>  
+  
+  <p>
+    Las tabulaciones son posiciones fijas a las cuales se desplaza el cursor cuando pulsamos la tecla de tabulación <b>TAB</b>
+  </p>
+  
+  <p>
+    Cuando necesitamos insertar texto en columnas o tablas pueden ser muy utiles las tabulaciones.
+    Word tiene por defecto definidas tabulaciones cada 1.25 cm. Pero se pueden establecer tabulaciones en las
+    posiciones que deseemos. Además podemos definir la alineación para cada tabulación.
+  </p>
+  
+  <h3>Establecer tabulaciones utilizando la regla horizontal</h3>
+  <p>
+    Las tabulaciones afectan sólo al párrafo en el que se definen. Para establecer cada tabulación tenemos que repetir
+    cada uno de estos dos pasos:
+    <ul>
+      <li>
+        Hacer clic en el extremo izquierdo de la regla horizontal para seleccionar la alineación de la tabulación
+        que vamos a insertar. Por cada clic que hagamos irán apareciendo repetivamente diferentes iconos que corresponden 
+        a las siguientes alineaciones: <b>izquierda</b>, <b>centrada</b>, <b>derecha</b>, <b>decimal</b>, <b>barra de tabulaciones</b>,
+        <b>sangría de primera línea</b> y <b>sangría francesa</b>.
+
+      </li>
+      <li>
+        Colocar el cursor en la regla horizontal en la posición en la que deseemos establecer la tabulación 
+        y hacer clic, veremos cómo se inserta el icono con la tabulación seleccionada.
+      </li>
+    </ul>
+
+    <div class="flexbox">  
+      <img src="../Imagenes/S1/Tabulaciones_regla.JPG" alt="",height="auto",width="auto"> 
+    </div>
+  
+    <b>Observación:</b> Si queremos modificar la posición de una tabulación basta colocar el cursor en el icono de 
+      esa tabulación y hacer clic y arrastrarlo a la nueva posición.
+  </p>
+  
+  
+  <p>
+    También podemos hacer doble clic sobre una de las marcas de tabulación de la regla horizontal para que aparezca
+    el cuadro de diálogo de tabulaciones que vemos en la imagen de la derecha donde podemos fijar todas las 
+    tabulaciones de una vez o eliminarlas. O bien, en la pestaña <b>Inicio</b> > grupo <b>Párrafo</b>, iniciamos el
+    <b>cuadro de diálogo Párrafo</b>. Se pueden establecer las tabulaciones desde el <b>botón Tabulaciones</b>
+    que se encuentra en la parte inferior izquierda. 
+  </p>
+  
+  <div class="flexbox">  
+    <img src="../Imagenes/S1/Ventana_tabulaciones.JPG" alt="",height="auto",width="auto"> 
+  </div>
+
+  <p>
+    Para establecer las tabulaciones escribimos la posición en cm. en el campo <b>Posición</b>, a continuación hacer clic en
+    el <b>tipo de alineación</b> deseada, luego podemos elegir un <b>tipo de relleno</b> con el que se rellenarán los espacios en 
+    blanco a la izquierda de la tabulación y por ultimo pulsar el botón <b>Fijar</b>, esto hará que la tabulación que acabamos
+    de crear aparezca en la la lista de tabulaciones.
+  </p>
+
+  <p>
+    Si queremos eliminar una tabulación debemos seleccionarla, haciendo clic en la lista y pulsar el botón <b>Eliminar</b>. 
+    También tenemos un botón para eliminar todas las tabulaciones del párrafo en que nos encontramos. 
+  </p>
+
+  <p>
+    Una vez tengamos todas la tabulaciones preparadas pulsaremos el botón Aceptar y volveremos a nuestro documento donde veremos
+    en la regla horizontal los iconos de las tabulaciones que acabamos de fijar. Para modificar cualquier tabulación se puede 
+    utilizar esta ventana o la regla horizontal, independientemente de la forma en la que se creó la tabulación.<br>
+
+    También.  en esta ventana podemos variar la distancia a la que se colocan las <b>tabulaciones predeterminadas</b>, que es de 1.25 cm.
+    basta con escribir otro número en la ventana.
+  </p>
+
+
+  <h2 class="number-title"> Simbolos</h2>
+    
+    <p>
+    Insertar texto no tiene secreto, únicamente hay que escribirlo, pero ¿qué ocurre si queremos insertar
+    algún símbolo o un carácter especial? ¿O si queremos insertar ecuaciones matemáticas?
+    </p>
+    <ul>
+        <li>
+        <b>Insertar</b> > <b>grupo Símbolos</b>.      <img src="../Imagenes/S1/Grupo_simbolo.JPG" alt="", width="auto" height="auto"></li>     
+    
+    <p>
+        <div class="flexbox">
+            <img src="../Imagenes/S1/Grupo_simbolo2.JPG" alt="", width="auto" height="auto">
+            </div>
+    </p>
+
+    <li>
+    El botón <b>Ecuación</b> nos permitirá acceder a una herramienta específica que facilita la inserción de ecuaciones
+    </li>
+    <p>
+        <div class="flexbox">
+            <img src="../Imagenes/S1/Grupo_simbolo3.JPG" alt="", width="100%" height="auto">
+            </div>
+    </p>
+<li>
+    En cambio con el botón <b>Símbolo</b>, accederemos a caracteres especiales como símbolos monetarios, el símbolo del 
+    copyright o de registro, etc.Puedes hacer clic en <b>Más símbolos</b> <img src="../Imagenes/S1/Boton_mas_simbolos.JPG" alt="", width="auto" height="auto">, 
+    para ver un catálogo mas completo de símbolos:
+</li>
+<p>
+    <div class="flexbox">
+        <img src="../Imagenes/S1/Grupo_simbolo4.JPG" alt="", width="auto" height="auto">
+        </div>
+</p>
+
+<ul>
+    <li>
+        Al hacer doble clic sobre un símbolo, o seleccionarlo y pulsar el botón <b>Insertar</b>, 
+        se incluirá en el documento,  donde esté situado el punto de inserción. La ventana no se cerrará hasta que presiones
+         <b>Cancelar</b> o <b>Cerrar</b>, esto permite insertar varios símbolos sin tener que abrir cada vez la ventana.
+    </li>
+
+    <li>
+        Los símbolos disponibles dependen del tipo de fuente que se utilice, por ello podrás cambiar la fuente en el desplegable
+         Fuente de la parte superior. Luego, podremos seleccionar en desplegable Subconjunto el tipo de símbolo que buscamos, para
+         filtrar el resultado.
+    </li>
+</ul>
+</ul>
+
+<p><h4>Observación:</h4> Si un símbolo lo utilizas con regularidad, selecciónalo y observa las teclas que lo insertan 
+    automáticamente en la zona inferior. Esta combinación, la puedes cambiar por otra desde el botón  <img src="../Imagenes/S1/Boton_teclas.JPG" alt="", width="auto" height="auto">.
+    </p>
+
+
+  <h2 class="number-title"> Numeracion y viñetas</h2>  
+ 
+
+  
+  <p>
+    En el grupo <b>Párrafo</b> >  pestaña <b>Inicio</b> también encontramos herramientas para crear listas. 
+    <img src="../Imagenes/S1/Boton_listas.JPG" alt="", width="auto" height="auto">
+  </p>
+  
+  <h3>Manualmente</h3>
+  <p>
+    Una lista no es más que un conjunto de elementos ligeramente tabulados y precedidos por un símbolo, dibujo o número.
+    Utilizaremos una lista numerada o por viñetas dependiendo de si los elementos guardan o no un orden secuencial.
+    Para aplicarlas, podemos:
+    <ul>
+      <li>
+        Pulsar el correspondiente botón y empezar a escribir cada uno de los elementos de la lista.
+      </li>
+      <li>
+        O bien seleccionar un texto ya existente y aplicar el estilo de lista.
+      </li>
+    </ul>
+  </p>
+  
+  <h3>Automaticamente</h3>
+  <p>
+    Podemos dejar que Word  cree la lista  de forma automática.
+    <ul>
+      <li>
+        Si empiezas a introducir elementos precedidos por un signo (como - o * ) Word entenderá que quieres
+         introducir una lista de viñetas.
+      </li>
+      <li>
+        Si lo que haces es introducir elementos precedidos por letras o números también creará una lista, en este caso numérica.
+      </li>
+    </ul>
+  </p>
+  <p>
+    <h4>Observaciones:</h4> 
+    <ul>
+      <li>
+        Se inserta un número o viñeta por cada párrafo, es decir, a continuación de la tecla INTRO. 
+        Si quieres que dos elementos estén en la misma viñeta, deberás separarlos por un salto de línea, pulsando MAYÚS+INTRO
+        en vez de INTRO.
+    </li>
+    <li>
+      Si quieres que un elemento de la lista numérica no empiece por 1 o no siga la secuencia, utiliza la opción
+      <b>Establecer valor de numeración</b> del submenú que despliega su correspondiente flecha.
+    </li>
+        <li>
+      Una vez hemos completado la lista y queremos continuar con un párrafo normal, hay que pulsar de nuevo la tecla INTRO
+      después del último elemento, es decir, hay que pulsar dos veces la tecla INTRO.
+    </li>
+    <li>
+      Una característica de los elementos de una lista es que se pueden ordenar alfabéticamente. Lo haremos seleccionándolos 
+      y pulsando el botón <b>Ordenar</b> <img src="../Imagenes/S1/Boton_ordenar.JPG" alt="", width="auto" height="auto"> que se
+      encuentra también en la pestaña Inicio, junto a los botones de lista. En el cuadro de diálogo lo único que debemos 
+      hacer es escoger si queremos una ordenación ascendente o descendente y aceptar.
+    </li>
+    <li>
+      Al pulsar el botón Aumentar sangría antes de introducir un nuevo elemento indicamos que este está un nivel inferior 
+      que el anterior, es decir, indicamos una dependencia. Esto da lugar a las listas multinivel. Las listas multinivel 
+      pueden ser tanto de viñetas como numéricas.
+    </li>
+    </ul>
+    </p>
+
+  
+  <h3>Nivel de lista</h3>
+
+  <p>
+
+    También tenemos la opción <b>Cambiar nivel de lista</b> en cada uno de los botones de lista 
+    <img src="../Imagenes/S1/Boton_niveles_viñetas.JPG" alt="", width="auto" height="auto">
+  </p>
+  
+  <p>
+    Para elegir el estilo de lista, lo único que hay que hacer es desplegar la flecha triangular
+    situada a la derecha de cada uno de los botones. Podemos escoger entre varios modelos, pulsando directamente sobre la pequeña muestra del menú que se despliega. 
+    También puedes crear un estilo de lista personalizado pulsando Definir nueva viñeta, Definir nuevo formato de
+    número o Definir nueva lista multinivel.
+  </p>
+  
+  </div>
+  
+
+
+  <div class="nota-box">
+    <h1 class="number-subtitle">  Ortografía y gramática</h1>
+
+<p> 
+La <b>revisión ortográfica y gramatical</b> es otra de las grandes aportaciones de los procesadores de texto. 
+Particularmente, Word dispone de potentes herramientas en este campo que han sido mejoradas notablemente desde 
+las primeras versiones.
+</p>
+
+<p>
+Evitar que haya errores en nuestros textos es ahora mucho más fácil. No obstante conviene saber que revisar 
+un documento y que Word no encuentre ningún error no quiere decir que, necesariamente, sea así. Ya que hay
+errores que Word no puede detectar puesto que dependen del contexto. La forma que tiene Word para detectar
+las palabras erróneas es comprobar si las palabras de nuestro documento existen en el diccionario que lleva
+incorporado, junto con algunas reglas gramaticales. Lo que no es capaz de hacer Word, por el momento, es 
+discernir el significado de las palabras en cada contexto.   
+</p>
+
+<p><b>Ejemplo:</b> Mi paciencia es muy basta.</p>
+
+<p>La <b>revisión ortográfica</b> consiste en comprobar que las palabras de nuestro texto no son erróneas y 
+   la <b>revisión gramatical</b> trata de que las frases no contengan errores gramaticales como por ejemplo
+   "Los libros son buenas"; donde no concuerdan el género del sujeto y del adjetivo. Obviamente Word realiza
+   mejor la revisión ortográfica, porque únicamente debe contrastar con los diccionarios. Por eso es importante
+   que prestemos especial atención a los posibles fallos gramaticales, que al depender del contexto, son más 
+   difíciles de identificar para el programa.
+</p>
+    
+<p>
+Podemos realizar una revisión ortográfica, una gramatical o ambas a la vez
+</p>
+
+<h2 class="number-title"> Revisar mientras se escribe</h2>
+
+<p>
+De forma predeterminada, Word irá subrayando con una línea ondulada las palabras que considere que contienen
+<b>errores ortográficos en rojo</b> y las que considere que contienen <b>errores gramaticales en azul</b>. Lo hará a medida 
+que vayamos escribiendo, sin necesidad de solicitar la revisión de forma expresa. Word no podrá detectar 
+errores gramaticales hasta que la frase esté acabada, por ejemplo, con un punto.
+</p>
+
+<p>
+<b>Ejemplo: Este computadora se ha desconpuesta </b>   
+</p>
+
+<p>
+ <div class="flexbox">
+    <img src="../Imagenes/S1/" alt="Clic_derecho_error_ortografico", width="auto" height="auto">
+ </div> 
+</p>
+
+<h2 class="number-title"> Ortografía y gramática </h2>
+<p>
+Para corregir el error debemos colocar el cursor sobre palabra subrayada y pulsar el botón derecho del ratón.
+Entonces aparecerá el menú contextual que nos permitirá elegir una de las palabras sugeridas.
+</p>
+
+<p>
+Además de las palabras sugeridas, en el menú contextual encontramos otras opciones interesantes: 
+<ul>
+<li><b> Omitir todo:</b>  En ocasiones el corrector se equivoca, o simplemente estamos utilizando nombres 
+propios o marcas que no están incluidos en el diccionario. En tal caso, deberemos <b>omitir el error</b>. Si queremos
+que no vuelva a identificar esta palabra como un error a lo largo del documento, deberemos seleccionar <b>Omitir 
+todas</b>. <!-- Los fallos gramaticales se basan en que la palabra en sí no tiene ningún error, el error es producido 
+por su dependencia con el contexto, por ese motivo, no podremos omitir todas, sino que deberemos Omitir una vez.
+Sin embargo esta opción no aparece en el menú contextual, para poder usarla deberemos abrir el panel Ortografía 
+pulsando F7, que explicaremos un poco más adelante. -->
+</li>
+<li><b>Agregar al diccionario:</b> Añade la palabra subrayada al diccionario personalizado y no la volverá a mostrar subrayada.
+Podemos agregar palabras al diccionario si estamos seguros de su existencia. Por ejemplo, términos científicos que no suelen estar contemplados.
+O bien, por motivos prácticos. Si utilizamos constantemente el nombre de nuestra empresa  y siempre presenta problemas,
+lo más práctico es incluirlo en el diccionario, para no tener que omitirlo en cada uno de los documentos.</li>
+</ul>
+</p>
+
+<!--
+<h2 class="number-title"> Gramática</h2>
+
+<p>En nuestro ejemplo la palabra sugerida frente al error gramatical es Este, con lo que la frase quedaría "Este autobús ... "</p>
+
+<p>
+    <div class="flexbox">
+       <img src="../Imagenes/S1/" alt="Clic_derecho_error_gramatical", width="auto" height="auto">
+    </div> 
+   </p>
+<p>
+    <ul>
+        <li><h4>Omitir una vez:</h4></li>
+        <li><h4>Gramática</h4> Abre el panel de gramática que veremos a continuación.</li>
+    </ul>
+</p>
+-->
+<p>
+<h4>Observación:</h4> Tener activada la opción de revisar mientras se escribe puede causar que, en documentos extensos, 
+    la carga del documento resulte lenta. Ésto se debe a que, al abrir el archivo, se revisará automáticamente todo su contenido
+</p>
+
+<h2 class="number-title"> Panel ortografía/gramática.</h2>
+<p>
+    Si no queremos ir cambiando cada una de las palabras manualmente, podemos recurrir a forzar la revisión una vez 
+    hayamos terminado de escribir. 
+</p>
+
+
+
+
+<p> Lo podemos realizar desde la <b>pestaña Revisar</b> > <b>grupo Revisión</b> >  <b>opción Ortografía y gramática</b> , o bien pulsando la tecla <b>F7</b>.</p>
+
+    <p>
+        <div class="flexbox">
+           <img src="../Imagenes/S1/Pestana_revision_grupo_revisar.JPG" alt="Pestana_revision_grupo_revisar", width="auto" height="auto">
+        </div> 
+       </p>
+       
+       <p>Word comenzará a efectuar la revisión ortográfica y cuando encuentre un posible error se detendrá y lo mostrará en el <b>panel
+         Ortografía</b> o en el <b>panel Gramática</b> para que escojamos la opción más correcta, de forma similar a como acabamos de ver con el 
+         menú contextual, la diferencia es que en el panel hay más opciones disponibles.
+       </p>
+
+<h2 class="number-title"> Autocorreción </h2>
+
+   <p>
+    Mediante la <emp>autocorrección</emp> Word puede corregir algunos errores obvios sin previo aviso y nos ofrece
+    la posibilidad de realizar nuestras propias correcciones.
+   </p>
+
+<p><b>Ejemplo:</b>
+  Por ejemplo, si detecta que escribes <b>o once</b>, lo cambiará automáticamente por <b>u once</b>. O bien, si detecta que empiezas una 
+  frase con minúscula, la cambiará por mayúscula.
+</p>
+
+<p>Esta herramienta es un arma de doble filo y como todo, presenta ventajas y desventajas:</p>
+      
+<p>
+  <ul>
+    <li>Es una forma cómoda de automatizar la corrección en errores que solemos cometer frecuentemente.</li>
+    <li>Hay que ir con cuidado porque en ocasiones Word cambiará automáticamente una palabra sin que nos 
+        demos cuenta y es posible que no nos interese en algún caso en concreto. Por eso no recomendamos 
+        automatizar demasiado los errores, porque puede ocurrir que al final no tengamos  control 
+        de lo que estemos escribiendo.
+      </li>
+  </ul>
+</p>
+
+<p><h4>Observación:</h4>Para tener un mayor control de las correcciones que Word hace de forma automatizada, 
+  lo ideal es mirar la pantalla a la vez que escribimos para detectarlas a tiempo y no fijar la vista en el teclado.
+  Si te falta práctica para ello, es posible que te interese desactivar esta opción de corrección.  Para hacerlo:</p>
+
+  <p>
+    <ul>
+      <li>Elegir la <b>pestaña Archivo</b> > <b>Opciones</b>.</li>
+      <li>En el cuadro de diálogo que aparecerá. Seleccionar en el menú de la izquierda, <b>Revisión</b>.</li>
+      <li>Hacer clic en el botón <b>Opciones de Autocorrección....</b></li>
+    </ul>
+  </p>
+
+  <p>Aparecerá un cuadro de diálogo como este, vamos a ver las posibilidades más interesantes.</p>
+
+  <p>
+    <div class="flexbox">
+       <img src="../Imagenes/S1/Ventana_autocorrecion.JPG" alt="Pestana_revision_grupo_revisar", width="auto" height="30%">
+    </div> 
+   </p>
+
+   <ul>
+    <li>
+      <b>Corregir DOs Mayúsculas Seguidas</b>. Si activamos esta casilla cuando aparezcan dos mayúsculas seguidas
+       al principio de una palabra Word sustituirá la segunda mayúscula por una minúscula.
+    </li>
+    <li>
+      <b>Poner en mayúscula la primera letra de una oración</b> Pone en mayúscula la primera letra después de un 
+      signo de puntuación que indique el final de una oración, como por ejemplo un punto, un final de interrogación, etc.
+    </li>
+    <li>
+      <b>Poner en mayúscula la primera letra de celdas de tablas</b>  Cuando hay texto en una celda hace que empiece por mayúscula.
+    </li>
+    <li> 
+      <b>Poner en mayúscula los nombres de días.</b> Pone en mayúscula los nombres de los días de la semana.
+    </li>
+    <li>
+      <b>Corregir el uso accidental de bLOQ mAYÚS</b> Cuando encuentra una palabra con la primera letra en minúscula y 
+      las siguientes  en mayúsculas la cambia por la primera en mayúscula y las siguientes en minúsculas y desactiva el
+       bloqueo de mayúsculas.
+    </li>
+    <li>
+      <b>Reemplazar texto mientras escribe:</b>  Al activar esta casilla sustituye las palabras de la columna Reemplazar 
+      por las palabras de la columna Con. De esta forma se pueden corregir errores como los que vemos en la imagen. 
+      Por ejemplo, si la palabra cuanto va detrás de una exclamación va siempre con tilde.
+    </li>
+    <li>También tenemos disponible el botón <b>Excepciones</b>... que nos permite especificar unas excepciones a algunas
+       opciones de Autocorrección.</li>
+   </ul>
+  
+   <h2 class="number-title"> Sinónimos y traducción</h2>
+   <p>
+    Además de la corrección de textos, Word consigue facilitar nuestro trabajo a la hora de la redacción y ayudarnos
+    a crear documentos de valor. Para ello, nos ofrece los sinónimos, la traducción y una serie de fuentes de información 
+    y consulta. Pueden resultar muy útiles, especialmente si disponemos de conexión a internet, ya que en tal caso también
+    podremos consultar contenidos de la red directamente en Word.
+   </p>
+</div>
+
+  
+
+     
+  <div class="nota-box">
+    <h1 class="number-subtitle"> Configuración de página </h2>  
+      
+<h2 class="number-title"> Saltos de linea</h2>
+
+<ul>
+<li>
+    En Word al escribir un texto hay que teclearlo sin más preocupación. Los saltos de línea se realizan automáticamente
+    al llegar al margen derecho. Si quieres realizar un cambio de línea, se utiliza la tecla <b>INTRO</b> 
+    (también  llamada <b>ENTER</b> o <b>retorno de carro</b>). 
+</li>
+
+<li>
+    Word se encarga de que el texto que vas introduciendo se contenga dentro de unos márgenes y pasa a la línea inferior 
+    cuando alcanza el margen derecho. Pero conviene saber que, si algún momento quieres realizar un salto de línea de
+    forma voluntaria, lo puedes hacer con la combinación de teclas <b>MAYÚS</b>+<b>INTRO</b>.
+</li>
+</ul>
+
+<h2 class="number-title"> Saltos de página</h2>
+
+<p>
+Los <b>saltos de página</b> se insertan automáticamente cuando llegamos al margen inferior de una página y seguimos escribiendo.
+</p>
+
+<p>
+    También se pueden insertar de forma manual si queremos pasar a la página siguiente aunque no hayamos llegado al final, 
+    desde la pestaña <b>Insertar</b> > grupo <b>Páginas</b> > opción <b>Salto de página</b>. <img src="../Imagenes/S1/Boton_salto_pagina.JPG" alt="", width="auto" height="auto">
+</p>
+
+<p><b>Observación:</b> En la pestaña  <b>Inicio</b> > grupo <b>Párrafo</b>, se cuenta tambien con la  
+herramienta <b>Mostrar todo</b> <img src="../Imagenes/S1/Simbolo_parrafo.JPG" alt="", width="auto" height="auto">, la cual  permite saber si un texto ha sido dividido en bloques
+mediante <b>saltos de línea</b> o <b>párrafos</b>.
+</p>
+
+<p>Si la utilizamos, el documento se llenará de marcas como las que ves en la imagen:</p>
+<div class="flexbox">
+<img src="../Imagenes/S1/Boton_mostrar_todo.PNG" alt="", width="100%" height="auto">
+</div>
+
+<p>
+Además de los <b>saltos de línea</b> y los <b>cambios de párrafos</b> también se muestran otros símbolos 
+como un punto medio que señala que hay un <b>espacio separando las palabras</b>, o una 
+<b>marca de salto de página</b>.
+</p>
+
+<p>
+Para ocultar de nuevo estas marcas debemos pulsar de nuevo el botón <img src="../Imagenes/S1/Simbolo_parrafo.JPG" alt="", width="auto" height="auto">.
+</p>
+
+<h2 class="number-title"> Encabezado y pie de pagina</h2>
+
+<p>
+  Un encabezado o pie de página puede contener texto, información sobre el documento o incluso imágenes. Puede crear 
+  un encabezado o pie de página para todo el documento o tener un encabezado o pie de página diferente para la primera página,
+  impar. e incluso páginas, o incluso varias secciones.
+</p>
+
+<p>
+Un <b>encabezado</b> es un texto que se insertará automáticamente al principio de cada página. Esto es 
+útil para escribir textos como, por ejemplo, el título del trabajo que se está escribiendo,
+el autor, la fecha, etc.
+</p>
+
+<p>
+El <b>pie de página</b> tiene la misma funcionalidad, pero se imprime al final de la página, y suele contener los números
+ de página.
+</p>
+
+<p>
+Para modificarlos vamos a la pestaña <b>Insertar</b> y entonces hacemos clic en alguno de los dos botones 
+(Pie de página o Encabezado) y seleccionamos la opción Editar.
+</p>
+
+<p>
+Se mostrará una nueva pestaña, <b>Herramientas para encabezado y pie de página</b> > <b>Diseño</b>, que contiene los
+ iconos con todas las opciones disponibles:
+</p>
+
+<div class="flexbox">
+<img src="../Imagenes/S1/Herramientas_encabezado_pie_pagina.JPG" alt="", width="100%" height="auto">
+</div>
+
+
+<p>
+Observa que ha aparecido el Encabezado delimitado por una línea punteada y con los elementos que lo contienen en modo edición.
+Ahí podremos teclear el encabezado y, si lo creemos conveniente, insertar numeración de página, fechas o cualquier otro 
+elemento de la barra de herramientas, como vamos a ver a continuación.
+</p>
+
+
+<div class="flexbox">
+<img src="../Imagenes/S1/Encabezado_edicion.PNG" alt="", width="100%" height="auto">
+</div>
+
+<p>
+ Una vez hayamos acabado de editar el encabezado o pie de página finalizaremos haciendo clic en el botón <b>Cerrar encabezado
+  y pie de página</b>, a la derecha de la cinta de opciones  <img src="../Imagenes/S1/Cerrar_herramientas_encabezado.JPG" alt="", width="auto" height="15%">.
+</p>
+
+
+<p>
+Mediante estos botones podemos pasar del encabezado al pie y viceversa.
+</p>
+
+<div class="flexbox">
+<img src="../Imagenes/S1/Boton_cambiar_encabezado.JPG" alt="", width="40%" height="auto">
+</div>
+
+<h3>Quitar todos los encabezados y pies de página</h3>
+
+<p>
+  Vaya a <b>Insertar</b> > <b>Encabezado o Pie de página</b> y después, elija <b>Quitar encabezado o Quitar pie de página</b>. 
+  Si el documento tiene varias secciones, deberá repetir el proceso para cada sección.
+</p>
+<div class="flexbox">
+  <img src="../Imagenes/" alt="", width="40%" height="auto">
+</div>
+
+En la pestaña Diseño también encontraremos el siguiente grupo de opciones:
+
+<h3>Encabezado o  pie de página de la primera página</h3>
+
+<p>
+  Si marcamos esta casilla podemos definir un encabezado y pie diferente 
+  para la primera página. Esta opción está pensada por ejemplo, para cuando la primera página es la portada
+   del documento y no conviene que aparezca el mismo encabezado o pie con el número de la página.
+</p>
+
+<p>
+  <ul>
+  <li>Haga doble clic en el área de encabezado o pie de página.</li> 
+  <li>Seleccione la opcion <b>Primera página diferente</b>. Se eliminará el contenido del encabezado
+    o pie de página en la primera página.
+  </li>
+  <li>Por el contrario, si lo que desea un encabezado o pie de página en la primera página, agregue 
+    el contenido ahora. Este no aparecerá en las páginas siguientes.
+  </li>
+  <li>
+    Si desea que el encabezado o pie de página solo aparezca en la primera página, vaya al encabezado
+     o pie de página en la página siguiente y elimine el contenido.
+  </li>
+  <li>
+    Haga clic en Cerrar encabezado y pie de página o presione Esc para salir.
+  </li>
+  </ul>
+</p>
+
+<p><h4>Observaciones:</h4>
+<ol>
+  <li>
+  Se puede aplicar Primera página diferente a la primera página de cualquier sección en el documento, 
+  no solo a la primera página.
+  </li>
+  <li>
+  En el área de encabezado o pie de página, debería ver una etiqueta en la primera página que dice 
+  Encabezado de primera página.
+  </li>
+</ol>
+
+<p><b>Sugerencia:</b>
+  Si desea que la segunda página comience en 1 en lugar de en 2, vaya a <b>Insertar</b> > <b>Número de página</b> 
+  > <b>Dar formato a los números de página</b> y establezca <b>Iniciar en bajo</b> el rótulo Numeración de páginas 
+  desde 0 en lugar de 1.
+</p>
+</p>
+
+<p>
+  Todas las páginas de un documento de Microsoft Word mostrarán el mismo pie de página  a menos que
+   configure diferentes pies de página para diferentes secciones. Incluso después de insertar un salto 
+   de sección, los pies de página tendrán el mismo aspecto en todas las secciones hasta que los 
+   desvincule desactivando el ajuste <em> que el anterior</em>, denominado oficialmente 
+   <b>Vincular al anterior</b>. En Microsoft Word 2007 y 2010, puedes acceder a esta opción en la
+    cinta de opciones tras abrir la pestaña que contiene las herramientas de pie de página.
+</p>
+
+<h3>Encabezados y pies de página diferentes para páginas pares e impares</h3>
+
+<p>Word aplica los mismos encabezados y pies de página en todas las páginas de forma predeterminada. 
+  En muchas ocasiones, deseamos algo diferente en las páginas pares e impares del documento.
+  Si marcamos la casilla <b>Páginas pares e impares diferentes</b> podemos definir un encabezado y pie diferente para las páginas pares e impares.
+   Por ejemplo para imprimir el número de página se imprime a la izquierda en las páginas impares y en las 
+   páginas pares imprimirlo a la derecha.  
+</p>
+
+<h3>Elementos rápidos</h3>
+<p>
+Dentro de esta misma pestaña <b>Diseño del encabezado de página</b> > Grupo <b>Insertar</b> > <b>Elementos rápidos</b>
+<img src="../Imagenes/S1/Boton_Elementos_rapidos2.JPG" alt="", width="20%" height="auto">
+</p>
+
+<p>
+Permite, desde la opción <b>Propiedad del documento</b>, escoger distintos elementos
+de un listado desplegable. En ocasiones esta opción ahorra tiempo ya que permite, por ejemplo,
+insertar con un sólo clic el autor del documento o la fecha.
+</p>
+
+<div class="flexbox">
+<img src="../Imagenes/S1/Boton_Elementos_rapidos.JPG" alt="", width="60%" height="auto">
+</div>
+
+<p>
+La opción de <b>Elementos rápidos</b> también está disponible directamente en la pestaña Insertar, 
+pero se incluye en la de Diseño de los encabezados y pies de página porque es una herramienta 
+muy útil en este tipo de ocasiones. De hecho, el elemento <b>Autotexto</b> es uno de los que más se 
+prestan a la personalización para mejorar la comodidad de la redacción en Word. Así que probablemente 
+lo utilizarás más a menudo desde la pestaña Insertar directamente. Con él podemos insertar rápidamente 
+párrafos completos y demás contenido que solemos repetir constantemente con un sólo clic, como 
+cabeceras o despedidas en las cartas.
+</p>
+
+<h3>Autotexto</h3>
+<p>
+Un <b>autotexto</b> es un texto ya preparado que insertamos en nuestro documento con un sólo 
+clic. El texto no está a priori en el documento, sino que encontramos un botón que nos permite incluirlo desde 
+la cinta de opciones.
+</p>
+
+<p>
+Esta opción Autotexto la encontraremos en la pestaña <b>Insertar</b> > grupo <b>Texto</b> > <b>Elementos rápidos</b>.
+Veremos que se despliega un submenú para escoger el que necesitamos. Al hacer clic en él se insertará allí donde tengamos
+el punto de inserción.
+</p>
+
+
+
+
+
+
+<h2 class="number-title"> Número de página</h2>
+
+<p>
+  Un encabezado o pie de página puede contener texto, información sobre el documento o incluso imágenes. 
+  Sin embargo, los elementos más comunes de un encabezado o pie de página son los <b>números de página</b>. 
+  Los números de página pueden ser continuos a través de un documento, todos menos la primera página,
+  o volver a empezar en cada sección.
+</p>
+
+<p>
+Cuando creamos un nuevo documento, Word numera las páginas para poder referenciarlas, ese número es el 
+que aparece en la parte izquierda de la barra de estado, pero este número de página no aparece en el documento.
+</p>
+
+<div class="flexbox">
+  <img src="../Imagenes/S1/Barra_estado.JPG" alt="", width="auto" height="auto">
+</div>
+
+ <p>
+  Si queremos que los números de página aparezcan en nuestro documento cuando lo imprimamos deberemos 
+  insertarlos desde la pestaña <b>Insertar</b> > grupo <b>Encabezados y pies de página</b> >
+  <b>Número de página</b>  y entonces  eligir dónde queremos que aparezca el número.
+  </p>
+
+  <div class="flexbox">
+    <img src="../Imagenes/S1/Opcion_numero_pagina.JPG" alt="", width="auto" height="auto">
+  </div>
+
+  <p>
+    Al seleccionar una ubicación se despliega una lista de formatos prediseñados para que elijamos
+    el que más nos guste. Existe una gran cantidad de formatos prediseñados asociados a cada ubicación,
+    estos están organizados por secciones para facilitarnos la localización del formato que buscamos.
+  <ol>
+    <li><b>Simple:</b> Tenemos números simples con diferentes alineaciones.</li>      
+    <li><b>Con formas:</b> Los números se escriben dentro de una forma, por ejemplo con cinta.</li>
+    <li><b>Número sin formato:</b> Tenemos los números de página a los cuales se les aplica algún tipo 
+    de formato.
+    </li>
+    <li><b>Página x:</b> El número de página viene acompañado de la palabra Página o Pag.</li>
+    <li><b>Pagina x de y:</b> , Se añade además el número total de páginas del documento</li>
+
+  </ol>
+  </p>
+
+
+  <p>
+    Para ver los encabezados y pies de página en la pantalla de nuestro ordenador tenemos que estar en
+    modo vista Diseño de Impresión donde se ven en un tono más claro que el texto normal. Una vez
+    insertado el número de página podemos variar su formato con la opción Formato del número de página. 
+    En el menú <b>Formato de número</b> veremos una lista con posibles formatos predeterminados entre
+   los que elegir.
+  </p>
+
+  <p>Tenemos dos alternativas para indicar en qué número empezará la numeración de las páginas:</p>
+  <p>
+    <ul>
+      <li>Continuar desde la sección anterior (o empezar desde uno, si ésta es la primera sección).</li>
+      <li>Iniciar en el número que especifiquemos en la opción Iniciar en:</li>
+    </ul>
+  </p>
+
+  <p>
+    Si tenemos estructurado nuestro documento en capítulos, también podemos incluir el número del capítulo 
+    junto con el de la página, marcando la casilla Incluir número de capítulo y seleccionando un formato.
+  </p>
+
+  <div class="flexbox">
+    <img src="../Imagenes/S1/Ventana_formato_numero_pagina.JPG" alt="", width="auto" height="auto">
+  </div>
+
+
+<h3>Iniciar la numeración de página más adelante en el documento</h3>
+
+<p>
+  <ul>
+    <li>Vaya a Insertar > Encabezado o Pie de página > Editar encabezado o Editar pie de página.</li>
+  </ul>
+</p>
+
+
+<h2 class="number-title"> Secciones</h2>
+
+
+<p>
+  Word trata un documento como una única sección hasta que se inserta un <b>saltos de sección</b>. Los saltos de sección de Word
+  indican cuándo acaba un determinado apartado o sección y permiten establecer
+  opciones de formato y diseño de página específicas (como numeración de línea, columnas o encabezados y pies de página) 
+  para diferentes partes de un documento. De esta manera,  los elementos que comúnmente se aplican a todo el documento
+  por igual, como el \emph{pie de página} o las  \emph{tabulaciones}, terminen en un determinado punto, para poder
+  configurarlos de forma distinta mas adelante. Puede resultar muy útil para aplicar un formato distinto en las páginas
+  de un mismo documento o bien en distintas zonas de la misma página.
+</p>
+
+
+<p>
+  
+</p>
+
+<p><h4>Ejemplos</h4>
+  <ul>
+    <li>Tener una única columna en la primera mitad de la página y dos columnas en la mitad restante.</li>
+    <li>Aplicar una numeración de páginas que empezara de nuevo en cada uno de los temas o capítulos.</li>
+    <li>Establecer un tamaño de página y orientación distintas en un mismo documento.</li>
+    <li>Aplicar márgenes distintos a una página en concreto, independientemente de los establecidos en el documento, etc.</li>
+  </ul>
+</p>
+
+<p>
+  En general,  podemos utilizar saltos de sección para cambiar el diseño o el formato de las páginas del documento. 
+  Para cambiar el formato de un documento, inserte un salto de sección al principio de donde desee el cambio. Configure el cambio
+  de formato justo después del nuevo salto de sección. Si desea cambiar el formato de nuevo, coloque otro salto de sección. 
+  Si los cambios deben estar en la misma página, elija el <b>salto de sección Continuo</b>. En caso contrario, elija <b>Página siguiente</b>,
+  <b>Página impar</b> o <b>Saltos de sección Página par</b>.
+</p>
+
+<p>
+  Para <b>incluir un salto de sección en el documento</b>, nos situamos en la ficha <b>Diseño de página</b> > grupo 
+  <b>Configurar página</b>
+</p>
+
+  <div class="flexbox">
+    <img src="../Imagenes/S1/Boton_saltos_seccion.JPG" alt="", width="auto" height="auto">
+  </div>
+
+
+
+<p>Elijamos el tipo de salto de sección que desee:
+  <ul>
+  <li><b>Página siguiente:</b>inserta un salto de sección e inicia la nueva sección en la página siguiente. 
+    Este tipo de salto de sección es útil para iniciar nuevos capítulos en un documento. </li>
+  <li><b>Continuo:</b> inserta un salto de sección e inicia la sección nueva en la misma página. 
+    Un salto de sección continuo es útil para crear cambios de formato, como un número diferente de columnas en una página.</li>
+  <li><b>Página par o impar</b>insertan un salto de sección e inician la nueva sección en la siguiente página par o impar, respectivamente.
+    Para iniciar los capítulos del documento siempre en una página impar o par, use la opción Página impar o Salto de sección página par.</li>
+</p>
+
+
+
+<h3>Modificar un salto de sección</h3>
+
+<p>
+  Haga clic o pulse en el salto de sección que desea cambiar. 
+  Luego, en la pestaña <b>Diseño</b>,  selecciona el botón <b>Iniciador de configuración de página</b>.
+  Una vez abierta la ventana, seleccionemos  la pestaña <b>Diseño</b> y en la opcion <b>Iniciar sección</b>
+  elegir la opción  a la que deseamos cambiar el salto de sección: 
+</p>
+
+<div class="flexbox">
+  <img src="../Imagenes/" alt="", width="auto" height="auto">
+</div>
+
+
+<h3>Eliminar saltos de sección</h3>
+
+<p>
+  Si no se muestran los saltos de sección, selecciona <b>Inicio</b> > <b>Mostrar u ocultar</b>
+  <img src="../Imagenes/" alt="", width="auto" height="auto"> para mostrar saltos de sección.
+</p>
+
+<p>
+  Los saltos de sección tienen este aspecto:
+</p>
+
+<div class="flexbox">
+  <img src="../Imagenes/" alt="", width="auto" height="auto">
+</div>
+
+<p>
+Coloque el cursor justo antes del salto de sección y presione Eliminar.
+</p>
+
+
+
+<p>
+También para <b>eliminar un salto de sección</b> podemos realizar lo siguiente:
+  <ol>
+    <li>
+      Cambiar a la vista Borrador desde la pestaña Vista.
+    </li>
+    <li>
+      Situar el cursor en la línea que representa el salto.
+    </li>
+    <li>
+      Pulsar la tecla SUPR.
+    </li>
+  </ol>
+</p>
+
+
+
+<p><h4>Advertencia</h4>
+<ol>
+<li>
+  Al eliminar un salto de sección, Word combina el texto antes y después del salto en una sección. La nueva sección combinada 
+  usará el formato de la sección que siguió al salto de sección.
+</li>
+<li>Si desea que la sección use el formato, encabezados o pies de página de antes del salto de sección, use <b>Vincular a anterior</b>
+   en lugar de quitar el salto de sección.</li>
+</ol>
+</p>
+
+  <h2 class="number-title"> Margenes </h2>
+
+  <p>
+   En Word, todas las páginas tienen automáticamente un margen de una pulgada. Se puede personalizar la configuración
+   de márgenes o elegir una predefinida. También se pueden establecer márgenes de páginas opuestas, dejar espacio de 
+   márgenes adicional para la encuadernación de documentos y cambiar el modo en que se miden los márgenes.
+  </p>
+   
+
+  <h3> Elegir margenes de página con una configuración predefinida </h3>
+   
+      <ol>
+          <li>En el grupo <b>Configurar página</b> de la pestaña <b>Diseño de página</b>, elija <b>Márgenes</b>
+              y aparecerá la galería Márgenes.        
+          </li>
+          <li>Elija el tipo de margen que quiera aplicar.</li>
+          <li>Establezca la nueva configuración de márgenes como predeterminada para la plantilla. Cada nuevo 
+              documento que se base en esa plantilla usará automáticamente la nueva configuración de márgenes.
+          <ul>
+            <li>Después de seleccionar un nuevo margen, elija Márgenes y luego Márgenes personalizados.</li>
+            <li>  En el cuadro de diálogo Configurar página, elija Establecer como predeterminado.</li>
+          </ul>
+          </li>
+      </ol>
+      <p> 
+          <h4>Observación:</h4> Si el documento contiene varias secciones, el nuevo tipo de margen solo se aplicará a la sección
+           actual. Para aplicar el nuevo tipo de margen a varias secciones, asegúrese de seleccionarlas todas.
+          </p>
+  
+  
+  <h3> Crear una configuración de margenes de paginas personalizadas</h3>
+  
+      <ol>
+          <li>En el grupo Configurar página de la pestaña Diseño de página, elija Márgenes y aparecerá la galería Márgenes. </li>
+          <li>En la parte inferior de la galería Márgenes, elija Márgenes personalizados.</li>
+          <li>En el cuadro de diálogo Configurar página, especifique nuevos valores para los márgenes.</li>
+            
+          
+      </ol>
+      <p> 
+          <b>Otras sugerencias sobre márgenes</b> 
+          <ul>
+              <li>Para cambiar los márgenes de una sección de un documento, seleccione el texto y establezca los nuevos 
+                  márgenes en el cuadro de diálogo Configurar página. En el cuadro Aplicar a, haga clic en Texto seleccionado. 
+                  Microsoft Word inserta automáticamente saltos de sección antes y después del texto con la nueva configuración 
+                  de márgenes. 
+              </li>
+              <li>La mayoría de las impresoras requieren un ancho mínimo para la configuración de márgenes. Si los márgenes son
+                   demasiado estrechos, Microsoft Word muestra el mensaje Uno o más márgenes están establecidos fuera del área
+                    imprimible de la página. Haga clic en Arreglar para aumentar el ancho de los márgenes automáticamente. 
+                    Si omite el mensaje, Word muestra otro mensaje que le pregunta si quiere continuar.
+              </li>
+              <li>La configuración del margen mínimo de impresión depende de la impresora, el controlador de la impresora y
+                  el tamaño del papel. Para obtener información sobre la configuración de márgenes mínimos, consulte el manual
+                  de la impresora.</li>
+          </ul>
+          </p>
+  
+  
+  
+  
+  <h3> Establecer margenes de páginas opuestas</h3>
+      <p>Utilice márgenes simétricos para configurar páginas opuestas en documentos de doble cara, como libros o revistas.
+         Cuando se eligen márgenes simétricos, los márgenes de la página izquierda son una imagen reflejada de los de la 
+         página derecha. Los márgenes interiores tienen el mismo ancho y los márgenes exteriores tienen el mismo ancho. 
+      </p>
+  
+      <ol>
+          <li>En el grupo Configurar página de la pestaña Diseño de página, haga clic en Márgenes > Reflejado.</li>
+      </ol>
+      <p><h4>Observación:</h4> Nota: Para cambiar el ancho de márgenes, haga clic en Márgenes personalizados en la parte
+           inferior de la galería Márgenes. Escriba nuevos valores en los cuadros Interior y Exterior.</p>
+      
+  
+  <h3> Agregar un margen de encuadenación  para documentos enlazados</h3>
+    <p>
+      Un margen de encuadernación agrega espacio adicional al margen lateral, al margen superior o a los márgenes
+      internos del documento que tiene pensado encuadernar. De esa manera, el texto no quedará oculto con la 
+      encuadernación.
+    </p>   
+  
+      <ul>
+      <li>Márgenes de medianil para encuadernación</li>
+      <li>Márgenes simétricos en páginas opuestas</li>
+      </ul>
+  
+  <p><h4>Para establecer el margen de medianil</h4></p>
+  
+  <ol>
+      <li>En la pestaña Diseño de página, en el grupo Configurar página, haga clic en Márgenes.</li>
+      <li>Haga clic en Márgenes personalizados.</li>
+      <li>En el cuadro Medianil, escriba un valor para el ancho del margen de medianil.</li>
+      <li>En el cuadro Posición de medianil, haga clic en Izquierda o en Superior.</li>
+  </ol>
+  <p><h4>Nota:</h4> El cuadro Posición de medianil no está disponible cuando se utiliza la opción Márgenes simétricos, 
+      Dos páginas por hoja o Formato libro. Para esas opciones, la posición del margen interno se determina automáticamente
+  </p>
+  
+  <h3> Agregar un margen de encuadenación  para documentos enlazados</h3>
+    <p>  Word puede mostrar líneas en el documento que representen los límites del texto.</p>
+  <ol>
+      <li>En la pestaña Archivo, haga clic en Opciones.</li>
+      <li>Haga clic en Avanzadas y, en Mostrar contenido de documento, active la casilla Mostrar límites de texto.</li>
+  </ol>
+  
+  <p>
+    Los márgenes de página aparecen en el documento como líneas de puntos.
+  </p>
+  
+  <p><b>Nota:</b><br> Puede ver los márgenes de página en la vista de diseño
+       de impresión o la vista de diseño web. Los límites de texto no aparecen en la página impresa.
+      </p>
+  </div>
+
+</div>
+
+  
+ 
+
+</body>

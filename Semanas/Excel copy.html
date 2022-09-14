@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) 
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+-->
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+        <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+           <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+            </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Excel  </title>
+      
+  </head>
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox">Excel</h1>
+    
+
+  
+    <div class="nota-box">
+      <h1 class="number-subtitle">Otras operaciones con datos</h1>
+
+      
+
+      <p>Frecuentemente, cuando trabajamos con un gran volumen de información o recopilamos datos desde varios orígenes 
+        diferentes, aparecen en nuestro libro de trabajo filas idénticas. A menos que lo que nos interese sea
+        estudiar la frecuencia con la que aparece un determinado registro, la mayoría de las veces no nos
+        interesará tener duplicados, porque no aportan información adicional y pueden comprometer la fiabilidad
+        de las estadísticas basadas en los datos.
+      </p>
+
+      <p>
+        Por ejemplo, si disponemos de un listado de trabajadores y queremos saber la media de edad, el cálculo se vería
+        comprometido en el caso de que un mismo trabajador apareciese varias veces.</p>
+
+      <h2>Eliminar filas duplicadas</h2>
+
+      <ul>
+      <ul><p>Deberemos tener como celda activa uno de los registros a comprobar, de forma que, si existen varias tablas
+         distintas, Excel sepa interpretar a cuál nos referimos. Visualizarás un marco alrededor de todos los registros
+         que se verán afectados por la comprobación.</p></ul>
+      <ul> En la prestaña Datos pulsamos Quitar duplicados 
+        <img src="../Imagenes/Excel/quitar_duplicados.gif" alt="Luego de elegir la función deseada, pulsamos Aceptar 
+        e indicamos los valores", width="auto" height="auto"></ul>
+      </ul>
+
+
+      <h2 class="number-title"> La validación de datos</h2>
+
+      <p>La validación de datos nos permite asegurarnos de que los valores que se introducen en las celdas son los adecuados; 
+        pudiendo incluso mostrar un mensaje de error o aviso si nos equivocamos.</p>
+
+      <p>Para aplicar una validación a una celda.</p>
+
+      <ul>
+        <li>Seleccionamos la celda que queremos validar.</li>
+        <li>Accedemos a la pestaña Datos y pulsamos Validación de datos. En él podremos escoger remarcar los errores 
+          con círculos o borrar estos círculos de validación. Pero nos vamos a centrar en la opción Validación de datos
+          <img src="../Imagenes/Excel/btn_validar_datos.gif" alt="Luego de elegir la función deseada, pulsamos Aceptar 
+          e indicamos los valores", width="auto" height="auto"> </li>
+      </ul>
+
+      <p>Nos aparece un cuadro de diálogo Validación de datos como el que vemos en la imagen donde podemos elegir entre 
+        varios tipos de validaciones.</p>
+
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/validar_datos.gif" alt="Luego de elegir la función deseada, pulsamos Aceptar 
+            e indicamos los valores", width="auto" height="auto">
+          </div>
+        </p>
+
+        <p>En la sección Criterio de validación indicamos la condición para que el datos sea correcto.</p>
+      
+        <p>Dentro de Permitir podemos encontrar Cualquier valor, Número entero, Decimal, Lista, Fecha, Hora,
+          Longitud de texto y personalizada. Por ejemplo si elegimos Número entero, Excel sólo permitirá números 
+          enteros en esa celda, si el usuario intenta escribir un número decimal, se producirá un error.</p>
+
+          <p>Podemos restringir más los valores permitidos en la celda con la opción Datos, donde, por ejemplo, 
+            podemos indicar que los valores estén entre 2 y 8.</p>
+
+
+          <p>Si en la opción Permitir: elegimos Lista, podremos escribir una lista de valores para que el usuario 
+            pueda escoger un valor de los disponibles en la lista. En el recuadro que aparecerá, Origen: podremos
+             escribir los distintos valores separados por ; (punto y coma) para que aparezcan en forma de lista.</p>
+
+          <p>
+            <ul>
+              <li>En la pestaña Mensaje de entrada podemos introducir un mensaje que se muestre al acceder a la celda. 
+                Este mensaje sirve para informar de qué tipos de datos son considerados válidos para esa celda.</li>
+
+                <li>En la pestaña Mensaje de error podemos escribir el mensaje de error que queremos se le muestre 
+                  al usuario cuando introduzca en la celda un valor incorrecto.</li>
+            </ul>
+          </p>
+      
+
+
+      <h2 class="number-title">Ordenar datos</h2>
+
+      <p>Cuando disponemos de muchos datos, lo más habitual es ordenarlos siguiendo algún criterio.
+        Esta ordenación se puede hacer de forma simple, es decir, ordenar por una columna u ordenar 
+        por diferentes columnas a la vez, siguiendo una jerarquía.</p>
+
+
+      <p>
+        <ul>
+          <li>Para hacer una ordenación simple debemos posicionarnos en la columna que queramos ordenar y,
+            desde la pestaña Datos y los botones   
+            <img src="../Imagenes/Excel/botones_ordenar.gif" alt="", width="auto" height="auto"> 
+            <img src="../Imagenes/Excel/botones_ordenar (1).gif" alt="", width="auto" height="auto"> 
+            de la sección Ordenar y filtrar, para 
+            que la ordenación sea ascendente o descendente respectivamente. También podemos pulsar sobre Ordenar...
+            y escoger el criterio de ordenación, aunque en este caso esta opción es menos rápida.
+            Ésto ordenará todo el conjunto de la fila.</li>
+          </ul>
+      </p>
+
+      <p>Si lo que queremos es ordenar una determinada columna, sin que esto afecte al resto, deberemos hacer 
+        clic sobre el encabezado de la misma.
+         Por ejemplo, sobre el encabezado A. En ese caso, nos aparecerá una ventana como la siguiente:</p>
+
+         <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/aviso_ordenar.gif" alt="", width="auto" height="auto">
+          </div>
+        </p>
+
+        <ul>
+          <li>Si elegimos Ampliar la selección, ordenará toda la fila.</li>
+          <li>
+            Si en cambio elegimos Continuar con la selección actual, se ordenará sólo la columna seleccionada, 
+            sin tener en cuenta los datos que se encuentran en la misma fila.
+          </li>
+          <li>
+            Tras elegir, pulsamos Aceptar y veremos que los cambios se han aplicado.</li>
+        </ul>
+
+
+      <h3>El boton ordenar</h3>
+
+      <p> El botón Ordenar  <img src="../Imagenes/Excel/boton_ordenar.gif" alt="", width="auto" height="auto"> 
+        está más enfocado a ordenar por más de un criterio de ordenación. Al pulsarlo, nos aparece
+         el cuadro de diálogo donde podemos seleccionar los campos por los que queremos ordenar</p>
+
+         <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/ordenar_varios_criterios.gif" alt="", width="auto" height="auto">
+          </div>
+        </p>
+
+        <ol>
+          <li>
+            En el desplegable Ordenar por elegiremos la columna. Si los datos tienen un encabezado 
+            que les da nombre, Excel los mostrará. Si no, mostrará los nombres de columna (columna A, columna B, ...).
+          </li>
+          <li>
+            Deberemos indicar en qué se basa nuestra ordenación (Ordenar según). Se puede elegir entre tener 
+            en cuenta el valor de la celda, el color de su texto o fondo, o su icono.
+          </li>
+          <li>
+            Y cuál es el Criterio de ordenación: Si ascendente (A a Z), descendente (Z a A). O bien si se trata de un 
+            criterio personalizado como: lunes, martes, miércoles...
+          </li>
+        </ol>
+
+        <p>Cuando hemos completado un criterio, podemos incluir otro pulsando Agregar nivel, como se muestra 
+           en la imagen. De forma que podremos ordenar por ejemplo por nombre y en caso de que dos o más 
+           registros tengan el mismo nombre, por apellido.</p>
+
+        <p>Seleccionando un nivel, y pulsando las flechas hacia arriba o hacia abajo, aumentamos o disminuimos 
+            la prioridad de ordenación de este nivel. Los datos se ordenarán, primero, por el primer 
+            nivel de la lista, y sucesivamente por los demás niveles en orden descendente.</p>
+
+        <p>En la parte superior derecha tenemos un botón Opciones..., este botón sirve para abrir el
+           cuadro Opciones de ordenación dónde podremos especificar más opciones en el criterio de la ordenación.</p>
+
+
+           <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/cuadro_opciones_orden.gif" alt="", width="auto" height="auto">
+            </div>
+          </p>
+      
+      <h2 class="number-title"> Buscar y reemplazar datos  </h2>
+
+
+      <p>Cuando manejamos una cantidad importante de datos, en ocasiones necesitamos localizar en el libro 
+        un dato concreto. Para facilitarnos esta tarea existe la herramienta de búsqueda. La encontraremos 
+        en la pestaña Inicio > Buscar y seleccionar.</p>
+
+        <p> Buscar... (teclas CTRL+B) abrirá un cuadro de diálogo que te permite introducir el dato que deseas encontrar.</p>
+        
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/ventana_buscar.gif" alt="", width="auto" height="auto">
+          </div>
+        </p>
+
+        <p>Al hacer clic en Buscar siguiente iremos pasando de una celda a otra, de entre las que contentienen 
+          el valor introducido. Buscará a partir de donde estemos situados, por lo que deberemos situarnos 
+          en la primera celda para que busque en toda la hoja. Además, si tenemos varias celdas seleccionadas,
+          sólo buscará en ellas.
+        </p>
+
+        <p>También podemos pulsar Buscar todos, para mostrar en la propia ventana un listado con la localización
+          de cada una de las celdas en que se encuentra el dato. La lista de resultados será un conjunto de enlaces
+          y simplemente haciendo clic sobre uno de ellos nos situará en la celda en cuestión.
+        </p>
+          
+        <p>El botón Opciones nos permite ampliar la ventana de búsqueda con opciones extra. Podremos elegir 
+          dónde buscar (si en la hoja en que estamos o en todo el libro), si buscamos únicamente las celdas 
+          con un formato concreto (por ejemplo, sólo las celdas con formato de moneda), etc.</p>
+
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/ventana_buscar_opciones.gif" alt="", width="auto" height="auto">
+            </div>
+          </p>
+
+          <p>
+            <ol>
+              <li>En la pestaña Reemplazar de esta misma ventana, o bien en la opción Reemplazar... del
+                botón Buscar y seleccionar (teclas CTRL+L) podremos realizar una sustitución de los datos,
+                cambiando un valor original por otro. La opción de reemplazo no se limita únicamente a 
+                valores, también puede referirse a formatos. Por ejemplo, podríamos buscar todos las
+                celdas que contengan el valor 0 en formato moneda y reemplazarlo por el mismo valor
+                pero con un color de celda rojo, para destacarlos.
+              </li>
+
+              <li>La opción Ir a... (teclas CTRL+I) nos permite situarnos en una celda en concreto.
+                La ventaja que tiene frente a otras formas de desplazarnos entre las celdas es que 
+                guarda un historial de las celdas que se van visitando, de forma que si vamos a 
+                trabajar con las mismas celdas todo el tiempo, es posible que nos interese utilizar esta opción.
+              </li>
+               
+              <li>Luego encontramos una serie de opciones: Fórmulas, Comentarios, Formato condicional, 
+                constantes, Validación de datos, Seleccionar objetos que nos permiten seleccionar todas
+                las celdas que contengan este tipo de información a la vez. Es decir, seleccionar todas 
+                las fórmulas del documento, por ejemplo.
+              </li>
+            </ol>
+          </p>
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/boton_buscar.gif" alt="", width="auto" height="auto">
+            </div>
+          </p>
+      </div>
+
+    
+
+
+    
+</body>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Curso propedéutico: Matemáticas  </h1>
+       <nav class="top-nav">
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/CPMatematicas/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/CPMatematicas/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/CPMatematicas/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/CPMatematicas/Ejercicios.html"> Ejercicios  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/CPMatematicas/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Ejercicios Excel  </title>
+    
+  </head>
+
+
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Ejercicios </h1>   
+    
+  
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+      <p>El equipo olímpico de relevos 4 x 400 está
+        realizando algunos ensayos a fin de definir su mejor estrategia. Lo que
+        el entrenador necesita saber es:
+        <ol>
+        <li>Cuánto tiempo hicieron en total los cuatro corredores.</li>
+        <li>Cuál es el tiempo promedio individual.</li>
+        <li>Quién hizo menos tiempo.</li>
+        <li>Quién hizo más tiempo.</li>
+        <li>Cuánto tiempo hay entre el corredor más rápido y el más lento.</li>
+        </p>
+        </ol>
+    </div>
+
+        
+</body>

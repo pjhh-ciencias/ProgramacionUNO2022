@@ -1,0 +1,1461 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+
+    <!--
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+-->
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 6 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 6 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+          <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> § Semana  7 </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"></h1>
+
+  
+  
+<div class="nota-box">
+  <h1 class="number-subtitle"> Validación de datos</h1>
+
+   <p>La validación de datos nos permite asegurarnos de que los valores que se introducen en las celdas son los adecuados; 
+    pudiendo incluso <b>mostrar un mensaje de error</b> o <b>aviso si nos equivocamos</b>. La validación de datos también es sumamente
+    útil cuando quiere compartir un libro con otros usuarios y quiere que los datos que se escriban en él sean exactos
+    y coherentes.
+  </p>
+
+  <h2 class="number-title">  ¿Cuándo es útil la validación de datos?</h2>
+
+
+  <p> Puede usar la validación 
+    de datos para lo siguiente, entre otras aplicaciones:</p>
+  
+    <ul>
+      <li><b>Limitar las entradas a elementos predefinidos en una lista:</b><br>
+         Por ejemplo, puede limitar las elecciones 
+        de departamento de un usuario a Contabilidad, Nóminas o RR. HH., por nombrar algunos.</li>
+      <li><b>Limitar los números a un rango específico:</b><br> 
+        Por ejemplo, puede especificar una entrada de porcentaje máxima
+         para el aumento anual de un empleado, un 3 %, por ejemplo, o permitir que sea solo un número entero entre 1 y 100.</li>
+      <li><b>Limitar las fechas a un período de tiempo específico:</b><br> 
+        Por ejemplo, en una solicitud de vacaciones de un empleado, 
+        puede evitar que alguien seleccione una fecha antes de la del día actual.</li>
+      <li><b>Limitar las horas a un período de tiempo específico:</b><br> 
+        Por ejemplo, puede especificar la programación de 
+        una reunión entre las 8:00 y las 17:00.</li>
+      <li><b>Limitar el número de caracteres de texto:</b><br> 
+        Por ejemplo, puede imponer un límite al texto permitido en 
+        una celda a 10 o menos caracteres.</li>
+      <li><b>Validar datos según fórmulas o valores de otras celdas:</b> <br>
+        Por ejemplo, puede usar la validación 
+        de datos para establecer un límite máximo para comisiones y bonificaciones, en función del valor de nómina
+         general proyectado. Si los usuarios escriben un valor superior al límite, aparecerá un mensaje de error.</li>
+    </ul>
+  
+    <h2 class="number-title">  Mensajes de error y de entrada de validación de datos</h2>
+
+    <p>
+     Puede decidir mostrar un <b>mensaje de entrada</b> cuando el usuario seleccione la celda. Los mensajes
+     de entrada se usan normalmente para ofrecer instrucciones a los usuarios sobre el tipo de datos que quiere
+     que escriban en la celda. Este tipo de mensaje aparece cerca de la celda. Puede mover este mensaje, si quiere,
+     y permanece visible hasta que lo mueve a otra celda o presiona Esc.
+    </p>
+
+    <p>
+      Puede configurar el mensaje de entrada en la segunda pestaña de validación de datos.
+    </p>
+
+    <p>
+      Cuando los usuarios se familiaricen con el mensaje de entrada, puede desmarcar la opción 
+      Mostrar mensaje de entrada al seleccionar la celda.
+    </p>
+
+
+    <p>
+      Puede elegir entre <b>tres tipos de mensajes de error</b>:
+    </p>
+
+    <p>
+      <table class="banded">
+        <tbody>
+          <tr>
+            <td>
+              <p>Icono</p>
+            </td>
+            <td>
+              <p>Tipo</p>
+            </td>
+            <td>
+              <p>Uso</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../Imagenes/Excel/boton_msj_detener.JPG" alt="Icono Detener" loading="lazy">
+            </td>
+            <td>
+              <p><b>Detención</b></p>
+            </td>
+            <td>
+              <p>Impide que los usuarios escriban datos no válidos en una celda.</p>
+              <p>Un mensaje de alerta de <b class="ocpLegacyBold">Detención</b> tiene dos opciones: <b class="ocpLegacyBold">Volver a intentar</b> o <b class="ocpLegacyBold">Cancelar</b>. </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../Imagenes/Excel/boton_msj_advertencia.JPG" alt="Icono de advertencia" loading="lazy">
+            </td>
+            <td>
+              <p><b>Advertencia</b></p>
+            </td>
+            <td>
+              <p>Advierte a los usuarios de que los datos indicados no son válidos, pero sin evitar que los escriban. </p>
+              <p>Cuando aparece un mensaje de alerta de <b class="ocpLegacyBold">Advertencia</b>, los usuarios pueden hacer clic en <b class="ocpUI">Sí</b> para aceptar la entrada no válida, <b class="ocpUI">No</b> para editarla o <b class="ocpUI">Cancelar</b> para quitar la entrada no válida.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="../Imagenes/Excel/boton_msj_informacion.JPG" alt="Icono de información" loading="lazy">
+            </td>
+            <td>
+              <p><b>Información</b></p>
+            </td>
+            <td>
+              <p>Informa a los usuarios de que los datos indicados no son válidos, pero sin evitar que los escriban. Este tipo de alerta de error es el más flexible.</p>
+              <p>Cuando aparece un mensaje de alerta de <b class="ocpLegacyBold">Información</b>, los usuarios pueden hacer clic en <b class="ocpUI">Aceptar</b> para aceptar el valor no válido o <b class="ocpUI">Cancelar</b> para rechazarlo. </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+
+    <h2 class="number-title">  Aplicar una validación a una celda.</h2>
+
+    <p>
+    <ol>
+      <li><b>Seleccionamos la celda</b> que queremos validar.</li>
+      <li>Accedemos a la pestaña <b>Datos</b> y pulsamos <b>Validación de datos</b>. En él podremos escoger 
+        <em>remarcar los errores</em> con círculos o borrar estos círculos de validación. Pero nos vamos a centrar
+        en la opción <b>Validación de datos</b></li>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/btn_validar_datos_.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+      <li>Nos aparece un <b>cuadro de diálogo Validación de datos</b> como el que vemos en la imagen donde
+          podemos elegir entre varios tipos de validaciones.</li>
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/validar_datos.JPG" alt="", width="auto" height="auto">
+            </div>
+         </p>  
+      <li>En la <b>sección Criterio de validación</b> indicamos la condición para que el datos sea correcto.</li><br>
+      <li>Dentro de <b>Permitir</b> podemos encontrar:
+        <ul>
+          <li>Cualquier valor,</li>
+          <li>Número entero,</li>
+          <li>Decimal,</li>
+          <li>Lista,</li> 
+          <li>Fecha, Hora,</li> 
+          <li>Longitud de texto</li>
+         <li>Personalizada. </li><br>
+        </ul>
+        Por <b>ejemplo</b> si elegimos Número entero, Excel sólo permitirá números enteros en esa celda, 
+        si el usuario intenta escribir un número decimal, se producirá un error.</li><br>
+
+      <li>Podemos restringir más los valores permitidos en la celda con la opción <b>Datos</b>, donde, por ejemplo, 
+        podemos indicar que los valores estén entre 2 y 8.</li><br>
+
+      <li>Si en la opción <b>Permitir</b>: elegimos <b>Lista</b>, podremos escribir una <b>lista de valores</b> para que el usuario pueda
+         escoger un valor de los disponibles en la lista. En el recuadro que aparecerá, <b>Origen</b>: podremos escribir los distintos
+         valores separados por ; (punto y coma) para que aparezcan en forma de lista.</li><br>
+
+      <li>En la pestaña <b>Mensaje de entrada</b> podemos introducir un mensaje que se muestre al acceder a la celda. Este mensaje
+         sirve para informar de qué tipos de datos son considerados válidos para esa celda.</li><br>
+
+      <li>En la pestaña Mensaje de error podemos escribir el <b>Mensaje de error</b> que queremos se le muestre al usuario 
+        cuando introduzca en la celda un valor incorrecto.</li>
+    
+    </ol>
+    </p>
+<!---
+    <h2 class="number-title">  Crear una lista desplegable</h2>
+
+  <p>Use la validación de datos para restringir el tipo de datos o los valores que los usuarios escriben en una celda.
+     Uno de los usos más comunes de la validación de datos es Crear una <b>lista desplegable</b>.</p>
+
+  <ol>
+    <li>Seleccione las celdas para las que quiere crear una regla.</li>
+    <li>Seleccione <b>Datos</b> > <b>Validación de datos</b>.</li>
+    <li>En Permitir de la pestaña Configuración, seleccione una opción</li>
+    <ul>
+     <li><b>Número entero:</b> se restringe la celda para aceptar solo números enteros.</li>
+     <li><b>Decimal:</b> se restringe la celda para aceptar solo números decimales. </li>
+     <li><b>Lista:</b> permite elegir datos de una lista desplegable.</li>
+     <li><b>Fecha:</b> se restringe la celda para aceptar solo fechas.</li>
+     <li><b>Hora:</b> se restringe la celda para aceptar solo valores de hora.</li>
+     <li><b>Longitud del texto:</b></li> se restringe la longitud del texto.
+     <li><b>Personalizado:</b> permite crear fórmulas personalizadas.</li>  
+    </ul>
+    <li> En Datos, seleccione una condición.</li>  
+    <li> Defina el resto de valores obligatorios de Permitir y Datos según su elección.</li>
+    <li> Seleccione la pestaña Mensaje de entrada y personalice el mensaje que verán los usuarios al escribir datos.</li>
+    <li> Seleccione la casilla Mostrar mensaje de entrada al seleccionar la celda para mostrar el mensaje cuando el usuario
+       seleccione las celdas seleccionadas o mantenga el mouse sobre estas.</li>
+    <li>Seleccione Aceptar.</li>   
+  </ol>
+
+  <p>A partir de ese momento, cuando el usuario intente escribir un valor que no sea válido, aparecerá una Alerta de error con el mensaje personalizado.</p>
+
+-->
+</div>
+
+<!---
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle"> Gráficos</h1>
+
+<p>Un gráfico es la representación gráfica de los datos de una hoja de cálculo y facilita su interpretación.
+   La utilización de gráficos hace más sencilla e inmediata la interpretación de los datos. 
+   A menudo un gráfico nos dice mucho más que una serie de datos clasificados por filas y columnas.</p>
+
+
+<h2 class="number-title">  Crear gráficos </h2>
+
+<p>Para insertar un gráfico tenemos varias opciones, pero siempre utilizaremos la sección Gráficos
+   que se encuentra en la pestaña Insertar.</p>
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/b_grafico_excel.gif" alt="", width="auto" height="auto">
+    </div>
+ </p> 
+
+ <p><b>Importante:</b>  Es recomendable que tengas seleccionado el rango de celdas que quieres que participen 
+  en el gráfico, de esta forma, Excel podrá generarlo automáticamente. En caso contrario, el gráfico se mostrará 
+  en blanco o no se creará debido a un tipo de error en los datos que solicita.</p>
+
+
+  <p>
+    Como puedes ver existen diversos tipos de gráficos a nuestra disposición. Podemos seleccionar un gráfico a 
+    insertar haciendo clic en el tipo que nos interese para que se despliegue el listado de los que se encuentran disponibles.
+  </p>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/grafico_desple.gif" alt="", width="auto" height="auto">
+    </div>
+ </p> 
+
+  <p>En cada uno de los tipos generales de gráficos podrás encontrar un enlace en la parte inferior del
+     listado que muestra <b>Todos los tipos de gráfico...</b></p>
+
+
+  <p>Hacer clic en esa opción equivaldría a desplegar el cuadro de diálogo de Insertar gráfico que se muestra al hacer clic en la flecha de la parte inferior derecha de la sección Gráficos.</p>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/dialogo_insertar_grafico.gif" alt="", width="auto" height="auto">
+    </div>
+ </p> 
+
+
+ <p>Aquí puedes ver listados todos los gráficos disponibles, selecciona uno y pulsa Aceptar para empezar a crearlo.</p>
+
+ <p>Aparecerá un cuadro que contendrá el gráfico ya creado (si seleccionaste los datos previamente) o un cuadro en blanco (si no lo hiciste).</p>
+
+ <p>Además, verás que aparece en la barra de menús una sección nueva, Herramientas de gráficos, con tres pestañas: Diseño, Presentación y Formato.</p>
+
+ <p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/herramientas_graficos.gif" alt="", width="auto" height="auto">
+  </div>
+</p> 
+
+</div>
+
+-->
+<!-- 
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle"> Numeración de páginas en las hojas</h1>
+<p>Si desea que los números aparezcan en las páginas cuando imprime una hoja de cálculo de Microsoft Excel,
+   puede insertar números de página en los encabezados o pies de página de las páginas de hojas de cálculo.
+   En la vista Normal, no se muestran los números de página que inserta en la hoja de cálculo, solo se muestran en 
+   la vista Diseño de página y en las páginas impresas.</p>
+
+   <h2 class="number-title">  Agregar números de página en una única hoja de cálculo</h2>
+
+   <ol>
+    <li>Haga clic en la hoja de cálculo en la que desea insertar números de página.</li>
+    <li>En la pestaña <b>Insertar</b>, en el grupo <b>Texto</b>, haga clic en <b>Encabezado y pie de página</b>.<br>
+
+      <p>Microsoft Excel mostrará la hoja de cálculo en la vista Diseño de página. También puede hacer 
+        clic en Diseño de página Imagen del botón en la barra de estado para mostrar esta vist</p>
+    </li>
+    <li>En la hoja de cálculo, haga clic en <b>Haga clic para agregar encabezado</b> o en 
+      <b>Haga clic para agregar pie de página</b> <br>
+    <p>Se mostrarán las Herramientas para encabezado y pie de página con la pestaña Diseño.</p></li>
+    <li>Para especificar el lugar donde desea que aparezca el número en el encabezado o pie de página, 
+      haga clic en los cuadros <b>Sección izquierda</b>, <b>Sección central</b> o <b>Sección derecha</b> del encabezado o pie de página.</li>
+    <li>En la pestaña <b>Diseño</b>, en el grupo <b>Elementos del encabezado y pie de página</b>,
+       haga clic en <b>Número de página</b>.<br>
+      <p>
+       <ul> 
+        <li>El marcador de posición <b>&[Página]</b> aparece en la sección seleccionada.</li>
+        <li>Para agregar el número total de páginas, escriba un espacio después de <b>&[Página]</b>,
+           escriba la palabra de seguida de un espacio y, después, en el grupo <b>Elementos del encabezado y pie de página</b>, 
+           haga clic en <b>Número de páginas</b>.</li>
+        <li>El marcador de posición <b>&[Página]</b> de <b>&[Páginas]</b> aparece en la sección seleccionada.</li>
+       </ul>
+      </p>
+      </li>
+      <li>Haga clic en cualquier lugar fuera del área de encabezado o pie de página para mostrar los números de página 
+        reales en la vista Diseño de página.</li>
+      <li>Una vez que haya finalizado el trabajo en la vista Diseño de página, en la pestaña Vista,
+         en el grupo Vistas de libro, haga clic en Normal.<br>
+        <p>
+          También puede hacer clic en Imagen del botón normal en la barra de estado.
+        </p>
+        <p>Puede insertar números de página en una hoja de cálculo en la vista Diseño de página, donde puede verlos,
+           o puede usar el cuadro de diálogo Configurar página si desea insertar números de página en más de una hoja de 
+           cálculo al mismo tiempo. Para otros tipos de hoja, como hojas de gráfico, únicamente puede insertar números 
+           de página usando el cuadro de diálogo Configurar página.</p>
+        </li>  
+   </ol>
+
+   <h2 class="number-title"> Insertar números de página en varias hojas de cálculo</h2>
+   <ol>
+    <li>Haga clic en las hojas de cálculo o las hojas de gráficos a las que desea agregar los números de página.
+      s
+
+
+    </li>
+   </ol>
+</div>
+
+
+-->
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle"> Configuración de página</h1>
+
+<p>Antes de imprimir una hoja de cálculo, es conveniente que configuremos la página, 
+    para modificar factores que afectan a la presentación de las páginas impresas,
+    como la orientación, encabezados y pies de página, tamaño del papel, etc</p> 
+
+<p>Una de las funciones relacionada con los formatos es  <b>Configurar página</b>, que contiene varios
+  elementos relativos al aspecto general de cualquier hoja de cálculo pensados para mejorar su
+  presentación a la hora de realizar una impresión. Sus funciones se encuentran en la pestaña 
+  <b>Diseño de página</b> de la cinta de opciones:</p>
+
+
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/Cinta_opciones_grupo_diseno_pagina.JPG" alt="Cinta_opciones_grupo_diseno_pagina", width="auto" height="auto">
+    </div>
+  </p> 
+
+  
+  <p>
+    En el grupo <b>Configurar página</b>  <img src="../Imagenes/Excel/boton_config_pagina.JPG" alt="", width="auto" height="auto">
+    encontraremos botones rápidos a muchas de las opciones: para <b>configurar márgenes</b>, la <b>orientación del papel</b>, el <b>tamaño</b>, etc.
+  </p>
+  
+  <p>
+     Pero si lo que queremos es acceder a <b>todas las opciones de configuración</b>, 
+  deberemos pulsar el pequeño botón de la esquina inferior derecha
+ <img src="../Imagenes/Excel/Boton_ventana_grupos.JPG" alt="boton_grupo_configurar_pagina", width="auto" height="auto">, como siempre,
+  se abrirá una nueva ventana  con todas las funciones disponibles:
+</p>
+
+<p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/config_pag2_excel.JPG" alt="", width="auto" height="auto">
+  </div>
+</p> 
+
+ 
+<h2 class="number-title"> Página</h2>
+
+<p>
+  El cuadro de diálogo <b>Configurar página</b> está organizado en varias pestañas: La primera de las fichas
+  se denomina <b>Página</b> y permite indicar características como la <em>orientación del papel</em>, el <em>tamaño del
+  papel</em> que utilizamos y otros parámetros.
+</p>
+
+<p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/config_pag_marenes_excel" alt="", width="auto" height="auto">
+  </div>
+</p>  
+
+
+<ol>
+  <li>El grupo <b>Orientación</b> permitirá <b>establecer cómo se desea que aparezcan los
+    datos</b> en la hoja de papel: de forma <b>Vertical</b> (que es el modo normal) u horizontal
+    (con el botón Horizontal).</li><br>
+
+  <li>El grupo <b>Ajuste de escala</b> permite <b>ampliar o reducir proporcionalmente el
+    tamaño de los datos</b> en la página, generalmente para ajustarlos a las hojas de
+    papel. Esto se realiza mediante un porcentaje (con <b>Ajustar al</b>) en el que 100% es el
+    tamaño normal, o bien con el botón <b>Ajustar a</b> en el que indicaremos cuántas
+    páginas deseamos obtener por cada hoja.</li><br>
+
+    
+  <li>Puede elegirse el <b>tamaño de la hoja de papel</b>, según sus dimensiones, con la lista
+    desplegable que ofrece <b>Tamaño del papel</b>.</li><br>
+
+  <li><b>Calidad de impresión</b> ofrece datos para <b>realizar una impresión de mayor o
+    menor calidad</b>. Para una mejor impresión hay que establecer un valor más alto en
+    <b>ppp</b> (puntos por pulgada).</li><br>
+
+  <li>Se puede establecer cuál será el <b>Primer número de la página</b> con el cuadro de
+    texto que lleva su nombre. Normalmente suele activarse el modo <b>Automático</b>, pero
+    sustituyendo esa palabra por un número se indica cuál será el encargado de iniciar
+    la numeración.</li>
+</ol>
+
+<h2 class="number-title"> Margenes</h2>
+
+<p>Si se accede a la pestaña <b>Márgenes</b> se pueden modificar las distancias de éstos:</p>
+
+<p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/config_pag_marenes_excel.JPG" alt="Ventana_configurar_pagina_pestana_margenes", width="auto" height="auto">
+  </div>
+</p> 
+
+
+<p>
+  <ol>
+    <li>Se utiliza <b>Superior, Inferior, Izquierdo y Derecho</b> para establecer las <b>distancias
+      correspondientes de los márgenes</b> de la hoja.</li><br>
+
+      <li>También pueden <b>establecerse las medidas</b> que separan el <b>Encabezado</b> del borde
+      superior de la hoja, así como el <b>Pie de página</b> del borde inferior de la misma.</li><br>
+
+      <li>Si se desea <b>que los datos</b> de la hoja de cálculo <b>aparezcan centrados</b> en la hoja, se
+      deben activar las casillas <b>Horizontalmente</b> y <b>Verticalmente</b>.</li>
+  </ol>
+</p>
+
+
+<h2 class="number-title"> Encabezado y pie de página</h2>
+
+<p>Con la ficha <b>Encabezado y pie de página</b> puede añadirse un encabezado y un pie
+  de página que se repetirá en todas las páginas que contengan datos que se vayan a imprimir:</p>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/config_pag_encab_pie_excel.JPG" alt="Ventana_configurar_pagina_pestana_encabezado_pie", width="auto" height="auto">
+    </div>
+  </p> 
+  
+
+  <ol>
+    <li>Se despliega la lista <b>Encabezado</b> para <b>elegir el texto que se repetirá en la parte
+      superior</b> de todas las hojas de papel. Puede verse una muestra del resultado en el
+      cuadro en blanco que aparece en la parte superior del cuadro de diálogo (este resultado
+      sólo se ve al imprimir o al consultar el modo vista preliminar).</li><br>
+
+      <li>Igualmente, en la lista <b>Pie de página puede elegirse el texto que se repetirá en la
+      parte inferior</b> de las hojas de cálculo (el resultado aparece únicamente al imprimir
+      o al consultar el modo vista preliminar).</li><br>
+
+      <li>Si ninguno de los elementos de estas listas es adecuado, pueden <b>añadirse un texto
+      personalizado</b> y sus atributos de aspecto mediante los botones 
+      <img src="../Imagenes/Excel/boton_personalizar_encabezado.JPG" alt="boton_personalizar_encabezado", width="auto" height="auto">
+      y <img src="../Imagenes/Excel/boton_personalizar_pie.JPG" alt="boton_personalizar_pie", width="auto" height="auto">, que llevan a un cuadro de diálogo en el
+      que se añade el texto en una de las secciones (<b>Sección izquierda, Sección central</b>
+      o <b>Sección derecha</b>) para que el texto aparezca alineado así en la hoja de papel.
+      También se utiliza la hilera de botones sobre dichas secciones para aplicar
+      funciones como la <b>fuente para el texto</b>, <b>añadir el número de página</b>, <b>añadir la fecha</b>,
+      <b>añadir el nombre de la hoja</b>, etc.</li>
+  </ol>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/Ventana_configurar_pagina_pestana_encabezado_pie_ENCABEZADO.JPG" alt="Ventana_configurar_pagina_pestana_encabezado_pie_ENCABEZADO", width="auto" height="auto">
+    </div>
+  </p> 
+
+<h2 class="number-title">  Hoja</h2>
+
+<p>La pestaña <b>Hoja</b> permite especificar las zonas de la hoja que se imprimirán y
+  regula datos como los títulos que se imprimirán, otros detalles para imprimir las hojas de cálculo o el
+  orden en que aparecerán las páginas, si bien, maneja también otras funciones que pasamos a
+  ver:</p>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/Ventana_configurar_pagina_pestana_Hoja.JPG" alt="Ventana_configurar_pagina_pestana_Hoja", width="auto" height="auto">
+    </div>
+  </p> 
+
+
+  <p><b>Observaciones:</b><br>
+    Siempre que aparezca el botón <img src="../Imagenes/Excel/boton_elegir_celdas.JPG" alt="boton_elegir_celdas", width="auto" height="auto">
+     a la derecha de un cuadro de texto en Excel, puede utilizarlo para seleccionar un rango de celdas. 
+     Se siguen estos pasos:
+     <ol>
+      <li>Se pulsa el botón <img src="../Imagenes/Excel/boton_elegir_celdas.JPG" alt="boton_elegir_celdas", width="auto" height="auto">
+        el cuadro de diálogo se reduce para mostrar la
+        hoja de cálculo.</li>
+      <li>Se selecciona el rango de celdas con el ratón directamente sobre la  hoja.</li>
+      <li>Se vuelve a pulsar el botón <img src="../Imagenes/Excel/boton_elegir_celdas.JPG" alt="boton_elegir_celdas", width="auto" height="auto"> 
+        (en el cuadro de diálogo que ha quedado
+        reducido) para devolverlo a su tamaño normal y continuar el trabajo: el
+        rango ya estará escrito en el cuadro de texto.</li>
+     </ol>
+  </p>
+
+<ul>
+  <li>El cuadro de texto <b>Área de impresión</b> permite <b>establecer un rango de la hoja de    
+    cálculo</b> cuyo contenido será lo único que se imprimirá.</li><br>
+
+  <li>El grupo <b>Imprimir títulos</b> tiene dos cuadros de texto para <b>imprimir títulos en
+    filas y columnas</b> (en la parte externa de la hoja). Con <b>Repetir filas en extremo
+    superior</b> debe <b>establecerse la fila que se utilizará como título</b>, aunque se puede
+    indicar la dirección de una celda o de un grupo de ellas si son contiguas. Los pasos
+    que se deben seguir son los mismos con <b>Repetir columnas a la izquierda</b>, y el
+    resultado es que los títulos aparecen en las columnas en lugar de en las filas.</li><br>
+   </ul>
+
+   <h3>Grupo imprimir</h3> 
+
+
+  <p>Con el grupo <b>Imprimir</b> pueden especificarse varios datos que Excel tendrá en
+    cuenta a la hora de proporcionar datos por la impresora:</p>
+
+  <ul>
+    <li>Si se activa la casilla <b>Líneas de división</b>, Excel imprime las líneas que separan las
+      celdas en las hojas de cálculo. Se desactiva si no se desea que aparezcan en el
+      papel</li><br>
+
+      <li>Con <b>Blanco y negro</b> se imprimen todos los datos de la celda en blanco y
+        negro. Es aconsejable utilizar este botón si se utiliza una impresora en blanco y
+        negro, ya que la calidad de los datos impresos será mayor. Si la impresora es
+        en color, suele ser aconsejable no activar este botón para obtener una mayor
+        calidad.</li><br>
+
+      <li>Se activa <b>Calidad de borrador</b> para obtener el resultado impreso en una
+        calidad inferior. Las líneas que dividen las celdas no se imprimen y se
+        consigue una mayor rapidez a la hora de imprimir.</li><br>
+
+
+      <li>Con <b>Títulos de filas y columnas</b> se puede indicar si se desea que se impriman
+        éstos o no. Suele ser aconsejable imprimirlos como guía para el papel de la
+        hoja de cálculo que se imprime.</li><br>
+
+      <li>En la lista desplegable <b>Comentarios</b> se puede elegir si se imprimen las
+        anotaciones de celda de la hoja en la parte inferior de la hoja (<b>Al final de la
+        hoja</b>), en las mismas celdas en que se encuentren (<b>Como en la hoja</b>), o bien,
+        si no se imprimen (<b>ninguno</b>).</li><br>
+
+      <li>Desplegando la lista <b>Errores de celdas como</b> se puede elegir si se desea que
+        también aparezcan en el papel los errores que obtengamos en pantalla y en
+        qué forma deben mostrarse. Por ejemplo, se selecciona (<b>espacio vacío </b>) para
+        que los errores no aparezcan en el papel.</li><br>
+  </ul></p>
+
+</ul>
+
+
+<p><b>Observaciones:</b> En las cuatro pestañas anteriores dispone de los siguientes botones: <br>
+<ul>
+  <li>Pulse el botón <img src="../Imagenes/Excel/Boton_imprimir_ventana_conf_pagina.JPG" alt="boton_imprimir", width="auto" height="auto">
+      para obtener las opciones de imprimir en papel.</li><br>
+
+  <li>Pulse el botón <img src="../Imagenes/Excel/Boton_vista_preliminar_ventana_conf_pagina.JPG" alt="vista_preliminar", width="auto" height="auto">
+     para obtener una vista previa de cómo queda, por el momento, la hoja de cálculo.</li><br>
+  <li>El botón <img src="../Imagenes/Excel/Boton_vista_opciones_ventana_conf_pagina.JPG" alt="boton_opciones", width="auto" height="auto"> 
+    muestra opciones estándar de Windows para la impresión de datos en la impresora. Por ejemplo, al pulsar este botón,
+    podremos indicar de nuevo si deseamos una impresión vertical u horizontal. Los elementos que aparezcan en el
+    cuadro que se muestra son diferentes  para cada impresora, dependiendo de las funciones que tenga cada una.</li>
+</ul></p>
+
+
+<!-- 
+<p>Selecciona la orientación del papel, vertical u horizontal. (En la impresora se colocará el papel
+   siempre de la misma forma).</p>
+
+<p>En el recuadro Escala nos permitirá indicarle si deseamos que la salida a impresora venga determinada 
+  por un factor de escala (100%, 50%, 200%,...) o bien ajustando automáticamente la hoja en un número de 
+  páginas específico (una página de ancho por 1 de alto, así se imprimirá en una sola hoja,...).</p>
+  
+  <p>Para modificar los márgenes superior, inferior, derecho e izquierdo de las hojas a imprimir,
+     utilizar la ficha Márgenes.</p>
+
+     <p>
+      <div class="flexbox">
+        <img src="../Imagenes/Excel/config_pag2_excel.gif" alt="", width="auto" height="auto">
+      </div>
+    </p> 
+
+    <p>Si la hoja tiene encabezado: o pie de página:, también nos permite indicar a cuántos centímetros del borde
+       del papel queremos que se sitúen.</p>
+
+    <p>Si deseas que tu salida tenga centradas las hojas tanto horizontal como verticalmente, Excel nos lo realizará
+       automáticamente activando las casillas Horizontalmente y/o Verticalmente respectivamente.</p>
+      
+    <p>En la ficha Encabezado y pie de página podrás personalizarlos y ajustar diferentes parámetros.</p>
+  
+    <p>
+      <div class="flexbox">
+        <img src="../Imagenes/Excel/config_pag3_excel.gif" alt="", width="auto" height="auto">
+      </div>
+    </p> 
+
+    <p>La última ficha es Hoja, que nos permite definir cómo queremos que se impriman los datos contenidos en la hoja.</p>
+
+
+<p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/config_pag4_excel.gif" alt="", width="auto" height="auto">
+  </div>
+</p> 
+
+
+<p>En  <b>Área de impresión:</b> podrás indicar el rango de celdas a imprimir. </p>
+
+<p>En Imprimir títulos podrás activar las siguientes opciones:<br>
+<ul>
+  <li><b>Repetir filas en extremo superior</b> para que en cada página que se imprima aparezca como
+     título de columnas aquella fila que está indicada en ese recuadro.</li>
+  <li><b>Repetir columnas a la izquierda</b> para que en cada página que se imprima aparezca como título de
+     la fila aquella columna indicada en el recuadro.</li>
+  <li><b>Calidad de borrador</b> para realizar una impresión rápida pero menos bonita de nuestra hoja.
+     Sólo tendrá sentido si la impresora dispone de esta herramienta.</li>
+</ul>
+</p>
+
+<p>En el recuadro Imprimir podrás activar opciones, como:<br>
+<ul>
+  <li><b>Líneas de división</b> para imprimir las líneas que delimitan cada celda de la hoja.</li>
+  <li><b>Blanco y negro</b> para no gastar las tintas de colores.</li>
+  <li><b>Encabezados de filas y columnas</b> para imprimir los encabezados de filas (los números de filas de
+     la izquierda) y columnas (las letras de los nombres de las columnas superiores) de la hoja.</li>
+  <li><b>Comentarios</b> te permite elegir si quieres imprimir o no los comentarios que hayas podido incluir,
+     y si quieres hacerlo donde los has insertado o al final de la hoja.</li>
+  <li>También podrás elegir si quieres imprimir las celdas con errores.</li>
+</ul>
+</p>
+<p>Por último, podrás elegir el Orden de las páginas, es decir, la dirección que seguirán para la impresión.</p>
+
+
+
+<p>Tanto en ésta ficha como en las otras, podrás acceder a las Opciones específicas de la impresora seleccionada 
+  para la impresión, así como dirigirte a la opción Imprimir..., desde sus correspondientes botones.</p>
+-->
+</div>
+
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle">  Configuracion de impresión</h1>
+
+ <p>Si hemos pulsado <b>Imprimir</b> o <b>Vista previa</b> desde la ventana anterior, o bien si seleccionamos la 
+  opción Imprimir del menú Archivo, veremos la siguiente ventana:</p>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/Imprimir.JPG" alt="", width="100%" height="auto">
+    </div>
+  </p> 
+
+  <p><b>Observación:</b> También podemos utilizar la combinación de teclas <b>Ctrl</b> + <b>p</b> para acceder a ella.</p>
+
+  <p>En la zona izquierda dispondremos de una serie de <b>opciones de configuración de la impresión</b>, que nos permitirán:</p>
+
+  <ul>
+    <li>Elegir <b>cuántas copias imprimir</b> del documento.</li><br>
+
+    <li><b>Escoger qué impresora queremos utilizar</b> en la impresión del documento, en caso de que no queramos utilizar la 
+      predeterminada que viene seleccionada por defecto. También podremos modificar las Propiedades de impresora seleccionada.</li><br>
+
+    <li><b>Opciones de Configuración</b> como:</li><br>
+
+      <ul>
+        <li><b>Qué hojas imprimir</b>: Las hojas activas, todo el libro, o bien la selección realizada.</li><br>
+
+        <li><b>La intercalación</b>. Cuando imprimimos varias copias sin intercalación se imprime X veces cada página,
+          por ejemplo: 1,1,1    2,2,2    3,3,3    4,4,4 sería la impresión de tres copias de un libro que ocupa
+          cuatro páginas. En cambio, si utilizamos el intercalado, se imprime el trabajo completo, una vez tras otra.
+          El mismo ejemplo sería: 1,2,3,4    1,2,3,4     1,2,3,4</li><br>
+
+        <li>La <b>orientación</b> y el <b>tamaño del papel</b>.</li><br>
+        
+        <li> Modificar los <b>márgenes</b>.</li><br>
+
+        <li> Ajustar la <b>escala de impresión</b>.</li><br>
+
+        <li> Acceder a la <b>Configuración de página</b>.</li><br>
+      </ul>
+  </ul>
+
+  <p>En la <b>zona de la derecha</b> vemos la <b>vista previa de la página</b>. En  caso de tener más de una página, podremos
+     cambiar la página a visualizar utilizando los botones inferiores o escribiendo el número de la página 
+     a visualizar <img src="../Imagenes/Excel/boton_paginas.gif" alt="", width="auto" height="auto">. 
+     Si nuestra hoja sólo tiene 1 página éstos botones estarán inactivos.</p>
+
+  <p>También en la <b>zona inferior derecha</b>, encontramos dos botones para <b>personalizar la vista previa</b>, 
+    pudiendo mostrar/ocultar los márgenes y elegir si visualizar la página completa.</p>
+
+  <p>Cuando esté todo listo para la impresión y quede como deseas, podrás pulsar el botón
+     <img src="../Imagenes/Excel/boton_imprimir.gif" alt="", width="auto" height="auto"> de la zona superior.</p>
+
+</div>
+
+
+  <!--
+<div class="nota-box">
+  <h1 class="number-subtitle">  Vista de Diseño de página</h1>
+
+
+
+     <p>En Excel 2010, se utiliza el <b>Diseño de página</b> como herramienta para visualizar nuestra
+        hoja antes de imprimirla y modificar ciertos aspectos estéticos para la impresión </p>
+     
+        <p>
+         <div class="flexbox">
+           <img src="../Imagenes/Excel/menu_vistapreliminar.gif" alt="", width="auto" height="auto">
+         </div>
+       </p> 
+     
+     <p>La forma de visualizar la hoja cambiará de aspecto:</p>
+     
+     <p>
+       <div class="flexbox">
+         <img src="../Imagenes/Excel/b_grafico_excel.gif" alt="", width="auto" height="auto">
+       </div>
+     </p> 
+     
+     <p>Desde esta vista podemos seguir trabajando con la hoja de cálculo como hasta ahora, 
+       la única diferencia es que sabremos cómo quedará la hoja al imprimirla. 
+       Veremos los saltos de página, márgenes, encabezados y pies de página y sabermos cuántas hojas ocuparán
+        y cómo se ajustan los datos a la página.</p>
+     
+     <p>Si los datos ocupan más de una página, deberemos utilizar las barras de desplazamiento para ir viéndolas:</p>
+     
+     <p>
+       <div class="flexbox">
+         <img src="../Imagenes/Excel/paginas.gif" alt="", width="auto" height="auto">
+       </div>
+     </p> 
+     
+     <p>Al mover las barras de desplazamiento, un pequeño cuadro informativo nos indicará en qué columna o fila estamos situados.</p>
+     
+     <p>También aparecen las reglas superior e izquierda. En ellas podremos ajustar los márgenes de forma sencilla, 
+       arrastrándo sus límites.</p>
+     
+     
+     <p>La pestaña Vista permite personalizar qué elementos mostrar:</p>
+     
+     
+     <p>
+       <div class="flexbox">
+         <img src="../Imagenes/Excel/vista_mostrar.gif" alt="", width="auto" height="auto">
+       </div>
+     </p> 
+     
+     <p>Otra opción muy utilizada es la de Zoom. Con la opción Zoom, se abre una ventana que te permite escoger entre varios valores.
+       La opción central devuelve la vista al 100%, es decir, al tamaño real.
+       Y Ampliar selección aumenta el zoom a 400%, centrándolo en la celda u objeto seleccionado.</p>
+     
+       
+     <p>
+       <div class="flexbox">
+         <img src="../Imagenes/Excel/boton_prel_zoom_excel.gif" alt="", width="auto" height="auto">
+       </div>
+     </p> 
+     
+     <p>Cuando volvemos a la vista Normal, aparecerán unas líneas discontinuas que nos indicarán donde hará Excel los saltos de página. Estas líneas no se imprimirán.
+     
+     </p>
+
+</div>
+-->
+
+
+<h1 class="number-title flexbox">Modelo Entidad-Relación y Modelo Relacional de base de datos </h1>
+
+    
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Base de Datos </h1>
+
+      <p>En 1597 sir Francis Bacon acuñó la conocida frase "<b>Knowledge itself is a power</b>"", adaptada generalmente
+        al castellano como "<b>La información es poder</b>". Hoy en día la información es el activo más valioso de toda organización,
+        y las <em>bases de datos</em> son la respuesta a las necesidades técnicas surgidas hace unas
+        décadas.
+      </p>
+
+      <p>Una <b>base de datos</b> es un conjunto de información organizada de forma lógica, de tal manera que es
+         posible extraer toda la información o una parte de ella en cualquier momento. Las bases de datos
+         tienen importantes aplicaciones en la administración de empresas e instituciones públicas.
+          Algunas de sus aplicaciones representativas son:
+        <br>
+         
+         <!--
+         Las bases de datos sirven para:
+        <ol>
+          <li>Almacenar</li>
+          <li>Controlar:</li>
+          <ul>
+            <li>Restricciones</li>
+            <li>Seguridad</li>
+          </ul>
+          <li>Consultar</li>
+          <li>Actualizar</li>
+        </ol>
+      </p>
+-->
+      
+      
+      <ul>
+        <li><b>Banca:</b><br> Para información de los clientes, cuentas, préstamos y transacciones bancarias</li>
+        <li><b>Líneas aéreas:</b><br>
+          Para reservas e información de horarios. Las líneas aéreas fueron de las primeras en
+          usar las bases de datos de forma distribuida geográficamente</li>
+        <li><b>Universidades:</b><br> Para información de los estudiantes, matrículas en las asignaturas y cursos.</li>
+        <li><b>Transacciones de tarjetas de crédito:</b><br> Para compras con tarjeta de crédito y 
+           la generación de los estados de cuenta </li>
+        <li><b>Telecomunicaciones:</b><br> Para guardar un registro de las llamadas realizadas, generar
+           las facturas mensuales, mantener el saldo de las tarjetas telefónicas de prepago y 
+           para almacenar información sobre las redes de comunicaciones.</li>
+        <li><b>Finanzas:</b><br> Para almacenar información sobre compañías tenedoras, ventas y 
+          compras de productos financieros, como acciones y bonos; también para almacenar
+          datos del mercado en tiempo real para permitir a los clientes la compraventa en línea
+          y a la compañía la compraventa automática.</li>
+        <li><b>Ventas:</b><br> Para información de clientes, productos y compras</li>
+        <li><b>Comercio en línea:</b><br> Para los datos de ventas ya mencionados y para el seguimiento de los pedidos
+          Web, generación de listas de recomendaciones y mantenimiento de evaluaciones de productos
+          en línea</li>
+        <li><b>Producción:</b><br> Para la gestión de la cadena de proveedores y para el seguimiento de la producción
+          de artículos en las factorías, inventarios en los almacenes y pedidos.</li>
+        <li><b>Recursos humanos:</b><br> Para información sobre los empleados, salarios, impuestos sobre los sueldos y
+          prestaciones sociales, y para la generación de las nóminas</li>
+      </ul>
+    <p><b>Importante:</b> Las bases de datos forman una parte esencial de casi todas las empresas actuales.</p>
+
+    <p>Las bases de datos requieren de un software que permita la administración de dicha base de datos. 
+      Estos programas especializados sirven como interfaz para que los usuarios puedan administrar como
+       se estructura y optimiza toda la información recopilada.</p>
+    </div>
+    
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Sistema Gestor de Base de Datos (SGBD) </h1>
+
+
+      <p>Se le llama <b>sistema gestor de bases de datos</b> ( <b>SGBD</b> aunque se suele 
+        utilizar más a menudo las siglas DBMS procedentes del inglés, Data Base Management System) a 
+        una colección de datos interrelacionados y un conjunto de programas para acceder a dichos datos.</p>
+        
+      <p>
+        El <b>objetivo principal de un SGBD</b> es proporcionar una forma de <em>almacenar</em> y <em>recuperar</em> la información de una base
+        de datos de manera que sea tanto práctica como eficiente.
+      </p>
+
+      <p>Los sistemas gestores de bases de datos se diseñan para gestionar grandes cantidades de información 
+        de tal manera que  se garantiza la fiabilidad de la información almacenada, a pesar de las caídas del sistema o
+        de los intentos de acceso no autorizados. Si los datos van a ser compartidos entre diferentes usuarios, el
+        sistema debe evitar posibles resultados anómalos.</p>
+      <!--
+
+      <p>. La
+        gestión de los datos implica tanto la definición de estructuras para almacenar la información como la
+        provisión de mecanismos para la manipulación de la información. Además, 
+      </p>
+
+      <p>Un sistema gestor de bases de datos o SGBD (aunque se
+        suele utilizar más a menudo las siglas DBMS procedentes del
+        inglés, Data Base Management System) es el software que permite
+        a los usuarios procesar, describir, administrar y recuperar
+        los datos almacenados en una base de datos</p>
+
+      -->
+
+      <p>Entre los sistemas gestores de bases de datos (SGBD) más conocidos se encuentran: <b>Microsoft Access</b> y <b>MySQL</b>.</p>
+     
+    </div>  
+
+     
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Bases de datos vs Hojas de cálculo</h1>
+<p>
+  Las bases de datos y las hojas de cálculo son herramientas útiles para almacenar
+información. Las <b>principales diferencias</b> entre ambas son:
+</p>
+
+<ol>
+  <li>La forma de manipular y guardar la información.</li>
+  <li>La cantidad de datos que se pueden almacenar</li>
+  <li>La accesibilidad a esos datos almacenados.</li>
+</ol>
+
+<p>
+Las hojas de cálculo desde sus comienzos fueron diseñadas para un usuario. Son
+excelentes para uno o un pequeño número de usuarios que no necesitan utilizar un
+gran volumen de datos.
+</p>
+
+<p>
+  Las bases de datos, por otro lado, fueron creadas para almacenar gran cantidad
+de información organizada, permite acceder y consultar los datos de forma rápida
+y segura a muchos usuarios al mismo tiempo.
+</p>
+
+<h3 class="number-title"> Cuando  diseñamos una base de datos, debemos
+  tomar en cuenta las siguientes aspectos: </h3>
+  <ol>
+      <li>Trate de planificar para el futuro e incluya todos los datos que probablemente necesite.</li>
+      <!--
+      En Access, es posible cambiar los tipos de datos de los atributos o agregar atributos más tarde,
+      pero si la base de datos ya es grande o muchas personas la están usando simultáneamente, 
+      agregar atributos o modificar los tipos de datos podría ser lento o interrumpir 
+      el uso de su sistema.
+      -->
+      <li>Tenga un campo separado para cada división de los datos que anticipe necesitar.</li>
+          <!-- Como regla general, es mucho más fácil juntar datos que separarlos. Por ejemplo, 
+          si almacenamos los nombres de los estudiantes como tres campos diferentes (nombre, segundo nombre y apellido),
+          entonces podemos formar fácilmente el nombre completo de un estudiante concatenando (colocando de extremo a extremo)
+          el contenido de estos campos. Si solo almacenamos el nombre como un campo grande, entonces ciertas tareas, 
+          como ordenar a los estudiantes por su nombre o apellido, pueden volverse innecesariamente difíciles y propensas a errores.
+          -->
+      <li>  Evite almacenar campos calculados</li>
+      <!-- 
+      Si ya ha almacenado el total de créditos y puntos de calificación acumulados,
+      puede calcular fácilmente el GPA. No hay necesidad de almacenar de forma redundante 
+      los GPA de los estudiantes. Eso ocupará espacio innecesario y creará una oportunidad 
+      para que los campos de la base de datos se vuelvan inconsistentes entre sí. 
+      En bases de datos relacionales como Access, generalmente debe usar objetos de tabla 
+      solo para sus datos "base". Los cálculos basados en esos datos residen en otros objetos, 
+      como consultas, formularios e informes. Esta separación de datos base y calculados es otra
+       forma en la que las bases de datos relacionales son diferentes de las hojas de cálculo,
+        en las que todos los datos "base" coexisten con los cálculos dentro de la misma cuadrícula bidimensional 
+        de celdas.
+      -->
+  </ol>
+
+  <p>
+  <b>Recuerda:</b> Una base de datos bien diseñada no solo ayuda a garantizar la integridad de los datos,
+   sino que es más fácil de mantener y actualizar.
+  </p>
+  </div>
+
+  
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Modelo entidad-relación</h1> 
+
+      <p>También conocido como <b>diagrama o modelo E-R</b> o <b>E/R</b>. El diagrama entidad/relación
+        es una técnica cuyo objetivo es la <b>representación y definición</b> de todos los datos que se introducen,
+        almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta
+        las necesidades de la tecnología existente, ni otras restricciones.</p>
+        
+        <p>Definimos <b>sistema de información</b> como el conjunto de procedimientos y funciones dirigidos
+          a la recolección, elaboración, evaluación, almacenamiento, recuperación, condensación y distribución
+          de informaciones dentro de una organización</p>
+        <!-- Merece la pena recalcar ese factor de independencia con respecto a la implementación final. -->
+      <p>
+        El Diagrama E-R dará solución al problema planteado sin importar cuál sea el SGBD comercial que se
+        vaya a utilizar. Para ello parte de una serie de conceptos que se describen a continuación:</p>
+      
+     <h2 class="number-title"> Entidad</h2>
+     <p>Una <b>entidad</b> es cualquier objeto real o abstracto que tiene existencia por sí mismo y se puede
+      identificar de una forma clara y precisa, y del cual se desea registrar información en el sistema.
+      <b>Es el elemento fundamental que hay que caracterizar</b>.
+     </p>
+     
+     <p>Se <b>representa con sustantivos en singular</b>
+      que encierran un concepto, y es labor del analista identificar dichos sustantivos.</p>
+
+      <p><b>Ejemplos</b> Los siguientes son ejemplos de entidad:<br>       
+        
+          <p>
+        <ul>
+          <li>"Empleado",</li> 
+          <li>"Cliente",</li>
+          <li>"Factura",</li> 
+          <li>"Línea de factura",</li>
+          <li>"Proveedor".</li>
+        </ul>
+      </p>
+        
+        </p>
+
+
+      <p><!-- Entidad es un concepto abstracto.--> Cada elemento concreto de una entidad es una <b>ocurrencia</b>.
+        En el ejemplo de la entidad “Empleado”, cada uno de los empleados es una ocurrencia de dicha
+        entidad. A su vez, <b>cada ocurrencia presenta una serie de datos asociados</b>:<br>
+        
+        <p><li>Un empleado tendrá nombre, apellidos, NIF, dirección postal, número de teléfono, etc. </li></p>
+
+        <p>Cada uno de esos datos es un <b>atributo</b>, y cada ocurrencia tiene distintos valores para cada atributo.</p>
+
+        <p><li>En la entidad “Empleado”, un empleado concreto tendrá “Juan Antonio” como valor de su atributo “Nombre”, “García Corredor”
+        como valor de su atributo “Apellidos” y “52874660Y” como valor de su atributo “NIF”.</li></p>
+      </p>
+
+      <p><b>Toda entidad debe cumplir dos características:</b></p>
+
+      <p>
+        <ol>
+          <li>Presencia del mismo conjunto de atributos para todas las ocurrencias, independientemente
+            de que alguna ocurrencia carezca de valor para algún atributo.</li><br>
+          <li>Diferenciación unívoca de ocurrencias. No puede haber dos ocurrencias con los mismos
+            valores para todos sus atributos.</li>
+        </ol>
+      </p>
+      
+      <h3>Representación gráfica de una entidad</h3>
+
+      <p>La <b>representación gráfica de una entidad</b> consiste en un <b>rectángulo</b> con el nombre de la entidad
+        en su interior, generalmente en mayúsculas. Los <b>atributos asociados</b> a una entidad se pueden
+        representar de dos formas:
+        <ul>
+          <li>Mediante óvalos que incluyen el nombre del atributo, </li>
+          <li>Mediante círculos con el nombre del atributo en el exterior.</li>
+        </ul>
+      </p>
+
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/BD/Representacion_grafica_entidad_atributos.JPG" alt="", width="auto" height="auto">
+        </div>
+      </p>
+
+
+
+     <p>Hay dos tipos de entidades:</p>
+     <ol>
+      <li> <b>Fuerte o regular</b>. No depende de otra. Corresponde a la inmensa mayoría de las entidades.</li><br>
+      <li> <b>Débil</b>. La existencia de sus ocurrencias depende de la existencia de ocurrencias en otras
+        entidades.</li>
+     </ol>
+
+    <p><b>Ejemplo:</b> Consideremos un sistema de información de una <b>biblioteca</b>. Si queremos llevar un control sobre
+      las multas impuestas a los socios por devolución tardía de libros, crearemos una entidad “Multa”.
+      Toda multa se impone a un socio; por tanto, no podrá haber ocurrencias en la entidad “Multa” si
+      no existe una ocurrencia correspondiente a un socio en la entidad “Socio”.
+       Para que una entidad sea débil tiene que serlo respecto a todas las entidades con las que se relaciona.
+      Las entidades débiles se representan mediante un doble rectángulo:<br>
+      
+    </p>
+
+    <p>
+      <div class="flexbox">
+        <img src="../Imagenes/BD/Entidad_debil.JPG" alt="", width="auto" height="auto">
+      </div>
+    </p>
+
+    <h2 class="number-title"> Relación</h2>
+
+    <p>Una <b>relación</b> es una asociación o vínculo entre ocurrencias de varias entidades. Se nombran
+      con <b>expresiones verbales</b>.</p>
+      
+    <p>Ejemplos de relaciones serían la existente entre las ocurrencias de la
+      entidad “Cliente” y las de la entidad “Factura” (ya que toda factura corresponde a un cliente),
+      y a la que podríamos llamar “genera” (se leería “cliente genera factura”).
+    </p>
+
+    <h3>Representacón gráfica de una relación</h3>
+    <p>La <b>representación gráfica de una relación</b> consiste en un <b>rombo</b> rodeando su nombre:</p>
+
+    
+    <p>
+      <div class="flexbox">
+        <img src="../Imagenes/BD/Relacion.JPG" alt="", width="auto" height="auto">
+      </div>
+    </p>
+
+    <h3> Clasificación de relaciones</h3>
+    <p>De acuerdo al número de entidades cuyas ocurrencias relacionan, podemos dividir las relaciones
+      en varias categorías:</p>
+
+    <p>
+      <ol>
+        <li><b>Binarias.</b> Relacionan entre sí ocurrencias de dos entidades.<br>
+          <p>
+          <b>Ejemplo:</b>
+          En el ejemplo anterior, la relación "genera" entre “Cliente” y “Factura” representa una relacion binaria y 
+          gráficamente se representa  como:
+          
+    <p>
+      <div class="flexbox">
+        <img src="../Imagenes/BD/Relacion_binaria.JPG" alt="", width="auto" height="auto">
+      </div>
+    </p>
+  </p>
+        </li>
+        <li><b>Ternarias.</b> Relacionan entre sí ocurrencias de tres entidades.<br>
+        <p>
+         <b>Ejemplo:</b> Consideremos un sistema de información correspondiente a un centro de enseñanza.
+          Cada profesor imparte una serie de asignaturas a distintos grupos de alumnos. Si
+          disponemos de las entidades “Profesor”, “Grupo” y “Asignatura”, tendríamos que relacionar
+          sus ocurrencias mediante la siguiente relación ternaria:
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/BD/Relacion_ternaria.JPG" alt="", width="auto" height="auto">
+            </div>
+          </p>
+        </p>
+        </li>
+      <li><b>N-arias.</b> Dependiendo de la complejidad de nuestro modelo de datos podemos relacionar
+        ocurrencias de más de tres entidades. <br>
+        <p><b>Ejemplo:</b>
+          Supongamos que en la relación del ejemplo anterior
+          sea necesario, además, indicar en qué aula se imparte cada asignatura a cada grupo:
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/BD/Relacion_cuaternaria.JPG" alt="", width="auto" height="auto">
+            </div>
+          </p>
+          Como criterio de diseño se identifican relaciones ternarias o n-arias cuando la acción
+          identificada por la relación afecta de forma simultánea a las ocurrencias de todas las entidades
+          relacionadas (un profesor imparte una asignatura a un grupo en un aula en un
+          momento concreto, por lo que existe simultaneidad temporal). 
+        </p>     
+       
+      </li>
+      <li><b>Reflexivas.</b> Relacionan entre sí ocurrencias de la misma entidad. Para comprenderlas correctamente
+        hay que tener en cuenta que las ocurrencias que relacionan, aun perteneciendo
+        a la misma entidad, están jugando papeles distintos. <br>
+      <p><b>Ejemplo</b> Consideremos  una entidad “Empleado” que almacena 
+        ocurrencias de empleados de una empresa. Hay empleados que son jefes de otros, y todos
+        los empleados figuran como ocurrencias de la entidad “Empleado”. En este caso, debemos
+        relacionar ocurrencias de “Empleado” correspondientes a empleados que tienen jefe con
+        ocurrencias de “Empleado” correspondientes a empleados que son jefes de otros:
+      </p>
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/BD/Relacion_reflexiva.JPG" alt="", width="auto" height="auto">
+        </div>
+      </p>
+      </li>
+    </ol>
+    </p>
+
+    <h2 class="number-title"> Cardinalidad y modalidad</h2>
+
+    <p>Para dotar de contenido semántico a una relación hay que especificar <b>de qué modo se relacionan
+      entre sí las ocurrencias de las distintas entidades</b>, estableciendo ámbitos, límites y restricciones.</p>
+
+      <h3>Cardinalidad</h3>
+
+     <p>La <b>cardinalidad</b> (también llamada <b>tipo de correspondencia</b> por algunos autores) indica el número máximo
+      de ocurrencias de una entidad con las que se puede relacionar una ocurrencia de otra entidad.</p>
+
+      <p><b>Ejemplos:</b><br> 
+      <ol>
+        <li>Toda factura deba emitirse a nombre de un
+      solo cliente, pero que cada cliente pueda emitir muchas facturas,</li>
+      <li> Cada proveedor suministre varios artículos y que cada artículo sea suministrado por varios 
+      proveedores, </li>
+      <li>Cada empleado se siente en una ubicación concreta de la oficina y a cada ubicación corresponda
+      solamente un empleado.</li>
+      </ol>
+      </p>
+
+      <p> La cardinalidad refleja estos casos del siguiente modo:</p>
+      <p>
+        <ul>
+          <li><b>1:N (uno a ene/uno a muchos)</b>. Una ocurrencia de una entidad puede relacionarse con
+            varias de otra entidad, pero cada ocurrencia de la segunda entidad solo puede relacionarse
+            con una única ocurrencia de la primera entidad.<br>
+            <p>
+            <b>Ejemplo:</b> Supongamos una empresa donde cada empleado pertenece a un departamento y en
+            cada departamento puede haber varios empleados. Esta sería la representación gráfica:
+            <p>
+              <div class="flexbox">
+                <img src="../Imagenes/BD/Relacion_1an.JPG" alt="", width="auto" height="auto">
+              </div>
+            </p>
+            </p>
+          </li>
+          <li><b>M:N (eme a ene/muchos a muchos).</b> Cada ocurrencia de una entidad puede relacionarse
+            con varias de otra entidad, y cada ocurrencia de la segunda entidad también puede relacionarse
+            con varias de la primera.<br>
+          <p>
+            <b>Ejemplo: </b> Si en nuestro sistema de información un músico puede tocar varios instrumentos y
+            un instrumento puede ser tocado por varios músicos:
+            <p>
+              <div class="flexbox">
+                <img src="../Imagenes/BD/Relacion_MaN.JPG" alt="", width="auto" height="auto">
+              </div>
+            </p>
+          </p>
+          </li>
+        <li><b>1:1 (uno a uno).</b> Una ocurrencia de una entidad se relaciona con otra ocurrencia de otra
+          entidad y viceversa.<br>
+         <p><b>Ejemplo:</b>  Una consultora financiera podría asignar a cada cliente una única cartera de inversión
+          propia:
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/BD/Relacion_1a1.JPG" alt="", width="auto" height="auto">
+            </div>
+          </p>
+        </p> 
+        </li>
+        </ul>
+      </p><br>
+
+      <h2 class="number-title"> Modalidad</h2>
+
+     
+      <p>
+        <b>La cardinalidad delimita los límites superiores de una relación, pero no define su obligatoriedad.</b>
+      </p>
+
+      <p>
+        ¿Todo instrumento debe ser tocado por algún músico? ¿Podría haber alguna ocurrencia
+        en la entidad “Instrumento” que no tuviera relación con otra ocurrencia en la entidad “Músico”?
+        Puede que, como requisito del sistema de información, la entidad “Instrumento” deba contener
+        una lista de instrumentos independientemente de que haya algún músico que los toque (quizás
+        una de las ocurrencias de “Instrumento” corresponda al acordeón y, en cambio, en “Músico” 
+        no haya ninguna ocurrencia correspondiente a un músico que toque el acordeón). Pero también
+        puede que el sistema de información exija que las ocurrencias de “Instrumento” se carguen a
+        medida que se introduzcan en “Músico” ocurrencias de músicos, de modo que todos los instrumentos
+        tendrían su correspondencia con, al menos, un músico. Obviamente, las dos situaciones
+        son incompatibles en un buen diseño de datos, y la cardinalidad no nos aporta la
+        información necesaria para solventar esta disyuntiva.
+      </p>
+
+
+
+      <p>La <b>modalidad</b> (llamada por algunos autores cardinalidad, con la consiguiente confusión) define
+        el número mínimo y máximo de ocurrencias de una entidad que pueden estar relacionadas con
+        una ocurrencia de otra u otras entidades, identificando <b>relaciones optativas</b> (en las que no tiene
+        por qué haber correspondencia).</p>
+        
+      <p><b>La modalidad se indica a ambos lados de la relación, y su valor
+        máximo coincide con el valor de la cardinalidad correspondiente al lado de la relación en el
+        que nos encontremos.</b></p>
+
+
+      <p> Puede ser de los siguientes tipos:</p>
+
+        <p>
+          <ul>
+            <li><b>0..1 (cero a uno).</b> Cada ocurrencia de la primera entidad puede relacionarse con una
+              ocurrencia de la segunda entidad o no. No puede relacionarse con varias.</li>
+            <li><b>1..1 (uno a uno).</b> Cada ocurrencia de la primera entidad debe relacionarse obligatoriamente
+              con una y solo una ocurrencia de la segunda entidad.</li>
+            <li><b>1..N (uno a ene/uno a muchos).</b> Cada ocurrencia de la primera entidad debe relacionarse
+              obligatoriamente con al menos una ocurrencia de la segunda entidad. Puede relacionarse
+              con varias.</li>
+            <li><b>0..N (cero a ene/cero a muchos).</b> Cada ocurrencia de la primera entidad no tiene limitada
+              su relación con ocurrencias de la segunda entidad. Puede relacionarse con una, varias
+              o ninguna.</li>
+          </ul>
+
+          <p><b>Ejemplo:</b> Veamos el siguiente ejemplo, correspondiente a un concesionario de automóviles:</p>
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/BD/Ejemplo_modalidad.JPG" alt="", width="auto" height="auto">
+            </div>
+          </p>
+
+          <p><b>Para cada entidad de la relación debemos leer su modalidad en el lado opuesto.</b> En este caso, la modalidad de “Cliente” con respecto a “Automóvil” es de 0..N, 
+            y la de “Automóvil” con respecto a “Cliente” es de 0..1. Esta relación “compra” se leería del siguiente modo:</p>
+
+          <p>
+          <ul>
+            <li>Toda ocurrencia de “Cliente” puede relacionarse con varias ocurrencias de “Automóvil”,
+              con una o con ninguna (en lenguaje natural: un cliente puede no comprar, comprar un
+              automóvil o comprar varios automóviles).</li><br>
+              <li> Toda ocurrencia de “Automóvil” puede relacionarse con una sola ocurrencia de
+              “Cliente” o no (un automóvil puede ser vendido a un solo cliente, o bien no ser vendido;
+              en cualquier caso, el mismo automóvil no puede ser vendido a varios clientes).</li>
+            </ul>
+          </p>
+        </p>
+
+
+
+      <h2 class="number-title"> Atributos de relación</h2>
+
+      <p>En algunas ocasiones, ciertas propiedades o características susceptibles de constituir un atributo
+        afectan a más de una entidad</p>
+
+      <p>Retomando uno de los  ejemplos previos: Es fácil identificar posibles
+        atributos de la entidad “Socio” (“NIF”, “Nombre”, “Apellidos”, “Dirección”, “Teléfono”, “Fecha
+        de nacimiento”, “Fecha de alta”) y de la entidad “Libro” (“Signatura”, “Título”, “Autor”, “Editorial”,
+        “Año de publicación”). No obstante, un dato importante que el sistema debe registrar
+        es la fecha del préstamo. No puede figurar como atributo de “Socio”, porque impediría que un
+        socio pudiera tomar más de un libro en préstamo, y no puede figurar como atributo de “Libro”
+        porque impediría que un libro fuera prestado más de una vez. <b> Afecta a ocurrencias de ambas
+        entidades, por lo que debe figurar en la relación</b>:
+      </p>
+
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/BD/Atributo_relacion.JPG" alt="", width="auto" height="auto">
+        </div>
+      </p>
+
+      <h2 class="number-title"> Clave primaria y claves candidatas</h2>
+
+      <p>En toda entidad hay al menos un atributo o conjunto de atributos cuyos valores <b>identifican de
+        forma unívoca a cada una de las ocurrencias</b>. Observemos el siguiente ejemplo:</p>
+
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/BD/Entidad_con_atributos.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>
+      
+      <p>Si queremos elegir un conjunto de atributos que identifiquen de forma única a cada empleado,
+        podemos pensar en la combinación de “Nombre” y “Apellidos”, pero presenta un gran problema:
+        no garantiza la unicidad (puede haber dos empleados llamados “Juan Pérez García”).</p>
+        
+        
+        <p>Si seguimos buscando entre la lista de atributos, veremos tres posibles opciones: “Código de empleado”, “NIF” y
+        “Número de la Seguridad Social”. Cada uno de los tres sirve para identificar a cada ocurrencia de
+        forma única e inconfundible (no puede haber dos empleados con el mismo NIF, ni con el mismo
+        número de la Seguridad Social, ni con el mismo código de empleado, suponiendo que dicho código
+        haya sido definido de forma única).</p>
+        
+        <p>Esos tres atributos son llamados <b>claves candidatas</b>, y el que elijamos
+        para identificar a las ocurrencias de la entidad será la <b>clave primaria</b> (<b>primary key</b>).
+        </p>
+        
+        <p>Por motivos de rendimiento de la base de datos resultante, se recomienda <b>elegir la clave primaria
+           más pequeña posible</b>.</p>
+
+      <p><b>En un diagrama entidad/relación</b> las claves primarias se representan subrayando el nombre
+        del atributo si se ha optado por dibujar los atributos en el interior de un óvalo, u oscureciendo
+        el círculo si se ha decidido utilizar el otro tipo de representación gráfica.</p>
+        
+        <p>Supongamos que hemos elegido “NIF” como clave primaria:</p>
+
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/BD/Representaciones_gráficas_de_clave_primaria.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>
+
+      <h3> Clave primaria compuesta</h3>
+       
+       
+      <p>A veces un solo atributo no es suficiente para identificar de forma unívoca todas las ocurrencias
+        de una entidad, por lo que hay que construir una clave primaria que incluya los valores
+        de varios atributos en el orden especificado, es decir, una <b>clave primaria compuesta</b>. 
+      </p>
+      
+      <p><b>Ejemplo:</b> En el siguiente ejemplo, la entidad “Cuenta bancaria” necesita cuatro atributos para definir su clave primaria,
+        ya que cada uno de ellos es susceptible de repetir valores en distintas ocurrencias:</p>
+
+        
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/BD/Clave_primaria_compuesta.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>
+
+
+      <h2 class="number-title"> Ejemplo de diagrama entidad/relación</h2>
+
+      <p>Se ha de definir el modelo de datos de una biblioteca con las siguientes restricciones básicas:</p>
+
+      <p>
+        <ul>
+        <li> Cada libro registrado cuenta con varios ejemplares físicos.</li>
+        <li>Todo libro corresponde a una o varias temáticas, está escrito por uno o varios autores y
+        publicado por una sola editorial.</li>
+        <li>Los ejemplares se prestan a los socios. Hay que guardar la fecha de préstamo.</li>
+        <li>Es necesario almacenar la nacionalidad o nacionalidades de cada autor, así como el país
+        donde cada editorial tiene su sede principal.</li>
+      </ul></p>
+
+      <p>A pesar de que falta mucha información sobre los requisitos de la aplicación, el siguiente
+        diagrama cumple con las restricciones expuestas:s</p>
+    </div>
+
+
+
+
+  </body>

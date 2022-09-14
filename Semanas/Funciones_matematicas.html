@@ -1,0 +1,1144 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+          <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction( )">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> § Semana  6 </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Funciones Matemáticas</h1>
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  ABS</h1>
+    
+    La función <b>ABS(número)</b> proporciona el valor absoluto de un número.
+
+    </div>
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  SIGNO</h1>
+
+      <p>La función <b>SIGNO(número)</b> devuelve el signo del número especificado. Si el número es negativo,
+        devuelve -1; si es cero, devuelve 0; y si es positivo, devuelve 1.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función NUMERO.ROMANO  </h1>
+      <p>La función <b>NUMERO.ROMANO(número)</b> devuelve el número especificado en números romanos (en
+        formato de texto). Tenga en cuenta que los números romanos no son infinitos debido a que
+        están formados por letras: si utiliza un número superior a 3999, esta función dará error.</p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función ALEATORIO</h1>
+
+      <p>La funci+on <b>ALEATORIO( )</b> devuelve un número decimal al azar entre 0 y 1.</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Funcion ALEATORIO.ENTRE</h1>
+      <P>la función  ALEATORIO.ENTRE(x;y) devuelve un número al azar entre X e Y. El primer número
+        debe ser menor que el segundo.</P>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función COCIENTE</h1>
+      <P>La funcion <b>COCIENTE(x;y)</b> realiza la división entera entre X e Y. El resultado es el cociente de la
+        división sin decimales (si los tuviera).
+      </P>
+    </div>
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función RESTO </h1>
+
+      <p>La función <b>RESTO(x;y)</b> proporciona el resto de dividir x entre y.</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  CONTAR</h1>
+    
+      <p>La función <b>CONTAR(rango)</b> ofrece el número de celdas ocupadas con datos numéricos que
+        haya en un rango.</p>
+
+    </div>
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  CONTARA</h1>
+    
+      <p>La función <b>CONTARA(rango)</b> ofrece el número de celdas ocupadas con datos de cualquier
+        tipo que haya en un rango.</p>
+
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función CONTAR.BLANCO </h1>
+      <p>La funcion <b>CONTAR.BLANCO(rango)</b> ofrece el número de celdas vacías que haya en el rango.</p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función CONTAR.SI</h1>
+      <p>La función <b>CONTAR.SI(rango;criterio)</b> ofrece el número de celdas del rango que contengan un determinado
+        valor (el criterio).</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función CONTAR.SI.CONJUNTO</h1>
+
+      <p>La función <b>CONTAR.SI.CONJUNTO(rango;criterio)</b> La función CONTAR.SI.CONJUNTO aplica criterios 
+        a las celdas de varios rangos y cuenta el número de veces que se cumplen todos los criterios.</p>
+
+
+      <h2 class="number-title"> Sintaxis</h2>
+
+      <p> <center> <b>CONTAR.SI.CONJUNTO(rango_criterios1; criterios1; [rango_criterios2; criterios2];…)</b></center></p>
+      
+      <p>
+        La sintaxis de la función CONTAR.SI.CONJUNTO tiene los siguientes argumentos:
+
+
+        <ul>
+          <li><b>Criterios_rango1</b>    Obligatorio. El primer rango en el que se evalúan los criterios asociados</li>
+          <li><b>criterios1</b>    Obligatorio. Los criterios en forma de número, expresión, referencia de celda o texto 
+            que determinan las celdas que se van a contar. Por ejemplo, los criterios se pueden expresar como 
+            32, ">32", B4, "manzanas" o "32".</li>
+            <li><b>criterios_rango2, criterios2...</b>    Opcional. Rangos adicionales y sus criterios asociados. 
+              Se permiten hasta 127 pares de rangos/criterios.</li>
+        </ul>
+      </p>
+
+      <p><b>Importante</b>  Cada rango adicional debe tener la misma cantidad de filas y columnas que el 
+        argumento criterios_rango1. No es necesario que los rangos sean adyacentes.</p>
+
+        <p><b>Observaciones:</b>
+        <ul>
+          <li>Los criterios de cada rango se aplican a una celda cada vez. Si todas las primeras celdas cumplen 
+            los criterios asociados, el número aumenta en 1. Si todas las segundas celdas cumplen los criterios
+             asociados, el número aumenta en 1 nuevamente y así sucesivamente hasta evaluar todas las celdas.
+          </li>
+          <li>Si el argumento de los criterios hace referencia a una celda vacía, la función CONTAR.SI.CONJUNTO 
+            trata dicha celda como un valor 0.</li>
+          <li>En los criterios se pueden usar caracteres comodín, el signo de interrogación (?) y el asterisco (*) .
+             El signo de interrogación se corresponde con un solo carácter y el asterisco se corresponde con cualquier 
+             secuencia de caracteres. Si desea buscar un signo de interrogación o un asterisco reales, escriba una tilde 
+             (~) delante del carácter que desea buscar.</li>
+        </ul></p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  PRODUCTO</h1>
+     <p>La función <b>PRODUCTO(rango o x;y;z…)</b> multiplica el contenido de las celdas del rango
+      especificado. </p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función POTENCIA  </h1>
+      <p>La función <b>POTENCIA(x;y)</b> devuelve x elevado a y.</p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función RCUAD  </h1>
+
+      <p>La función <b>RCUAD(número)</b> devuelve la raíz cuadrada del número especificado</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función FACT </h1>
+      <p>La función <b>FACT(número)</b> devuelve el factorial del número especificado.</p>
+    </div>
+
+    
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función SUMA  </h1>
+
+      <p>La función <b>SUMA(rango o x;y;z;...)</b> suma el contenido de las celdas del rango especificado. </p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función SUMA.SI  </h1>
+
+      <p>La función <b>SUMA.SI(rango o x;y;z;...)</b> se usa para sumar los valores intervalo de un rango 
+        que cumplan los criterios que haya especificado </p>
+
+     <h2 class="number-title"> Sintaxis </h2>
+
+     <p><center> <b>SUMAR.SI(rango; criterio; [rango_suma])</b></center></p>
+
+     <p>La sintaxis de la función SUMAR.SI tiene los argumentos siguientes:
+
+      <ul>
+        <li><b>Intervalo</b>   Obligatorio. El rango de celdas que se desea evaluar según los criterios.
+           Las celdas de cada rango deben ser números, nombres, matrices o referencias que contengan 
+           números. Los valores en blanco y de texto se ignoran. El rango seleccionado puede contener 
+           fechas en formato estándar de Excel (a continuación se incluyen ejemplos).</li>
+        <li><b>Criterios</b>   Obligatorio. Es el criterio en forma de número, expresión, referencia de celda, 
+          texto o función que determina las celdas que va a sumar. <br>
+        <p><b>Observación:</b>Se pueden incluir caracteres comodín: 
+          un signo de interrogación (?) para que coincida con cualquier carácter individual, un asterisco 
+          (*) para que coincida con cualquier secuencia de caracteres. Si desea buscar un signo de interrogación 
+          o un asterisco real, escriba una tilde (~) antes del carácter.</p>
+        <p><b>Ejemplo:</b> Por ejemplo, los criterios pueden expresarse como 32, ">32", B5, "3?", "manzanas*", “*~” u HOY().</p>
+        <p><b>Importante:</b> Cualquier criterio de texto o cualquier criterio que incluya los símbolos lógicos 
+        o matemáticos debe estar entre comillas dobles ("). Si el criterio es numérico, las comillas dobles no 
+        son necesarias. </p>
+        </li>
+        <li><b>Rango_suma</b>  Opcional. Son las celdas reales que se sumarán, si es que desea sumar celdas 
+          a las ya especificadas en el argumento rango. Si omite el argumento rango_suma, Excel suma las 
+          celdas especificadas en el argumento rango (las mismas celdas a las que se aplica el criterio).
+        <p><b>Observación:</b> Rango_suma debe tener el mismo tamaño y forma que intervalo. Si no es así,
+           el rendimiento puede verse afectado y la fórmula sumará un rango de celdas que comienza con la 
+           primera celda de sum_range pero tiene las mismas dimensiones que rango.</p>
+        </li>
+      </ul>
+     </p>
+    </div>
+
+    
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función SUMA.SI.CONJUNTO  </h1>
+
+      <p>La función <b>SUMA.SI.CONJUNTO(rango o x;y;z;...)</b> agrega todos los argumentos que cumplen varios criterios</p>
+
+     <h2 class="number-title"> Sintaxis </h2>
+
+     <p><center> <b>SUMAR.SI.CONJUNTO(rango_suma; rango_criterios1; criterios1; [rango_criterios2; criterios2];...)</b></center></p>
+
+     <p>La sintaxis de la función SUMAR.SI.CONJUNTO tiene los argumentos siguientes:
+      <ul>
+        <li><b>Rango_suma </b> Obligatorio. El rango de celdas que se suman.</li>
+        <li><b>rango_criterios1</b> Obligatorio. El rango que se prueba con criterios1.<br>
+
+        Rango_criterios1 y criterios1 establecen un par de búsqueda que se usa para buscar un rango con criterios específicos.
+         Una vez que se encuentran los elementos del rango, se agregan los valores correspondientes de rango_suma.</li>
+        <li><b></b>Obligatorio. Los criterios que determinan las celdas de rango_criterios1 que se agregarán. </li>
+        <li><b>Rango_criterios2, criterios2, …  </b> Opcional. Rangos adicionales y sus criterios asociados. 
+          Puede introducir hasta 127 pares de rango/criterios.</li>
+      </ul>
+     </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función SUMA.CUADRADOS </h1>
+
+      <p>La función <b>SUMA.CUADRADOS(x;y)</b> devuelve la suma de los cuadrados de x e y (eleva ambos al
+        cuadrado y suma el resultado). </p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  PROMEDIO</h1>
+
+      <p>La función <b>PROMEDIO(rango o x;y;z...)</b> genera la media aritmética de los valores contenidos en el
+        rango especificado.</p>
+    </div>
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  PROMEDIO.SI</h1>
+
+      <p>La función <b>PROMEDIO.SI</b> Devuelve el promedio (media aritmética) 
+        de todas las celdas de un rango que cumplen unos criterios determinados.</p>
+
+      <h2 class="number-title">Sintaxis</h2>
+      
+     <p><center> <b>PROMEDIO.SI(rango; criterios; [rango_promedio])</b></center></p>
+        
+     <p>
+      La sintaxis de la función PROMEDIO.SI tiene los siguientes argumentos:<br> 
+     <ul>
+      <li><b>Rango:</b>  Obligatorio. Una o más celdas cuyo promedio se desea 
+        obtener que incluyan números, o nombres, matrices o referencias que contengan números.</li>
+     <li><b>Criterio</b>    Obligatorio. Criterio en forma de número, expresión, referencia de 
+        celda o texto que determina las celdas cuyo promedio se va a obtener. Por ejemplo, 
+        los criterios pueden expresarse como 32, "32", ">32", "manzanas" o B4.</li>
+      <li><b>Rango_promedio</b> Opcional. Conjunto real de celdas cuyo promedio se va a calcular. Si se omite, se utiliza un rango.</li>
+      </ul>
+     </p>
+
+     <p><b>Observaciones:</b>
+      <ul>
+        <li>No se tienen en cuenta las celdas de rango que contienen VERDADERO o FALSO.</li>
+        <li>Si una celda de rango_promedio es una celda vacía, PROMEDIO.SI la omite.</li>
+        <li>Si rango es un valor en blanco o de texto, PROMEDIO.SI devuelve el valor de error #¡DIV0!. #¡VALOR!</li>
+        <li>Si una celda de criterio está vacía, PROMEDIO.SI la trata como un valor 0.</li>
+        <li>Si no hay celdas en el rango que cumplan los criterios, PROMEDIO.SI devuelve #¡DIV/0!. #¡VALOR!</li>
+        <li>En los criterios se puede utilizar los caracteres comodín de signo de interrogación (?) y asterisco (*).
+           El signo de interrogación corresponde a un solo carácter cualquiera y el asterisco equivale a cualquier
+           secuencia de caracteres. Si desea buscar un signo de interrogación o un asterisco reales, escriba una tilde (~)
+           delante del carácter que desea buscar.
+        </li>
+        <li>No es necesario que rango_promedio tenga el mismo tamaño y forma que rango. Las celdas reales de
+           las que se debe obtener el promedio se determinan utilizando la celda superior izquierda de rango_promedio como 
+           la celda inicial e incluyendo las celdas que corresponden con el tamaño y la forma del rango. Por ejemplo:</li>
+        
+      </ul>
+     </p>
+
+    </div>
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  PROMEDIO.SI.CONJUNTO </h1>
+
+      <p>La función <b>PROMEDIO.SI.CONJUNTO</b> Devuelve el promedio (media aritmética) de todas las celdas que 
+        cumplen múltiples criterios.</p>
+
+      <h2 class="number-title">Sintaxis</h2>
+      
+     <p><center> <b>PROMEDIO.SI.CONJUNTO(rango_promedio; rango_criterio1; criterio1; [rango_criterio2; criterio2]; ...)</b></center></p>
+        
+     <p>
+      La sintaxis de la función PROMEDIO.SI.CONJUNTO tiene los siguientes argumentos:<br> 
+     <ul>
+      <li><b>Rango_promedio</b>    Obligatorio. Una o más celdas cuyo promedio se desea obtener que incluyan números, 
+        o nombres, matrices o referencias que contengan números.</li>
+      <li><b>Rango_criterio1; rango_criterio2;...</b>   Rango_criterio1 es obligatorio, los demás rangos de criterios son opcionales.
+         De 1 a 127 rangos en los que se van a evaluar los criterios asociados.</li>
+      <li><b>Criterio1; criterio2;...</b>   Criterio1 es obligatorio, los criterios siguientes son opcionales. De 1 a 127 criterios
+         en forma de número, expresión, referencia de celda o texto que determinan las celdas cuyo promedio se va a calcular. 
+         Por ejemplo, los criterios pueden expresarse como 32, "32", ">32", "manzanas" o B4.</li>
+     </ul>
+     </p>
+
+     <p><b>Observaciones:</b>
+    <ul>
+      <li>Si rango_promedio es un valor en blanco o de texto, PROMEDIO.SI.CONJUNTO devuelve el valor de error #¡DIV0!. #¡VALOR!</li>
+      <li>Si una celda de un rango de criterios está vacía, PROMEDIO.SI.CONJUNTO la trata como un valor 0.</li>
+      <li>Las celdas del rango que contienen VERDADERO se evalúan como 1; las celdas del rango que contienen FALSO 
+        se evalúan como 0 (cero).</li>
+      <li>Cada celda del rango_promedio se utiliza en el cálculo promedio solo si todos los criterios especificados 
+        correspondientes son verdaderos para dicha celda.</li>
+      <li>A diferencia de los argumentos rango y criterio de la función PROMEDIO.SI, en PROMEDIO.SI.CONJUNTO cada rango_criterio
+         debe tener el mismo tamaño y forma que rango_suma.</li>
+      <li>Si las celdas de rango_promedio no se pueden traducir en números, PROMEDIO.SI.CONJUNTO devuelve el valor de error #¡DIV0!. #¡VALOR!</li>
+      <li>Si no hay celdas que cumplen todos los criterios, PROMEDIO.SI.CONJUNTO devuelve el valor de error #¡DIV/0!. #¡VALOR!</li>
+      <li>En los criterios se puede utilizar los caracteres comodín de signo de interrogación (?) y asterisco (*). 
+        El signo de interrogación corresponde a un solo carácter cualquiera y el asterisco equivale a cualquier secuencia
+         de caracteres. Si desea buscar un signo de interrogación o un asterisco reales, escriba una tilde (~) delante del
+          carácter que desea buscar.</li>
+    </ul></p>
+
+    </div>
+    
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función MIN </h1>
+      
+      <p>La función <b>MIN(rango o x;y;z;...)</b> muestra el valor más pequeño contenido en las celdas del rango
+        especificado</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función MAX</h1>
+
+      <p>La función <b>MAX(rango)</b> muestra el valor más alto contenido en las celdas del rango especificado. </p>
+    </div>
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función M.C.D</h1>
+      <p>La función <b>M.C.D(rango o x;y;z;...)</b> devuelve el Máximo Común Divisor de la lista de los números
+        especificada. Se pueden establecer tantos números como se desee separándolos por punto y
+        coma (;).</p>
+    </div>
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función M.C.M</h1>
+
+      <p>La función <b>M.C.M(rango o x;y;z;...)</b> devuelve el Mínimo Común Múltiplo de la lista de los números
+        especificada. Se pueden establecer tantos números como se desee separándolos por punto y
+        coma (;).</p>
+    </div>
+ 
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función REDONDEAR  </h1>
+
+      <p>La función <b>REDONDEAR(número;decimales)</b> redondea el número especificado a la cantidad de
+        decimales indicada como segundo dato.</p>
+
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función REDONDEAR.MAS  </h1>
+
+      <p>La función <b>REDONDEAR.MAS(número;decimales)</b> redondea un número hacia arriba, en dirección contraria a cero.</p>
+
+     <h2 class="number-title"> Sintaxis</h2>   
+     <p><center><b>REDONDEAR.MAS(número; núm_decimales)</b></center></p>
+     <p>La sintaxis de la función REDONDEAR.MAS tiene los siguientes argumentos:<br>
+      <ul>
+      <li>Número    Obligatorio. Cualquier número real que se desea redondear hacia arriba.</li>      
+      <li>Núm_decimales    Obligatorio. El número de dígitos al que se desea redondear el número.</li>
+    </ul>
+
+    <h2 class="number-title"> Observaciones</h2>
+    <ul>
+      <li>
+        La función REDONDEAR.MAS es similar a la función REDONDEAR, excepto que siempre redondea al número
+        superior más próximo, alejándolo de cero.
+      </li>
+
+      <li>
+        Si el argumento núm_decimales es mayor que 0 (cero), el número se redondea al valor superior 
+        (inferior para los números negativos) más próximo que contenga el número de lugares decimales especificado.
+      </li>
+
+      <li>
+        Si núm_decimales es 0, número se redondeará hacia arriba al entero más próximo.
+      </li>
+
+      <li>
+        Si el argumento núm_decimales es menor que 0, el número se redondea al valor superior (inferior si es negativo) 
+        más próximo a partir de la izquierda de la punto decimal.
+      </li>
+    </ul>
+    </p>
+
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Descripción (resultado)</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Resultado</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(3.2;0)</p>
+            </td>
+            <td>
+              <p>Redondea 3.2 hacia arriba a cero posiciones decimales.</p>
+            </td>
+            <td>
+              <p>4</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(76.9;0)</p>
+            </td>
+            <td>
+              <p>Redondea 76.9 hacia arriba a cero posiciones decimales.</p>
+            </td>
+            <td>
+              <p>77</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(3.14159; 3)</p>
+            </td>
+            <td>
+              <p>Redondea 3.14159 hacia arriba a tres posiciones decimales.</p>
+            </td>
+            <td>
+              <p>3.142</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(-3.14159; 1)</p>
+            </td>
+            <td>
+              <p>Redondea -3.14159 hacia arriba a una posición decimal.</p>
+            </td>
+            <td>
+              <p>-3.2</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(31415.92654; -2)</p>
+            </td>
+            <td>
+              <p>Redondea 31415.92654 hacia arriba a 2 posiciones decimales a la izquierda de la punto decimal.</p>
+            </td>
+            <td>
+              <p>31500</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+  
+    </div>
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función REDONDEAR.MENOS  </h1>
+
+      <p>La función <b>REDONDEAR.MENOS(número;decimales)</b> redondea un número hacia abajo, en dirección hacia cero.</p>
+
+     <h2 class="number-title"> Sintaxis</h2>   
+     <p><center><b>REDONDEAR.MENOS(número; núm_decimales)</b></center></p>
+     <p>La sintaxis de la función REDONDEAR.MENOS tiene los siguientes argumentos:<br>
+      <ul>
+      <li><b>Número</b>    Obligatorio. Cualquier número real que se desea redondear hacia abajo.</li>      
+      <li><b>Núm_decimales</b>    Obligatorio. El número de dígitos al que se desea redondear el número.</li>
+    </ul>
+
+    <h2 class="number-title"> Observaciones</h2>
+    <ul>
+      <li>
+        La función REDONDEAR.MENOS es similar a la función REDONDEAR, excepto que siempre redondea un número acercándolo a cero.
+      </li>
+
+      <li>
+        Si el argumento núm_decimales es mayor que 0 (cero), el número se redondea al valor inferior 
+        (superior para los números negativos) más próximo que contenga el número de lugares decimales especificado.
+      </li>
+
+      <li>
+        Si núm_decimales es 0, número se redondeará al entero inferior más próximo.
+      </li>
+
+      <li>
+        Si el argumento núm_decimales es menor que 0, el número se redondea al valor inferior 
+        (superior si es negativo) más próximo a partir de la izquierda de la punto decimal.
+      </li>
+    </ul>
+    </p>
+
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Descripción</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Resultado</b>
+                
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(3.2; 0)</p>
+            </td>
+            <td>
+              <p>Redondea 3.2 hacia abajo a cero posiciones decimales.</p>
+            </td>
+            <td>
+              <p>3</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(76.9; 0)</p>
+            </td>
+            <td>
+              <p>Redondea 76.9 hacia abajo a cero posiciones decimales.</p>
+            </td>
+            <td>
+              <p>76</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(3.14159; 3)</p>
+            </td>
+            <td>
+              <p>Redondea 3,14159 hacia abajo a tres posiciones decimales.</p>
+            </td>
+            <td>
+              <p>3.141</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(-3.14159; 1)</p>
+            </td>
+            <td>
+              <p>Redondea -3.14159 hacia abajo a una posición decimal.</p>
+            </td>
+            <td>
+              <p>-3,1</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(31415.92654; -2)</p>
+            </td>
+            <td>
+              <p>Redondea 31415.92654 hacia abajo a 2 posiciones decimales a la izquierda de la punto decimal.</p>
+            </td>
+            <td>
+              <p>31400</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función REDONDEAR.MULT  </h1>
+
+      <p>La función <b>REDONDEAR.MULT(número;decimales)</b>  devuelve un número redondeado al múltiplo deseado.</p>
+
+     <h2 class="number-title"> Sintaxis</h2>   
+     <p><center><b>REDONDEAR.MENOS(número; multiplo)</b></center></p>
+     <p>La sintaxis de la función REDONDEAR.MULT tiene los siguientes argumentos:<br>
+      <ul>
+      <li><b>Número</b>    Obligatorio. Es el valor que va a redondear.</li>      
+      <li><b>Multiplo</b>   Obligatorio. Es el múltiplo al que desea redondear el número.</li>
+    </ul>
+
+    <h2 class="number-title"> Observaciones</h2>
+    <ul>
+      <li>
+        La función REDOND.MULT redondea hacia valores positivos, hacia arriba, si el resto de dividir número entre 
+        múltiplo es mayor o igual que la mitad del valor de múltiplo.
+      </li>
+
+      <li>
+        Los argumentos Número y Múltiplo deben tener el mismo signo. Si no, se devuelve un error #NUM
+      </li>
+    </ul>
+    </p>
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <th>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </th>
+            <th>
+              <p>
+                <b class="ocpLegacyBold">Descripción</b>
+              </p>
+            </th>
+            <th>
+              <p>
+                <b class="ocpLegacyBold">Resultado</b>
+              </p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=REDOND.MULT(10;3)</p>
+            </td>
+            <td>
+              <p>Redondea 10 al múltiplo de 3 más próximo.</p>
+            </td>
+            <td>
+              <p>9</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDOND.MULT(-10;-3)</p>
+            </td>
+            <td>
+              <p>Redondea -10 al múltiplo de -3 más próximo.</p>
+            </td>
+            <td>
+              <p>-9</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDOND.MULT(1.3;0.2)</p>
+            </td>
+            <td>
+              <p>Redondea 1.3 al múltiplo de 0.2 más próximo.</p>
+            </td>
+            <td>
+              <p>1.4</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDOND.MULT(5;-2)</p>
+            </td>
+            <td>
+              <p>Devuelve el mensaje de error #¡NUM! porque -2 y 5 tienen signos diferentes.</p>
+            </td>
+            <td>
+              <p>#¡NUM!</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    </div>
+
+  
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  REDONDEA.PAR </h1>
+
+    <p>Devuelve un número redondeado hacia arriba hasta el próximo número entero par</p>
+
+    <h2 class="number-title"> Sintaxis</h2>   
+     <p><center><b>REDONDEA.PAR(número)</b></center></p>
+     <p>La sintaxis de la función REDONDEA.PAR tiene los siguientes argumentos:<br>
+      <ul>
+       <li><b>Número</b>  Obligatorio. Es el valor que va a redondear. </li></p>
+
+
+    <p><b>Observaciones:</b><br>
+    <ul>
+      <li>Si número no esnumérico, REDONDEAR.PAR devuelve error #¡VALOR!.</li>
+      <li>Independientemente del signo del valor de número, se entiende que el valor se redondea
+         hacia arriba cuando se hace en dirección contraria a cero. Si el argumento número es un
+         entero par, no se redondea.</li>
+    </ul></p>
+
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Descripción</b>
+              </p>
+            </td>
+            <td>
+              <p id="__goback">
+                <b class="ocpLegacyBold">Resultado</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=REDONDEA.PAR(1.5)</p>
+            </td>
+            <td>
+              <p>Redondea 1.5 al número par entero más próximo</p>
+            </td>
+            <td>
+              <p>2</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEA.PAR(3)</p>
+            </td>
+            <td>
+              <p>Redondea 3 al número par entero más próximo </p>
+            </td>
+            <td>
+              <p>4</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEA.PAR(2)</p>
+            </td>
+            <td>
+              <p>Redondea 2 al número par entero más próximo</p>
+            </td>
+            <td>
+              <p>2</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEA.PAR(-1)</p>
+            </td>
+            <td>
+              <p>Redondea -1 al número par entero más próximo</p>
+            </td>
+            <td>
+              <p>-2</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </p>
+    </div>
+
+
+    
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  REDONDEA.IMPAR </h1>
+
+      <p>La función <b>REDONDEA.IMPAR(número)</b> redondea un número hasta el próximo entero impar.</p>
+
+     <h2 class="number-title">Sintaxis</h2>
+
+     <p><center><b>REDONDEA.IMPAR(número)</b></center></p>
+
+     <p>La sintaxis de la función REDONDEA.IMPAR tiene los siguientes argumentos:<br>
+
+      <ul>
+        <li>Número:   Obligatorio. Es el valor que va a redondear.</li>
+      </ul>
+      </p>
+
+      
+    <p><b>Observaciones:</b><br>
+      <ul>
+        <li>Si número no es numérico, REDONDEAR.IMPAR devuelve error #¡VALOR!.</li>
+        <li>Independientemente del signo del valor de número, se entiende que el valor se redondea
+           hacia arriba cuando se hace en dirección contraria a cero. Si el argumento número es un
+           entero impar, no se redondea.</li>
+      </ul></p>
+
+
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <th>
+              <p>
+                <b class="ocpUI">Fórmula</b>
+              </p>
+            </th>
+            <th>
+              <p>
+                <b class="ocpUI">Descripción</b>
+              </p>
+            </th>
+            <th>
+              <p>
+                <b class="ocpUI">Resultado</b>
+              </p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=REDONDEA.IMPAR(1.5)</p>
+            </td>
+            <td>
+              <p>Redondea 1.5 hasta el entero impar más próximo</p>
+            </td>
+            <td>
+              <p>3</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEA.IMPAR(3)</p>
+            </td>
+            <td>
+              <p>Redondea 3 hasta el entero impar más próximo</p>
+            </td>
+            <td>
+              <p>3</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEA.IMPAR(2)</p>
+            </td>
+            <td>
+              <p>Redondea 2 hasta el entero impar más próximo.</p>
+            </td>
+            <td>
+              <p>3</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEA.IMPAR(-1)</p>
+            </td>
+            <td>
+              <p>Redondea -1 hasta el entero impar más próximo.</p>
+            </td>
+            <td>
+              <p>-1</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEA.IMPAR(-2)</p>
+            </td>
+            <td>
+              <p>Redondea -2 hasta (lejos de 0) el entero impar más próximo.</p>
+            </td>
+            <td>
+              <p>-3</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  TRUNCAR </h1>
+
+      <p>La función <b>TRUNCAR(número)</b> elimina los decimales del número especificado devolviendo la parte
+        entera exclusivamente. </p>
+    </div>
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función ENTERO</h1>
+      <p>La función <b>ENTERO(número)</b> Redondea un número hasta el entero inferior más próximo.</p>
+    </div>
+
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Observación ENTERO VS TRUNCAR</h1>
+      <p>Las funciones TRUNCAR y ENTERO son parecidos porque ambos devuelven enteros. TRUNCAR quita la 
+        parte fraccionaria del número. ENTERO redondea los números al entero más cercano basado en el valor
+        de la parte fraccionaria del número. Estas dos funciones solo son diferentes cuando se utilizan números 
+        negativos: TRUNCAR(-4.3) devuelve -4, pero ENTERO(-4.3) devuelve -5 porque -5 es el valor más bajo.</p>
+    </div>
+
+
+
+
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función PI( ) </h1>
+
+      <p>La función  <b>PI( )</b> devuelve el valor del número Pi redondeado a nueve decimales.</p>
+    </div>
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función GRADOS</h1>
+      <p>La funcón <b>GRADOS(número)</b> convierte el número especificado (de radianes) en grados.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función RADIANES  </h1>
+
+      <p>La función <b>RADIANES(número)</b> convierte el número especificado (que esté en grados) en radianes.</p>
+    </div>
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  SENO</h1>
+
+      <p>La función <b>SENO(ángulo)</b> devuelve el seno del ángulo especificado.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función EXP </h1>
+      <p>La función <b>EXP(número)</b> devuelve el número e elevado al número especificado.</p>
+    </div>
+
+    
+      
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función LOG</h1>
+
+      <p>La función <b>LOG(número;base)</b> devuelve el logaritmo del número especificado en la base indicada</p>
+    </div>
+
+    
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función LOG10</h1>
+
+      <p>La función <b>LOG10(número)</b> devuelve el logaritmo en base 10 del número especificado. </p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  TAN </h1>
+
+      <p>La función <b>TAN(ángulo)</b> devuelve la tangente del ángulo especificado. </p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función MDETERM </h1>
+
+      <p>La función <b>MDETERM(rango)</b> devuelve la matriz determinante de una matriz especificada mediante
+        un rango. La matriz debe ser cuadrada, es decir, debe tener el mismo número de filas que de
+        columnas. Ninguna de las celdas debe tener datos de tipo texto.</p>
+    </div>
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función MINVERSA </h1>
+
+      <p>La función <b>MINVERSA(rango)</b> devuelve la matriz inversa de una matriz especificada mediante un
+        rango. La matriz debe ser cuadrada, es decir, debe tener el mismo número de filas que de
+        columnas. Ninguna de las celdas debe tener datos de tipo texto.</p>
+    </div>
+
+    
+
+
+<!--
+  
+  
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  SUMARSI</h1>
+
+      <h2 class="number-title"> Sintaxis </h2>
+        
+      <p> <center><b>=SUMAR.SI.CONJUNTO(rango_evaluacion1,criterio1...,rango_suma)</b></center></p>
+
+
+      <p>
+        <ul>
+          <li><b>Rango Evaluacion1</b>: Rango de celdas que contienen uno de los parámetros a sumar</li>
+          <li><b>Criterio 1</b>: Indica el criterio a considerar del rango_evaluación 1...: Puedes indicar
+             hasta 128 rango/criterios de evaluación, si sólo tienes uno, pasar el siguiente parámetro</li>
+          <li><b>Rango Suma</b>: Establece las celdas que se deben sumar de acuerdo a las condiciones</li>
+        </ul>
+      </p>
+
+      <p> OJO. Los rangos indicados en la función, deben ser del mismo tamaño de celdas, es decir,
+         en el rango evaluación se seleccionaron 10 celdas, el rango de suma también debe ser de 10 celdas.</p>
+
+      <p>Es una función que nos ayudará a realizar SUMAS, con la característica de que la suma será 
+        condicionada a uno o varios criterios.</p>
+
+      <p>La función SUMARSI CONJUNTO te será muy útil para realizar análisis de datos y encontrar 
+        indicadores de acuerdo a diferentes criterios cómo pueden ser países, productos, vendedores 
+        o también, ventas mayores a, clientes sin factura, entre otros.</p>
+        
+      <p>Así que gracias a la fórmula condicional podremos, por ejemplo, encontrar la suma de 
+        ventas de un producto de manzana (columna A) en EUA (columna B).</p>
+
+
+      <p>=SUMAR.SI.CONJUNTO(A1:A100,"Manzana",B1:B100,"EUA",E1:E100)</p>  
+    </div>
+
+-->
+
+ 
+    
+  </body>
