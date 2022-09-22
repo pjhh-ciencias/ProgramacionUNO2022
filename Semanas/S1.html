@@ -14,6 +14,8 @@
     <script type="text/javascript" src="../main.js"></script>
 
 
+
+
     <!-- Next part is for new coomands -->
     <script>
       window.MathJax = {
@@ -22,14 +24,13 @@
             sen: "\\operatorname{sen}",
             seg: ["\\overrightarrow{#1}", 1]
           },
-          tags: "ams", /* this part is for numbered equations */
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
+          tags: "ams" /* this part is for numbered equations */
         }
       };
     </script>
 
     <!-- This part is for using single $ for latex input, instead of \(\) -->
-    <!--<script>
+    <script>
         MathJax = {
         tex: {
             inlineMath: [['$', '$'], ['\\(', '\\)']]
@@ -38,7 +39,9 @@
             fontCache: 'global'
         }
     };
-    </script>-->
+    </script>
+
+
 
     <!-- CSS -->
 
@@ -56,18 +59,18 @@
   
     <!-- Top Menu  -->
 
+
     <header class="main-header">
-        <h1> Tecnolologías de la información y comunicación II  </h1>
+        <h1> Curso propedéutico: Matemáticas  </h1>
        <nav class="top-nav">
-         <ul>
-          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
-          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
-          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
-          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
-         <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
-        
-            
-          </ul>
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Home.html"> Inicio  </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Informacion_General.html"> Información general </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Notas.html"> Notas </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Ejercicios.html"> Ejercicios </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+
        </nav>
        <!-- 
         <nav class="small-nav" align=right>
@@ -76,87 +79,30 @@
       -->
 
       </header>
+
       <!-- This part is for title in tab-->
-      <title> § Semana  1 </title>
+      <title> § Parcial 2   </title>
     
   </head>
 
+
+
   <body class="fondo-body" >
-    <h1 class="number-title flexbox"></h1>
-  
-    <div class="nota-box">
-      <h1 class="number-subtitle"> </h1>  
-
-<p>Una de las mejores formas de aprender  a programar es empezar c por los diagramas de flujo y pseudocodigo . 
-  ambos facilitan al estudiante su inmersion en la resolucion de problemas mediante algoritmos. 
-</p>
-
-
-<p>El pseudocodigo es una forma de expresar los distintos pasos que va a realizar un programa de la forma mas 
-  parecida a un lenguaje de programación.  Su principal función es la de representar por pasos la solución a un
-  problema o algoritmo, de la forma más detallada posible, utilizando un lenguaje cercano al de programación. 
-  El pseudocódigo no puede ejecutarse en un ordenador ya que entonces dejaría de ser pseudocódigo, como su propio 
-  nombre indica, se trata de un código falso (pseudo = falso), es un código escrito para que lo entienda el ser 
-  humano y no la máquina. </p>
-
-
-  <p>Podemos considerar al pseudocódigo como un lenguaje intermedio, que se encuentra en medio de nuestro propio lenguaje 
-    y el lenguaje de programación que entiende el ordenador.</p>
-
-
-    <p>https://openwebinars.net/blog/que-es-pseudocodigo/</p>
-
-    <p>https://openwebinars.net/cursos/introduccion-programacion/</p>
-
-    <p>https://coggle.it/diagram/Xp5nOhqrZNiREmUW/t/pseint</p>
-
-    <p>http://pseint.sourceforge.net/index.php?page=features.php</p>
-
-    <p>https://formacion.intef.es/catalogo/mod/book/view.php?id=69&chapterid=335</p>
-
-    <p>https://www.softzone.es/programas/lenguajes/pseint/</p>
-
-
+    <h1 class="number-title flexbox"> Propiedades de los numeros reales </h1>   
+    <div class="teorema-box">
+      <h2 class="number-title"> Teorema</h2>
+     <p>
+      <ol>
+        <li>Si $a,b \in \mathbb{R}$, existe un único $x \in \mathbb{R}$ tal que $a + x= b$.</li>
+        <li>Si $a,b \in \mathbb{R}$ y $a \not= 0$, entonces existe un único $x \in \mathbb{R}$ tal que $ax=b$.</li>
+      </ol> 
+     </p> 
+     <button class="respButton hvr-grow ">   Demostración </button>
+    <div class="resp-box flexbox">
+      <div class="flexbox">
+        <a href="https://youtu.be/1iRLuX2MHUY" target="_blank" > Video </a> </div>
     </div>
-    <div class="nota-box">
-        <h1 class="number-subtitle"> </h1>  
-<p>PSeInt es  un intérprete de pseudocódigo.</p>
-
-<p>Uno de los problemas a los que se enfrenta un estudiante que da sus primeros pasos en el aprendizaje
-   de la programación reside en que las 'palabras reservadas' de la mayoría de los lenguajes se basan 
-   en el inglés, por lo que al esfuerzo de añadir un nuevo lenguaje informático se añade la tarea de 
-   estar traduciendo mentalmente términos como 'printf'.</p>
-
-
-<p>Para evitar este problema, y para asegurarse de que esas primeras nociones sobre programación no sean aplicables 
-  a un único lenguaje, se suele recurrir a lo que llamamos 'pseudocódigo': un falso lenguaje que represente en
-   la solución a un algoritmo de la forma más comprensible posible, manteniendo una estructura similar al código real,
-    y todo ello en la lengua en la que 'piensa' el estudiante.</p>
-<p>Proceso Suma<br>
-
-  Escribir "Ingrese el primer numero:"<br>
-  
-  Leer A<br>
-  
-  Escribir "Ingrese el segundo numero:"<br>
-  
-  Leer B<br>
-  
-  C <- A+B<br>
-  
-  Escribir "El resultado es: ",C<br>
-  
-  FinProceso</p>
-
-  <p>Muchas veces, el objetivo de este pseudocódigo es el de ser usado en una pizarra o en un ejercicio con lápiz y papel,
-     antes de empezar a usar entornos de programación reales con lenguajes también reales. Pero algunas universidades
-      apuestan por recurrir también a 'pseudoentornos'; es decir, a software capaz de detectar errores de sintaxis en
-       el pseudocódigo, e incluso de ejecutarlo</p>
-</div>
-
-  
-
-
- 
+    </div>
+    
 
 </body>
