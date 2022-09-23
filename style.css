@@ -35,11 +35,23 @@ html, body{
   align-items: center;
 }
 
+
+
+.flexbox_{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* for top menu */
 .main-header{
   text-align: center;
   width: 100%;
-  margin-bottom: 50px;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: -80px;
   }
  
 .small-nav{
@@ -94,7 +106,7 @@ html, body{
 
 .calculo-title{
   text-align: center;
-  font-size: 100px;
+  font-size: 150px;
   font-family: "Cinzel";
 }
 
@@ -121,10 +133,20 @@ html, body{
    counter-reset: sectionCounter  cardCounter ;
  }
 
+ 
+
+h1.title{
+  font-size: 35px;
+  font-family: "Muli";
+  content:" ";
+  color: rgb(0, 4, 255);
+}
+
 
 h1.number-title{
   counter-reset: sectionCounter  cardCounter ;
   font-family: "Muli";
+  font-size: 33px;
 }
 
 
@@ -142,6 +164,7 @@ h1.number-title:before{
 }
 
 h2.number-title{
+  font-size: 35px;
   font-family: "Roboto";
 }
 
@@ -255,8 +278,8 @@ h2.number-title:before{
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
-    font-size: 20px;
-    width: 80%;
+    font-size: 21px;
+    width: 90%;
     box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
 
   /*
