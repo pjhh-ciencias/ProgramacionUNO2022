@@ -101,6 +101,16 @@
     El proceso de <b>resolución de un problema</b> abarca desde la <em>descripción inicial del
     problema</em> hasta el <em>desarrollo de un programa</em>  de computadora que lo resuelva.</b> 
    </p>
+
+   
+   <p>En la siguiente figura se resume las etapas que debemos seguir para solucionar algún problema:</p> 
+
+    <p>
+      <div class="flexbox">
+          <img src="../Imagenes/Etapas_solucion_problema.JPG" alt="", width="auto" height="auto">
+      </div>
+  </p>
+
    <p>El proceso de diseño de un programa  tiene una serie de etapas que generalmente deben
     seguir todos los programadores. Estas etapas son:
     <ol>
@@ -111,13 +121,6 @@
     </ol>
    </p>  
    
-   <p>En las siguientes figuras se se resumen las etapas que debemos seguir para solucionar algún problema:</p> 
-
-    <p>
-      <div class="flexbox">
-          <img src="../Imagenes/Etapas_solucion_problema.JPG" alt="", width="auto" height="auto">
-      </div>
-  </p>
 
   </div>
 <div class="nota-box">
@@ -318,6 +321,124 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
 
 
 
+<p>        
+  <table class="info">
+    <thead>
+    <tr>
+      <th>Símbolo</th>
+      <th> Descripcion del símbolo</th>
+        
+      </tr>
+    </thead>
+      <tbody>
+      <tr>
+        <td><img src="../Imagenes/Simbolo_inicio_fin.JPG" alt="", width="auto" height="auto"></td>
+        <td> Se utiliza para marcar el inicio y el fin del diagrama de flujo.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_lectura.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para introducir los datos de entrada. Expresa lectura.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_proceso.JPG" alt="", width="auto" height="auto"></td>
+        <td>Representa un proceso. En su interior se colocan asignaciones,
+          operaciones aritméticas, cambios de valor de celdas en memoria,
+          etc.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_decision.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar una decisión. En su interior se almacena
+          una condición, y, dependiendo del resultado, se sigue por
+          una de las ramas o caminos alternativos. Este símbolo se utiliza
+          con pequeñas variaciones en las estructuras selectivas</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_decision_multiple.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar una decisión múltiple, switch, que
+          analizaremos en el siguiente capítulo. En su interior se almacena
+          un selector, y, dependiendo del valor de dicho selector, se
+          sigue por una de las ramas o caminos alternativos.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Sibolo_escritura.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar la impresión de un resultado. Expresa
+          escritura.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_direccion_flujo.JPG" alt="", width="auto" height="auto"></td>
+        <td>Expresan la dirección del flujo del diagrama.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Conexion_misma_pagina.JPG" alt="", width="auto" height="auto"></td>
+        <td>Expresa conexión dentro de una misma página.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Conexion_diferente_pagina.JPG" alt="", width="auto" height="auto"></td>
+        <td>Representa conexión entre páginas diferentes.</td>
+      </tr>
+
+      <tr> <td><img src="../Imagenes/Simbolo_subproblema.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para expresar un módulo de un problema, subproblema,
+          que hay que resolver antes de continuar con el flujo
+          normal del diagrama.</td>
+      </tr>
+    </tbody>
+    </table>
+  </p>
+
+
+<p>En la siguiente figura se presentan los pasos que se deben seguir en la
+  construcción de un diagrama de flujo. El procesamiento de los datos generalmente
+  está relacionado con el proceso de toma de decisiones. Además, es muy común
+  repetir un conjunto de pasos.</p>
+
+  
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Etapas_construccion_diagrama_flujo.JPG" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+<h2 class="number-title">Reglas para la construcción
+  de diagramas de flujo</h2>
+
+<p>El diagrama de flujo debe ilustrar gráficamente los pasos o procesos que se deben
+  seguir para alcanzar la solución de un problema. Los símbolos presentados, colocados
+  en los lugares adecuados, permiten crear una estructura gráfica flexible
+  que ilustra los pasos a seguir para alcanzar un resultado específico. El diagrama
+  de flujo facilita entonces la escritura del programa en un lenguaje de programación,
+  C en este caso. A continuación se presenta el conjunto de reglas para la
+  construcción de diagramas de flujo:</p>
+  <p>
+    <ol>
+      <li>Todo diagrama de flujo debe tener un inicio y un fin.</li>
+      <li>Las líneas utilizadas para indicar la dirección del flujo del diagrama deben
+        ser rectas: verticales u horizontales</li>
+      <li>Todas las líneas utilizadas para indicar la dirección del flujo del diagrama
+        deben estar conectadas. La conexión puede ser a un símbolo que exprese
+        lectura, proceso, decisión, impresión, conexión o fin del diagrama.</li>
+      <li>El diagrama de flujo debe construirse de arriba hacia abajo (top-down) y de
+        izquierda a derecha (right to left).</li>
+      <li>La notación utilizada en el diagrama de flujo debe ser independiente del
+        lenguaje de programación. La solución presentada se puede escribir posteriormente
+        en diferentes lenguajes de programación.</li>
+      <li>Al realizar una tarea compleja, es conveniente poner comentarios que
+        expresen o ayuden a entender lo que hayamos hecho.</li>
+      <li>Si la construcción del diagrama de flujo requiriera más de una hoja,
+        debemos utilizar los conectores adecuados y enumerar las páginas
+        correspondientes.</li>
+      <li>No puede llegar más de una línea a un símbolo determinado.</li>
+    </ol>
+  </p>
+
 </div>
   
 
@@ -330,19 +451,34 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
   es comprender con claridad el problema que va a resolverser por medio de la computadora  y entender 
 tambien con detalle cual sera el procedimiento mediante el cual la maquina llegara a la solucion deseada.</p>
 
+
+<h2 class="number-title"> Lenguajes de programación</h2>
+
+
  <p>Cuando programamos, no podemos utilizar el lenguaje natural con que nos comunicamos
   cotidianamente los seres humanos. Por el contrario, los programadores
   emplean un lenguaje que la computadora puede interpretar para realizar tareas.
   En otras palabras, un <em>lenguaje de programación</em> </p>
 
-  <p><b>Definición:</b> Un <b>lenguaje de programación</b> es un conjunto de reglas que permiten escribir
-   programas para su ejecuci ´on por cierto mecanismo
+
+  <p><b>Definición:</b> Un <b>lenguaje de programación</b>  se conforma de una serie de símbolos y
+    reglas de sintaxis y semántica que definen la estructura principal del lenguaje y le dan un significado 
+    a sus elementos y expresiones.
   </p>
+
+  <p>La función principal de los lenguajes de programación es escribir programas que permiten la comunicación 
+    usuario-máquina. Unos programas especiales (compiladores o intérpretes) convierten las instrucciones escritas
+    en código fuente, en instrucciones escritas en lenguaje máquina (0 y 1).<br>
+
+    Los intérpretes leen la instrucción línea por línea y obtienen el código máquina correspondiente.<br>
+    
+    En cuanto a los compiladores, traducen los símbolos de un lenguaje de programación a su equivalencia escrito
+    en lenguaje máquina (proceso conocido como compilar). Por último, se obtiene un programa ejecutable.</p>
 
   <p>Existen muchos y variados lenguajes de programación, de características sumamente
     diferentes y que emplean diferentes enfoques con los que podemos
     programar. Cada lenguaje comprende un conjunto de ideas que guían, como su propósito final, 
-    la forma en que codificamos la descripci ´on que otorgaremos a la maquina. En todo momento el lenguaje de programaci´on permite especificar de
+    la forma en que codificamos la descripci ón que otorgaremos a la maquina. En todo momento el lenguaje de programación permite especificar de
     manera precisa el trabajo que el programador espera que la computadora realice.</p>
 
   <p><b>En  esta etapa tenemos que  escribir en un <em>lenguaje de programación</em> el algoritmo creado
@@ -372,6 +508,27 @@ tambien con detalle cual sera el procedimiento mediante el cual la maquina llega
     <p>https://www.softzone.es/programas/lenguajes/pseint/</p>
 
 
+    <p>Los lenguajes de alto nivel se traducen automáticamente a código de máquina,
+      sı, pero has de saber que hay dos tipos diferentes de traductores dependiendo de su modo de
+      funcionamiento: compiladores e intérpretes.</p>
+
+    <h2 class="number-title"> Compiladores e interpretes</h2>
+  
+    
+    <p><b>Definición:</b> Un compilador lee completamente un programa en un lenguaje de alto nivel y lo traduce
+      en su integridad a un programa de código de máquina equivalente. El programa de código de
+      máquina resultante se puede ejecutar cuantas veces se desee, sin necesidad de volver a traducir
+      el programa original.</p>
+
+    <p><b>definición:</b> Un intérprete actúa de un modo distinto: lee un programa escrito en un lenguaje de alto nivel
+      instrucción a instrucción y, para cada una de ellas, efectúa una traducción a las instrucciones de
+      código de máquina equivalentes y las ejecuta inmediatamente. No hay un proceso de traducción
+      separado por completo del de ejecución. Cada vez que ejecutamos el programa con un intérprete,
+      se repite el proceso de traducción y ejecución, ya que ambos son simultáneos.</p>
+
+    <p>Por regla general, los intérpretes ejecutarán los programas más lentamente, pues al tiempo
+      de ejecución del código de máquina se suma el que consume la traducción simultánea. Además,
+      un compilador puede examinar el programa de alto nivel abarcando más de una instrucción</p>
     </div>
 
 
