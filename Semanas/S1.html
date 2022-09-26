@@ -98,25 +98,72 @@
 
 
    <p>
-    El proceso de <b>resolución de un problema</b> abarca desde la descripción inicial del
-    problema hasta el desarrollo de un programa  de computadora que lo resuelva.</b> 
-    
-   <p>El proceso de diseño de programas tiene una serie de fases que generalmente deben
-    seguir todos los programadores. Estas fases son: análisis del problema; diseño del algoritmo;
-    codificación; compilación y ejecución, verificación; depuración; mantenimiento y documentación.
-   </p>   
+    El proceso de <b>resolución de un problema</b> abarca desde la <em>descripción inicial del
+    problema</em> hasta el <em>desarrollo de un programa</em>  de computadora que lo resuelva.</b> 
    </p>
-  </div>
+   <p>El proceso de diseño de un programa  tiene una serie de etapas que generalmente deben
+    seguir todos los programadores. Estas etapas son:
+    <ol>
+      <li>Definición o análisis del problema,</li>
+      <li>Diseño del algoritmo,</li>
+      <li>Transformación del algoritmo en un programa,</li>
+      <li>Ejecución y validación del programa</li>
+    </ol>
+   </p>  
+   
+   <p>En las siguientes figuras se se resumen las etapas que debemos seguir para solucionar algún problema:</p> 
 
+    <p>
+      <div class="flexbox">
+          <img src="../Imagenes/Etapas_solucion_problema.JPG" alt="", width="auto" height="auto">
+      </div>
+  </p>
+
+  </div>
+<div class="nota-box">
+  <h2 class="number-title"> Definición o análisis del problema</h2>
+
+  <p>La definición del problema comienza analizando los requisitos del usuario;
+   estos requisitos con frecuencia suelen ser imprecisos y difíciles de escribir.
+   Por esta razón en este etapa de especificación se requiere normalmente una gran
+   comunicación entre los programadores y los futuros usuarios finales del sistema.
+  </p>
+
+  <p>En esta estapa también  tenemos que  especificar claramente aquella información
+    que necesaria para la resolución del problema.</p>
+  
+    <p>Para hacer el análisis hay  que responder 
+      a las siguientes preguntas:<br>
+      <ul>
+        <li>¿Qué entrada(s) tiene el problema?,</li>
+        <li>¿Cuál es la salida deseada?,</li>
+        <li>¿Qué método produce la salida deseada a partir de los datos de entrada?</li>
+      </ul>
+    </p>
+   
+    
+    
+
+
+</div>
   
 <div class="nota-box">
   <h2 class="number-title"> Diseño del algoritmo</h2> 
   
-<p><b>Definición:</b> Se llama <b>algoritmo</b> a un conjunto de reglas que permite obtener un resultado determinado a partir de ciertos datos de partida. El nombre procede del matemático persa Abu Ja’far Mohammed ibn Musa al-Jowârizmî,
-  autor de un tratado de aritmética que se publicó hacia el año 825 y que fue muy conocido durante la Edad Media</p>
+  <p>Casi inconscientemente, los humanos efectuamos cotidianamente una serie de pasos, procedimientos o acciones que nos permiten
+    alcanzar un resultado o resolver un problema. Continuamente seguimos una serie de pasos o conjunto de acciones que nos
+    permiten alcanzar un resultado. Estas series de pasos, procedimientos o acciones,comenzamos a aplicarlas desde que
+    empieza el día, cuando, por ejemplo, decidimos bañarnos. Posteriormente, cuando tenemos que ingerir alimentos
+    también seguimos una serie de pasos que nos permiten alcanzar un resultado específico: desayunar. La historia se repite
+    innumerables veces durante el día. En realidad todo el tiempo estamos aplicando algoritmos para resolver problemas.
+    </p>
+
+<p>En esta etapa es importante definir el concepto de <em>algoritmo</em>. El nombre procede del matemático persa Abu Ja’far Mohammed ibn Musa al-Jowârizmî,
+  autor de un tratado de aritmética que se publicó hacia el año 825 y que fue muy conocido durante la Edad Media.</p>
   
-   <p><b>Definición:</b> Un algoritmo es un conjunto finito de reglas que proponen una serie de
-    operaciones que sirven para resolver un determinado problema y que cumple las siguientes características:
+<p><b>Definición:</b> Un <b>algoritmo</b> es un conjunto de reglas que permite obtener un resultado determinado a 
+   partir de ciertos datos de partida y que cumple las siguientes características: </p>
+  
   <ol>
     <li>
       <b>Finito:</b> Debe acabar siempre tras un número finito de pasos, si bien este número de pasos puede ser 
@@ -135,6 +182,13 @@
   </ol>
    </p>
 
+   <p>Un algoritmo consta de tres secciones o mudulos pincipales. </p>
+   <p>
+    <div class="flexbox">
+        <img src="../Imagenes/Secciones_algoritmo.JPG" alt="", width="auto" height="auto">
+    </div>
+</p>
+
    <p><b>Ejemplos:</b>
     <ul>
       <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
@@ -143,25 +197,126 @@
     </ul>  
    </p>
 
-<p>En esta etapa tenemos que definir el problema y especificar claramente aquello que 
-  es necesario para su resolución.</p>
 
-<p>Para hacer el análisis hay  que responder a las siguientes preguntas:<br>
-  <ul>
-    <li>¿Qué entrada(s) tiene el problema?,</li>
-    <li>¿Cuál es la salida deseada?,</li>
-    <li>¿Qué método produce la salida deseada a partir de los datos de entrada?</li>
-  </ul>
+<p>
+  En esta etapa hay que indicar cómo hace el algoritmo la tarea solicitada, y eso se traduce en la construcción de un algoritmo.
+  Los métodos más eficaces se basan en la técnica <b>divide y vencerás</b>:
 </p>
 
-<p>La definición del problema comienza analizando los requisitos del usuario;
-  pero estos requisitos con frecuencia suelen ser imprecisos y difíciles de escribir.
-  La fase de especificación requiere normalmente una gran comunicación entre los
-  programadores y los futuros usuarios del sistema.
+<center>
+  El problema se divide en subproblemas, y a continuación se divide cada uno de estos subproblemas en otros hasta que pueda 
+  ser implementada una solución.
+</center>
+
+<p>
+  Esta fase de diseño es bastante larga, pero hay que tener en cuenta que el gasto de tiempo en la fase de diseño será ahorro de tiempo cuando se escriba
+  y depure el programa. El resultado final del diseño es una solución que debe ser fácil de traducir a estructuras de datos y estructuras
+  de control de un lenguaje de programación específico.
 </p>
 
-<p>Las dos herramientas más comúnmente utilizadas para diseñar algoritmos son: <b>diagramas de flujo</b> 
-  y <b>pseudocódigos</b></p>
+
+<p>No existen reglas específicas que nos permitan resolver un problema. Sin embargo, es posible  ofrecer un
+  conjunto de técnicas y herramientas metodológicas que permitan flexibilizar y estructurar el razonamiento
+  utilizado en la solución de un problema. Eso provocará finalmente la construcción de algoritmos eficientes.
+</p>
+
+
+<p>
+  Las dos <b>herramientas más comúnmente utilizadas para diseñar algoritmos</b> son: <em>diagramas de flujo</em> 
+  y <em>pseudocódigos</em>. De hecho, una de las mejores formas de aprender  a programar es empezar por los <em>diagramas de flujo</em> y 
+  <em>pseudocodigo</em>. Ambos facilitan e inducen  la resolucion de problemas mediante <em>algoritmos</em></p>
+
+
+<h2 class="number-title"> Pseudocodigo</h2>
+
+<p>En el mundo de la programación el <em>pseudocódigo</em> es una de las 
+herramientas más conocidas para el diseño de solución de problemas por 
+computadora. Esta herramienta permite pasar casi de manera directa la 
+solución del problema a un <em>lenguaje de programación</em> específico. 
+</p>
+
+<p><b>Definición:</b> El <b>pseudocodigo</b> es una serie de pasos bien detallados y claros que conducen a la 
+  resolución de un problema. Es una forma de expresar los distintos pasos que va a realizar un programa de la forma mas 
+  parecida a un lenguaje de programación. 
+</p>
+
+<p><b>Observación:</b> El pseudocódigo no puede ejecutarse en un ordenador ya que entonces dejaría 
+  de ser pseudocódigo, como su propio nombre indica, se trata de un código falso (pseudo = falso), es un código escrito para que lo entienda el ser 
+  humano y no la máquina.</p>
+
+<p><b>Ejemplo:</b> El pseudocódigo para determinar el volumen de una caja de dimensiones A, B y C se puede 
+  establecer de la siguiente forma:
+<ol>
+<li></li>
+</ol>
+</p>
+
+<p>Podemos considerar al pseudocódigo como un lenguaje intermedio, que se encuentra en medio de nuestro propio lenguaje 
+y el lenguaje de programación que entiende el ordenador.</p>
+
+
+<h2 class="number-title"> Diagramas de flujo</h2>
+
+
+<p>
+  Un diagrama de flujo representa la esquematización gráfica de un algoritmo. En
+  realidad muestra gráficamente los pasos o procesos a seguir para alcanzar la solución
+  de un problema. Su correcta construcción es sumamente importante porque
+  a partir del mismo se escribe un programa en algún lenguaje de programación. Si
+  el diagrama de flujo está completo y correcto, el paso del mismo a un lenguaje de
+  programación es relativamente simple y directo.
+</p>
+<p><b>Definición:</b> Un diagrama de flujo es una representación gráfica de un algoritmo. Los símbolos utilizados
+   han sido normalizados por el Instituto Norteamericano de Normalización (ANSI).</p>
+<p>
+    <div class="flexbox">
+        <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+    </div>
+</p>
+
+<p>
+  Dentro de los diagramas de flujo se pueden utilizar los símbolos que 
+  se presentan en la tabla 1.2, con los cuales se indican las operaciones que se 
+  efectuarán a los datos con el fin de producir un resultado.
+</p>
+
+
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+<p><b>Ejemplo</b> El diagrama de flujo para determinar el volumen de una caja de dimensiones A, B y C </p>
+
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+<p>
+Se puede ver gráficamente, de forma precisa la secuencia de los pasos por realizar
+para obtener el resultado del volumen. Como se puede verificar, son los mismos pasos
+que se establecieron en el algoritmo presentado previamente mediante el pseudocódigo
+</p>
+
+<p>Los diagramas de flujo son una herramienta que permite representar visualmente qué operaciones
+  se requieren y en qué secuencia se deben efectuar para solucionar un problema dado.
+  Por consiguiente, un diagrama de flujo es la representación gráfica mediante símbolos especiales,
+  de los pasos o procedimientos de manera secuencial y lógica que se deben realizar para solucionar 
+  un problema dado</p>
+
+<p>Los diagramas de flujo facilitan la comunicación entre los programadores y los usuarios,
+  además de que permiten de una manera más rápida  detectar los posibles errores de lógica 
+  que se presenten al implementar el algoritmo</p>
+
+
+<p>Enseguida se muestran algunos de los principales símbolos 
+  utilizados para construir un diagrama de flujo.
+</p>
+
+
 
 </div>
   
@@ -169,43 +324,39 @@
 
   
   <div class="nota-box">
-    <h2 class="number-title"> Pseudocódigo</h2>  
+    <h2 class="number-title"> Transformación del algoritmo en un programa: Codificación</h2>  
 
-    <p>Una de las mejores formas de aprender  a programar es empezar por los <b>diagramas de flujo</b> y 
-      <b>pseudocodigo</b>. Ambos facilitan inducen  en la resolucion de problemas mediante <b>algoritmos</b>. 
-    </p>
-     
+    <p><b>Programar</b> es un proceso mental complejo, dividido en varias etapas. La finalidad de la programación
+  es comprender con claridad el problema que va a resolverser por medio de la computadora  y entender 
+tambien con detalle cual sera el procedimiento mediante el cual la maquina llegara a la solucion deseada.</p>
 
-<p>En el mundo de la programación el pseudocódigo es una de las 
-  herramientas más conocidas para el diseño de solución de problemas por 
-  computadora. Esta herramienta permite pasar casi de manera directa la 
-  solución del problema a un lenguaje de programación específico. El pseudocódigo es una serie de pasos bien detallados y claros que conducen a la 
-  resolución de un problema.
-  La facilidad de pasar casi d</p>
+ <p>Cuando programamos, no podemos utilizar el lenguaje natural con que nos comunicamos
+  cotidianamente los seres humanos. Por el contrario, los programadores
+  emplean un lenguaje que la computadora puede interpretar para realizar tareas.
+  En otras palabras, un <em>lenguaje de programación</em> </p>
 
+  <p><b>Definición:</b> Un <b>lenguaje de programación</b> es un conjunto de reglas que permiten escribir
+   programas para su ejecuci ´on por cierto mecanismo
+  </p>
 
- <b>Ejemplo</b>
- <p>el pseudocódigo para determinar el volumen de una 
-  caja de dimensiones A, B y C se puede establecer de la siguiente forma:
-<ol>
-  <li></li>
-</ol>
+  <p>Existen muchos y variados lenguajes de programación, de características sumamente
+    diferentes y que emplean diferentes enfoques con los que podemos
+    programar. Cada lenguaje comprende un conjunto de ideas que guían, como su propósito final, 
+    la forma en que codificamos la descripci ´on que otorgaremos a la maquina. En todo momento el lenguaje de programaci´on permite especificar de
+    manera precisa el trabajo que el programador espera que la computadora realice.</p>
 
+  <p><b>En  esta etapa tenemos que  escribir en un <em>lenguaje de programación</em> el algoritmo creado
+     en la fase de diseño, debiendo seguirse las siguientes reglas:</b>
+     <ol>
+      <li>Si un problema se ha dividido en subproblemas los algoritmos que resuelven cada subproblema deben ser codificados y
+        probados independientemente.</li>
+      <li>Deben usarse como identificadores términos significativos usando nombres para los datos, y verbos para los subprogramas.</li>
+      <li>Ha de tenerse especial cuidado en la comunicación de los distintos subprogramas, siendo recomendable que esta comunicación
+        se realice siempre mediante los parámetros.</li>
+      <li>El sangrado (indentación) así como los buenos comentarios facilitan la posterior lectura del código.</li>
+     </ol>
 
-
-</p> 
-
-
-<p>El pseudocodigo es una forma de expresar los distintos pasos que va a realizar un programa de la forma mas 
-  parecida a un lenguaje de programación.  Su principal función es la de representar por pasos la solución a un
-  problema o algoritmo, de la forma más detallada posible, utilizando un lenguaje cercano al de programación. 
-  El pseudocódigo no puede ejecutarse en un ordenador ya que entonces dejaría de ser pseudocódigo, como su propio 
-  nombre indica, se trata de un código falso (pseudo = falso), es un código escrito para que lo entienda el ser 
-  humano y no la máquina. </p>
-
-
-  <p>Podemos considerar al pseudocódigo como un lenguaje intermedio, que se encuentra en medio de nuestro propio lenguaje 
-    y el lenguaje de programación que entiende el ordenador.</p>
+     <b></b>
 
 
     <p>https://openwebinars.net/blog/que-es-pseudocodigo/</p>
@@ -225,23 +376,9 @@
 
 
     <div class="nota-box">
-      <h2 class="number-title"> Diagramas de flujo </h2>  
+      <h2 class="number-title">  </h2>  
 
-    <p>Los diagramas de flujo son una herramienta que permite representar visualmente qué operaciones
-      se requieren y en qué secuencia se deben efectuar para solucionar un problema dado.
-      Por consiguiente, un diagrama de flujo es la representación gráfica mediante símbolos especiales,
-      de los pasos o procedimientos de manera secuencial y lógica que se deben realizar para solucionar 
-      un problema dado</p>
-
-    <p>Los diagramas de flujo facilitan la comunicación entre los programadores y los usuarios,
-      además de que permiten de una manera más rápida  detectar los posibles errores de lógica 
-      que se presenten al implementar el algoritmo</p>
-
-
-    <p>Enseguida se muestran algunos de los principales símbolos 
-      utilizados para construir un diagrama de flujo.</p>
     
-
 
 
     </div>
@@ -249,93 +386,25 @@
     <div class="nota-box">
       <h2 class="number-subtitle"> </h2>  
       
-  <p>Casi inconscientemente, los humanos efectuamos cotidianamente una serie de
-     pasos, procedimientos o acciones que nos permiten alcanzar un resultado o resolver
-     un problema.
-  </p>
+  
 
-  <p>Continuamente seguimos una serie
-    de pasos o conjunto de acciones que nos permiten alcanzar un resultado. Estamos
-    en realidad aplicando un <emph>algoritmo</emph> para resolver un problema.
-  </p>
-
-    <p>Un <b>algoritmo</b> como un conjunto de pasos, procedimientos
-      o acciones que nos permiten alcanzar un resultado o resolver un problema"
-    </p>
-
-    <p>Muchas veces aplicamos el algoritmo de manera inadvertida, inconsciente o
-      automáticamente. Esto generalmente se produce cuando el problema que tenemos
-      enfrente lo hemos resuelto con anterioridad un gran número de veces.
-    </p>
-
-
-    <p>Por otra parte, existe una gran cantidad de problemas que requieren de un
-      análisis profundo y de un pensamiento flexible y estructurado para su solución.
-    </p>
-
-    <p>No
-      existen reglas específicas que nos permitan resolver un problema. Sin embargo,
-      creemos que se pueden ofrecer un conjunto de técnicas y herramientas metodológicas
-      que permitan flexibilizar y estructurar el razonamiento utilizado en la solución
-      de un problema. Eso provocará finalmente la construcción de algoritmos
-      eficientes.</p>
     </div>
 
 
     
 
     <div class="nota-box">
-      <h2 class="number-title"> Diagramas de flujo</h2>  
+      <h2 class="number-title"></h2>  
 
-      <p>
-        Un diagrama de flujo representa la esquematización gráfica de un algoritmo. En
-        realidad muestra gráficamente los pasos o procesos a seguir para alcanzar la solución
-        de un problema. Su correcta construcción es sumamente importante porque
-        a partir del mismo se escribe un programa en algún lenguaje de programación. Si
-        el diagrama de flujo está completo y correcto, el paso del mismo a un lenguaje de
-        programación es relativamente simple y directo.
-      </p>
-
-      <p>
-          <div class="flexbox">
-              <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
-          </div>
-      </p>
-    
-      <p>
-        Dentro de los diagramas de flujo se pueden utilizar los símbolos que 
-        se presentan en la tabla 1.2, con los cuales se indican las operaciones que se 
-        efectuarán a los datos con el fin de producir un resultado.
-      </p>
-
-
-      <p>
-        <div class="flexbox">
-            <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
-        </div>
-      </p>
-
-    <p><b>Ejemplo</b> El diagrama de flujo para determinar el volumen de una caja de dimensiones A, B y C </p>
-
-      <p>
-        <div class="flexbox">
-            <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
-        </div>
-    </p>
-
-    <p>
-      Se puede ver gráficamente, de forma precisa la secuencia de los pasos por realizar
-      para obtener el resultado del volumen. Como se puede verificar, son los mismos pasos
-      que se establecieron en el algoritmo presentado previamente mediante el pseudocódigo
-    </p>
+      
 
       </div> 
 
     
       <div class="nota-box">
-        <h2 class="number-title"> Lenguajes de programación </h2>  
+        <h2 class="number-title">  </h2>  
 
-      <p> los lenguajes de programación son  herramientas que permiten “dialogar” al usuario con la máquina: .</p>
+      
 
 
       </div>
