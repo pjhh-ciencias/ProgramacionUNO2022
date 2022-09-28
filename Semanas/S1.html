@@ -191,13 +191,7 @@
     </div>
 </p>
 
-   <p><b><u>Ejemplos:</u></b>
-    <ul>
-      <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
-      <li>Decidir si un número es primo.</li>
-      <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
-    </ul>  
-   </p>
+   
 
 <h2 class="number-title"> Construccion del algoritmo</h2>
 <p>
@@ -229,6 +223,49 @@
   y <em>pseudocódigos</em>. De hecho, una de las mejores formas de aprender  a programar es empezar por los <em>diagramas de flujo</em> y 
   <em>pseudocodigo</em>. Ambos facilitan e inducen  la resolucion de problemas  mediante <em>algoritmos</em>.s</p>
 
+  <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para  saber si un número entero positivo $p$ es primo o no.<br>
+    <p><em><b>Análisis del problema:</b></em> Un número es <b>primo</b> si sus únicos divisores son $1$ y el mismo 
+    número. Entonces para saber si  $p$ es primo necesitamos dividir $p$ sucesivamente por $2,3,4,\ldots$.
+    Definiremos una nueva variable $x$ para denotar el divisor. 
+    </p>
+   <ol>
+     <li>Inicio</li>
+     <li>Si $p$ es igual a $2$, entonces $p$ es primo e ir al paso 8, en caso contrario continuar con el 
+      proceso.</li>
+     <li>Hacer $x$ igual a $2$</li>
+     <li>Realizar la división  $p$ entre $x$</li>
+     <li>Si el resultado de la división  $p/x$ es un número entero, entonces $p$ no es un número primo e 
+      ir al paso ; en caso contrario, continuar el proceso.</li>
+     <li>Suma $1$ a $x$</li>
+     <li>Si $x$ es igual a $p$, entonces $p$ es un número primo; en caso contrario, 
+      bifurcar al punto 4</li>
+     <li>Fin</li>
+    </ol>
+
+
+    <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar la suma de todos los números pares 
+      entre  $1$ y $1\,000$.<br>
+      <p><em><b>Análisis del problema:</b></em> El problema consiste en sumar $2 + 4 + 6 + 8+ \cdots + 1\, 000$. 
+        Definiremos dos nuevas variables auxiliares para resolver el problema,  Sum  representará  las sumas 
+        sucesivas $(2+4), (2+4+6), (2+4+6+8), \ldots$. Mientras que Num denotará el número par a sumar.</p>
+     <ol>
+       <li>Inicio</li>
+       <li>Hacer Sum igual a $0$</li>
+       <li>Hacer Num igual a $2$</li>
+       <li>Sumar Num a Sum y actualizar el valor de Sum a este resultado, i.e. El nuevo valor de Sum es 
+         el valor previo de Sum más Num. </li>
+       <li>Incrementar Num en 2 unidades.</li>
+       <li>Si Num es menor o igual que $1\,000$, entonces ir al paso 4. En caso contrario el último escribe 
+        escribir el último valor que tiene  Sum. </li>
+       <li>Fin</li>
+      </ol>
+
+    <!-- <ul>
+       <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
+       <li>Decidir si un número es primo.</li>
+       <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
+     </ul>-->  
+    </p> 
 
 <h2 class="number-title"> Pseudocodigo</h2>
 
