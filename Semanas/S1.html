@@ -136,9 +136,9 @@
     que es  necesaria para la resolución del problema. Para hacer el análisis hay  que responder 
       a las siguientes preguntas:<br>
       <ul>
-        <li><b>¿Qué entrada(s) tiene el problema?</b>,</li><br>
-        <li><b>¿Cuál es la salida deseada?</b>,</li><br>
-        <li><b>¿Qué método produce la salida deseada a partir de los datos de entrada?</b></li><br>
+        <li><b>¿Qué entrada(s) tiene el problema?</b>,</li>
+        <li><b>¿Cuál es la salida deseada?</b>,</li>
+        <li><b>¿Qué método produce la salida deseada a partir de los datos de entrada?</b></li>
       </ul>
     </p>
    
@@ -284,11 +284,29 @@ solución del problema a un <em>lenguaje de programación</em> específico.
   de ser pseudocódigo, como su propio nombre indica, se trata de un código falso (pseudo = falso), es un código escrito para que lo entienda el ser 
   humano y no la máquina.</p>
 
-<p><b><u>Ejemplo:</u></b> El pseudocódigo para determinar el volumen de una caja de dimensiones A, B y C se puede 
-  establecer de la siguiente forma:
-<ol>
-<li></li>
-</ol>
+<p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
+
+<p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
+  números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $</p>
+<pre>   
+<em><b>Algoritmo</b></em><br>
+<b>Algoritmo</b> Suma_cincuenta 
+<em><b>Variables</b></em>
+<b>Entero</b> Contador, Suma
+<b>Inicio</b>
+  Contador <font size=5>&#8592;</font> 0 
+  Suma <font size=5>&#8592;</font> 0  
+  <b>Mientras</b> Contador <= 100 <b>Hacer</b> 
+    Suma <font size=5>&#8592;</font> Suma + Contador
+    Contador <font size=5>&#8592;</font> Contador + 1
+  <b>Fin_mientras</b>
+  <b>Escribe</b>(Suma)
+<b>Fin</b>
+</pre>
+
+
+
+
 </p>
 
 <p>Podemos considerar al pseudocódigo como un lenguaje intermedio, que se encuentra en medio de nuestro propio lenguaje 
