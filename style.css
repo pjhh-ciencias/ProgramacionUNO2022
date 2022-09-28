@@ -77,6 +77,7 @@ html, body{
 
 .top-nav li {
   display: inline;
+
 }
 
 .top-nav a{
@@ -506,12 +507,41 @@ table {
   width: 100%;
 }
 
-td, th {
-  border: 1px solid #dddddd;
+th{
+  border: 1.7px solid #46a1df;
+  text-align: center;
+  padding: 8px;
+  background-color: rgb(207, 207, 207);
+}
+
+td{
+  border: 1.7px solid #46a1df;
   text-align: left;
   padding: 8px;
+  
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: rgb(255, 255, 255);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(196, 231, 255);
+}
+
+/*//// Listas//////*/
+
+ol {
+  list-style: none;
+  counter-reset: my-counter;
+}
+ol li {
+  counter-increment: my-counter;
+  padding: 5px;
+}
+ol li::before {
+  content:  counter(my-counter) ".- ";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
 }
