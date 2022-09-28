@@ -434,6 +434,41 @@ h2.number-title:before{
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
 
+
+.algoritmo-box{
+  background:  rgb(218, 237, 245);
+  color: black;
+  border-radius: 20px;
+  padding: 1px;
+  border-top:  0px solid   rgb(218, 237, 245);
+  border-bottom:  0px solid   rgb(218, 237, 245);
+  border-right:  0px solid   rgb(218, 237, 245);
+  border-left:  -10px solid   rgb(218, 237, 245);
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 21px;
+  width: 70%;
+  box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201);
+}
+
+.pseudocodigo-box{
+  background:  rgb(218, 237, 245);
+  color: black;
+  border-radius: 20px;
+  padding: 1px;
+  border-top:  0px solid   rgb(218, 237, 245);
+  border-bottom:  0px solid   rgb(218, 237, 245);
+  border-right:  0px solid   rgb(218, 237, 245);
+  border-left:  20px solid   rgb(218, 237, 245);
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 21px;
+  width: 70%;
+  box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201);
+}
+
 /*////////// Small boxes /////////////////////// */
 .respButton{
     display: block;
@@ -537,7 +572,7 @@ ol {
 }
 ol li {
   counter-increment: my-counter;
-  padding: 5px;
+  padding: 1px;
 }
 ol li::before {
   content:  counter(my-counter) ".- ";

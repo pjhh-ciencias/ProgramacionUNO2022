@@ -224,11 +224,13 @@
   <em>pseudocodigo</em>. Ambos facilitan e inducen  la resolucion de problemas  mediante <em>algoritmos</em>.s</p>
   
   <HR>
+
   <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para  saber si un número entero positivo $p$ es primo o no.<br>
     <p><em><b>Análisis del problema:</b></em> Un número es <b>primo</b> si sus únicos divisores son $1$ y el mismo 
     número. Entonces para saber si  $p$ es primo necesitamos dividir $p$ sucesivamente por $2,3,4,\ldots$.
     Definiremos una nueva variable $x$ para denotar el divisor. 
     </p>
+  <div class="algoritmo-box">
    <ol>
      <li>Inicio</li>
      <li>Si $p$ es igual a $2$, entonces $p$ es primo e ir al paso 8, en caso contrario continuar con el 
@@ -242,7 +244,8 @@
       bifurcar al punto 4</li>
      <li>Fin</li>
     </ol>
-
+</div>
+</p>
     <HR>
 
     <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar la suma de todos los números pares 
@@ -250,7 +253,8 @@
       <p><em><b>Análisis del problema:</b></em> El problema consiste en sumar $2 + 4 + 6 + 8+ \cdots + 1\, 000$. 
         Definiremos dos nuevas variables auxiliares para resolver el problema,  Sum  representará  las sumas 
         sucesivas $(2+4), (2+4+6), (2+4+6+8), \ldots$. Mientras que Num denotará el número par a sumar.</p>
-     <ol>
+      <div class="algoritmo-box">
+       <ol>
        <li>Inicio</li>
        <li>Hacer Sum igual a $0$</li>
        <li>Hacer Num igual a $2$</li>
@@ -261,6 +265,7 @@
         escribir el último valor que tiene  Sum. </li>
        <li>Fin</li>
       </ol>
+      </div>
 
     <!-- <ul>
        <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
@@ -290,28 +295,49 @@ solución del problema a un <em>lenguaje de programación</em> específico.
 <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
 
 <p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
-  números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $</p>
-<pre>   
-<b>Algoritmo</b> Suma_cincuenta 
+  números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $
+<div class="pseudocodigo-box">
+<pre>
+<b>Algoritmo</b> Suma_cincuenta
 <em><b>Variables</b></em>
 <b>Entero</b> Contador, Suma
 <b>Inicio</b>
-  Contador <font size=5>&#8592;</font> 0 
-  Suma <font size=5>&#8592;</font> 0  
-  <b>Mientras</b> Contador <= 100 <b>Hacer</b> 
+  Contador <font size=5>&#8592;</font> 0
+  Suma <font size=5>&#8592;</font> 0
+  <b>Mientras</b> Contador <= 100 <b>Hacer</b>
     Suma <font size=5>&#8592;</font> Suma + Contador
     Contador <font size=5>&#8592;</font> Contador + 1
   <b>Fin_mientras</b>
   <b>Escribe</b>(Suma)
 <b>Fin</b>
 </pre>
+</div>
+</p>
 
 <HR>
 
+  <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
 
-
-</p>
-
+  <p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
+    números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $
+  
+  <div class="pseudocodigo-box">
+  <pre>
+  <b>Algoritmo</b> Suma_cien
+  <em><b>Variables</b></em>
+  <b>Entero</b> Contador, Suma
+  <b>Inicio</b>
+    Contador <font size=5>&#8592;</font> 0
+    Suma <font size=5>&#8592;</font> 0
+    <b>Mientras</b> Contador <= 100 <b>Hacer</b>
+      Suma <font size=5>&#8592;</font> Suma + Contador
+      Contador <font size=5>&#8592;</font> Contador + 1
+    <b>Fin_mientras</b>
+    <b>Escribe</b>(Suma)
+  <b>Fin</b>
+  </pre>
+  </div>  
+  </p>
 <p>Podemos considerar al pseudocódigo como un lenguaje intermedio, que se encuentra en medio de nuestro propio lenguaje 
 y el lenguaje de programación que entiende el ordenador.</p>
 
