@@ -531,7 +531,7 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
   </p>
     <hr>
 
-    <h2 class="number-title">Datos lógicos</h2>
+    <h2 class="number-title"> Datos lógicos</h2>
     <p>En este tipo de de datos se encuentran los <b>booleanos</b>. Son datos que solo pueden tomar dos valores: 
     <b>Verdadero</b> (<b>True</b>) o <b>Falso</b> (<b>false</b>)</p>
 
@@ -551,7 +551,181 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
       <li>Los demás caracteres pueden ser letras  (a,b,c,...,x,y,z), digitos (0,1,2,...,9) o el simbolo especial: _</li>
       <li>La longitud del identificador es igual a 7 en la mayoría de los lenguajes de programación.</li>
     </ul>
+    </p>
 
+    <p><b><u>Definición.</u></b> Las <b>constantes</b> son datos que no cambian durante la ejecución de un <em>programa</em>
+    Para nombrar las constantes utilizamos los identificadores que mencionamos anteriormente. Existen tipos de constantes 
+    como  tipos de datos, por lo tanto puede haber constantes de tipo entero, real, caracter, cadena de caracteres, etc.   </p>
+
+
+    <p><b><u>Definición.</u></b>  Las <b>variables</b> son objetos que pueden cambiar su valor durante la ejecución de un programa. 
+    Par nombrar las variables utilizaremos los identificadores que se abordaron anteriormente. Al igual que las constantes, pueden 
+    existir tipos de variables como tipos de datos. Las más comunes son las  variables de tipo entero y real.
+
+    <p><b><u>Observación.</u></b> Es importante que los nombres de las constantes y las variables  sean representativas de la función 
+    que tienen las mismas en el programa.</p>
+
+    <h2 class="number-title"> Operaciones aritméticas</h2>
+
+    <p>Para poder realizar operaciones aritmeticas necesitamos realizar operaciones aritméticas. Etos operadores nos permitirán 
+      realizar operaciones aritmeticas entre operandos: numeros, constantes o variables.  El resultado de una operación aritmetica 
+      será un número.  
+    </p>
+
+    <p>En la siguiente tabla presentamos los operadores aritméticos, la operación que pueden realizar, un ejemplo de su uso y el 
+    resultado de dicho ejemplo. 
+    </p>
+    
+    <center>        
+      <table class="info"  style="width:60%">
+        <thead>
+        <tr>
+          <th style="width:170px">Operador aritmético</th>
+          <th style="width:130px">Operación</th>
+          <th>Ejemplo</th>
+          <th>Resultado</th>
+        </tr>
+        </thead>
+          <tbody>
+          <tr >
+            <td><center><b>**</b></center></td>
+            <td>Potencia</td>
+            <td>4**3</td>
+            <td>64</td>
+          </tr>
+
+          <tr>
+            <td><center><b>*</b></center></td>
+            <td>Multiplicación</td>
+            <td>1.25*2</td>
+            <td>2.5</td>
+          </tr>
+
+          <tr>
+            <td><center><b>/</b></center></td>
+            <td>División</td>
+            <td>15/4</td>
+            <td>3.75</td>
+          </tr>
+
+          <tr>
+            <td><center><b>+</b></center></td>
+            <td>Suma</td>
+            <td>20.5+9.2</td>
+            <td>29.7</td>
+          </tr>
+
+          <tr>
+            <td><center><b>-</b></center></td>
+            <td>Resta</td>
+            <td>17.9-14.6</td>
+            <td>3.3</td>
+          </tr>
+
+          <tr>
+            <td><center><b>mod</b></center></td>
+            <td>Módulo (residuo)</td>
+            <td>15 mod 2</td>
+            <td>1</td>
+          </tr>
+
+          <tr>
+            <td><center><b>div</b></center></td>
+            <td>División entera</td>
+            <td>17/3</td>
+            <td>5</td>
+          </tr>
+
+        </tbody>
+        </table>
+      </center>
+    
+  <p>Al evaluar expresiones que contienen operadores aritmeticos debemos respetar la jerarquia en el orden de aplicacion de los operadores. 
+    Esto es, si tenemos en una expresion mas de un operador, debemos aplicar primero el operador de mayor jerarquia, resolver esa operacion y 
+    asi sucesivamente. Es importante señalar que el operador ()es un operador asociativo que tiene la priopridad mas alta en cualquier lenguaje 
+    de programacion. 
+  </p>
+
+  <p>En la siguiente tabla se presenta la jerarquia de los operadores:</p>
+
+
+  <center>        
+    <table class="info"  style="width:60%">
+      <thead>
+      <tr>
+        <th style="width:170px">Operador</th>
+        <th style="width:130px">Jerarquía</th>
+        <th>Operación</th>
+      </tr>
+      </thead>
+        <tbody>
+        <tr >
+          <td><center><b>**</b></center></td>
+          <td>Potencia</td>
+          <td>4**3</td>
+          <td>64</td>
+        </tr>
+
+        <tr>
+          <td><center><b>*</b></center></td>
+          <td>Multiplicación</td>
+          <td>1.25*2</td>
+          <td>2.5</td>
+        </tr>
+
+        <tr>
+          <td><center><b>/</b></center></td>
+          <td>División</td>
+          <td>15/4</td>
+          <td>3.75</td>
+        </tr>
+
+        <tr>
+          <td><center><b>+</b></center></td>
+          <td>Suma</td>
+          <td>20.5+9.2</td>
+          <td>29.7</td>
+        </tr>
+
+        <tr>
+          <td><center><b>-</b></center></td>
+          <td>Resta</td>
+          <td>17.9-14.6</td>
+          <td>3.3</td>
+        </tr>
+
+        <tr>
+          <td><center><b>mod</b></center></td>
+          <td>Módulo (residuo)</td>
+          <td>15 mod 2</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td><center><b>div</b></center></td>
+          <td>División entera</td>
+          <td>17/3</td>
+          <td>5</td>
+        </tr>
+
+      </tbody>
+      </table>
+    </center>
+
+
+    <p>Las reglas para resolver una expresion arirtmetica son:
+    <ol>
+      <li></li>
+      <li></li>
+    </ol>
+
+    </p>
+
+    <h2 class="number-title"> Operadres relacionales</h2>
+
+    <h2 class="number-title"> logicos</h2>
+
+    <h2 class="number-title"> Bloques de asignación</h2>
 
   <h2 class="number-title"> Pseudocodigo</h2>
 
