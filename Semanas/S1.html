@@ -274,73 +274,6 @@
      </ul>-->  
     </p> 
 <HR>
-<h2 class="number-title"> Pseudocodigo</h2>
-
-<p>En el mundo de la programación el <em>pseudocódigo</em> es una de las 
-herramientas más conocidas para el diseño de solución de problemas por 
-computadora. Esta herramienta permite pasar casi de manera directa la 
-solución del problema a un <em>lenguaje de programación</em> específico. 
-</p>
-
-<p><b><u>Definición:</u></b> El <b>pseudocodigo</b> es una serie de pasos bien detallados y claros que conducen a la 
-  resolución de un problema. Es una forma de expresar los distintos pasos que va a realizar un programa de la forma mas 
-  parecida a un lenguaje de programación. 
-</p>
-
-<p><b><u>Observación:</u></b> El pseudocódigo no puede ejecutarse en un ordenador ya que entonces dejaría 
-  de ser pseudocódigo, como su propio nombre indica, se trata de un código falso (pseudo = falso), es un código escrito para que lo entienda el ser 
-  humano y no la máquina.</p>
-  
-  <HR>
-<p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
-
-<p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
-  números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $
-<div class="pseudocodigo-box">
-<pre>
-<b>Algoritmo</b> Suma_cincuenta
-<em><b>Variables</b></em>
-<b>Entero</b> Contador, Suma
-<b>Inicio</b>
-  Contador <font size=5>&#8592;</font> 0
-  Suma <font size=5>&#8592;</font> 0
-  <b>Mientras</b> Contador <= 100 <b>Hacer</b>
-    Suma <font size=5>&#8592;</font> Suma + Contador
-    Contador <font size=5>&#8592;</font> Contador + 1
-  <b>Fin_mientras</b>
-  <b>Escribe</b>(Suma)
-<b>Fin</b>
-</pre>
-</div>
-</p>
-
-<HR>
-
-  <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
-
-  <p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
-    números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $
-  
-  <div class="pseudocodigo-box">
-  <pre>
-  <b>Algoritmo</b> Suma_cien
-  <em><b>Variables</b></em>
-  <b>Entero</b> Contador, Suma
-  <b>Inicio</b>
-    Contador <font size=5>&#8592;</font> 0
-    Suma <font size=5>&#8592;</font> 0
-    <b>Mientras</b> Contador <= 100 <b>Hacer</b>
-      Suma <font size=5>&#8592;</font> Suma + Contador
-      Contador <font size=5>&#8592;</font> Contador + 1
-    <b>Fin_mientras</b>
-    <b>Escribe</b>(Suma)
-  <b>Fin</b>
-  </pre>
-  </div>  
-  </p>
-<p>Podemos considerar al pseudocódigo como un lenguaje intermedio, que se encuentra en medio de nuestro propio lenguaje 
-y el lenguaje de programación que entiende el ordenador.</p>
-
 
 <h2 class="number-title"> Diagramas de flujo</h2>
 
@@ -527,7 +460,200 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
     </ol>
   </p>
 
+
+
+
+  <p>Presentaremos a continuación algunos conceptos que son fundamentales para la
+    construcción de algoritmos, diagramas de flujo y programas. Primero analizaremos
+    los <em>tipos de datos</em>, luego estudiaremos los conceptos de <em>identificador, constantes
+    y variables</em>, más adelante analizaremos las <em>operaciones aritméticas</em> y
+    <em>expresiones lógicas</em>.</p>
+    
+  <h2 class="number-title"> Tipos de datos: simples y estructurados </h2>
+
+  <p>Los datos a procesar por una computadora pueden clasificarse en <b>simples</b> y <b>estructurados</b>.</p>
+ 
+  <p><b><u>Definición.</u></b> Los <b>datos simples</b> son aquellos  que ocupan sólo una casilla de memoria, por lo tanto, una variable simple
+    hace referencia a un único valor a la vez. Dentro de este grupo de datos se encuentran: <b>enteros</b>, <b>reales</b>,
+   <b>caracteres</b> y <b>booleanos</b>
+   </p>
+
+   
+  <p><b><u>Definición.</u></b> Los <b>datos estructurados</b> se caracterizan por el hecho de que con un nombre
+    (identificador de variable estructurada) se hace referencia a un grupo de casillas
+    de memoria. Es decir, un dato estructurado tiene varios componentes. Cada uno de los
+    componentes puede ser a su vez un dato simple o estructurado. Sin embargo, los
+    componentes básicos (los del nivel más bajo) de cualquier tipo estructurado son datos
+    simples. Dentro de este grupo de datos se encuentran: <b>arreglos</b>, <b>cadena de caracteres</b>, 
+    <b>registros</b> y <b>conjuntos</b>.</p>
+
+
+  <h2 class="number-title"> Datos númericos</h2>
+
+  <p>Detro de los tipos de dato númerico  se encuentran los <b>enteros</b> y los <b>reales</b>.
+    Los enteros son números que pueden estar precedidos del signo + o y que no tienen parte decimal.
+    Mientras que los  reales son numeros que pueden estar precedidos del signo $+$ o $-$, y que tiene una parte 
+    decimal.</p>
+  <hr>
+  <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i>entero</i>: 
+    $$1,-10,152,456,-895,-7613,0$$
+  <hr>
+
+  <hr>
+  <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i>real</i>: 
+    $$0.5,-1.8,1.52,9.4,-8.57,-2.2,0.99$$
+  <hr>
+
+
+  <h2 class="number-title"> Datos alfanúmericos</h2>
+
+  <p>Dentro de este tipo de datos encontramos los de tipo caracter (simple) y cadena de caracteres (estructurado).
+     Son datos cuyo contenido pueden ser letras del abecededario (a,b,c, ..., x,y,z) , digitos ( 0,1,2,...,9) o 
+     símbolos especiales (#, $, ^, *, %, /, !, +, -, ...,etc) 
+  </p>
+
+  <p><b><u>Observación:</u></b> Aunque este  tipo de datos pueden contener números, no pueden ser utilizados para 
+    realizar operaciones aritméticas </p>
+
+    
+  <p>Un dato de tipo <b>caracter</b> contiene un sólo caracter, y se escribe entre apóstrofes. Un dato tipo <b>cadena de caracteres</b>
+  contiene un conjunto de caracteres, y se escribe entre comillas.</p>
+
+  <hr>
+  <p><b><u>Ejemplo.</u></b> Son ejemplos de datos de tipo <i>caracter</i>: 
+    <center><pre>'a'    'P'   '$'   '5'   '-'   '#'   'H'</pre></center>
+  </p>
+  <hr>
+
+  <hr>
+  <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i>cadena de caracteres</i>:
+  <center><pre>"aeiou"    "#50"   "$100A"   "Actuaria"   "UMAR"   "951-590-75-00"   "ECONOMIA"</pre></center>
+  </p>
+    <hr>
+
+    <h2 class="number-title">Datos lógicos</h2>
+    <p>En este tipo de de datos se encuentran los <b>booleanos</b>. Son datos que solo pueden tomar dos valores: 
+    <b>Verdadero</b> (<b>True</b>) o <b>Falso</b> (<b>false</b>)</p>
+
+    <h2 class="number-title"> Identificadores, constantes y variables</h2>
+
+    <p>Los datos a procesar por una computadora, ya sean simples o estructurados, se deben almacenar en casillas 
+      o celdas de memoria para su posterior utilización. Estas casillas o celdas de memoria (ya sean constantes o variables)
+      tienen un nombre que permite su ubicación.
+    </p>
+
+
+    <p><b><u>Definición.</u></b> Se le llama <b>identificador</b> al nombre que se les da a las casillas de memoria. 
+    Un identificador se forma de acuerdo a ciertas reglas (en general estas dependen dellenguaje de programacion 
+    que se este utilizando):
+    <ul>
+      <li>El primer caracter que forma un identificador debe ser una letra (a,b,c,...,x,y,z)</li>
+      <li>Los demás caracteres pueden ser letras  (a,b,c,...,x,y,z), digitos (0,1,2,...,9) o el simbolo especial: _</li>
+      <li>La longitud del identificador es igual a 7 en la mayoría de los lenguajes de programación.</li>
+    </ul>
+
+
+  <h2 class="number-title"> Pseudocodigo</h2>
+
+  <p>En el mundo de la programación el <em>pseudocódigo</em> es una de las 
+  herramientas más conocidas para el diseño de solución de problemas por 
+  computadora. Esta herramienta permite pasar casi de manera directa la 
+  solución del problema a un <em>lenguaje de programación</em> específico. 
+  </p>
+  
+  <p><b><u>Definición:</u></b> El <b>pseudocodigo</b> es una serie de pasos bien detallados y claros que conducen a la 
+    resolución de un problema. Es una forma de expresar los distintos pasos que va a realizar un programa de la forma mas 
+    parecida a un lenguaje de programación. 
+  </p>
+  
+  <p><b><u>Observación:</u></b> El pseudocódigo no puede ejecutarse en un ordenador ya que entonces dejaría 
+    de ser pseudocódigo, como su propio nombre indica, se trata de un código falso (pseudo = falso), es un código escrito para que lo entienda el ser 
+    humano y no la máquina.</p>
+    
+    <HR>
+  <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
+  
+  <p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
+    números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $</p>
+  <div class="pseudocodigo-box">
+  <pre>
+  <b>Algoritmo</b> Suma_cincuenta
+  <em><b>Variables</b></em>
+  <b>Entero</b> Contador, Suma
+  <b>Inicio</b>
+    Contador <font size=5>&#8592;</font> 0
+    Suma <font size=5>&#8592;</font> 0
+    <b>Mientras</b> Contador <= 100 <b>Hacer</b>
+      Suma <font size=5>&#8592;</font> Suma + Contador
+      Contador <font size=5>&#8592;</font> Contador + 1
+    <b>Fin_mientras</b>
+    <b>Escribe</b>(Suma)
+  <b>Fin</b>
+  </pre>
+  </div>
+  
+  
+  <HR>
+  
+  <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
+  
+    <p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
+      números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $</p>
+    
+  <div class="pseudocodigo-box">
+  <pre>
+  <b>Algoritmo</b> Suma_cien
+  <em><b>Variables</b></em>
+  <b>Entero</b> Contador, Suma
+  <b>Inicio</b>
+    Contador <font size=5>&#8592;</font> 0
+    Suma <font size=5>&#8592;</font> 0
+    <b>Mientras</b> Contador <= 100 <b>Hacer</b>
+      Suma <font size=5>&#8592;</font> Suma + Contador
+      Contador <font size=5>&#8592;</font> Contador + 1
+    <b>Fin_mientras</b>
+    <b>Escribe</b>(Suma)
+  <b>Fin</b>
+  </pre>
+  </div>  
+  
+  <HR>
+  
+    <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que lea $10$ número enteros y calcule el mayor.<br></p>
+  
+    <p><em><b>Análisis del problema:</b></em> Implementaremos una variable entera Num para leer mediante un ciclo los números 
+      enteros ingresados, otra  variable <b>Max</b>  para almacenar el máximo de los números, este valor máximo se 
+      actualizará dentro del ciclo conforme los números son ingresados, así también usaremos una variable entera <b>Contador</b>
+      que llevará la cuenta de la cantidad de  números ingresados, el ciclo se detendra despues de  $10$, otra variable entera  que vamos a sumar  y .</p>
+    
+  <div class="pseudocodigo-box">
+  <pre>
+  <b>Algoritmo</b> Mayor_diez
+  <em><b>Variables</b></em>
+  <b>Entero</b> Contador, Max
+  <b>Inicio</b>
+    Leer(Numero)
+    Contador <font size=5>&#8592;</font> 0
+    S <font size=5>&#8592;</font> 0
+    <b>Mientras</b> Contador <= 100 <b>Hacer</b>
+      Suma <font size=5>&#8592;</font> Suma + Contador
+      Contador <font size=5>&#8592;</font> Contador + 1
+    <b>Fin_mientras</b>
+    <b>Escribe</b>(Suma)
+  <b>Fin</b>
+  </pre>
+  </div>  
+  
+  
+  <p>Podemos considerar al pseudocódigo como un lenguaje intermedio, que se encuentra en medio de nuestro propio lenguaje 
+  y el lenguaje de programación que entiende el ordenador.</p>
+  
+  
+
 </div>
+
+
+
     
   <div class="nota-box">
     <h2 class="number-title"> Transformación del algoritmo en un programa</h2>  
@@ -640,8 +766,8 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
     
     <p>Los principales tipos de lenguajes de programación son:</p>
 
-  <ol>
-    <li><h3><u>Lenguajes de  máquina.</u></h3> Es un conjunto de instrucciones o códigos que pueden ser interpretados  directamente 
+  
+  <h3><u>Lenguajes de  máquina.</u></h3> Es un conjunto de instrucciones o códigos que pueden ser interpretados  directamente 
       por el procesador de una computadora, está basado en el sistema binario y varía dependiendo del hardware. En otras palabras,
       el lenguaje de maquina es aquel cuyas instrucciones son directamente entendibles por la computadora y no necesitan traducción
       posterior para que la UCP  pueda comprender y ejecutar el programa. Las instrucciones en lenguaje maquina se expresan en términos de la unidad de memoria más pequeña
@@ -669,9 +795,9 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
         comunicarse con la computadora pero que se hace más fácil de escribir y de leer por el programador. Para evitar la
         tediosa tarea de escribir programas en este lenguaje se han diseñado otros programas de programación que facilitan 
         la escritura y posterior ejecución de los programas. 
-      </p></li>
+      </p>
 
-      <li><h3><u>Lenguajes de bajo nivel (ensamblador).</u></h3> Son una representación más entendible para el humano de los 
+      <h3><u>Lenguajes de bajo nivel (ensamblador).</u></h3> Son una representación más entendible para el humano de los 
         códigos del lenguaje máquina. Cada instrucción en lenguaje ensamblador representa una instrucción en el lenguaje máquina. 
         El lenguaje ensamblador aparece casi a la par con el lenguaje máquina, esto debido a que los fabricantes de hardware 
         diseñan sus Chips pensando ya en las instrucciones de un lenguaje de ensamblado.
@@ -680,7 +806,7 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
           del lenguaje de máquina.  Realmente lo que hace es ayudar un poco a que el código sea más legible. El lenguaje
           ensamblador adicionalmente necesita un traductor (ensamblador) capaz de convertir dichos códigos en lenguaje máquina.</p>
       
-<li><h3><u>Lenguajes de alto nivel:</u></h3> Los lenguajes de programación de alto nivel se caracterizan porque su estructura 
+      <h3><u>Lenguajes de alto nivel:</u></h3> Los lenguajes de programación de alto nivel se caracterizan porque su estructura 
       semántica es muy similar a la forma como escriben los humanos, lo que permite codificar los algoritmos de manera más natural,
       en lugar de codificarlos en el lenguaje binario de las máquinas, o a nivel de lenguaje ensamblador. <!-- Los lenguajes de
       programación de alto nivel se componen de un conjunto de instrucciones o primitivas más fáciles
@@ -744,8 +870,6 @@ que se establecieron en el algoritmo presentado previamente mediante el pseudoc�
     </tbody>
     </table>
   </p>      
-</li>
-</ol>
 
     <p>Los lenguajes de alto nivel necesitan de un traductor que puede ser interpretador o compilador. 
       Los interpretadores o intérpretes, necesitan de un programa auxiliar que traduce en tiempo real las instrucciones al
