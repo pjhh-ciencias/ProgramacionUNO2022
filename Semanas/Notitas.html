@@ -1,0 +1,1299 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Programación UNO</h1>
+       <nav class="top-nav">
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Home.html"> Inicio  </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Informacion_General.html"> Información general </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Notas.html"> Notas </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Ejercicios.html"> Ejercicios </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Semana 1   </title>
+    
+  </head>
+
+
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Semana 1 </h1>   
+
+    
+    <h1 class="title flexbox_"> Etapas en la solución de un problema  </h1>   
+    
+    <div class="nota-box">
+      <h2 class="number-title"> Introducción</h2>  
+
+
+   <p>
+    El proceso de <b>resolución de un problema</b> mediante una computadora abarca desde la <em>descripción inicial del
+    problema</em> hasta el <em>desarrollo de un programa</em>  de computadora que lo resuelva.</b> 
+   </p>
+
+   
+   <p>En la siguiente figura se resume las etapas que debemos seguir para solucionar algún problema:</p> 
+
+    <p>
+      <div class="flexbox">
+          <img src="../Imagenes/Etapas_solucion_problema.JPG" alt="", width="auto" height="auto">
+      </div>
+  </p>
+
+   <p>El proceso de diseño de un <em>programa</em>  tiene una serie de etapas que generalmente deben
+    seguir todos los <em>programadores</em>:
+    <ol>
+      <li><b>Definición o análisis del problema</b>,</li>
+      <li><b>Diseño del algoritmo</b>,</li>
+      <li><b>Transformación del algoritmo en un programa</b>,</li>
+      <li><b>Ejecución y validación del programa</b>.</li>
+    </ol>
+   </p>  
+  </div>
+
+  
+<div class="nota-box">
+  <h2 class="number-title"> Definición o análisis del problema</h2>
+
+  <p>La definición del problema comienza analizando los <b>requisitos del usuario</b>;
+   estos requisitos con frecuencia suelen ser imprecisos y difíciles de escribir.
+   Por esta razón en este etapa de especificación se requiere normalmente una gran
+   <b>comunicación</b> entre los <b>programadores</b> y los futuros <b>usuarios finales</b>.
+  </p>
+
+  <p>En esta etapa también tenemos que especificar claramente aquella información que es  necesaria para
+     la resolución del problema. Para hacer el análisis hay  que responder  a las siguientes preguntas:<br>
+      <ul>
+        <li><b>¿Qué <em>datos(información) de entrada(s)</em> tiene el problema?</b>,</li>
+        <li><b>¿Cuál es la <em>salida</em> deseada?</b>,</li>
+        <li><b>¿Qué <em>método</em> produce la salida deseada a partir de los datos de entrada?</b></li>
+      </ul>
+    </p>
+   
+    
+    
+
+
+</div>
+  
+<div class="nota-box">
+  <h2 class="number-title"> Diseño del algoritmo</h2> 
+  
+  <p>Casi inconscientemente, los humanos efectuamos cotidianamente una serie de pasos, procedimientos o acciones que nos permiten
+    <b>alcanzar un resultado</b> o <b>resolver un problema</b>. <!-- Continuamente seguimos una serie de pasos o conjunto de acciones que nos
+    permiten alcanzar un resultado -->Esta serie de pasos, procedimientos o acciones, comenzamos a aplicarlas desde que
+    empieza el día, cuando, por ejemplo, <b>tomar un bañar</b>. Luego, tenemos que continuar con una serie de pasos que 
+    nos permitan alcanzar otro resultado específico: <b>desayunar</b>. La historia se repite innumerables veces durante 
+    el día. En realidad todo el tiempo estamos aplicando <em>algoritmos</em> para resolver problemas.</p>
+
+  <h2 class="number-title"> Algoritmo</h2>
+<p>A estas alturas es importante definir el concepto de <em>algoritmo</em>. El nombre procede del matemático persa
+  <b>Abu Ja’far Mohammed ibn Musa al-Jowârizmî</b>, autor de un tratado de aritmética que se publicó hacia el año 825 y que fue muy conocido durante la Edad Media.</p>
+  
+<p><b><u>Definición:</u></b> Un <b>algoritmo</b> es un conjunto ordenado de pasos ejecutables que permiten obtener un resultado determinado a 
+   partir de ciertos datos de partida y que cumple las siguientes características: </p>
+  
+  <ol>
+    <li>
+      <b>Finito:</b> Debe acabar siempre tras un número finito de pasos, si bien este número de pasos puede ser 
+      arbitrariamente grande.
+     </li><br>
+     <li>
+      <b>Definibilidad:</b> Cada paso del algoritmo debe definirse de modo preciso. Las acciones del algoritmo 
+      deben estar expresadas sin ambigüedad.
+     </li><br>
+     <li>
+      <b>Efectividad:</b> Las operaciones del algoritmo deben ser básicas, estar expresadas de modo exacto y deben ejecutarse en un
+        tiempo finito.
+     </li><br>
+     <li><b>Entrada:</b> Todo algoritmo debe tener cero o más datos de entrada.</li><br>
+     <li><b>Salida:</b> Todo algoritmo debe tener cero o más datos de salida.</li>
+  </ol>
+   </p>
+
+   <p>En general, un algoritmo consta de tres secciones o modulos pincipales. </p>
+   <p>
+    <div class="flexbox">
+        <img src="../Imagenes/Secciones_algoritmo.JPG" alt="", width="auto" height="auto">
+    </div>
+</p>
+
+   
+
+<h2 class="number-title"> Construccion del algoritmo</h2>
+<p>
+  Durante la etapa <b>diseño del algoritmo</b>  hay que indicar la serie de  acciones para llevar a cabo  
+   la tarea solicitada o resolver el problema planteado,  lo que se traduce en la <b>construcción de un algoritmo</b>. 
+   Los métodos más eficaces se basan en la técnica <b><em>divide y vencerás</em></b>:
+</p>
+
+<center>
+  <b>El problema se divide en subproblemas, y a continuación se divide cada uno de estos subproblemas en otros hasta que pueda 
+  ser implementada una solución.</b>
+</center>
+
+<p>
+  Esta etapa de diseño es bastante larga, pero hay que tener en cuenta que el gasto de tiempo en la etapa de diseño será ahorro de tiempo cuando se escriba
+  y depure el programa. El resultado final del diseño es una solución que debe ser fácil de traducir a estructuras de datos y estructuras
+  de control de un <b>lenguaje de programación</b> específico.
+</p>
+
+
+<p>No existen reglas específicas que nos permitan resolver un problema. Sin embargo, es posible  ofrecer un
+  conjunto de técnicas y herramientas metodológicas que permitan flexibilizar y estructurar el razonamiento
+  utilizado en la solución de un problema. Eso provocará finalmente la construcción de algoritmos eficientes.
+</p>
+
+
+<p>
+  Las dos <b>herramientas más comúnmente utilizadas para diseñar algoritmos</b> son: <em>diagramas de flujo</em> 
+  y <em>pseudocódigos</em>. De hecho, una de las mejores formas de aprender  a programar es empezar por los <em>diagramas de flujo</em> y 
+  <em>pseudocodigo</em>. Ambos facilitan e inducen  la resolucion de problemas  mediante <em>algoritmos</em>.s</p>
+  
+  <HR>
+
+  <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para  saber si un número entero positivo $p$ es primo o no.<br>
+    <p><em><b>Análisis del problema:</b></em> Un número es <b>primo</b> si sus únicos divisores son $1$ y el mismo 
+    número. Entonces para saber si  $p$ es primo necesitamos dividir $p$ sucesivamente por $2,3,4,\ldots$.
+    Definiremos una nueva variable $x$ para denotar el divisor. 
+    </p>
+  <div class="algoritmo-box">
+   <ol>
+     <li>Inicio</li>
+     <li>Si $p$ es igual a $2$, entonces $p$ es primo e ir al paso 8, en caso contrario continuar con el 
+      proceso.</li>
+     <li>Hacer $x$ igual a $2$</li>
+     <li>Realizar la división  $p$ entre $x$</li>
+     <li>Si el resultado de la división  $p/x$ es un número entero, entonces $p$ no es un número primo e 
+      ir al paso ; en caso contrario, continuar el proceso.</li>
+     <li>Suma $1$ a $x$</li>
+     <li>Si $x$ es igual a $p$, entonces $p$ es un número primo; en caso contrario, 
+      bifurcar al punto 4</li>
+     <li>Fin</li>
+    </ol>
+</div>
+</p>
+    <HR>
+
+    <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar la suma de todos los números pares 
+      entre  $1$ y $1\,000$.<br>
+      <p><em><b>Análisis del problema:</b></em> El problema consiste en sumar $2 + 4 + 6 + 8+ \cdots + 1\, 000$. 
+        Definiremos dos nuevas variables auxiliares para resolver el problema,  Sum  representará  las sumas 
+        sucesivas $(2+4), (2+4+6), (2+4+6+8), \ldots$. Mientras que Num denotará el número par a sumar.</p>
+      <div class="algoritmo-box">
+       <ol>
+       <li>Inicio</li>
+       <li>Hacer Sum igual a $0$</li>
+       <li>Hacer Num igual a $2$</li>
+       <li>Sumar Num a Sum y actualizar el valor de Sum a este resultado, i.e. El nuevo valor de Sum es 
+         el valor previo de Sum más Num. </li>
+       <li>Incrementar Num en 2 unidades.</li>
+       <li>Si Num es menor o igual que $1\,000$, entonces ir al paso 4. En caso contrario el último escribe 
+        escribir el último valor que tiene  Sum. </li>
+       <li>Fin</li>
+      </ol>
+      </div>
+
+    <!-- <ul>
+       <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
+       <li>Decidir si un número es primo.</li>
+       <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
+     </ul>-->  
+    </p> 
+<HR>
+
+<h2 class="number-title"> Diagramas de flujo</h2>
+
+
+<p>
+  Un diagrama de flujo representa la esquematización gráfica de un algoritmo. Muestra gráficamente los pasos o procesos
+  a seguir para alcanzar la solución de un problema. El diagrama de flujo representa la solución del problema.
+  Su correcta construcción es sumamente importante porque a partir del mismo se escribe un programa en algún lenguaje
+  de programación. Si el diagrama de flujo está completo y correcto, el paso del mismo a un <em>lenguaje de
+  programación</em> es relativamente simple y directo.
+</p>
+<p><b><u>Definición:</u></b> Un diagrama de flujo es una representación gráfica de un algoritmo. Los símbolos utilizados
+   satisfacen las recomendaciones de la <em>International Organization for Standardization</em> (ISO) y el American National
+   Standards Institute (ANSI).</p>
+<p>
+    <div class="flexbox">
+        <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+    </div>
+</p>
+
+<p>
+  Dentro de los diagramas de flujo se pueden utilizar los símbolos que 
+  se presentan en la tabla 1.2, con los cuales se indican las operaciones que se 
+  efectuarán a los datos con el fin de producir un resultado.
+</p>
+
+
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+<p><b><u>Ejemplo:</u></b> El diagrama de flujo para determinar el volumen de una caja de dimensiones A, B y C </p>
+
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+<p>
+Se puede ver gráficamente, de forma precisa la secuencia de los pasos por realizar
+para obtener el resultado del volumen. Como se puede verificar, son los mismos pasos
+que se establecieron en el algoritmo presentado previamente mediante el pseudocódigo
+</p>
+
+<p>Los diagramas de flujo son una herramienta que permite representar visualmente qué operaciones
+  se requieren y en qué secuencia se deben efectuar para solucionar un problema dado.
+  Por consiguiente, un diagrama de flujo es la representación gráfica mediante símbolos especiales,
+  de los pasos o procedimientos de manera secuencial y lógica que se deben realizar para solucionar 
+  un problema dado</p>
+
+<p>Los diagramas de flujo facilitan la comunicación entre los programadores y los usuarios,
+  además de que permiten de una manera más rápida  detectar los posibles errores de lógica 
+  que se presenten al implementar el algoritmo</p>
+
+
+<p>Enseguida se muestran algunos de los principales símbolos 
+  utilizados para construir un diagrama de flujo.
+</p>
+
+
+
+<p>        
+  <table class="info">
+    <thead>
+    <tr>
+      <th>Símbolo</th>
+      <th> Descripcion del símbolo</th>
+    </tr>
+    </thead>
+      <tbody>
+      <tr>
+        <td><img src="../Imagenes/Simbolo_inicio_fin.JPG" alt="", width="auto" height="auto"></td>
+        <td> Se utiliza para marcar el inicio y el fin del diagrama de flujo.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_lectura.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para introducir los datos de entrada. Expresa lectura.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_proceso.JPG" alt="", width="auto" height="auto"></td>
+        <td>Representa un proceso. En su interior se colocan asignaciones,
+          operaciones aritméticas, cambios de valor de celdas en memoria,
+          etc.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_decision.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar una decisión. En su interior se almacena
+          una condición, y, dependiendo del resultado, se sigue por
+          una de las ramas o caminos alternativos. Este símbolo se utiliza
+          con pequeñas variaciones en las estructuras selectivas</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_decision_multiple.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar una decisión múltiple, switch, que
+          analizaremos en el siguiente capítulo. En su interior se almacena
+          un selector, y, dependiendo del valor de dicho selector, se
+          sigue por una de las ramas o caminos alternativos.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Sibolo_escritura.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar la impresión de un resultado. Expresa
+          escritura.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_direccion_flujo.JPG" alt="", width="auto" height="auto"></td>
+        <td>Expresan la dirección del flujo del diagrama.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Conexion_misma_pagina.JPG" alt="", width="auto" height="auto"></td>
+        <td>Expresa conexión dentro de una misma página.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Conexion_diferente_pagina.JPG" alt="", width="auto" height="auto"></td>
+        <td>Representa conexión entre páginas diferentes.</td>
+      </tr>
+
+      <tr> <td><img src="../Imagenes/Simbolo_subproblema.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para expresar un módulo de un problema, subproblema,
+          que hay que resolver antes de continuar con el flujo
+          normal del diagrama.</td>
+      </tr>
+    </tbody>
+    </table>
+  </p>
+
+ <h2 class="number-title"> Construcción de un diagrama de flujo</h2>
+  <p>En la siguiente figura se presentan los pasos que se deben seguir en la
+    construcción de un diagrama de flujo. El <b>procesamiento de los datos</b> generalmente
+    está relacionado con el <b>proceso de toma de decisiones</b>. Además, es muy común
+    <b>repetir un conjunto de pasos</b>.</p>
+  
+    
+  <p>
+    <div class="flexbox">
+        <img src="../Imagenes/Etapas_construccion_diagrama_flujo.JPG" alt="", width="auto" height="auto">
+    </div>
+  </p>
+
+<h2 class="number-title"> Reglas para la construcción
+  de diagramas de flujo</h2>
+ 
+
+   <p>El diagrama de flujo debe ilustrar gráficamente los pasos o procesos que se deben
+      seguir para alcanzar la solución de un problema.
+    </p>
+
+    <p>Los símbolos presentados, colocados en los lugares adecuados, permiten crear una <b>estructura gráfica flexible
+      que ilustra los pasos a seguir para alcanzar un resultado específico</b>. El diagrama
+      de flujo facilita entonces la escritura del programa en un lenguaje de programación.
+    </p>
+    <p>
+     A continuación se presenta el conjunto de <b>reglas para la construcción de diagramas de flujo</b>:
+    </p>
+  <p>
+    <ol>
+      <li>Todo diagrama de flujo debe tener un inicio y un fin.</li>
+      <li>Las líneas utilizadas para indicar la dirección del flujo del diagrama deben
+        ser rectas:<i> verticales u horizontales</i></li>
+      <li>Todas las líneas utilizadas para indicar la dirección del flujo del diagrama
+        deben estar conectadas. La conexión puede ser a un símbolo que exprese
+        lectura, proceso, decisión, impresión, conexión o fin del diagrama.</li>
+      <li>El diagrama de flujo debe construirse de arriba hacia abajo (top-down) y de
+        izquierda a derecha (right to left).</li>
+      <li>La notación utilizada en el diagrama de flujo debe ser independiente del
+        lenguaje de programación. La solución presentada se puede escribir posteriormente
+        en diferentes lenguajes de programación.</li>
+      <li>Al realizar una tarea compleja, es conveniente poner comentarios que
+        expresen o ayuden a entender lo que hayamos hecho.</li>
+      <li>Si la construcción del diagrama de flujo requiriera más de una hoja,
+        debemos utilizar los conectores adecuados y enumerar las páginas
+        correspondientes.</li>
+      <li>No puede llegar más de una línea a un símbolo determinado.</li>
+    </ol>
+  </p>
+
+
+
+
+  <p>Presentaremos a continuación algunos conceptos que son fundamentales para la
+    construcción de algoritmos, diagramas de flujo y programas. Primero analizaremos
+    los <em>tipos de datos</em>, luego estudiaremos los conceptos de <em>identificador, constantes
+    y variables</em>, más adelante analizaremos las <em>operaciones aritméticas</em> y
+    <em>expresiones lógicas</em>.</p>
+    
+  <h2 class="number-title"> Tipos de datos: simples y estructurados </h2>
+
+  <p>Los datos a procesar por una computadora pueden clasificarse en <b>simples</b> y <b>estructurados</b>.</p>
+ 
+  <p><b><u>Definición.</u></b> Los <b>datos simples</b> son aquellos  que ocupan sólo una casilla de memoria, por lo tanto, una variable simple
+    hace referencia a un único valor a la vez. Dentro de este grupo de datos se encuentran: <b>enteros</b>, <b>reales</b>,
+   <b>caracteres</b> y <b>booleanos</b>
+   </p>
+
+   
+  <p><b><u>Definición.</u></b> Los <b>datos estructurados</b> se caracterizan por el hecho de que con un nombre
+    (identificador de variable estructurada) se hace referencia a un grupo de casillas
+    de memoria. Es decir, un dato estructurado tiene varios componentes. Cada uno de los
+    componentes puede ser a su vez un dato simple o estructurado. Sin embargo, los
+    componentes básicos (los del nivel más bajo) de cualquier tipo estructurado son datos
+    simples. Dentro de este grupo de datos se encuentran: <b>arreglos</b>, <b>cadena de caracteres</b>, 
+    <b>registros</b> y <b>conjuntos</b>.</p>
+
+
+  <h2 class="number-title"> Datos númericos</h2>
+
+  <p>Detro de los tipos de dato númerico  se encuentran los <b>enteros</b> y los <b>reales</b>.
+    Los enteros son números que pueden estar precedidos del signo + o y que no tienen parte decimal.
+    Mientras que los  reales son numeros que pueden estar precedidos del signo $+$ o $-$, y que tiene una parte 
+    decimal.</p>
+  <hr>
+  <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i>entero</i>: 
+    $$1,-10,152,456,-895,-7613,0$$
+  <hr>
+
+  <hr>
+  <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i>real</i>: 
+    $$0.5,-1.8,1.52,9.4,-8.57,-2.2,0.99$$
+  <hr>
+
+
+  <h2 class="number-title"> Datos alfanúmericos</h2>
+
+  <p>Dentro de este tipo de datos encontramos los de tipo caracter (simple) y cadena de caracteres (estructurado).
+     Son datos cuyo contenido pueden ser letras del abecededario (a,b,c, ..., x,y,z) , digitos ( 0,1,2,...,9) o 
+     símbolos especiales (#, $, ^, *, %, /, !, +, -, ...,etc) 
+  </p>
+
+  <p><b><u>Observación:</u></b> Aunque este  tipo de datos pueden contener números, no pueden ser utilizados para 
+    realizar operaciones aritméticas </p>
+
+    
+  <p>Un dato de tipo <b>caracter</b> contiene un sólo caracter, y se escribe entre apóstrofes. Un dato tipo <b>cadena de caracteres</b>
+  contiene un conjunto de caracteres, y se escribe entre comillas.</p>
+
+  <hr>
+  <p><b><u>Ejemplo.</u></b> Son ejemplos de datos de tipo <i>caracter</i>: 
+    <center><pre>'a'    'P'   '$'   '5'   '-'   '#'   'H'</pre></center>
+  </p>
+  <hr>
+
+  <hr>
+  <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i>cadena de caracteres</i>:
+  <center><pre>"aeiou"    "#50"   "$100A"   "Actuaria"   "UMAR"   "951-590-75-00"   "ECONOMIA"</pre></center>
+  </p>
+    <hr>
+
+    <h2 class="number-title"> Datos lógicos</h2>
+    <p>En este tipo de de datos se encuentran los <b>booleanos</b>. Son datos que solo pueden tomar dos valores: 
+    <b>Verdadero</b> (<b>True</b>) o <b>Falso</b> (<b>false</b>)</p>
+
+    <h2 class="number-title"> Identificadores, constantes y variables</h2>
+
+    <p>Los datos a procesar por una computadora, ya sean simples o estructurados, se deben almacenar en casillas 
+      o celdas de memoria para su posterior utilización. Estas casillas o celdas de memoria (ya sean constantes o variables)
+      tienen un nombre que permite su ubicación.
+    </p>
+
+
+    <p><b><u>Definición.</u></b> Se le llama <b>identificador</b> al nombre que se les da a las casillas de memoria. 
+    Un identificador se forma de acuerdo a ciertas reglas (en general estas dependen dellenguaje de programacion 
+    que se este utilizando):
+    <ul>
+      <li>El primer caracter que forma un identificador debe ser una letra (a,b,c,...,x,y,z)</li>
+      <li>Los demás caracteres pueden ser letras  (a,b,c,...,x,y,z), digitos (0,1,2,...,9) o el simbolo especial: _</li>
+      <li>La longitud del identificador es igual a 7 en la mayoría de los lenguajes de programación.</li>
+    </ul>
+    </p>
+
+    <p><b><u>Definición.</u></b> Las <b>constantes</b> son datos que no cambian durante la ejecución de un <em>programa</em>
+    Para nombrar las constantes utilizamos los identificadores que mencionamos anteriormente. Existen tipos de constantes 
+    como  tipos de datos, por lo tanto puede haber constantes de tipo entero, real, caracter, cadena de caracteres, etc.   </p>
+
+
+    <p><b><u>Definición.</u></b>  Las <b>variables</b> son objetos que pueden cambiar su valor durante la ejecución de un programa. 
+    Par nombrar las variables utilizaremos los identificadores que se abordaron anteriormente. Al igual que las constantes, pueden 
+    existir tipos de variables como tipos de datos. Las más comunes son las  variables de tipo entero y real.
+
+    <p><b><u>Observación.</u></b> Es importante que los nombres de las constantes y las variables  sean representativas de la función 
+    que tienen las mismas en el programa.</p>
+
+    <h2 class="number-title"> Operaciones aritméticas</h2>
+
+    <p>Para poder realizar operaciones aritmeticas necesitamos realizar operaciones aritméticas. Etos operadores nos permitirán 
+      realizar operaciones aritmeticas entre operandos: numeros, constantes o variables.  El resultado de una operación aritmetica 
+      será un número.  
+    </p>
+
+    <p>En la siguiente tabla presentamos los operadores aritméticos, la operación que pueden realizar, un ejemplo de su uso y el 
+    resultado de dicho ejemplo. 
+    </p>
+    
+    <center>        
+      <table class="info"  style="width:60%">
+        <thead>
+        <tr>
+          <th style="width:170px">Operador aritmético</th>
+          <th style="width:130px">Operación</th>
+          <th>Ejemplo</th>
+          <th>Resultado</th>
+        </tr>
+        </thead>
+          <tbody>
+          <tr >
+            <td><center><b>**</b></center></td>
+            <td>Potencia</td>
+            <td>4**3</td>
+            <td>64</td>
+          </tr>
+
+          <tr>
+            <td><center><b>*</b></center></td>
+            <td>Multiplicación</td>
+            <td>1.25*2</td>
+            <td>2.5</td>
+          </tr>
+
+          <tr>
+            <td><center><b>/</b></center></td>
+            <td>División</td>
+            <td>15/4</td>
+            <td>3.75</td>
+          </tr>
+
+          <tr>
+            <td><center><b>+</b></center></td>
+            <td>Suma</td>
+            <td>20.5+9.2</td>
+            <td>29.7</td>
+          </tr>
+
+          <tr>
+            <td><center><b>-</b></center></td>
+            <td>Resta</td>
+            <td>17.9-14.6</td>
+            <td>3.3</td>
+          </tr>
+
+          <tr>
+            <td><center><b>mod</b></center></td>
+            <td>Módulo (residuo)</td>
+            <td>15 mod 2</td>
+            <td>1</td>
+          </tr>
+
+          <tr>
+            <td><center><b>div</b></center></td>
+            <td>División entera</td>
+            <td>17/3</td>
+            <td>5</td>
+          </tr>
+
+        </tbody>
+        </table>
+      </center>
+    
+  <p>Al evaluar expresiones que contienen operadores aritmeticos debemos respetar la jerarquia en el orden de aplicacion de los operadores. 
+    Esto es, si tenemos en una expresion mas de un operador, debemos aplicar primero el operador de mayor jerarquia, resolver esa operacion y 
+    asi sucesivamente. Es importante señalar que el operador ()es un operador asociativo que tiene la priopridad mas alta en cualquier lenguaje 
+    de programacion. 
+  </p>
+
+  <p>En la siguiente tabla se presenta la jerarquia de los operadores:</p>
+
+
+  <center>        
+    <table class="info"  style="width:60%">
+      <thead>
+      <tr>
+        <th style="width:170px">Operador</th>
+        <th style="width:130px">Jerarquía</th>
+        <th>Operación</th>
+      </tr>
+      </thead>
+        <tbody>
+        <tr >
+          <td><center><b>**</b></center></td>
+          <td>Potencia</td>
+          <td>4**3</td>
+          <td>64</td>
+        </tr>
+
+        <tr>
+          <td><center><b>*</b></center></td>
+          <td>Multiplicación</td>
+          <td>1.25*2</td>
+          <td>2.5</td>
+        </tr>
+
+        <tr>
+          <td><center><b>/</b></center></td>
+          <td>División</td>
+          <td>15/4</td>
+          <td>3.75</td>
+        </tr>
+
+        <tr>
+          <td><center><b>+</b></center></td>
+          <td>Suma</td>
+          <td>20.5+9.2</td>
+          <td>29.7</td>
+        </tr>
+
+        <tr>
+          <td><center><b>-</b></center></td>
+          <td>Resta</td>
+          <td>17.9-14.6</td>
+          <td>3.3</td>
+        </tr>
+
+        <tr>
+          <td><center><b>mod</b></center></td>
+          <td>Módulo (residuo)</td>
+          <td>15 mod 2</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td><center><b>div</b></center></td>
+          <td>División entera</td>
+          <td>17/3</td>
+          <td>5</td>
+        </tr>
+
+      </tbody>
+      </table>
+    </center>
+
+
+    <p>Las reglas para resolver una expresion arirtmetica son:
+    <ol>
+      <li></li>
+      <li></li>
+    </ol>
+
+    </p>
+
+    <h2 class="number-title"> Operadres relacionales</h2>
+
+    <h2 class="number-title"> logicos</h2>
+
+    <h2 class="number-title"> Bloques de asignación</h2>
+
+  <h2 class="number-title"> Pseudocodigo</h2>
+
+  <p>En el mundo de la programación el <em>pseudocódigo</em> es una de las 
+  herramientas más conocidas para el diseño de solución de problemas por 
+  computadora. Esta herramienta permite pasar casi de manera directa la 
+  solución del problema a un <em>lenguaje de programación</em> específico. 
+  </p>
+  
+  <p><b><u>Definición:</u></b> El <b>pseudocodigo</b> es una serie de pasos bien detallados y claros que conducen a la 
+    resolución de un problema. Es una forma de expresar los distintos pasos que va a realizar un programa de la forma mas 
+    parecida a un lenguaje de programación. 
+  </p>
+  
+  <p><b><u>Observación:</u></b> El pseudocódigo no puede ejecutarse en un ordenador ya que entonces dejaría 
+    de ser pseudocódigo, como su propio nombre indica, se trata de un código falso (pseudo = falso), es un código escrito para que lo entienda el ser 
+    humano y no la máquina.</p>
+    
+    <HR>
+  <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
+  
+  <p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
+    números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $</p>
+  <div class="pseudocodigo-box">
+  <pre>
+  <b>Algoritmo</b> Suma_cincuenta
+  <em><b>Variables</b></em>
+  <b>Entero</b> Contador, Suma
+  <b>Inicio</b>
+    Contador <font size=5>&#8592;</font> 0
+    Suma <font size=5>&#8592;</font> 0
+    <b>Mientras</b> Contador <= 100 <b>Hacer</b>
+      Suma <font size=5>&#8592;</font> Suma + Contador
+      Contador <font size=5>&#8592;</font> Contador + 1
+    <b>Fin_mientras</b>
+    <b>Escribe</b>(Suma)
+  <b>Fin</b>
+  </pre>
+  </div>
+  
+  
+  <HR>
+  
+  <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que sume los  primeros $100$ números naturales.<br></p>
+  
+    <p><em><b>Análisis del problema:</b></em> Implementaremos una variable <b>Contador</b> que cuenta los  primeros $100$ 
+      números naturales  y una variable <b>Suma</b>, para almacenar las sumas sucesivas: $1, 1+2, 1+2+3,\dots $</p>
+    
+  <div class="pseudocodigo-box">
+  <pre>
+  <b>Algoritmo</b> Suma_cien
+  <em><b>Variables</b></em>
+  <b>Entero</b> Contador, Suma
+  <b>Inicio</b>
+    Contador <font size=5>&#8592;</font> 0
+    Suma <font size=5>&#8592;</font> 0
+    <b>Mientras</b> Contador <= 100 <b>Hacer</b>
+      Suma <font size=5>&#8592;</font> Suma + Contador
+      Contador <font size=5>&#8592;</font> Contador + 1
+    <b>Fin_mientras</b>
+    <b>Escribe</b>(Suma)
+  <b>Fin</b>
+  </pre>
+  </div>  
+  
+  <HR>
+  
+    <p><b><u>Ejemplo:</u></b> Escribir el pseudocódigo de un algoritmo que lea $10$ número enteros y calcule el mayor.<br></p>
+  
+    <p><em><b>Análisis del problema:</b></em> Implementaremos una variable entera Num para leer mediante un ciclo los números 
+      enteros ingresados, otra  variable <b>Max</b>  para almacenar el máximo de los números, este valor máximo se 
+      actualizará dentro del ciclo conforme los números son ingresados, así también usaremos una variable entera <b>Contador</b>
+      que llevará la cuenta de la cantidad de  números ingresados, el ciclo se detendra despues de  $10$, otra variable entera  que vamos a sumar  y .</p>
+    
+  <div class="pseudocodigo-box">
+  <pre>
+  <b>Algoritmo</b> Mayor_diez
+  <em><b>Variables</b></em>
+  <b>Entero</b> Contador, Max
+  <b>Inicio</b>
+    Leer(Numero)
+    Contador <font size=5>&#8592;</font> 0
+    S <font size=5>&#8592;</font> 0
+    <b>Mientras</b> Contador <= 100 <b>Hacer</b>
+      Suma <font size=5>&#8592;</font> Suma + Contador
+      Contador <font size=5>&#8592;</font> Contador + 1
+    <b>Fin_mientras</b>
+    <b>Escribe</b>(Suma)
+  <b>Fin</b>
+  </pre>
+  </div>  
+  
+  
+  <p>Podemos considerar al pseudocódigo como un lenguaje intermedio, que se encuentra en medio de nuestro propio lenguaje 
+  y el lenguaje de programación que entiende el ordenador.</p>
+  
+  
+
+</div>
+
+
+
+    
+  <div class="nota-box">
+    <h2 class="number-title"> Transformación del algoritmo en un programa</h2>  
+
+    
+
+  <p>En  esta etapa tenemos que  escribir en un <em>lenguaje de programación</em> el algoritmo creado
+    en la fase de diseño, debiendo seguirse las siguientes reglas:
+    <ol>
+     <li>Si un problema se ha dividido en subproblemas los algoritmos que resuelven cada subproblema deben ser codificados y
+       probados independientemente.</li>
+     <li>Deben usarse como identificadores términos significativos usando nombres para los datos, y verbos para los subprogramas.</li>
+     <li>Ha de tenerse especial cuidado en la comunicación de los distintos subprogramas, siendo recomendable que esta comunicación
+       se realice siempre mediante los parámetros.</li>
+     <li>El sangrado (indentación) así como los buenos comentarios facilitan la posterior lectura del código.</li>
+    </ol>
+
+ <h2 class="number-title"> Programa</h2>
+
+    <p>El pseudocódigo o el diagrama de flujo, no son comprensibles por una computadora, por lo tanto  el algoritmo 
+      se debe  expresar en un formato conocido como <em>programa</em> de tal manera que la computadora  
+      debe ser capaz de interpretar el algoritmo, esto es:
+    <ul>
+     <li>Comprender las instrucciones de cada paso,</li>
+     <li>Realizar las operaciones correspondientes.</li>
+    </ul>
+ 
+    <p><b><u>Definición:</u></b> Un <b>programa</b> es un conjunto de pasos lógicos escritos en un <em>lenguaje de programación</em>
+      que nos permite realizar una tarea específica. El proceso de análisis, diseño, implementación, prueba y depuración de
+      un algoritmo, a partir de un lenguaje que compila y genera un <em>código fuente</em> ejecutado en la computadora
+      se le llama <b>programación</b>.
+    </p>
+    
+    <h2 class="number-title"> Lenguajes de programación</h2>
+
+    
+  <p>Los <em>lenguajes de programación</em> se utilizan para escribir programas. Los programas de las computadoras modernas
+    constan de secuencias de instrucciones que se codifican como secuencias de dígitos numéricos que podrán
+    entender dichas computadoras. El sistema de codificación se conoce como <em>lenguaje máquina</em> que es el lenguaje
+    nativo de una computadora. Desgraciadamente la escritura de programas en lenguaje máquina es una tarea tediosa
+    y difícil ya que sus instrucciones son secuencias de 0 y 1 (patrones de bit, tales como 11110000, 01110011...) que
+    son muy difíciles de recordar y manipular por las personas. En consecuencia, se necesitan lenguajes de programación
+    “amigables con el programador” que permitan escribir los programas para poder “charlar” con facilidad con las
+    computadoras. Sin embargo, las computadoras sólo entienden las instrucciones en lenguaje máquina, por lo que será
+    preciso traducir los programas resultantes a lenguajes de máquina antes de que puedan ser ejecutadas
+    por ellas.
+  </p> 
+
+
+    <p>Cada lenguaje de programación tiene un conjunto o “juego” de instrucciones (acciones u operaciones que debe
+      realizar la máquina) que la computadora podrá entender directamente en su código máquina o bien se traducirán a
+      dicho código máquina. Las instrucciones básicas y comunes en casi todos los lenguajes de programación son:</p>
+
+    <p>
+      <ul>
+        <li><b>Instrucciones de entrada/salida:</b> Instrucciones de transferencia de información entre dispositivos periféricos y
+          la memoria central, tales como "leer de..." o bien "escribir en...".</li>
+        <li><b>Instrucciones de cálculo:</b> Instrucciones para que la computadora pueda realizar operaciones aritméticas.</li>
+        <li><b>Instrucciones de control:</b> Instrucciones que modifican la secuencia de la ejecución del programa.</li>
+      </ul>
+    </p>
+    
+
+  <p><b>Programar</b> es un proceso mental complejo, y podriamos separar este proceso en  varias etapas:
+  <ul>
+    <li>Codificación</li>
+    <li>Compilación y Ejecución</li>
+    <li>Verificación</li>
+    <li>Depuración</li>
+    <li>Documentación</li>
+    </ul>
+  
+  </p>
+
+
+
+  
+  
+  
+  <p>La <b>finalidad de la programación</b> es comprender con claridad el problema que va a resolverser por medio de la computadora
+     y entender tambien con detalle cual sera el procedimiento mediante el cual la maquina llegara a la solucion deseada.
+    </p>
+  
+  
+ 
+
+    <p><b><u>Definición:</u></b> Un <b>lenguaje de programación</b> es una herramienta que permite desarrollar
+      programas (software) para una computadora.<!--Los lenguajes de programación son empleados para diseñar programas  encargados
+      de definir y administrar el comportamiento de los dispositivos físicos y lógicos de una computadora. Lo anterior 
+      se logra mediante la  implementación de algoritmos que se utilizan como una forma de comunicación humana con la computadora.-->
+      Un lenguaje de programación se conforma de una serie de símbolos y reglas de sintaxis y semántica que definen la estructura
+      principal del lenguaje y le dan un significado a sus elementos y expresiones. 
+  </p>
+
+  
+  <p>Cuando programamos, no podemos utilizar el lenguaje natural con que nos comunicamos cotidianamente
+    los seres humanos. Por el contrario, los programadores emplean un lenguaje que la computadora puede interpretar
+    para realizar tareas, es este sentido la <b>función principal</b> de los lenguajes  de programación es escribir
+    programas que permiten la comunicación usuario-máquina, con ayuda de unos programas especiales (<em>compiladores</em> 
+    o <em>intérpretes</em>) convierten las instrucciones escritas en código fuente, en instrucciones escritas en lenguaje
+    máquina (0 y 1).
+  </p>
+
+   <h2 class="number-title"> Clasificación de los lenguajes de programación</h2>
+
+  <p>Existen muchos y variados lenguajes de programación, de características sumamente  diferentes y que emplean diferentes 
+    enfoques con los que podemos programar. Cada lenguaje comprende un conjunto de ideas que guían, como su propósito final, 
+    la forma en que codificamos la descripci ón que otorgaremos a la maquina. En todo momento el lenguaje de programación 
+    permite especificar de manera precisa el trabajo que el programador espera que la computadora realice.</p>
+    
+    <p>Los principales tipos de lenguajes de programación son:</p>
+
+  
+  <h3><u>Lenguajes de  máquina.</u></h3> Es un conjunto de instrucciones o códigos que pueden ser interpretados  directamente 
+      por el procesador de una computadora, está basado en el sistema binario y varía dependiendo del hardware. En otras palabras,
+      el lenguaje de maquina es aquel cuyas instrucciones son directamente entendibles por la computadora y no necesitan traducción
+      posterior para que la UCP  pueda comprender y ejecutar el programa. Las instrucciones en lenguaje maquina se expresan en términos de la unidad de memoria más pequeña
+      (bit) = digito binario 0 o 1, en esencia una secuencia de bits que especifican la operación y las celdas de memoria
+      implicadas en una operación
+
+      <p>La principal ventaja del lenguaje máquina es su alta velocidad, debida a la traducción inmediata de los códigos binarios.
+         Entre sus muchas debilidades encontramos:
+        <ul>
+          <li><b>Codificación compleja:</b> el programador debe entender el significado de los unos y ceros y tener tablas de instrucciones
+            y variables. En los procesadores actuales de 64bits, por ejemplo, una instrucción tiene 64 unos y ceros, lo cual es 
+            muy difícil de controlar.</li>
+          <li><b>Errores en la codificación y depuración compleja:</b> debido a la complejidad de los códigos.</li>
+          <li><b>Productividad mínima:</b> tiempos de desarrollo muy altos</li>
+          <li><b>No portabilidad:</b> un programa solo funciona sobre el hardware para el que es hecho.</li>
+        </ul>
+        </p>
+
+      <p><b><u>Ejemplo:</u></b> Los siguientes son instrucciones en lenguaje de maquina:  0010, 0000, 1001, 1001, 10001, 1110.</p>
+
+   
+
+      <p>Las  instrucciones en lenguaje de maquina  son fáciles de leer por una computadora y difíciles para un programador y viceversa. 
+        Por esta razón se hace difícil escribir programas en código o lenguaje de maquina. Y se requiere otro lenguaje para
+        comunicarse con la computadora pero que se hace más fácil de escribir y de leer por el programador. Para evitar la
+        tediosa tarea de escribir programas en este lenguaje se han diseñado otros programas de programación que facilitan 
+        la escritura y posterior ejecución de los programas. 
+      </p>
+
+      <h3><u>Lenguajes de bajo nivel (ensamblador).</u></h3> Son una representación más entendible para el humano de los 
+        códigos del lenguaje máquina. Cada instrucción en lenguaje ensamblador representa una instrucción en el lenguaje máquina. 
+        El lenguaje ensamblador aparece casi a la par con el lenguaje máquina, esto debido a que los fabricantes de hardware 
+        diseñan sus Chips pensando ya en las instrucciones de un lenguaje de ensamblado.
+
+        <p>A pesar de que el lenguaje ensamblador es más fácil de entender por las personas sigue teniendo las desventajas 
+          del lenguaje de máquina.  Realmente lo que hace es ayudar un poco a que el código sea más legible. El lenguaje
+          ensamblador adicionalmente necesita un traductor (ensamblador) capaz de convertir dichos códigos en lenguaje máquina.</p>
+      
+      <h3><u>Lenguajes de alto nivel:</u></h3> Los lenguajes de programación de alto nivel se caracterizan porque su estructura 
+      semántica es muy similar a la forma como escriben los humanos, lo que permite codificar los algoritmos de manera más natural,
+      en lugar de codificarlos en el lenguaje binario de las máquinas, o a nivel de lenguaje ensamblador. <!-- Los lenguajes de
+      programación de alto nivel se componen de un conjunto de instrucciones o primitivas más fáciles
+      de escribir y recordar su función que los lenguajes máquina y ensamblador. --><br>
+
+      <p>Algunas de las características de los lenguajes de alto nivel son:</p>
+
+      <ul>
+        <li><b>Depuración más sencilla:</b> Debido a que el código es más legible, la depuración también se hace más fácil.
+            Con la ayuda editores (IDEs – Entornos de Desarrollo Integrados) la compilación, depuración y ejecución se hacen
+            más fácilmente.</li>
+        <li><b>Productividad aceptable:</b> son más productivos que los lenguajes de alto nivel.</li>
+        <li><b>Algunos permiten la portabilidad:</b> generalmente los interpretados.</li>
+      </ul>
+      
+      <p><b><u>Ejemplos:</u></b></p>
+      <p>
+       <table class="info">
+        <thead>
+        <tr>
+          <th>Lenguaje</th>
+          <th> Descripcion</th>
+        </tr>
+        </thead>
+          <tbody>
+          <tr>
+            <td><b>C++</b></td>
+            <td> Fue diseñado a mediados de la década de 1980 por Bjarne Stroustrup. Abarca dos paradigmas de la programación: 
+              la estructurada y la orientada a objetos.</td>
+          </tr>
+          <tr>
+            <td><b>Fortran</b></td>
+            <td> Fue desarrollado en la década de 1950 y es empleado activamente desde entonces. Acrónimo de formula translator,
+           Fortran se utiliza principalmente en aplicaciones científicas y análisis numérico.</td>
+          </tr>
+          <tr>
+            <td><b>Java</b></td>
+            <td>Lenguaje de programación orientado a objetos desarrollado por Sun Microsystems a principios de 1990. Las aplicaciones 
+          Java están típicamente compiladas en un bytecode, aunque la compilación en código máquina nativo también es posible.</td>
+          </tr>
+          <tr>
+            <td><b>Perl</b></td>
+            <td> El lenguaje práctico para la extracción e informe es este lenguaje de programación diseñado por Larry Wall 
+          en 1987. Perl toma características del C, del lenguaje interpretado shell sh, AWK, sed, Lisp y, en grado inferior, de muchos
+          otros lenguajes de programación.</td>
+          </tr>
+          <tr>
+            <td><b>PHP</b> </td>
+            <td>Es empleado frecuentemente para la creación de contenido para sitios web con los cuales se pueden programar 
+          las páginas HTML y los códigos de fuente. PHP es un acrónimo que significa PHP hypertext pre-processor (inicialmente, PHP
+          tools o personal home page tools), y se trata de un lenguaje interpretado que se aprovecha para la creación de aplicaciones
+          para servidores o contenidos dinámicos de sitios web. Últimamente también sirve para crear otro tipo de programas que
+          incluyen aplicaciones con interfaz gráfica, librerías Qt o GTK+.</td>
+          </tr>
+          <tr>
+            <td><b>Python</b> .</td>
+            <td>Fue hecho por Guido van Rossum en 1990. En la actualidad se desarrolla como un proyecto de código abierto 
+          administrado por la Python Software Foundation. La última versión estable del lenguaje es la 2.5 (septiembre 2006)</td>
+          </tr>
+      
+    </tbody>
+    </table>
+  </p>      
+
+    <p>Los lenguajes de alto nivel necesitan de un traductor que puede ser interpretador o compilador. 
+      Los interpretadores o intérpretes, necesitan de un programa auxiliar que traduce en tiempo real las instrucciones al
+      lenguaje máquina, por lo tanto, cada vez que un programa interpretado se ejecuta debe ejecutarse también su interprete.
+      Los lenguajes compilados son aquellos que necesitan de un compilador para la traducción al lenguaje máquina.
+      La traducción o compilación se hace solo una vez, y el resultado es un código objeto entendible por la máquina.
+      Para ejecutar un programa compilado no se necesita de su compilador. Ejemplos de lenguajes compilados: Pascal, C,
+       Fortran, Cobol, Modula-2 (evolución del Pascal), etc.
+    </p>
+
+    <p>Los lenguajes de alto nivel se traducen automáticamente a código de máquina,
+       si, pero has de saber que hay dos tipos diferentes de traductores dependiendo de su modo de
+       funcionamiento: compiladores e intérpretes.</p>
+
+    <p>Sin embargo, los programas escritos en un lenguaje de alto nivel, como C o Java necesitan ser traducidos a 
+      código máquina; para ello se requiere un programa denominado traductor. Estos programas de traducción se
+      denominaron técnicamente, compiladores. De     este modo existen compiladores de C, FORTRAN, Pascal, Java, etc.</p>
+
+ 
+  <h2 class="number-title"> Compiladores e interpretes</h2>
+
+  
+  <p><b><u>Definición:</u></b></u></b> A los escritores y diseñadores de programas se les llama <b>programadores</b>. 
+    El proceso de traducir un algoritmo en pseudocódigo a un lenguaje de programación 
+    se denomina <b>codificación</b>, y el algoritmo escrito en un lenguaje de programación se denomina 
+    <b>código fuente</b>. En realidad la computadora no entiende directamente los lenguajes de programación sino que se requiere un
+    programa que traduzca el código fuente a otro lenguaje que sí entiende la máquina directamente, pero muy complejo
+    para las personas, este lenguaje se conoce como <b>lenguaje máquina</b> que es el lenguaje nativo de una computadora. 
+    La escritura de programas en lenguaje máquina es una tarea tediosa
+    y difícil ya que sus instrucciones son secuencias de 0 y 1 (patrones de bit, tales como 11110000, 01110011...) que
+    son muy difíciles de recordar y manipular por las personas;  el código correspondiente es llamado <b>código máquina</b>.
+    Los programas que traducen el código fuente escrito en un lenguaje de programación a código  máquina se denominan <b>traductores</b>.
+  </p>
+
+
+  <p>El proceso de traducción de un programa fuente escrito en un lenguaje de alto nivel a un lenguaje máquina comprensible
+    por la computadora, se realiza mediante programas llamados “traductores”. Los traductores de lenguaje son
+    programas que traducen a su vez los programas fuente escritos en lenguajes de alto nivel a código máquina. Los
+    traductores se dividen en compiladores e intérpretes.
+  </p>
+
+  <p><b><u>Definición:</u></b></u></b> Un <b>compilador</b> lee completamente un programa en un lenguaje de alto nivel y 
+    lo traduce en su integridad a un programa de código de máquina equivalente, la traducción del programa completo
+    se realiza en una sola operación denominada <b>compilación del programa</b>; es decir, se traducen todas
+    las instrucciones del programa en un solo bloque.  El programa compilado y <em>depurado</em> (eliminados los errores del
+    código fuente) se denomina <b>programa ejecutable</b> porque ya se puede ejecutar directamente y cuantas veces se desee;
+    sólo deberá volver a compilarse de nuevo en el caso de que se modifique alguna instrucción del programa. De este modo el
+    programa ejecutable no necesita del compilador para su ejecución. Los traductores de lenguajes típicos más
+    utilizados son: C, C++, Java, C#, Pascal, FORTRAN y COBOL</p>
+
+    
+  <p><b><u>Definición:</u></b> Un <b>intérprete</b> actúa de un modo distinto: lee un programa escrito en un lenguaje de alto nivel
+    instrucción a instrucción y, para cada una de ellas, efectúa una traducción a las instrucciones de
+    código de máquina equivalentes y las ejecuta inmediatamente. No hay un proceso de traducción
+    separado por completo del de ejecución. Cada vez que ejecutamos el programa con un intérprete,
+    se repite el proceso de traducción y ejecución, ya que ambos son simultáneos.</p>
+
+
+
+   <p><b><u>Compiladores e interpretes. . . de idiomas:</u></b> 
+    Puede resultarte de ayuda establecer una analogía entre compiladores e intérpretes de lenguajes
+    de programación y traductores e intérpretes de idiomas.
+    Un compilador actúa como un traductor que recibe un libro escrito en un idioma determinado
+    (lenguaje de alto nivel) y escribe un nuevo libro que, con la mayor fidelidad posible,
+    contiene una traducción del texto original a otro idioma (código de máquina). El proceso
+    de traducción (compilación) tiene lugar una sola vez y podemos leer el libro (ejecutar el
+    programa) en el idioma destino (código de máquina) cuantas veces queramos.
+    Un intérprete de programas actúa como su homónimo en el caso de los idiomas. Supón
+    que se imparte una conferencia en inglés en diferentes ciudades y un intérprete ofrece su
+    traducción simultánea al castellano. Cada vez que la conferencia es pronunciada, el intérprete
+    debe realizar nuevamente la traducción. Es más, la traducción se produce sobre la marcha,
+    frase a frase, y no de un tirón al final de la conferencia. Del mismo modo actúa un intérprete
+    de un lenguaje de programación: traduce cada vez que ejecutamos el programa y además lo
+    hace instrucción a instrucción.</p> 
+
+  <p><b><u>Observación:</u></b> Los intérpretes ejecutarán los programas más lentamente, pues al tiempo
+    de ejecución del código de máquina se suma el que consume la traducción simultánea. Además,
+    un compilador puede examinar el programa de alto nivel abarcando más de una instrucción cada vez,
+    por lo que es capaz de producir mejores traducciones. Un programa interpretado
+    suele ser mucho más lento que otro equivalente que haya sido compilado</p>
+
+    <p>Si tan lento resulta interpretar un programa, <b>¿por qué no se usan únicamente compiladores?</b>
+      Por regla general, los intérpretes permiten una mayor flexibilidad que los compiladores y ciertos lenguajes
+      de programación de alto nivel han sido diseñados para explotar esa mayor flexibilidad. 
+      Otros lenguajes de programación, por
+      contra, sacrifican la flexibilidad en aras de una mayor velocidad de ejecución. Aunque nada
+      impide que compilemos o interpretemos cualquier lenguaje de programación, ciertos lenguajes
+      se consideran apropiados para que la traducción se lleve a cabo con un compilador y otros
+      no.</p>
+      
+      <p>Es más apropiado hablar, pues, de <b>lenguajes de programación típicamente interpretados</b> y
+      <b>lenguajes de programación típicamente compilados</b>. Entre los primeros podemos citar Python,
+      BASIC, Perl, Tcl, Ruby, Bash, Java o Lisp. Entre los segundos, C, Pascal, C++ o Fortran.</p>
+    
+    
+
+
+    Los intérpretes leen la instrucción línea por línea y obtienen el código máquina correspondiente.<br>
+    
+    En cuanto a los compiladores, traducen los símbolos de un lenguaje de programación a su equivalencia escrito
+    en lenguaje máquina (proceso conocido como compilar). Por último, se obtiene un programa ejecutable.</p>
+
+   <h2 class="number-title"> Entorno de desarrollo integrado (IDE) </h2>  
+    <p> Los programas pueden escribirse en un simple editor de textos. Sin embargo, un entorno de desarrollo de programación o IDE
+      (Integrated Development Environment) ayuda a la programación: coloreando las palabras clave, mostrando
+      las instrucciones clave cuando las tenemos a medio escribir (Similar a cuando escribimos mensajes con el móvil),
+      resaltando los errores, etc…</p>
+    
+    </div>
+
+
+    <div class="nota-box">
+      <h2 class="number-title">  </h2>  
+
+    
+
+
+    </div>
+
+    <div class="nota-box">
+      <h2 class="number-subtitle"> </h2>  
+      
+  
+
+    </div>
+
+
+    
+
+    <div class="nota-box">
+      <h2 class="number-title"></h2>  
+
+      
+
+      </div> 
+
+    
+      <div class="nota-box">
+        <h2 class="number-title">  </h2>  
+
+      
+
+
+      </div>
+
+    <div class="nota-box">
+        <h2 class="number-subtitle"> </h2>  
+<p>PSeInt es  un intérprete de pseudocódigo.</p>
+
+<p>Uno de los problemas a los que se enfrenta un estudiante que da sus primeros pasos en el aprendizaje
+   de la programación reside en que las 'palabras reservadas' de la mayoría de los lenguajes se basan 
+   en el inglés, por lo que al esfuerzo de añadir un nuevo lenguaje informático se añade la tarea de 
+   estar traduciendo mentalmente términos como 'printf'.</p>
+
+
+<p>Para evitar este problema, y para asegurarse de que esas primeras nociones sobre programación no sean aplicables 
+  a un único lenguaje, se suele recurrir a lo que llamamos 'pseudocódigo': un falso lenguaje que represente en
+   la solución a un algoritmo de la forma más comprensible posible, manteniendo una estructura similar al código real,
+    y todo ello en la lengua en la que 'piensa' el estudiante.</p>
+<p>Proceso Suma<br>
+
+  Escribir "Ingrese el primer numero:"<br>
+  
+  Leer A<br>
+  
+  Escribir "Ingrese el segundo numero:"<br>
+  
+  Leer B<br>
+  
+  C <- A+B<br>
+  
+  Escribir "El resultado es: ",C<br>
+  
+  FinProceso</p>
+
+  <p>Muchas veces, el objetivo de este pseudocódigo es el de ser usado en una pizarra o en un ejercicio con lápiz y papel,
+     antes de empezar a usar entornos de programación reales con lenguajes también reales. Pero algunas universidades
+      apuestan por recurrir también a 'pseudoentornos'; es decir, a software capaz de detectar errores de sintaxis en
+       el pseudocódigo, e incluso de ejecutarlo</p>
+</div>
+
+
+<div class="nota-box">
+  <h2 class="number-title"> </h2>
+</div>
+
+<h1 class="title flexbox_"> PSeInt </h1>   
+
+
+<div class="nota-box">
+   <h2 class="number-title"> ¿Qué es PSeInt?</h2>
+
+  <p>PSeInt es la abreviatura de Pseudocode Interpreter, en español, Intérprete de Pseudocódigo. Este programa fue
+    creado como proyecto final para la materia  Programación 1 de la carrera Ingeniería en Informática de la Facultad de
+    Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral, de Argentina del en aquel momento estudiante 
+    y hoy docente Pablo Novara.
+  </p>
+
+<p>PSeInt le ayuda a escribir algoritmos utilizando un pseudo-lenguaje simple, intuitivo y en español.</p>
+
+<p>El objetivo es permitir al estudiante centrar la atención en los conceptos fundamentales que debe aprender, 
+  sin perder tiempo en los detalles de un lenguaje o del uso de un intérprete o compilador.</p>
+
+  <p>El programa utiliza pseudocódigo, una descripción de un algoritmo computacional,
+    cuya principal misión es que el programador pueda centrarse en los aspectos
+    lógicos de la programación, dejando el apartado técnico para cuando el
+    programador vea la sintaxis de un lenguaje de programación real.</p>
+</div>
+
+    <div class="nota-box">
+      <h2 class="number-title"> Caracteristicas</h2>
+<ol>
+  <li>es software libre. Está disponible su código fuente, y con instrucciones para ejecutarlo, de modo
+    que si sabemos C++ podremos modificarlo, para personalizarlo y/o corregirlo.</li><br>
+  <li>Posee previsualización y exportación a C, C++, Java y otros lenguajes para
+    que podamos ver el mismo código implementado en un lenguaje de
+    programación real, lo que ayuda a aprender estos y otros lenguajes</li><br>
+  <li>) Es un software multiplataforma, está disponible para Windows (a partir de
+    Windows XP), GNU/Linux y Mac, de modo que podemos seguir utilizándolo
+    pese a que eventualmente tengamos que utilizar otro sistema operativo que
+    no sea Windows. También hay un desarrollo independiente para Android, que
+    usa la sintaxis estricta de PSeInt.</li><br>
+</ol>
+
+
+<p><b><u>Observaciones:</u></b> se maneja con dos perfiles. El estricto, que es el más parecido a
+  un lenguaje de programación real, se debe respetar al pie de la letra el
+  formato del pseudocódigo propuesto por Novara. La sintaxis personalizada
+  pero basada en la estricta la usaremos para ejecutar ciertos códigos que
+  requieren un poco más flexibilidad a la hora de ejecutarse. A menos que se
+  indique que se deba personalizar la sintaxis estricta, se utilizará la sintaxis
+  estricta sin personalizaciones.</p>
+
+    </div>
+
+  
+<div class="nota-box">
+  <h2 class="number-title"> Estructuras Repetitivas</h2>
+
+  <p>Las estructuras repetitivas son aquellas que permiten ejecutar repetidamente un 
+    conjunto de instrucciones, bien un número predeterminado de veces, o bien hasta
+     que se verifique una determinada condición.</p>
+
+  <p>En términos de un lenguaje de programación, que se verifique o no una condición se traduce en que una (adecuada)
+     expresión lógica tome el valor VERDADERO (TRUE) o tome el valor FALSO (FALSE). En los casos más sencillos y habituales
+    la condición suele ser una comparación entre dos datos, como por ejemplo:
+
+    si a < b hacer una cosa y en caso contrario hacer otra distinta.</p>
+</div>
+
+
+
+    
+
+</body>
