@@ -159,7 +159,7 @@
 
   <h2 class="number-title"> Algoritmo</h2>
 <p>A estas alturas es importante definir el concepto de <em>algoritmo</em>. El nombre procede del matemático persa
-  <b>Abu Ja’far Mohammed ibn Musa al-Jowârizmî</b>,  muy conocido durante la Edad Media por sentar las bases del álgebra.</p>
+  <b>Abu Ja’far Mohammed ibn Musa al-Jowârizmî</b>,  muy conocido durante la Edad Media por sentar las bases del Álgebra.</p>
   
 <p><b><u>Definición:</u></b> Un <b>algoritmo</b> es un conjunto ordenado de pasos ejecutables que permiten obtener un resultado determinado a 
    partir de ciertos datos de partida y que cumple las siguientes características: </p>
@@ -205,23 +205,253 @@
 
 <p>
   Esta etapa de diseño es bastante larga, pero hay que tener en cuenta que el gasto de tiempo en la etapa de diseño será ahorro de tiempo cuando se escriba
-  y depure el programa. El resultado final del diseño es una solución que debe ser fácil de traducir a estructuras de datos y estructuras
-  de control de un <b>lenguaje de programación</b> específico.
+  y depure el programa. El resultado final del diseño es una solución que debe ser fácil de traducir a <em>estructuras de datos</em> y <em>estructuras
+  de control</em> de un <b>lenguaje de programación</b> específico.
 </p>
 
 
+
+
+  <HR>
+
+  
+    <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar la suma de todos los números pares 
+      entre  $1$ y $1\,000$.<br>
+      <p><em><b>Análisis del problema:</b></em> El problema consiste en sumar $2 + 4 + 6 + 8+ \cdots + 1\, 000$. 
+        Definiremos dos nuevas variables auxiliares para resolver el problema,  <b>Sum</b> y <b>Num</b>, la variable Sum representará  las sumas 
+        sucesivas $(2+4), (2+4+6), (2+4+6+8), \ldots$. Mientras que Num denotará el número par a sumar.</p>
+      <div class="algoritmo-box">
+       <ol>
+       <li>Inicio</li>
+       <li>Hacer Sum igual a $0$</li>
+       <li>Hacer Num igual a $2$</li>
+       <li>Sumar Num a Sum y actualizar el valor de Sum a este resultado, i.e. El nuevo valor de Sum es 
+         el valor previo de Sum más Num. </li>
+       <li>Incrementar Num en 2 unidades.</li>
+       <li>Si Num es menor o igual que $1\,000$, entonces ir al paso 4. En caso contrario escribe 
+        el último valor que tiene  Sum. </li>
+       <li>Fin</li>
+      </ol>
+      </div>
+
+    <!-- <ul>
+       <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
+       <li>Decidir si un número es primo.</li>
+       <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
+     </ul>-->  
+    </p> 
+<HR>
+
+  
 <p><b><u>Observación:</u></b> No existen reglas específicas que nos permitan resolver un problema. Sin embargo, es posible  ofrecer un
   conjunto de técnicas y herramientas metodológicas que permitan flexibilizar y estructurar el razonamiento
-  utilizado en la solución de un problema. Eso provocará finalmente la construcción de algoritmos eficientes.
+  utilizado en la solución de un problema. Obteniendo finalmente la construcción de algoritmos eficientes.
 </p>
-
-
+  
 <p>
   Las dos <b>herramientas más comúnmente utilizadas para diseñar algoritmos</b> son: <b><em>diagramas de flujo</em></b>
   y <b><em>pseudocódigos</em></b>. De hecho, una de las mejores formas de <b>aprender  a programar</b> es empezar por los <em>diagramas de flujo</em> y 
   <em>pseudocodigo</em>. Ambos facilitan e inducen  la resolucion de problemas  mediante <em>algoritmos</em></p>
   
-  <HR>
+
+<h2 class="number-title"> Diagramas de flujo</h2>
+
+
+<p>
+  Un diagrama de flujo es la representación gráfica mediante símbolos especiales, de los pasos o procedimientos de
+   manera secuencial y lógica que se deben realizar para solucionar  un problema específico.
+  
+
+  
+  <p>Los diagramas de flujo facilitan la comunicación entre los programadores y los usuarios,
+    además de que permiten de una manera más rápida  detectar los posibles errores de lógica 
+    que se presenten al implementar el algoritmo. Su correcta construcción es sumamente importante 
+    porque a partir del mismo se escribe un <em>programa</em> en algún <em>lenguaje de programación</em>.
+    Si el diagrama  de flujo está completo y correcto, el paso del mismo a un <em>lenguaje de programación</em>
+    es relativamente simple y directo.
+  </p>
+
+<p><b><u>Definición:</u></b> Un <b>diagrama de flujo</b> es una representación gráfica de un algoritmo. Los símbolos utilizados
+   satisfacen las recomendaciones de la <em>International Organization for Standardization</em> (ISO) y el American National
+   Standards Institute (ANSI).</p>
+
+<!--
+<p>
+    <div class="flexbox">
+        <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+    </div>
+</p>
+
+
+
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+<p><b><u>Ejemplo:</u></b> El diagrama de flujo para determinar el volumen de una caja de dimensiones A, 
+  B y C </p>
+
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+
+  <p>
+  Se puede ver gráficamente, de forma precisa la secuencia de los pasos por realizar
+  para obtener el resultado del volumen. Como se puede verificar, son los mismos pasos
+  que se establecieron en el algoritmo presentado previamente mediante el pseudocódigo
+  </p>
+
+  <p>
+  Dentro de los diagramas de flujo se pueden utilizar los símbolos que 
+  se presentan en la siguiente tabla, con los cuales se indican las operaciones que se 
+  efectuarán a los datos con el fin de producir un resultado.
+</p>
+
+-->
+
+
+<p>Enseguida se muestran algunos de los principales símbolos 
+  utilizados para construir un diagrama de flujo.
+</p>
+
+
+
+<p>        
+  <table class="info">
+    <thead>
+    <tr>
+      <th>Símbolo</th>
+      <th> Descripcion del símbolo</th>
+    </tr>
+    </thead>
+      <tbody>
+      <tr>
+        <td><img src="../Imagenes/Simbolo_inicio_fin.JPG" alt="", width="auto" height="auto"></td>
+        <td> Se utiliza para marcar el <b>inicio</b> y el <b>fin</b> del diagrama de flujo.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_lectura.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para introducir los datos de entrada. Expresa <b>lectura</b>.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_proceso.JPG" alt="", width="auto" height="auto"></td>
+        <td>Representa un <b>proceso</b>. En su interior se colocan asignaciones,
+          operaciones aritméticas, cambios de valor de celdas en memoria,
+          etc.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_decision.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar una <b>decisión</b>. En su interior se almacena
+          una condición, y, dependiendo del resultado, se sigue por
+          una de las ramas o caminos alternativos. Este símbolo se utiliza
+          con pequeñas variaciones en las estructuras selectivas</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_decision_multiple.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar una <b>decisión múltiple</b>. En su interior se almacena
+          un selector, y, dependiendo del valor de dicho selector, se
+          sigue por una de las ramas o caminos alternativos.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Sibolo_escritura.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar la impresión de un resultado. Expresa
+          <b>escritura</b>.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_direccion_flujo.JPG" alt="", width="auto" height="auto"></td>
+        <td>Expresan la <b>dirección</b> del flujo del diagrama.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Conexion_misma_pagina.JPG" alt="", width="auto" height="auto"></td>
+        <td>Expresa <b>conexión</b> dentro de una misma página.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Conexion_diferente_pagina.JPG" alt="", width="auto" height="auto"></td>
+        <td>Representa <b>conexión</b> entre páginas diferentes.</td>
+      </tr>
+
+      <tr> <td><img src="../Imagenes/Simbolo_subproblema.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para expresar un módulo de un problema, <b>subproblema</b>,
+          que hay que resolver antes de continuar con el flujo
+          normal del diagrama.</td>
+      </tr>
+    </tbody>
+    </table>
+  </p>
+
+ <h2 class="number-title"> Construcción de un diagrama de flujo</h2>
+  <p>En la siguiente figura se presentan los pasos que se deben seguir en la
+    construcción de un diagrama de flujo. El <b>procesamiento de los datos</b> generalmente
+    está relacionado con el <b>proceso de toma de decisiones</b>. Además, es muy común
+    <b>repetir un conjunto de pasos</b>.</p>
+  
+    
+  <p>
+    <div class="flexbox">
+        <img src="../Imagenes/Etapas_construccion_diagrama_flujo.JPG" alt="", width="auto" height="auto">
+    </div>
+  </p>
+
+<h2 class="number-title"> Reglas para la construcción
+  de diagramas de flujo</h2>
+ 
+
+   <p>El diagrama de flujo debe ilustrar gráficamente los pasos o procesos que se deben
+      seguir para alcanzar la solución de un problema.
+    </p>
+
+    <p>Los símbolos presentados, colocados en los lugares adecuados, permiten crear una <b>estructura gráfica flexible
+      que ilustra los pasos a seguir para alcanzar un resultado específico</b>. El diagrama
+      de flujo facilita entonces la escritura del programa en un lenguaje de programación.
+    </p>
+    <p>
+     A continuación se presenta el conjunto de <b>reglas para la construcción de diagramas de flujo</b>:
+    </p>
+  <p>
+    <ol>
+      <li>Todo diagrama de flujo debe tener un inicio y un fin.</li>
+      <li>Las líneas utilizadas para indicar la dirección del flujo del diagrama deben
+        ser rectas:<i> verticales u horizontales</i></li>
+      <li>Todas las líneas utilizadas para indicar la dirección del flujo del diagrama
+        deben estar conectadas. La conexión puede ser a un símbolo que exprese
+        lectura, proceso, decisión, impresión, conexión o fin del diagrama.</li>
+      <li>El diagrama de flujo debe construirse de arriba hacia abajo (top-down) y de
+        izquierda a derecha (right to left).</li>
+      <li>La notación utilizada en el diagrama de flujo debe ser independiente del
+        lenguaje de programación. La solución presentada se puede escribir posteriormente
+        en diferentes lenguajes de programación.</li>
+      <li>Al realizar una tarea compleja, es conveniente poner comentarios que
+        expresen o ayuden a entender lo que hayamos hecho.</li>
+      <li>Si la construcción del diagrama de flujo requiriera más de una hoja,
+        debemos utilizar los conectores adecuados y enumerar las páginas
+        correspondientes.</li>
+      <li>No puede llegar más de una línea a un símbolo determinado.</li>
+    </ol>
+  </p>
+
+
+
+
+  <p>Presentaremos a continuación algunos conceptos que son fundamentales para la
+    construcción de algoritmos, diagramas de flujo y programas. Primero analizaremos
+    los <em>tipos de datos</em>, luego estudiaremos los conceptos de <em>identificador, constantes
+    y variables</em>, más adelante analizaremos las <em>operaciones aritméticas</em> y
+    <em>expresiones lógicas</em>.</p>
+    
+
 
 
 </body>
