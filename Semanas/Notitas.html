@@ -98,7 +98,51 @@
 
 
    
+  
+
+      <HR>
+
+  
+        <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar si un número entero positivo $p$
+          es primo o no.<br>
+          <p><em><b>Datos:</b></em>  Entero positivo $p$</p>
+          <p><em><b>Análisis del problema:</b></em> Recordemos que un número entero positivo es primo si 
+            tiene unicamente dos divisores: $1$ y $p$. Para resolver el problema consideremos la
+            variable auxiliar,  <b>Divisior</b>  para representar a los divisores de $p$,
+            tenemos que realizar divisiones sucesivas para determinar si $p$ es primo. 
+            sumar sucesivas </p>
+
+
+        <button class="respButton hvr-grow ">  Solución       </button>
+        <div class="resp-box flexbox">
+          <div class="flexbox">  
+          
+           <ol>
+           <li>Inicio</li>
+           <li>Si $p$ es igual a $2$, entonces escribir "$p$ es primo" e ir al paso $8$. En caso contrario
+            continuar.
+           </li>
+           <li>Hacer Divisor <font size=5>&#8592;</font> 2</li>
+           <li>Dividir $p$ entre Divisor (sin decimales) </li>
+           <li>Si el residuo de la división es distinto de $0$, escribir "$p$ no es primo" e ir al paso $8$. 
+            En caso contrario continuar. </li>
+           <li>Hacer Divisor <font size=5>&#8592;</font> Divisor +1 </li>
+           <li>Si  Divisor es igual a $p$ escribir "$p$ es primo" e ir al paso $8$. En caso contrario ir al paso 4 </li>
+           <li>Fin</li>
+          </ol>
+          </div>
+          
+        </div>
+        
+    
+        <!-- <ul>
+           <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
+           <li>Decidir si un número es primo.</li>
+           <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
+         </ul>-->  
+        </p> 
     <HR>
+    
   <h2 class="number-title"> Tipos de datos: simples y estructurados </h2>
 
   <p>Los datos a procesar por una computadora pueden clasificarse en <b>simples</b> y <b>estructurados</b>.</p>
