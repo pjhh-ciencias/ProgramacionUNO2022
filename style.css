@@ -355,6 +355,7 @@ h2.number-title:before{
 
 
 .resp-box{
+  display: none;
   background:  rgb(218, 237, 245);
   color: black;
   border-radius: 15px;
