@@ -28,21 +28,31 @@ html, body{
 
 
 ol {
-  column-count: 2;
+  column-count: 1;
 }
 
-.flexbox{
+
+.flexboxx{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.flexbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
 /* for top menu */
 .main-header{
   text-align: center;
   width: 100%;
-  margin-bottom: 50px;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: -80px;
   }
  
 .small-nav{
@@ -382,6 +392,37 @@ h2.number-title:before{
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
 
+
+.algoritmo-box{
+  background:  rgb(218, 237, 245);
+  color: black;
+  border-radius: 15px;
+  padding: 1px;
+  border-top:  0px solid   rgb(218, 237, 245);
+  border-bottom:  0px solid   rgb(218, 237, 245);
+  border-right:  10px solid   rgb(218, 237, 245);
+  border-left:  0px solid   rgb(218, 237, 245);
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 20px;
+  width: 85%;
+  box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201);
+}
+
+.pseudocodigo-box{
+  background:  rgb(218, 237, 245);
+  color: black;
+  border-radius: 20px;
+  padding: 1px;
+  border-left:  20px solid   rgb(218, 237, 245);
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 20px;
+  width: 40%;
+  box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201);
+}
 
 
 .quiz-box{
