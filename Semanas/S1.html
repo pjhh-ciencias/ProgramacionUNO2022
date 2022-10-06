@@ -243,6 +243,50 @@
        <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
      </ul>-->  
     </p> 
+
+<HR>
+    
+    <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar si un número entero positivo $p$
+      es primo o no.<br>
+      <p><em><b>Datos:</b></em> &nbsp;  $p$<br>
+      Donde:&nbsp; &nbsp; &nbsp; $p$ es un entero positivo
+      </p>
+      <p><em><b>Análisis del problema:</b></em> Recordemos que un número entero positivo es primo si 
+        tiene unicamente dos divisores: $1$ y $p$. Para resolver el problema consideremos la
+        variable auxiliar,  <b>Divisior</b>  para representar a los divisores de $p$,
+        tenemos que realizar divisiones sucesivas para determinar si $p$ es primo. 
+        sumar sucesivas </p>
+
+
+    <button class="respButton hvr-grow ">  Solución       </button>
+    <div class="resp-box flexbox">
+      <div class="flexbox">  
+      
+       <ol>
+       <li>Inicio</li>
+       <li>Si $p$ es igual a $2$, entonces escribir "$p$ es primo" e ir al paso $8$. En caso contrario
+        continuar.
+       </li>
+       <li>Hacer Divisor <font size=5>&#8592;</font> 2</li>
+       <li>Dividir $p$ entre Divisor (sin decimales) </li>
+       <li>Si el residuo de la división es distinto de $0$, escribir "$p$ no es primo" e ir al paso $8$. 
+        En caso contrario continuar. </li>
+       <li>Hacer Divisor <font size=5>&#8592;</font> Divisor +1 </li>
+       <li>Si  Divisor es igual a $p$ escribir "$p$ es primo" e ir al paso $8$. En caso contrario ir al paso 4 </li>
+       <li>Fin</li>
+      </ol>
+      </div>
+      
+    </div>
+    
+
+    <!-- <ul>
+       <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
+       <li>Decidir si un número es primo.</li>
+       <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
+     </ul>-->  
+    </p> 
+
 <HR>
 
   
@@ -261,12 +305,12 @@
 
 
 <p>
-  Un diagrama de flujo es la representación gráfica mediante símbolos especiales, de los pasos o procedimientos de
+  Un <em>diagrama de flujo</em> es la representación gráfica mediante símbolos especiales, de los pasos o procedimientos de
    manera secuencial y lógica que se deben realizar para solucionar  un problema específico.
   
 
   
-  <p>Los diagramas de flujo facilitan la comunicación entre los programadores y los usuarios,
+  <p>Los <em>diagramas de flujo</em> facilitan la comunicación entre los programadores y los usuarios,
     además de que permiten de una manera más rápida  detectar los posibles errores de lógica 
     que se presenten al implementar el algoritmo. Su correcta construcción es sumamente importante 
     porque a partir del mismo se escribe un <em>programa</em> en algún <em>lenguaje de programación</em>.
@@ -454,7 +498,72 @@
     y variables</em>, más adelante analizaremos las <em>operaciones aritméticas</em> y
     <em>expresiones lógicas</em>.</p>
     
+ 
+    <h2 class="number-title"> Tipos de datos: simples y estructurados </h2>
 
+    <p>Los datos a procesar por una computadora pueden clasificarse en <b>simples</b> y <b>estructurados</b>.</p>
+   
+    <p><b><u>Definición.</u></b> Los <b>datos simples</b> son aquellos  que ocupan sólo una casilla de memoria, por lo tanto, una variable simple
+      hace referencia a un único valor a la vez. Dentro de este grupo de datos se encuentran: <b>enteros</b>, <b>reales</b>,
+     <b>caracteres</b> y <b>booleanos</b>
+     </p>
+  
+     
+    <p><b><u>Definición.</u></b> Los <b>datos estructurados</b> se caracterizan por el hecho de que con un nombre
+      (identificador de variable estructurada) se hace referencia a un grupo de casillas
+      de memoria. Es decir, un dato estructurado tiene varios componentes. Cada uno de los
+      componentes puede ser a su vez un dato simple o estructurado. Sin embargo, los
+      componentes básicos (los del nivel más bajo) de cualquier tipo estructurado son datos
+      simples. Dentro de este grupo de datos se encuentran: <b>arreglos</b> y las <b>cadena de caracteres</b>.
+    </p>
+  
+  
+    <h2 class="number-title"> Datos númericos</h2>
+  
+    <p>Dentro de los tipos de dato númerico  se encuentran los <b>enteros</b> y los <b>reales</b>.
+      Los enteros son números que pueden estar precedidos del signo $+$ o $-$  y que no tienen parte decimal.
+      Mientras que los  reales son numeros que pueden estar precedidos del signo $+$ o $-$, y que tiene una parte 
+      decimal.</p>
+    <hr>
+    <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i><b>entero</b></i>: 
+      $$1,-10,152,456,-895,-7613,0$$
+    <hr>
+  
+    <hr>
+    <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i><b>real</b></i>: 
+      $$0.5,-1.8,1.52,9.4,-8.57,-2.2,0.99$$
+    <hr>
+  
+  
+    <h2 class="number-title"> Datos alfanúmericos</h2>
+  
+    <p>Dentro de este tipo de datos encontramos los de <em>tipo caracter</em> (simple) y <em>cadena de caracteres</em> (estructurado).
+       Son datos cuyo contenido pueden ser letras del abecededario ($a,b,c, \ldots, x,y,z$) , digitos ($0,1,2,\ldots,9$) o 
+       símbolos especiales (#, $, ^, *, %, /, !, +, -, ...,etc) 
+    </p>
+  
+    <p><b><u>Observación:</u></b> Aunque este  tipo de datos pueden contener números, no pueden ser utilizados para 
+      realizar operaciones aritméticas </p>
+  
+      
+    <p>Un dato de tipo <b>caracter</b> contiene un sólo caracter, y se escribe entre comillas simples. Un dato tipo <b>cadena de caracteres</b>
+    contiene un conjunto de caracteres, y se escribe entre comillas.</p>
+  
+    <hr>
+    <p><b><u>Ejemplo.</u></b> Son ejemplos de datos de tipo <i><b>caracter</b></i>: 
+      <center><pre>'a'    'P'   '$'   '5'   '-'   '#'   'H'</pre></center>
+    </p>
+    <hr>
+  
+    <hr>
+    <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i><b>cadena de caracteres</b></i>:
+    <center><pre>"aeiou"    "#50"   "$100A"   "Actuaria"   "UMAR"   "951-590-75-00"   "ECONOMIA"</pre></center>
+    </p>
+      <hr>
+  
+      <h2 class="number-title"> Datos lógicos</h2>
+      <p>En este tipo de de datos se encuentran los <b>booleanos</b>. Son datos que solo pueden tomar dos valores: 
+      <b>Verdadero</b> (<b>True</b>) o <b>Falso</b> (<b>false</b>)</p>
 
 
 </body>
