@@ -284,6 +284,270 @@
   y <b><em>pseudocódigos</em></b>. De hecho, una de las mejores formas de <b>aprender  a programar</b> es empezar por los <em>diagramas de flujo</em> y 
   <em>pseudocodigo</em>. Ambos facilitan e inducen  la resolucion de problemas  mediante <em>algoritmos</em></p>
   
-</div>
+
+<h2 class="number-title"> Diagramas de flujo</h2>
+
+
+<p>
+  Un <em>diagrama de flujo</em> es la representación gráfica mediante símbolos especiales, de los pasos o procedimientos de
+   manera secuencial y lógica que se deben realizar para solucionar  un problema específico.
+  
+
+  
+  <p>Los <em>diagramas de flujo</em> facilitan la comunicación entre los programadores y los usuarios,
+    además de que permiten de una manera más rápida  detectar los posibles errores de lógica 
+    que se presenten al implementar el algoritmo. Su correcta construcción es sumamente importante 
+    porque a partir del mismo se escribe un <em>programa</em> en algún <em>lenguaje de programación</em>.
+    Si el diagrama  de flujo está completo y correcto, el paso del mismo a un <em>lenguaje de programación</em>
+    es relativamente simple y directo.
+  </p>
+
+<p><b><u>Definición:</u></b> Un <b>diagrama de flujo</b> es una representación gráfica de un algoritmo. Los símbolos utilizados
+   satisfacen las recomendaciones de la <em>International Organization for Standardization</em> (ISO) y el American National
+   Standards Institute (ANSI).</p>
+
+<!--
+<p>
+    <div class="flexbox">
+        <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+    </div>
+</p>
+
+
+
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+<p><b><u>Ejemplo:</u></b> El diagrama de flujo para determinar el volumen de una caja de dimensiones A, 
+  B y C </p>
+
+<p>
+  <div class="flexbox">
+      <img src="../Imagenes/Simbolos_diagramas_flujo" alt="", width="auto" height="auto">
+  </div>
+</p>
+
+
+  <p>
+  Se puede ver gráficamente, de forma precisa la secuencia de los pasos por realizar
+  para obtener el resultado del volumen. Como se puede verificar, son los mismos pasos
+  que se establecieron en el algoritmo presentado previamente mediante el pseudocódigo
+  </p>
+
+  <p>
+  Dentro de los diagramas de flujo se pueden utilizar los símbolos que 
+  se presentan en la siguiente tabla, con los cuales se indican las operaciones que se 
+  efectuarán a los datos con el fin de producir un resultado.
+</p>
+
+-->
+
+
+<p>Enseguida se muestran algunos de los principales símbolos 
+  utilizados para construir un diagrama de flujo.
+</p>
+
+
+
+<p>        
+  <table class="info">
+    <thead>
+    <tr>
+      <th>Símbolo</th>
+      <th> Descripcion del símbolo</th>
+    </tr>
+    </thead>
+      <tbody>
+      <tr>
+        <td><img src="../Imagenes/Simbolo_inicio_fin.JPG" alt="", width="auto" height="auto"></td>
+        <td> Se utiliza para marcar el <b>inicio</b> y el <b>fin</b> del diagrama de flujo.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_lectura.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para introducir los datos de entrada. Expresa <b>lectura</b>.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_proceso.JPG" alt="", width="auto" height="auto"></td>
+        <td>Representa un <b>proceso</b>. En su interior se colocan asignaciones,
+          operaciones aritméticas, cambios de valor de celdas en memoria,
+          etc.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_decision.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar una <b>decisión</b>. En su interior se almacena
+          una condición, y, dependiendo del resultado, se sigue por
+          una de las ramas o caminos alternativos. Este símbolo se utiliza
+          con pequeñas variaciones en las estructuras selectivas</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_decision_multiple.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar una <b>decisión múltiple</b>. En su interior se almacena
+          un selector, y, dependiendo del valor de dicho selector, se
+          sigue por una de las ramas o caminos alternativos.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Sibolo_escritura.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para representar la impresión de un resultado. Expresa
+          <b>escritura</b>.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Simbolo_direccion_flujo.JPG" alt="", width="auto" height="auto"></td>
+        <td>Expresan la <b>dirección</b> del flujo del diagrama.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Conexion_misma_pagina.JPG" alt="", width="auto" height="auto"></td>
+        <td>Expresa <b>conexión</b> dentro de una misma página.</td>
+      </tr>
+
+      <tr>
+        <td><img src="../Imagenes/Conexion_diferente_pagina.JPG" alt="", width="auto" height="auto"></td>
+        <td>Representa <b>conexión</b> entre páginas diferentes.</td>
+      </tr>
+
+      <tr> <td><img src="../Imagenes/Simbolo_subproblema.JPG" alt="", width="auto" height="auto"></td>
+        <td>Se utiliza para expresar un módulo de un problema, <b>subproblema</b>,
+          que hay que resolver antes de continuar con el flujo
+          normal del diagrama.</td>
+      </tr>
+    </tbody>
+    </table>
+  </p>
+
+ <h2 class="number-title"> Construcción de un diagrama de flujo</h2>
+  <p>En la siguiente figura se presentan los pasos que se deben seguir en la
+    construcción de un diagrama de flujo. El <b>procesamiento de los datos</b> generalmente
+    está relacionado con el <b>proceso de toma de decisiones</b>. Además, es muy común
+    <b>repetir un conjunto de pasos</b>.</p>
+  
+    
+  <p>
+    <div class="flexbox">
+        <img src="../Imagenes/Etapas_construccion_diagrama_flujo.JPG" alt="", width="auto" height="auto">
+    </div>
+  </p>
+
+<h2 class="number-title"> Reglas para la construcción
+  de diagramas de flujo</h2>
+ 
+
+   <p>El diagrama de flujo debe ilustrar gráficamente los pasos o procesos que se deben
+      seguir para alcanzar la solución de un problema.
+    </p>
+
+    <p>Los símbolos presentados, colocados en los lugares adecuados, permiten crear una <b>estructura gráfica flexible
+      que ilustra los pasos a seguir para alcanzar un resultado específico</b>. El diagrama
+      de flujo facilita entonces la escritura del programa en un lenguaje de programación.
+    </p>
+    <p>
+     A continuación se presenta el conjunto de <b>reglas para la construcción de diagramas de flujo</b>:
+    </p>
+  <p>
+    <ol>
+      <li>Todo diagrama de flujo debe tener un inicio y un fin.</li>
+      <li>Las líneas utilizadas para indicar la dirección del flujo del diagrama deben
+        ser rectas:<i> verticales u horizontales</i></li>
+      <li>Todas las líneas utilizadas para indicar la dirección del flujo del diagrama
+        deben estar conectadas. La conexión puede ser a un símbolo que exprese
+        lectura, proceso, decisión, impresión, conexión o fin del diagrama.</li>
+      <li>El diagrama de flujo debe construirse de arriba hacia abajo (top-down) y de
+        izquierda a derecha (right to left).</li>
+      <li>La notación utilizada en el diagrama de flujo debe ser independiente del
+        lenguaje de programación. La solución presentada se puede escribir posteriormente
+        en diferentes lenguajes de programación.</li>
+      <li>Al realizar una tarea compleja, es conveniente poner comentarios que
+        expresen o ayuden a entender lo que hayamos hecho.</li>
+      <li>Si la construcción del diagrama de flujo requiriera más de una hoja,
+        debemos utilizar los conectores adecuados y enumerar las páginas
+        correspondientes.</li>
+      <li>No puede llegar más de una línea a un símbolo determinado.</li>
+    </ol>
+  </p>
+
+
+
+
+  <p>Presentaremos a continuación algunos conceptos que son fundamentales para la
+    construcción de algoritmos, diagramas de flujo y programas. Primero analizaremos
+    los <em>tipos de datos</em>, luego estudiaremos los conceptos de <em>identificador, constantes
+    y variables</em>, más adelante analizaremos las <em>operaciones aritméticas</em> y
+    <em>expresiones lógicas</em>.</p>
+    
+ 
+    <h2 class="number-title"> Tipos de datos: simples y estructurados </h2>
+
+    <p>Los datos a procesar por una computadora pueden clasificarse en <b>simples</b> y <b>estructurados</b>.</p>
+   
+    <p><b><u>Definición.</u></b> Los <b>datos simples</b> son aquellos  que ocupan sólo una casilla de memoria, por lo tanto, una variable simple
+      hace referencia a un único valor a la vez. Dentro de este grupo de datos se encuentran: <b>enteros</b>, <b>reales</b>,
+     <b>caracteres</b> y <b>booleanos</b>
+     </p>
+  
+     
+    <p><b><u>Definición.</u></b> Los <b>datos estructurados</b> se caracterizan por el hecho de que con un nombre
+      (identificador de variable estructurada) se hace referencia a un grupo de casillas
+      de memoria. Es decir, un dato estructurado tiene varios componentes. Cada uno de los
+      componentes puede ser a su vez un dato simple o estructurado. Sin embargo, los
+      componentes básicos (los del nivel más bajo) de cualquier tipo estructurado son datos
+      simples. Dentro de este grupo de datos se encuentran: <b>arreglos</b> y las <b>cadena de caracteres</b>.
+    </p>
+  
+  
+    <h2 class="number-title"> Datos númericos</h2>
+  
+    <p>Dentro de los tipos de dato númerico  se encuentran los <b>enteros</b> y los <b>reales</b>.
+      Los enteros son números que pueden estar precedidos del signo $+$ o $-$  y que no tienen parte decimal.
+      Mientras que los  reales son numeros que pueden estar precedidos del signo $+$ o $-$, y que tiene una parte 
+      decimal.</p>
+    <hr>
+    <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i><b>entero</b></i>: 
+      $$1,-10,152,456,-895,-7613,0$$
+    <hr>
+  
+    <hr>
+    <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i><b>real</b></i>: 
+      $$0.5,-1.8,1.52,9.4,-8.57,-2.2,0.99$$
+    <hr>
+  
+  
+    <h2 class="number-title"> Datos alfanúmericos</h2>
+  
+    <p>Dentro de este tipo de datos encontramos los de <em>tipo caracter</em> (simple) y <em>cadena de caracteres</em> (estructurado).
+       Son datos cuyo contenido pueden ser letras del abecededario ($a,b,c, \ldots, x,y,z$) , digitos ($0,1,2,\ldots,9$) o 
+       símbolos especiales (#, $, ^, *, %, /, !, +, -, ...,etc) 
+    </p>
+  
+    <p><b><u>Observación:</u></b> Aunque este  tipo de datos pueden contener números, no pueden ser utilizados para 
+      realizar operaciones aritméticas </p>
+  
+      
+    <p>Un dato de tipo <b>caracter</b> contiene un sólo caracter, y se escribe entre comillas simples. Un dato tipo <b>cadena de caracteres</b>
+    contiene un conjunto de caracteres, y se escribe entre comillas.</p>
+  
+    <hr>
+    <p><b><u>Ejemplo.</u></b> Son ejemplos de datos de tipo <i><b>caracter</b></i>: 
+      <center><pre>'a'    'P'   '$'   '5'   '-'   '#'   'H'</pre></center>
+    </p>
+    <hr>
+  
+    <hr>
+    <p><b><u>Ejemplo.</u></b> Los siguientes son ejemplos de datos de tipo <i><b>cadena de caracteres</b></i>:
+    <center><pre>"aeiou"    "#50"   "$100A"   "Actuaria"   "UMAR"   "951-590-75-00"   "ECONOMIA"</pre></center>
+    </p>
+      <hr>
+  
+      <h2 class="number-title"> Datos lógicos</h2>
+      <p>En este tipo de de datos se encuentran los <b>booleanos</b>. Son datos que solo pueden tomar dos valores: 
+      <b>Verdadero</b> (<b>True</b>) o <b>Falso</b> (<b>false</b>)</p>
+
 
 </body>
