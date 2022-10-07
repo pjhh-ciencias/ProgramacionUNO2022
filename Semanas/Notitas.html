@@ -104,41 +104,7 @@
 
         <HR>
     
-          <p><b><u>Ejemplo:</u></b> Escriba un algoritmo para determinar si un número entero positivo $p$
-            es primo o no.<br>
-            <p><em><b>Datos:</b></em> &nbsp;  $p$<br>
-            Donde:&nbsp; &nbsp; &nbsp; $p$ es un entero positivo
-            </p>
-            <p><em><b>Análisis del problema:</b></em> Recordemos que un número entero positivo es primo si 
-              tiene unicamente dos divisores: $1$ y $p$. Para resolver el problema consideremos dos 
-              variables auxiliares,  $Divisior$ y $Contador$, la variable $Divisor$  la utilizaremos 
-              para representar a los divisores de $p$, y la variable $Contador$ para llevar la cuenta de los divisores 
-              que tiene $p$. Realizaremos  divisiones sucesivas para contar a los divisores de  $p$ y a partir de 
-              la cantidad de divisores concluiremos si $p$ es primo o no. 
-            </p>
-      
-      
-          <button class="respButton hvr-grow ">  Solución       </button>
-          <div class="resp-box flexbox">
-            <div class="flexbox">  
-            
-             <ol>
-             <li>Inicio</li>
-             <li>Hacer $Contador$ <font size=5>&#8592;</font> 1 # El $1$ es divisor de cualquier número.</li>
-             <li>Hacer $Divisor$ <font size=5>&#8592;</font> 2 </li>
-             <li>Hacer $Residuo$ <font size=5>&#8592;</font> Residuo de dividir  $p$ entre $Divisor$ (sin decimales) </li>
-             <li>Si $Residuo$  es igual a $0$, entonces hacer $Contador$ <font size=5>&#8592;</font> $Contador$ + 1. En caso 
-                 contrario continuar. </li>
-             <li>Hacer $Divisor$ <font size=5>&#8592;</font> $Divisor$ +1 </li>
-             <li>Si  $Divisor$ es menor que $p$, ir al paso $4$. En caso contrario, continuar. </li>
-             <li>Si  $Contador$ es igual a $2$, escribir "El número $p$ es primo". En caso contrario escribir 
-                 "El número $p$ no es primo" </li>
-             <li>Fin</li>
-            </ol>
-            </div>
-            
-          </div>  
-   
+         
 
     <h2 class="number-title"> Identificadores, constantes y variables</h2>
 

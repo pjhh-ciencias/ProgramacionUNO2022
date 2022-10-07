@@ -118,6 +118,35 @@
     <p>Construye un diagrama de flujo de un algoritmo que al recibir los datos $A, B, C$ y $D$ que 
       representan números enteros, y escriba los mismos en orden inverso.
     </p>           
+
+    <button class="respButton hvr-grow ">  Algoritmo      </button>
+    <div class="resp-box flexbox">
+      <div class="flexbox">  
+        <p><em><b>Análisis del problema:</b></em> Utilizaremos las variables auxiliares $A, B, C$ y $D$ para 
+          ir guadando los valores recibidos. Luego, tenemos que  leer/recibir cuatro valores e ir guardandolos en las 
+          variables  $A, B, C$ y $D$ (en ese orden), para luego posteriormente escrirlos/imprimirlos en el siguiente orden: $D,C,B,A$.
+          
+          </p>
+        <div class="algoritmo-box">  
+       <ol>
+       <li>Inicio</li>
+       <li>Leer el primer valor y guardarlo en la variable  $A$</li>
+       <li>Leer el segundo valor y guardarlo en la variable $B$</li>
+       <li>Leer el tercer valor y guardarlo en la variable $C$</li>
+       <li>Leer el cuarto valor y guardarlo en la variable $D$</li>
+       <li>Escribir el valor de la variable $D$</li>
+       <li>Escribir el valor de la variable $C$</li>
+       <li>Escribir el valor de la variable $B$</li>
+       <li>Escribir el valor de la variable $A$</li>
+       <li>Fin</li>
+      </ol>
+      </div>
+      </div>
+      
+    </div>  
+
+  </div>
+
     </div>
 
     <div class="ejercicio-box">
@@ -125,12 +154,45 @@
     <p>Construye un diagrama de flujo de un algoritmo que al recibir como datos la clave del empleado y
       los seis primeros sueldos del año, calcule el ingreso total semestral y el promedio
       mensual, e imprima la clave del empleado, el ingreso total y el promedio mensual.</p>
+
+
+      <button class="respButton hvr-grow ">  Algoritmo      </button>
+      <div class="resp-box flexbox">
+        <div class="flexbox">  
+         <p><em><b>Análisis del problema:</b></em> Utilizaremos las siguientes variables auxiliares: $Clave$, $S1$, $S2$, $S3$, $S4$, $S5$, $S6$. 
+          La variable $Clave$ la ultilizaremos para guardar  la clave del empleado,  $S1,S2,S3,S4,S5$ y $S6$ para guardar  los sueldos de los 
+            primeros seis meses del año respectivamente. También implementaremos las variables auxiliares $Ingreso,Promedio$ para 
+             guardar ahí el ingreso total del semestre y el promedio mensual respectivamente del empleado.
+            </p>
+          <div class="algoritmo-box">  
+         <ol>
+         <li>Inicio</li>
+         <li>Leer la clave del empleado y guardarlo en la variable  $Clave$</li>
+         <li>Leer  el sueldo del mes de enero del empleado y guardarlo en la variable $S1$</li>
+         <li>Leer  el sueldo del mes de febrero del empleado y guardarlo en la variable  $S2$</li>
+         <li>Leer  el sueldo del mes de marzo  del empleado y guardarlo en la variable  $S3$</li>
+         <li>Leer  el sueldo del mes de abril  del empleado y guardarlo en la variable  $S4$</li>
+         <li>Leer  el sueldo del mes de mayo del empleado y guardarlo en la variable  $S5$</li>
+         <li>Leer  el sueldo del mes de junio  del empleado y guardarlo en la variable  $S6$</li>
+         <li>Hacer $Ingreso$  <font size=5>&#8592;</font> $S1+ S2+ S3+ S4+ S5 + S6$ </li>
+         <li>Hacer $Promedio$ <font size=5>&#8592;</font> $Ingreso/6$ </li>
+         <li>Escribir/imprimir el valor de la variable $Clave$</li>
+         <li>Escribir/imprimir el valor de la variable $Ingreso$</li>
+         <li>Escribir/imprimir el valor de la variable $Promedio$</li>
+         <li>Fin</li>
+         </ol>
+         </div>
+         </div>
+        
+      </div>  
+
+    </div>  
     </div>
 
 
     <div class="ejercicio-box">
       <h2 class="number-title"> Ejercicio</h2>
-    <p>Escribe el  pseudocódigo de un algoritmo que al leer la base y la altura de un triángulo y
+    <p>Escribe el  pseudocódigo de un algoritmo que dada la base y la altura de un triángulo y
       calcule su área.</p>
       
       <button class="respButton hvr-grow ">  Algoritmo      </button>
@@ -146,7 +208,7 @@
           <div class="algoritmo-box">  
          <ol>
          <li>Inicio</li>
-         <li>Hacer $Area$  <font size=5>&#8592;</font> $Area=Base \cdot Altura$ 
+         <li>Hacer $Area$  <font size=5>&#8592;</font> $Base \cdot Altura$ 
          <li>Escribir el valor de la variable $Area$</li>
          <li>Fin</li>
         </ol>
