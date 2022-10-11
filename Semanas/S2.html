@@ -393,6 +393,417 @@
   
       <p><b><u>Observación.</u></b> Es importante que los nombres de las constantes y las variables  sean representativas de la función 
       que tienen las mismas en el programa.</p>
+
+      
+     <h2 class="number-title"> Operaciones aritméticas</h2>
+
+      <p>Para poder realizar <b>operaciones aritméticas</b> necesitamos de <b>operadores aritméticos</b>. Estos operadores nos 
+        permitirán realizar operaciones aritméticas entre operandos: números, constantes o variables.  El resultado de una
+        operación aritmética  será un número.  
+      </p>
+  
+      <p>En la siguiente tabla presentamos los operadores aritméticos, la operación que pueden realizar, un ejemplo de su uso y el 
+      resultado de dicho ejemplo. 
+      </p>
+      
+      <center>        
+        <table class="info"  style="width:60%">
+          
+        <caption><b><font size="4">Operadores aritméticos</font></b></caption>
+          <thead>
+          <tr>
+            <th style="width:170px">Operador aritmético</th>
+            <th style="width:130px">Operación</th>
+            <th>Ejemplo</th>
+            <th>Resultado</th>
+          </tr>
+          </thead>
+            <tbody>
+            <tr >
+              <td><center><b>**, ^</b></center></td>
+              <td>Potencia</td>
+              <td>4**3</td>
+              <td>64</td>
+            </tr>
+  
+            <tr>
+              <td><center><b>*</b></center></td>
+              <td>Multiplicación</td>
+              <td>1.25*2</td>
+              <td>2.5</td>
+            </tr>
+  
+            <tr>
+              <td><center><b>/</b></center></td>
+              <td>División</td>
+              <td>15/4</td>
+              <td>3.75</td>
+            </tr>
+  
+            <tr>
+              <td><center><b>+</b></center></td>
+              <td>Suma</td>
+              <td>20.5+9.2</td>
+              <td>29.7</td>
+            </tr>
+  
+            <tr>
+              <td><center><b>-</b></center></td>
+              <td>Resta</td>
+              <td>17.9-14.6</td>
+              <td>3.3</td>
+            </tr>
+  
+            <tr>
+              <td><center><b>MOD</b></center></td>
+              <td>Módulo (residuo)</td>
+              <td>15 MOD 2</td>
+              <td>1</td>
+            </tr>
+  
+            <tr>
+              <td><center><b>DIV</b></center></td>
+              <td>División entera</td>
+              <td>17 DIV 3</td>
+              <td>5</td>
+            </tr>
+  
+          </tbody>
+          </table>
+        </center>
+      
+    <p>Al evaluar expresiones que contienen operadores aritméticos debemos respetar la <b>jerarquía en el orden de aplicación de los operadores</b>. 
+      Esto es, si tenemos en una expresión más de un operador, debemos aplicar primero el operador de mayor jerarquía, resolver esa operación y 
+      así sucesivamente. Es importante señalar que el operador $( )$ es un <b>operador asociativo</b> que tiene la priopridad más alta en
+      cualquier lenguaje  de programación. 
+    </p>
+  
+    <p>En la siguiente tabla se presenta la jerarquía de los operadores aritméticos:</p>
+  
+    <center>        
+      <table class="info"  style="width:70%">
+        <caption><b><font size="4">Jerarquía de los operadores aritméticos</font></b></caption>
+        <thead>
+        <tr>
+          <th style="width:130px">Operador</th>
+          <th>Jerarquía</th>
+          <th>Operación</th>
+        </tr>
+        </thead>
+          <tbody>
+          <tr >
+            <td><center><b>**, ^</b></center></td>
+            <td rowspan="3"><center>Mayor <br> <font size="8"> &darr;</font> <br> Menor</center></td>
+            <td>Potencia</td>
+          </tr>
+  
+          <tr>
+            <td><center><b>*, /, MOD, DIV</b></center></td>
+            <td>Multiplicación, división, módulo, división entera </td>
+          </tr>
+  
+          <tr>
+            <td><center><b>+, -</b></center></td>
+            <td>Suma, resta</td>
+          </tr>
+  
+        </tbody>
+        </table>
+      </center>
+  
+  
+      <p>Las reglas para resolver una expresión aritmética son:
+      <ol>
+        <li>Si una expresión contiene <b>subexpresiones entre paréntesis</b>, éstas se evalúan 
+          primero; respetando claro está la jerarquía de los operadores aritméticos en 
+          esta subexpresión. Si las subexpresiones se encuentran anidadas por paréntesis, 
+          primero se evalúan las subexpresiones que se encuentran en el último nivel de anidamiento.
+          </li>
+        <li>Los operadores aritméticos se aplican teniendo en cuenta la jerarquía y de 
+          izquierda a derecha.</li>
+      </ol>
+  
+      </p>
+  
+      <h2 class="number-title"> Expresiones lógicas</h2>
+  
+      <p>Las <b><em>expresiones lógicas</em></b> o <b><em>booleanas</em></b>, llamadas así en honor del
+        matemático  <b><em>George Boole</em></b>, están constituidas por números, constantes o variables y <b>operadores
+        lógicos</b> o  <b>relacionales</b>. El valor que pueden tomar estas expresiones es el de  verdadero o falso.
+        Se utilizan frecuentemente en las <b><em>estructuras selectivas</em></b> (dependiendo del resultado de la evaluación
+        se toma por un determinado camino alternativo) y en las <b><em>estructuras repetitivas</em></b> (dependiendo del
+        resultado de la evaluación se continúa con el ciclo o se interrumpe al mismo).
+        </p>
+  
+     
+        <h2 class="number-title"> Operadores relacionales</h2>
+  
+        <p>
+          Los <b>operadores relacionales</b> son operadores que permiten <b>comparar dos operandos</b>. Los operandos pueden 
+          ser números, alfanuméricos, constantes o variables. Las constantes o variables, a su vez, pueden ser
+          de tipo entero, real, caracter o cadena de caracteres. <b>El resultado de una expresión con operadores 
+          relacionales es verdadero o falso.</b>
+        </p>
+    
+        <p>
+          En la tabla siguiente presentamos los operadores relacionales, la operación que pueden realizar, un
+          ejemplo de su uso y el resultado de dicho ejemplo.
+        </p>
+    
+         
+        <center>        
+          <table class="info"  style="width:60%">
+            
+        <caption><b><font size="4">Operadores relacionales</font></b></caption>
+            <thead>
+            <tr>
+              <th style="width:170px">Operador relacional</th>
+              <th style="width:130px">Operación</th>
+              <th>Ejemplo</th>
+              <th>Resultado</th>
+            </tr>
+            </thead>
+              <tbody>
+              <tr >
+                <td><center><b>=</b></center></td>
+                <td>Igual que</td>
+                <td>"Pablo"="pablo"</td>
+                <td>Falso</td>
+              </tr>
+    
+              <tr>
+                <td><center><b><></b></center></td>
+                <td>Distinto</td>
+                <td>'a'<>'A'</td>
+                <td>Verdadero</td>
+              </tr>
+    
+              <tr>
+                <td><center><b>< </b></center></td>
+                <td>Menor que </td>
+                <td>7 < 15</td>
+                <td>Verdadero</td>
+              </tr>
+    
+              <tr>
+                <td><center><b>></b></center></td>
+                <td>Mayor que</td>
+                <td>22>10</td>
+                <td>Verdadero</td>
+              </tr>
+    
+              <tr>
+                <td><center><b><=</b></center></td>
+                <td>Menor o igual que </td>
+                <td>20 <=50</td>
+                <td>Verdadero</td>
+              </tr>
+    
+              <tr>
+                <td><center><b>>=</b></center></td>
+                <td>Mayor o igual que </td>
+                <td>2>=1</td>
+                <td>Verdadero</td>
+              </tr>
+    
+              
+    
+            </tbody>
+            </table>
+          </center>
+  
+    <h2 class="number-title"> Operadores lógicos</h2>
+    
+    <p>Los <b>operadores lógicos</b> son operadores que permiten formular condiciones complejas a partir
+       de condiciones simples. Los operadores lógicos son de <b>conjunción</b> ( <b>Y</b>), <b>disyunción</b> (<b>O</b>) y <b>negación</b> (<b>NO</b>).
+    </p>
+  
+    <p>
+      En la siguiente tabla  presentamos el operador lógico, la expresión lógica y significado de dicha
+       expresión, teniendo en cuenta la <b>jerarquía correspondiente</b>.
+    </p>
+  
+  
+    
+    <center>        
+      <table class="info"  style="width:70%">
+        <caption><b><font size="4">Jerarquía de los operadores aritméticos</font></b></caption>
+        <thead>
+        <tr>
+          <th style="width:130px">Operador lógico</th>
+          <th>Jerarquía</th>
+          <th>Expresón lógica</th>
+          <th>Significado</th>
+        </tr>
+        </thead>
+          <tbody>
+          <tr >
+            <td><center><b>NO</b></center></td>
+            <td rowspan="3"><center>Mayor <br><br> <font size="10"> &darr;</font> <br><br> Menor</center></td>
+            <td><center>No P</center></td>
+            <td><center>No es cierto que P<br>
+          Es FALSO que P</center></td>
+          </tr>
+  
+          <tr>
+            <td><center><b>Y</b></center></td>
+            <td><center>P Y Q</center> </td>
+            <td><center>P ^ Q </center>  
+          </tr>
+  
+          <tr>
+            <td><center><b>O</b></center></td>
+            <td><center>P O Q</center></td>
+            <td><center>P o Q<br>
+               o  P o Q o ambas</center></td>
+            
+          </tr>
+  
+        </tbody>
+        </table>
+      </center>
+  
+      <p>A continuación presentamos la <b>tabla de verdad de los operadores lógicos:</b></p>
+  
+  
+         
+      <center>        
+        <table class="info"  style="width:60%">
+          
+      <caption><b><font size="4">Tabla de verdad de los operadores lógicos</font></b></caption>
+          <thead>
+          <tr>
+            <th style="width:170px"><center><b>P</b></center></th>
+            <th style="width:130px"><center><b>Q</b></center></th>
+            <th style="width:130px"><center><b>No P</b></center></th>
+            <th style="width:130px"><center><b>No Q</b></center></th>
+            <th style="width:130px"><center><b>P Y Q</b></center></th>
+            <th style="width:130px"><center><b>P O Q</b></center></th>
+          </tr>
+          </thead>
+            <tbody>
+            <tr >
+              <td><center>VERDADERO</center></td>
+              <td><center>VERDADERO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>VERDADERO</center></td>
+              <td><center>VERDADERO</center></td>
+            </tr>
+  
+            <tr>
+              <td><center>VERDADERO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>VERDADERO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>VERDADERO</center></td>
+            </tr>
+  
+            <tr>
+              <td><center>FALSO</center></td>
+              <td><center>VERDADERO</center></td>
+              <td><center>VERDADERO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>VERDADERO</center></td>
+            </tr>
+  
+            <tr>
+              <td><center>FALSO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>VERDADERO</center></td>
+              <td><center>VERDADERO</center></td>
+              <td><center>FALSO</center></td>
+              <td><center>FALSO</center></td>
+            </tr>
+  
+            
+          </tbody>
+          </table>
+        </center>
+  
+  
+      <p>Finalmente presentamos la jerarquía correspondiente de todos los operadores (aritméticos, 
+        relaciónales y lógicos)</p>
+        
+  
+        
+    
+    <center>        
+      <table class="info"  style="width:70%">
+        <caption><b><font size="4">Jerarquía de los operadores </font></b></caption>
+        <thead>
+        <tr>
+          <th style="width:130px">Operador lógico</th>
+          <th>Jerarquía</th>
+        </tr>
+        </thead>
+          <tbody>
+          <tr >
+            <td><center><b>()</b></center></td>
+            <td rowspan="7"><center>Mayor <br><br> <font size="12"> &darr;</font> <br><br> Menor</center></td>
+          </tr>
+  
+          <tr>
+            <td><center><b>**</b></center></td>
+          </tr>
+  
+          <tr>
+            <td><center><b>*, /, modulo, div</b></center></td>
+          </tr>
+  
+          <tr>
+            <td><center><b>=, <>, <, >, <=, >=</b></center></td>
+          </tr>
+          
+          <tr>
+            <td><center><b>No</b></center></td>
+          </tr>
+  
+          <tr>
+            <td><center><b>Y</b></center></td>
+          </tr>
+  
+          <tr>
+            <td><center><b>O</b></center></td>
+          </tr>
+  
+        </tbody>
+        </table>
+      </center>
+  
+  
+      
+  <HR>
+      <p><b><u>Observaciones:</u></b>
+        <ol>
+          <li>El operador $()$ es un operador asociativo que tiene la prioridad más
+            alta en  cualquier lenguaje de programación. Por otra parte, debemos señalar que en  ciertos lenguajes,
+            las prioridades de los operadores se manejan en forma diferente. Por ejemplo, el operador lógico 
+            de negación no en el lenguaje de  programación C tiene la prioridad más alta después del operador 
+            asociativo.</li>
+          <li>  No se puede realizar la comparación entre un valor lógico y un numérico, 
+            utilizando un operador relacionales
+          </li>
+        </ol>
+  
+        </p>
+        <HR>
+          <h2 class="number-title"> Bloque de asignación</h2>
+
+          <p>Un <b>bloque de asignación</b> se utiliza para asignar valores o expresiones a una variable.
+            La asignación es una <b>operación destructiva</b>. Esto significa que si la variable
+            tenía asignado un valor, éste se destruye, conservando ahora el nuevo valor. El
+            formato de la asignación es el siguiente:
+          </p>
+
+          <p>
+          <center><b>Variable <font size=5>&#8592;</font> Expresión o valor</b></center><br>
+          Donde: expresión puede ser aritmética o lógica, o una constante o variable.
+          </p>
+
+
 </div>
   
 </body>
