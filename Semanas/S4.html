@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 3 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 3 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Programación UNO</h1>
+       <nav class="top-nav">
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Home.html"> Inicio  </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Informacion_General.html"> Información general </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Notas.html"> Notas </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Ejercicios.html"> Ejercicios </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Semana 4   </title>
+    
+  </head>
+
+
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Semana 3 </h1>   
+ 
+
+    <h1 class="title flexbox_"> Continuación. Practicando en PSeInt: Estructuras selectivas </h1>   
+
+      <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+        <p>Construye el diagrama de flujo de un algoritmo que lea un número entero positivo $n$ y  determine si 
+          $n$ es  par o impar. Imprima "Par", "Impar" segun corresponda.
+        </p>
+      </div>
+
+
+      <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+        <p>Construye el diagrama de flujo de un algoritmo que lea un número entero positivo $m$ y 
+           determine si  $m$ es  multiplo de $3$ y $5$ simultaneamente. Imprima "El número dado es multiplo de $3$ y $5$",
+           en caso afirmativo y "El número dado No es multiplo de $3$ y $5$" en caso contrario.
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+        <p>Construye el diagrama de flujo de un algoritmo que lea un número real $x$, determine si 
+          $x$ es positivo, negativo o cero e imprima "Positivo", "Negativo" o "Cero" respectivamemte.
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+        <p>Construye el diagrama de flujo de un algoritmo que lea dos números reales, determine el
+            mayor de dos ellos y lo imprima.
+        </p>
+      </div>
+
+    
+        <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+          <p>Construye el  diagrama de flujo de un algoritmo que  reciba
+            como dato el salario de un profesor del SUNEO, calcule el incremento del
+            salario de acuerdo con el siguiente criterio y escriba el nuevo salario del profesor.
+            \begin{equation}
+            \begin{cases}
+            Salario < \$8\,000,&  \text{ Incremento del } 15\%. \\
+            \$12\,000 \leq Salario < \$15\,000,& \text{ incremento del } 12\%. \\
+            \$15\,000 \leq Salario < $18\,000,& \text{ incremento del } 8\%. \\
+            $18\,000  <  Salario,&  \text{ incremento del } 5\%.\\
+            \end{cases} 
+            \end{equation}
+          </p>       
+        </div>
+
+
+          
+        <div class="ejercicio-box">
+          <h2 class="number-title"> Práctica</h2>
+          <p>Construye el diagrama de flujo  de un algoritmo  que reciba los coeficientes $a,b,c$ de una ecuación cuadratica: 
+            $ax^2 + bx +c$ y determine si tiene si tiene dos soluciones reales, una solución real o bien ninguna solucion real.
+          </p>
+          <p><b>Hint:</b> Utiliza el discrminante de la ecuación cuadrática. </p>
+        </div> 
+               
+     
+       
+
+
+
+
+</body>
