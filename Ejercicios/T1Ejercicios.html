@@ -266,8 +266,8 @@
 
     <div class="ejercicio-box">
       <h2 class="number-title"> Ejercicio</h2>
-    <p>Construye el diagrama de flujo de un algoritmo que al recibir como datos las coordenadas de los
-      puntos $P_{1}:=(x_1,y_2), P_{2}:= (x_2,y_2)$ y $P_{3}:= (x_3,y_3)$ que corresponden 
+    <p>Construye el diagrama de flujo de un algoritmo que reciba tres puntos en el plano: 
+      $P_{1}(x_1,y_2), P_{2}(x_2,y_2)$ y $P_{3}(x_3,y_3)$  que corresponden 
       a los vértices de un triángulo, calcule su  perímetro.</p>
 
     <p><b>Hint:</b> Calcule la distancia entre cada par de puntos para conocer la longitud de
@@ -383,7 +383,7 @@
     
     <div class="ejercicio-box">
       <h2 class="number-title">  Ejercicio</h2>
-    <p>Construye el diagrama de flujo  de un algoritmo  que determine si un año es bisiesto. Imprima un msj
+    <p>Construye el diagrama de flujo  de un algoritmo  que determine si un año es bisiesto. Imprima un mensaje
        mensaje donde muestre el resultado.  
     </p>
 
@@ -455,16 +455,32 @@
 
 
    <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
-    <p>Construye el diagrama de flujo  de un algoritmo que solicite al usuario dos puntos distintos $A(x_1,y_1)$ y $B{2}(x_2,y_2)$
+    <p>Construye el diagrama de flujo  de un algoritmo que solicite al usuario dos puntos distintos en el plano $A(x_1,y_1)$ y $B{2}(x_2,y_2)$
       (Solicita primero las coordenas del punto $A$, y despues las coordenadas del punto $B$). Luego, determine 
       e imprima  la distancia entre $A$ y $B$, así como la pendiente de la recta que pasa por estos puntos.
       
     </p>
 
-    <p><b>Hint:</b> Recuerde que para cualquiera par de puntos distintos $A(x_1,y_1)$ y $B(x_2,y_2)$. La distancia entre ellos se determina mediante la 
+    <p><b>Hint:</b> Sean  $A(x_1,y_1)$, $B(x_2,y_2)$ puntos en el plano. 
+    <ul>
+      <li>La distancia entre los puntos $A$ y $B$  se determina mediante la 
     siguiente fórmula:
+    
     $$d(A,B)=\sqrt{(x_{1}-x_{2})^{2} +  (y_{1}-y_{2})^{2}}$$
-    </p>
+    </li>
+
+    <li>Si además, $A$ y $B$ son puntos tales que  i.e. $x_{1}\not= x_{2}$ o $y_{1}\not= y_{2}$, entonces existe una única 
+      recta que pasa los puntos $A$ y $B$. La pendiente de esta recta se define de la siguiente manera:
+
+      \begin{equation}
+      m: =\begin{cases}
+       \displaystyle{\frac{y_{2}-y_{1}}{x_{2} -x_{1}}},& \text{ si } x_{1}\not= x_{2}\\
+       \infty,& \text{ si } x_{1}= x_{2}
+       \end{cases}
+       \end{equation}
+    </li>
+    
+    </ul></p>
    </div>
 
 
