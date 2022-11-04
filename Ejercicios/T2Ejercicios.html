@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 1 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 1 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Programación UNO  </h1>
+       <nav class="top-nav">
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Ejercicios.html"> Ejercicios  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Ejercicios propuestos segundo parcial   </title>
+    
+  </head>
+
+
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Ejercicios propuestos segundo parcial </h1>   
+    
+    
+    <!-- <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el pseudocódigo de un algoritmo para:
+      <ul>
+        <li>Sumar dos números enteros.</li>
+        <li>Restar dos números enteros.</li>
+        <li>Multiplicar dos números enteros.</li>
+        <li>Dividir dos números enteros.</li>
+      </ul>
+        </p>
+        $
+        \begin{algorithmic}
+        \State $i \gets 10$
+        \If{$i\geq 5$} 
+            \State $i \gets i-1$
+        \Else
+            \If{$i\leq 3$}
+                \State $i \gets i+2$
+            \EndIf
+        \EndIf 
+        \end{algorithmic}
+        $
+    </div>-->
+  
+   
+   
+
+   <!--
+   <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+    <p>
+      En algunas oficinas gubernamentales pagan horas extra a sus empleados, además de su salario
+      correspondiente. Construye el diagrama de flujo  de un algoritmo  que lea  el salario de un
+      trabajador así como  las horas extras trabajadas. Luego, calcule e imprima la cantidad a pagar
+      tomando en cuenta su salario y las horas extras  trabajadas. La categorización de los trabajadores 
+      y el costo por  hora extra, estan dados por las siguientes tablas.</p>
+
+
+      
+<p>        
+  <table class="info">
+    
+    <caption><b><font size="4">Categorización de trabajadores</font></b></caption>
+    <thead>
+    <tr>
+      <th>Salario</th>
+      <th> Categoría</th>
+    </tr>
+    </thead>
+      <tbody>
+      <tr>
+        <td> Salario $< 12000$</td>
+        <td>1</td>
+      </tr>
+
+      </tbody>
+  </table>
+</p>
+   </div>
+
+-->
+
+
+
+
+   <!--
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+      <p>Construye un diagrama de flujo de un algoritmo que, al recibir
+        como dato el lado de un hexaedro o cubo, calcule el área de la base, el área
+        lateral, el área total y el volumen.</p>
+    </div>
+-->
+  <!--
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escribe el pseudocódigo de un algoritmo que sume los $50$ primeros números naturales.</p>
+    </div>  
+
+   
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un algoritmo que lea 100 números enteros y determine el mayor de ellos.</p>
+    </div>  
+
+   
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un algoritmo que lea 5 números enteros desde el teclado y calcule su suma.</p>
+    </div>  
+
+   
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un algoritmo que calcule el producto de dos números naturales 
+      usando sólo sumas. </p>
+    </div>  
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un  algoritmo que calcule el máximo común divisor de dos números.</p>
+        
+    </div>
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+     <p>Escribir el pseudocódigo de un  algoritmo que lea tres números enteros y decida si uno de
+       ellos coincide con la suma de los otros dos.
+    </p>   
+    </div>
+    
+    
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo  que imprima la suma de los primeros $100$ números 
+      naturales.
+    </p>
+        
+    </div>
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+      <p>Escriba el  pseudocodigo  de un algoritmo que imprima y sume la serie de  números $3,6,9,\ldots,99$.</p>
+    </div>
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+      <p>Escriba el  pseudocodigo de un algoritmo que imprima todas las potencias enteras de $2$ que sean
+         menores o iguales que $100$.</p>
+    </div>
+
+    
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo que sume los números pares comprendidos
+      entre $20$ y $100$ ambos inclusive.</p>
+    </div>
+
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo  que imprima los números del $100$ al $0$ en orden decreciente. </p>
+        
+    </div>
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba un pseudocodigo que imprima los números pares entre  $0$ y $100$. </p>
+        
+    </div>
+
+    
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo que imprima los números impares entre  $0$ y $100$ y que imprima cuantos impares hay. </p>
+        
+    </div>
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo que imprima los números impares entre  $0$ y $100$ y que imprima cuantos impares hay. </p>
+        
+    </div>
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo que imprima los números impares desde el  $100$ y hasta el número $1$ y que calcule e 
+       imprima su suma. </p>
+        
+    </div>
+
+ 
+    
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo que imprima  todos los número naturales hasta un numero que es introducido por teclado </p>
+        
+    </div>
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo que imprima suma de los cuadrados de los números pares entre $0$ y $100$</p>
+    </div>
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo  de un algoritmo que imprima, cuente y sume los multiplos de $2$  hasta un cierto número natural introducido por teclado.</p>
+    </div>
+-->
+
+<!--
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2>
+        
+    </div>
+-->
+
+  
+</body>
