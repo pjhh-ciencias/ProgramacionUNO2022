@@ -1,0 +1,947 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 1 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 1 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Programación UNO  </h1>
+       <nav class="top-nav">
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Ejercicios.html"> Ejercicios  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Ejercicios propuestos segundo parcial   </title>
+    
+  </head>
+
+
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Ejercicios propuestos segundo parcial </h1>   
+    
+   <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Un profesor tiene un salario inicial de $\$1500$, y recibe un incremento de $10\%$
+      anual durante $12$ años.
+    </p>
+    <p>
+      <ol>
+      <li>¿Qué salario ha recibido en cada uno de los $12$ años? </li>
+      <li>¿Cuál es su salario al cabo de $12$ años?</li>
+      </ol>  
+      Escribir el pseudocódigo de un algoritmo que resuel utilizando el ciclo apropiado.
+    </p>
+  </div>
+
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>En 1971, una persona vendió  tierras heredadas de su familia  la cantidad de $\$25\,000$.
+      Suponga que esta persona ha colocado el dinero en una cuenta de ahorros que paga $15\%$ anual.
+    </p>
+
+    <p>Escribir el pseudocódigo de un algoritmo que imprima el valor de su inversion actualmente. 
+    </p>
+  </div>
+
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p> El banco “Bandido de peluche” desea calcular para cada uno de sus N 
+      clientes su saldo actual, su pago mínimo y su pago para no generar 
+      intereses. Además, quiere calcular el monto de lo que ganó por concepto interés con los clientes morosos. Los datos que se conocen de 
+      cada cliente son: saldo anterior, monto de las compras que realizó y 
+      pago que depositó en el corte anterior. Para calcular el pago mínimo 
+      se considera 15% del saldo actual, y el pago para no generar intereses corresponde a 85% del saldo actual, considerando que el saldo 
+      actual debe incluir 12% de los intereses causados por no realizar el 
+      pago mínimo y $200 de multa por el mismo motivo. Realice el algoritmo correspondiente y represéntelo mediante diagrama de flujo y 
+      pseudocódigo.
+    </p>
+  </div>
+
+
+
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Escribir un programa que calcule y visualice la media, 
+      la desviación media y la varianza de N números. El 
+      valor de N se solicitará al principio del programa y los 
+      números serán introducidos por el usuario. 
+    </p>
+  </div>
+
+    
+
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+  <p>Escribir el pseudocódigo de un algoritmo que imprima  tanto los términos como la suma de los
+     términos de la siguiente serie:
+    $$ 2, 7, 10, 15, 18, 23, \ldots , 2500$$
+  </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+     <p>Escribir el pseudocódigo de un algoritmo que solicite un número entero positivo $n$ (validar entrada),
+       luego solicite al usuario $n$ números enteros, obtenga la suma de los números pares y 
+       el promédio de los impares. Imprima la suma y el promedio final.
+     </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un algoritmo que lea las calificaciones de un
+       grupo de alumnos que presentaron su examen  para  ingresar a la carrrera de Matemáticas 
+       Aplicadas en la  Universidad Tecnológica de la Mixteca. Luego,  determine  e imprima
+       el número de calificaciones que hay en cada uno de los siguientes rangos:
+          
+          \begin{align*}
+            \text{ Calificación} < 4 &  \\ 
+            4\leq  \text{ Calificación} < 6 &\\
+            6\leq  \text{ Calificación} < 7 & \\
+            6\leq  \text{ Calificación} < 7 & \\
+            7\leq  \text{ Calificación} < 8 & \\
+            9\leq  \text{ Calificación} < 10 & 
+        \end{align*} 
+        </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+
+      <p>
+        <b>Conjetura de  ULAM</b>. Recibe su nombre en honor del matemático S. Ulam.
+        <ol>
+          <li>Inicia con cualquier número entero positivo.</li>
+          <li>Si el número es par, divídelo entre $2$. Si es impar, multiplícalo por $3$ y sumale  $1$.</li>
+          <li>Obtenga sucesivamente números enteros repitiendo el proceso. A esta sucesión se le 
+            llama <b>sucesión de Ulam</b>.
+          </li>
+        </ol>
+      </p>
+      <p>Al final, obtendra el número $1$, independientemente del entero inicial.</p>
+      
+      <p>Por ejemplo cuando el entero inicial es $26$ la sucesion de Ulam es: 
+        $$26,13,40,20,10,5, 16,8,4,2,1$$ 
+      </p>
+
+      <p>Escribir el pseudocódigo de un algoritmo que solicite un número entero positivo $n$ 
+        (Validar entrada), e imprima la <b>sucesión de ULAM</b> correspondiente a $n$.
+      </p>
+     
+    </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p>Escribir el pseudocódigo de un algoritmo que solicite un número  entero positivo $n$ (Validar entrada),
+          e imprima los primeros $n$ términos de la sucesión de Fibonacci.
+        </p>
+      </div>
+      
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>El INE desea construir un programa para contabilizar los votos. En la elección hay cinco
+        candidatos, los cuales se representan con los valores comprendidos de $1$ a $5$.
+     
+        Escribir el pseudocódigo de un algoritmo que determine el número de
+        votos de cada candidato y el porcentaje que obtuvo respecto al total de los votantes.
+        El usuario ingresará los votos de manera desorganizada, tal y como se obtienen
+        en la elección, el final de datos se representa por un cero.</p>
+
+      <p>
+        Un  ejemplo del ingreso de los votos es el siguiente:
+       $$2 \, 5 \, 5\,  4\,  3\,  4\,  4\, 5\, 1\, 2\,  4\, 3\, 1\, 2\, 4\, 5\,  0$$
+      </p>
+      </div>
+
+      
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>La constante $\pi$ es muy utilizada en Matemáticas. Un método sencillo
+       de aproximar su valor es:
+       $$\pi \approx 4 \cdot \frac{2}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7}$$
+    </p>
+    <p>Escribir un programa que efectúe este cálculo con un 
+      número de términos especificados por el usuario</p>
+  </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p>El valor de $\pi$ se puede aproximar mediante la <b>serie de Liebniz</b>.</p>
+
+
+        <p>Consideremos la sucesión de número reales $\displaystyle{\left\{(-1)^{k}\frac{4}{2k+1}\right\}_{k=0}^{\infty}}$.        
+        Para cada  $n \in \mathbb{N}\cup \{0\}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> como:
+        
+         
+        $$S_{n}:=\sum_{k=0}^{n} (-1)^{k}\frac{4}{2k+1} = \frac{4}{1} - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9}+ \cdots + (-1)^{n}\frac{4}{2n+1}$$
+        
+         
+        A la sucesión de sumas parciales $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión $\displaystyle{\left\{(-1)^{k}\frac{4}{2k+1}\right\}_{k=0}^{\infty}}$
+         se le llama <b>Serie de Liebniz</b>. Se puede demostrar que la serie de Liebniz es convergente y converge a $\pi$. Esto es,
+
+         $$\lim_{n \to \infty} S_{n}= \pi.$$
+
+         Denotamos esto de la siguiente manera: $$\sum_{k=0}^{\infty} (-1)^{k}\frac{4}{2k+1}= \pi$$
+        </p>
+
+        <p>
+         Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero positivo $n$ (validar la entrada) y calcule e imprima  la  aproximación a $\pi$ dada por la $n$-ésima suma parcial $S_{n}$ de la serie de Liebniz.
+        </p>
+      
+      </div>
+
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p>El valor de $\pi$ se puede aproximar mediante la <b>serie de Nilakantha</b>.</p>
+
+
+        <p>Consideremos la sucesión de números reales $\{x_{k}\}_{k=0}^{\infty}$ cuyos términos  estan dados por:
+        
+        \begin{align*}
+        x_{0}&:=3\\
+        x_{k}&:= \frac{4}{2k \cdot (2k+1) \cdot (2k+2)},  \, \, \, \, \text{ para cada  } k\in \mathbb{N}
+        \end{align*}
+        
+        Esto es,  los primeros  términos de la sucesión son: 
+          $$3, \, \, \frac{4}{2\cdot 3\cdot 4},\, \,  \frac{4}{  4\cdot 5\cdot 6},\, \, 
+           \frac{4}{ 6\cdot 7 \cdot 8} ,\, \, \frac{4}{  8\cdot 9\cdot 10}, \ldots $$       
+        Para cada  $n \in \mathbb{N}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> como:
+        
+         
+        $$S_{n}:=3 + \sum_{k=1}^{n} \frac{4}{2k \cdot (2k+1) \cdot (2k+2)} = 3 +
+         \frac{4}{2\cdot 3\cdot 4} +  \frac{4}{  4\cdot 5\cdot 6} +  
+        \frac{4}{ 6\cdot 7 \cdot 8}+ \frac{4}{  8\cdot 9\cdot 10}+ \cdots $$
+        
+         
+        A la sucesión de sumas parciales $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión $\{x_{k}\}_{k=0}^{\infty}$ definida como antes se le llama <b>Serie de Nilakantha </b>. Se puede demostrar que la serie de Nilakantha es convergente y converge a $\pi$, i.e. 
+        $$\displaystyle{\lim_{n \to \infty} S_{n}}= \pi.$$
+        </p>
+
+        <p>
+         Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero positivo $n$ (validar la entrada) y calcule e imprima  la  aproximación a $\pi$ dada por la $n$-ésima suma parcial $S_{n}$ de la serie de Nilakantha.
+        </p>
+      </div>
+
+
+      
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p> El matemático italiano <b>Leonardo Fibonacci</b> propuso el siguiente problema. 
+        Supongamos que un par de conejos tiene un par de crías cada mes y cada nueva pareja se hace
+        fértil a la edad de un mes. Si se dispone de una pareja fértil y ninguno de
+        los conejos muere (vida infinita para los conejos). ¿Cuantos conejos se tienen transcurrido 
+        un determinado número de meses? Este problema genera la conocida <b>sucesion de Fibonacci:</b>
+        
+        $$1,1,2,3,5,8,13,21,34,55,89,\ldots$$
+        
+        Observemos que la sucesión comienza con los números $1$ y $1$. Luego​ a partir de estos,
+        cada término es la suma de los dos anteriores.
+      </p>
+      <p>
+        <ol>
+          <li>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero 
+            positivo $k$, e imprima los primeros $k$ terminos de la sucesion de Fibonacci.
+          </li>
+          <li>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero 
+            positivo $n$, determine e  imprima ¿cuántas parejas de conejos habrá después de $n$ años?
+          </li>
+          <li>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero 
+            positivo par $m$ (validar entrada), determine e imprima el número de meses necesarios 
+            para producir $m$  parejas de conejos.
+
+          </li>          
+        </ol>
+       </p>
+        
+      </div>
+
+     
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Calcular las siguientes series: 
+      $$1-\frac{1}{2} + \frac{1}{4s} - \frac{1}{6} + \frac{1}{8} - \frac{1}{10} + \frac{1}{12} +\cdots$$
+    </p>
+  </div>
+  
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+
+        <p>Consideremos la sucesión de número reales $\displaystyle{\left\{\frac{1}{k}\right\}_{k=1}^{\infty}}$. Para cada  $n \in \mathbb{N}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> como:
+        
+         
+        $$S_{n}:=\sum_{k=1}^{n} \frac{1}{k} =1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5}+ \cdots + \frac{1}{n}$$
+        
+         
+        A la sucesión de sumas parciales  $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión  $\displaystyle{\left\{\frac{1}{k}\right\}_{k=1}^{\infty}}$ se le llama <b>Serie Ármonica</b>. Se puede demostrar que la serie de Ármonica <b>no es convergente</b>.
+        </p>
+
+        <p>
+          Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero positivo $n$ (validar la entrada) y calcule e imprima  la $n$-ésima suma parcial $S_{n}$ de la serie Ármonica.
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+
+        <p>Sea $x \in \mathbb{R}$. Consideremos la sucesión de número reales 
+          $\displaystyle{\left\{(-1)^{k}\frac{x^{2k+1}}{(2k+1)!}\right\}_{k=0}^{\infty}}$. 
+          Para cada  $n \in \mathbb{N}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> 
+          como:
+        
+         
+        $$S_{n}:=\sum_{k=0}^{n} (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} = x -   \frac{x^{3}}{3!} +
+         \frac{x^{5}}{5!}+ \cdots +  (-1)^{n} \frac{x^{2n+1}}{(2n+1)!}$$
+        
+         
+        La sucesión de sumas parciales  $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión
+        $\displaystyle{\left\{(-1)^{k}\frac{x^{2k+1}}{(2k+1)!}\right\}_{k=0}^{\infty}}$ 
+        es la <b>serie de Taylor</b> de la función $\mathrm{Sen}(x)$. Se puede demostrar
+        que esta serie  <b>es convergente</b> y converge a $\mathrm{Sen}(x)$.
+        </p>
+
+        <p>
+          Escribir el pseudocódigo de un algoritmo que solicite al usuario un número 
+          entero positivo $n$ (validar la entrada) y calcule e imprima  la $n$-ésima 
+          suma parcial $S_{n}$ de la <b>serie de Taylor</b> de la función $\mathrm{Sen}(x)$.
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+
+        <p>Sea $x \in \mathbb{R}$. Consideremos la sucesión de número reales 
+          $\displaystyle{\left\{\frac{x^{k}}{k!}\right\}_{k=0}^{\infty}}$. 
+          Para cada  $n \in \mathbb{N}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> 
+          como:
+        
+         
+        $$S_{n}:=\sum_{k=0}^{n} \frac{x^{k}}{k!} =1 + \frac{x}{1!} + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \frac{x^{4}}{4!} + \cdots + \frac{x^{n}}{n!}$$
+        
+         
+        La sucesión de sumas parciales  $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión
+        $\displaystyle{\left\{\frac{x^{k}}{k!}\right\}_{k=0}^{\infty}}$. 
+        es la <b>serie de Taylor</b> de la función $e^{x}$. Se puede demostrar
+        que esta serie  <b>es convergente</b> y converge a $e^{x}$.
+        </p>
+
+        <p>
+          Escribir el pseudocódigo de un algoritmo que solicite al usuario un número 
+          entero positivo $n$ (validar la entrada) y calcule e imprima  la $n$-ésima 
+          suma parcial $S_{n}$ de la <b>serie de Taylor</b> de la función $e^{x}$.
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+
+        <p>Consideremos la sucesión de número reales 
+          $\displaystyle{\left\{(-1)^{k+1}k^{k}\right\}_{k=1}^{\infty}}$. 
+          Para cada  $n \in \mathbb{N}$, se define la <b>$n$-ésima suma parcial
+          de la sucesión</b> como:
+        
+         
+        $$S_{n}:=\sum_{k=1}^{n} (-1)^{k+1}k^{k} = 1 - 2^{2} + 3^{3} - 4^{4} + 5^{5}+ \cdots 
+        + (-1)^{n+1} n^{n}$$
+        
+         <!--
+        A la sucesión $\{ S_{n}\}_{n=1}^{\infty}$ de sumas parciales de la sucesión  $\displaystyle{\left\{(-1)^{k+1}k^{k}\right\}_{k=1}^{\infty}}$ se le llama <b>Serie</b> de la sucesión $\displaystyle{\left\{(-1)^{k+1}k^{k}\right\}_{k=1}^{\infty}}$. -->
+        </p>
+
+        
+
+        <p>
+          Escribir el pseudocódigo de un algoritmo que solicite al usuario un número
+          entero positivo $n$ (validar la entrada) y calcule e imprima
+          la $n$-ésima suma parcial $S_{n}$.
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p>
+          Calcular la suma de los términos de la serie: 
+          $$\frac{1}{1} − \frac{2}{2^{2}}+ \frac{3}{3^{3}} - \frac{4}{4^{4}} + \cdots + (-1)^{n}\frac{n}{n^{n}}$$
+         para un valor dado de n. 
+        </p>
+      </div>
+
+      <p><div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero
+         positivo $n$ (validar la entrada) y calcule e imprima el producto de los primeros 
+         $n$ números naturales.</p>
+      </div>
+      </p>
+
+      
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número 
+          entero positivo $n$ (validar la entrada) e imprima  todos los números perfectos que hay
+          entre $1$ y $n$, y que además imprima la cantidad de números perfectos que 
+          hay en dicho intervalo.
+        </p>
+        </div>
+
+        <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+
+        </div>
+
+
+      
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p>
+          al recibir como dato un número entero N, calcule el resultado de la siguiente serie:
+        </p>
+        </div>
+
+        <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+          <p>A la clase de Programación del profesor Pablo Jorge asiste un grupo numeroso de
+            alumnos. Escribir el pseudocódigo de un algoritmo que lea la matrícula, las 
+            calificaciones de los tres parciales y la calificacion del ordinario de cada
+            alumno (pedir primero la matricula y luego las calificaciones), el fin del
+            ingreso de datos esta dado por $0$. Además, debe obtener e imprimir la matrícula
+            y el promedio tanto del mejor como del peor alumno.
+          </p>
+        </div> 
+        
+        
+        
+        
+        <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+          <p> Un número entero positivo $n$ es <b>perfecto</b> si  la suma de todos sus 
+            divisores positivos (excluido el mismo) es igual a $n$.El primer número perfecto 
+            es $6$, ya que los divisores positivos de $6$ son $1, 2, 3$ y $1 + 2 + 3 = 6$.</p>
+          
+          <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero
+              positivo $n$ (validar la entrada) y determine e imprima si $n$ es un número perfecto.
+            
+          </p>
+          </div>
+
+          <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+          <p>Escribir un programa que encuentre los tres primeros 
+            números perfectos pares y los tres primeros números perfectos imp</p>
+          </div>
+                
+        <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+          <p>Sean $n,m$ números enteros positivos diremos que $n$ y $m$ son  <b>primos gemelos</b> si 
+            $n$ y $m$ se encuentran a una distancia exactamente igual a $2$ i.e. si  $|n-m|=2$. 
+            Por ejemplo $3$ y $5$ son primos gemelos. </p>
+
+          <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario dos números enteros 
+            positivos $n$ y $m$ (validar la entrada), obtenga e imprima todos los números primos
+            gemelos comprendidos entre dichos números. 
+          </p>
+        
+        </div>
+
+    
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p>Construye un diagrama de flujo y el correspondiente programa en C que calcule
+          el máximo común divisor (MCD) de dos números naturales N1 y N2. El MCD
+          entre dos números es el natural más grande que divide a ambos. 
+          Datos: N1, N2 (variables de tipo entero que representan los números que se
+          ingresan)
+        </p>
+      </div>
+
+
+
+
+
+
+  <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2>
+  <p>Escribir el pseudocódigo de un algoritmo que lea 5 números enteros desde el teclado y 
+    calcule su suma.</p>
+  </div>  
+
+ 
+ 
+
+
+  <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un  algoritmo que calcule el máximo común divisor de dos 
+      números.</p>
+      
+  </div>
+
+
+  
+
+      
+
+  <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba el  pseudocodigo de un algoritmo que imprima todas las potencias enteras de
+       $2$ que sean menores o iguales que $100$.</p>
+  </div>
+
+  
+
+
+
+ 
+  
+
+
+
+  <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2>
+  <p>Escriba el  pseudocodigo  de un algoritmo que imprima los números impares entre
+      $0$ y $100$ y que imprima cuantos impares hay. </p>
+      
+  </div>
+
+  <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2>
+  <p>Escriba el  pseudocodigo  de un algoritmo que imprima los números impares desde el
+      $100$ y hasta el número $1$ y que calcule e 
+     imprima su suma. </p>
+      
+  </div>
+
+
+  
+  <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2>
+  <p>Escriba el  pseudocodigo  de un algoritmo que imprima  todos los número naturales hasta un numero que es introducido por teclado </p>
+      
+  </div>
+
+
+
+  <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2>
+  <p>Escriba el  pseudocodigo  de un algoritmo que imprima, cuente y sume los multiplos de $2$  hasta un cierto número natural introducido por teclado.</p>
+  </div>
+
+
+  <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2>
+    <p>
+    Escriba un programa que calcule y visualice 
+        $$1! + 2! + 3! + ... + (n – 1)! + n!$$ 
+    donde n es un valor de un dato.</p>        
+  </div>
+
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Leer un número entero e imprimir su equivalente en binario, octal o hexadecimal, 
+      según elija el usuario.
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Adivinar en un máximo de cinco oportunidades un número entero comprendido entre 1 y 100. 
+      En cada ciclo la computadora dirá si el número que capturó el usuario es mayor o menor que el número 
+      de la computadora. Al final si adivinó el número, imprimir: “Felicidades lo lograste en ____ intentos”, y si 
+      no imprimir “Lástima, suerte para la próxima”. 
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Imprimir los cuadrados de los 25 primeros números enteros divisibles entre 7
+    </p>
+  </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Leer un número entero de 3 dígitos (validar la captura respectiva, sólo valores entre 1 y 999) y separarlo 
+      en unidades, decenas y centenas.
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Simular una ruleta (números aleatorios entre 0 y 38). Dejará de girar cuando se genere el cero. En cada 
+      vuelta contará por separado pares y nones. Al final imprimir los resultados. 
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Las potencias de 2 son: 1, 2, 4, 8, 16,... Para obtener la siguiente potencia se multiplica la anterior por 2. 
+      Imprimir la primera potencia de 2 que pasa de 700. 
+    </p>
+  </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      De acuerdo con un principio aritmético un número es múltiplo de 3 cuando la suma de sus cifras da un 
+      múltiplo de 3. Con base en este principio imprimir si un número es múltiplo de 3. 
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Generar dos números aleatorios entre 0 y 99, imprimir dichos números en forma de resta (por ejemplo:
+      25 2 10 5 ), y leer el resultado respectivo. En caso de ser correcto imprimir “Felicidades, tu resultado es 
+      correcto”, en caso contrario imprimir “Lo siento, el resultado era:___”. El proceso se llevará a cabo hasta 
+      que el alumno conteste correctamente.
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Imprimir los números del uno al cien excepto los múltiplos de 7,
+    </p>
+  </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un algoritmo que encuentre  todos los números enteros
+       positivos de dos cifras tales que la suma de los cuadrados de sus
+       cifras es igual al valor del número.
+    </p>
+  </div>
+
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un algoritmo que encuentre  todos los números enteros
+       positivos de tres cifras tales que la suma de los cuadrados de sus
+       cifras es igual al valor del número.
+    </p>
+  </div>
+  
+      
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba un algoritmo que encuentre e imprima  todos los números de $4$ cifras 
+      que cumplen la condición de que la suma de las cifras de 
+      orden impar es igual a la suma de las cifras de orden 
+      par. 
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escriba un algoritmo que encuentre todos los números de tres 
+      cifras tales que la suma de los cubos de las cifras es igual al valor del 
+      número.
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir un programa que visualice el siguiente dibujo
+    </p>
+    <pre>
+      *
+    * * *
+  * * * * *
+* * * * * * *
+* * * * * * * * *
+* * * * * * *
+  * * * * *
+    * * *
+      *
+    </pre>
+  </div>
+  
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero 
+          positivo $n$,  e imprima  una figura como la que se muestra a continuación: Por ejemplo 
+          para $n = 6$ 
+        </p>
+        <pre>
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5
+1 2 3 4 
+1 2 3 
+1 2 
+1
+    </pre>
+  </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero 
+          positivo $n$, e imprima  una figura como la que se muestra a continuación: por ejemplo 
+          para $n = 7$ 
+        </p>
+  <pre>
+1 2 3 4 5 6 7
+1 2 3 4 5 6 
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1
+  </pre>
+  </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero 
+          positivo $n$, e imprima  una figura como la que se muestra a continuación: por ejemplo 
+          para $n = 7$ 
+        </p>
+  <pre>
+1 2 3 4 5 6 7 6 5 4 3 2 1
+1 2 3 4 5 6 5 4 3 2 1
+1 2 3 4 5 4 3 2 1
+1 2 3 4 3 2 1
+1 2 3 2 1
+1 2 1
+1
+  </pre>
+  </div>
+
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero
+          positivo $n$, e imprima  una figura como la que se muestra a continuación: por ejemplo 
+            para $n = 7$ 
+        </p>
+  <pre>
+1
+1 2 1
+1 2 3 2 1
+1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1
+1 2 3 4 5 6 5 4 3 2 1
+1 2 3 4 5 6 7 6 5 4 3 2 1
+  </pre>
+  </div>
+
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero
+          positivo $n$,e imprima  una figura como la que se muestra a continuación: por ejemplo  
+          para $n = 7$ 
+        </p>
+
+  <pre>
+1 2 3 4 5 6 7   7 6 5 4 3 2 1
+1 2 3 4 5 6       6 5 4 3 2 1
+1 2 3 4 5           5 4 3 2 1
+1 2 3 4               4 3 2 1
+1 2 3                   3 2 1
+1 2                       2 1
+1                           1
+</pre>
+  </div>
+
+
+  
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero
+          positivo $n$, e imprima  la figura  que se muestra a continuación:
+        </p>
+  <pre>
+                1
+              2 3 2
+            3 4 5 4 3
+          4 5 6 7 6 5 4
+        5 6 7 8 9 8 7 6 5
+      6 7 8 9 0 1 0 8 7 6
+    7 8 9 0 1 2 3 2 1 0 9 8 7
+  8 9 0 1 2 3 4 5 4 3 2 1 0 9 8
+9 0 1 2 3 4 5 6 7 6 5 4 3 2 1 0 9
+0 1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1 0
+</pre>
+  </div>
+
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+  
+    </p>
+  </div>
+  
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+  
+</body>

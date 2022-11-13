@@ -89,152 +89,220 @@
   <body class="fondo-body" >
     <h1 class="number-title flexbox"> Ejercicios propuestos segundo parcial </h1>   
     
-    
-    <!-- <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-    <p>Escriba el pseudocódigo de un algoritmo para:
-      <ul>
-        <li>Sumar dos números enteros.</li>
-        <li>Restar dos números enteros.</li>
-        <li>Multiplicar dos números enteros.</li>
-        <li>Dividir dos números enteros.</li>
-      </ul>
-        </p>
-        $
-        \begin{algorithmic}
-        \State $i \gets 10$
-        \If{$i\geq 5$} 
-            \State $i \gets i-1$
-        \Else
-            \If{$i\leq 3$}
-                \State $i \gets i+2$
-            \EndIf
-        \EndIf 
-        \end{algorithmic}
-        $
-    </div>-->
-  
-   
-   
-
-   <!--
-   <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
     <p>
-      En algunas oficinas gubernamentales pagan horas extra a sus empleados, además de su salario
-      correspondiente. Construye el diagrama de flujo  de un algoritmo  que lea  el salario de un
-      trabajador así como  las horas extras trabajadas. Luego, calcule e imprima la cantidad a pagar
-      tomando en cuenta su salario y las horas extras  trabajadas. La categorización de los trabajadores 
-      y el costo por  hora extra, estan dados por las siguientes tablas.</p>
-
-
-      
-<p>        
-  <table class="info">
-    
-    <caption><b><font size="4">Categorización de trabajadores</font></b></caption>
-    <thead>
-    <tr>
-      <th>Salario</th>
-      <th> Categoría</th>
-    </tr>
-    </thead>
-      <tbody>
-      <tr>
-        <td> Salario $< 12000$</td>
-        <td>1</td>
-      </tr>
-
-      </tbody>
-  </table>
-</p>
-   </div>
-
--->
-
-
-
-
-   <!--
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-      <p>Construye un diagrama de flujo de un algoritmo que, al recibir
-        como dato el lado de un hexaedro o cubo, calcule el área de la base, el área
-        lateral, el área total y el volumen.</p>
+      Escribir el pseudocódigo de un algoritmo que lea un número entero positivo (validar entrada)
+      e invierta sus dígitos, imprima el número resultante.  
+    </p>
     </div>
---
 
 
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>
+      Escribir el pseudocódigo de un algoritmo que lea un número entero positivo $n$ (validar entrada)
+      y determine si $n$ es palindromo. Imprima un mensaje adecuado.  
+    </p>
+    </div>
 
 
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-    <p>Escribir el pseudocódigo de un algoritmo que lea 5 números enteros desde el teclado y calcule su suma.</p>
-    </div>  
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un algoritmo que lea un límite superior (entero positivo) $a$ (validar entrada) y una 
+      base (entero positivo) $b$ (validar entrada)  e  imprima todas las potencias de la base que sean menores que
+      el valor especificado el límite superior.
+    </p>
+    </div>
 
-   
-   
 
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que lea un número entero positivo $n$ (validar entrada) y
+         sume los primeros $n$ números naturales impares.
+      </p>
+    </div>
 
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-      <p>Escribir el pseudocódigo de un  algoritmo que calcule el máximo común divisor de dos números.</p>
-        
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que lea un número entero positivo $n$ (validar entrada)
+        e imprima  la tabla de multiplicar del número $n$.
+      </p>
+
+      <p>Por ejemplo si $n=3$, se debe imprimir  la tabla:
+        \begin{align*}
+          1 &\times 3 = 3\\
+          2 &\times 3 = 6\\
+          3 &\times 3 = 9\\
+          4 &\times 3 = 12\\
+          5 &\times 3 = 15\\
+          6 &\times 3 = 18\\
+          7 &\times 3 = 21\\
+          8 &\times 3 = 24\\
+          9 &\times 3 = 27\\
+          10 &\times 3 = 30\\
+        \end{align*}
+      </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo  que escriba la tabla de multiplicar del
+         $1, 2,\ldots ,10$
+      </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Para encontrar el Máximo Común Divisor (MCD) de 
+        dos números se puede implementar el <b>algoritmo de Euclides</b>:</p>
+        <p> Dados  $a,b \in \mathbb{N}$  
+        con $a>b$ (si $a=b$, entonces $\mathrm{MCD}(a,b)=a$), se 
+        divide $a$ entre $b$, obteniendo el cociente $q_{1}$ y el resto 
+        $r_{1}$. Si $r_{1} \not= 0$ 
+        se divide $r_{1}$ entre $b$, obteniendo el
+        cociente $q_{2}$ y el resto $r_{2}$. 
+        Si $r_{2} \not= 0$, se divide $r_{1} $ entre $r_{2}$,
+        para obtener $q_{3}$ y $r_{3}$, y así sucesivamente.
+        Se continúa el proceso hasta que se obtiene un resto igual a  $0$. 
+        El resto anterior a cero es entonces
+        el Máximo Común Divisor de los números $a$ y $b$.</p>
+
+        <p>Se denota el Máximo Común Divisor de $a$ y $b$ por $\mathrm{MCD}(a,b)$  </p>
+  
+        <p>Escriba un algoritmo que lea dos números enteros positivos $a$ y $b$ (validar entradas), 
+          e implemente el algoritmo de Euclides para encontrar el Máximo Común Divisor de $a$ y $b$.
+           Imprima el resultado.
+        </p>
+        </div>
+
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que
+         lea dos números enteros positivos (validar entradas) y
+         calcule e imprima el mínimo común múltiplo (mcm) de los dos números.
+      </p>
+
+      <p>Se denota el Mínimo Común Multiplo de $a$ y $b$ por $\mathrm{mcm}(a,b)$  </p>
+
+      <p><b>Hint:</b> Por resultado conocido de la Teoría de Números sabemos que:
+        $$a\cdot b= \mathrm{mcm}(a,b) \cdot \mathrm{MCM}(a,b)$$
+       </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que lea un número entero positivo $k$ 
+        (validar entrada) y encontre el número entero positivo  $n$ más pequeño tal que
+        la suma de los $n$ primeros números naturales exceda el valor de $k$.
+      </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que lea un número entero positivo (validar entrada) 
+        y calcule su factorial,  mediante un ciclo for (para), un ciclo while (mientras) y
+         mediante un ciclo do-while (hacer-mientras). En todos los casos imprimir el resultado.
+      </p>
     </div>
 
   
-    
-  
-        
-
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-      <p>Escriba el  pseudocodigo de un algoritmo que imprima todas las potencias enteras de $2$ que sean
-         menores o iguales que $100$.</p>
-    </div>
-
-    
-
-  
-
-   
-    
-
- 
-
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-    <p>Escriba el  pseudocodigo  de un algoritmo que imprima los números impares entre  $0$ y $100$ y que imprima cuantos impares hay. </p>
-        
-    </div>
-
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-    <p>Escriba el  pseudocodigo  de un algoritmo que imprima los números impares desde el  $100$ y hasta el número $1$ y que calcule e 
-       imprima su suma. </p>
-        
-    </div>
-
- 
-    
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-    <p>Escriba el  pseudocodigo  de un algoritmo que imprima  todos los número naturales hasta un numero que es introducido por teclado </p>
-        
-    </div>
-
-
-
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-    <p>Escriba el  pseudocodigo  de un algoritmo que imprima, cuente y sume los multiplos de $2$  hasta un cierto número natural introducido por teclado.</p>
-    </div>
--->
-
 <!--
-    <div class="ejercicio-box">
-      <h2 class="number-title"> Ejercicio</h2>
-        
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que  lea números enteros introducidos por el usuario
+         y cuente los ceros que se introducen. El final de datos viene dado
+        cuando se pulse por teclado una tecla distinta de s o S.
+      </p>
     </div>
--->
 
-  
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>
+    
+      </p>
+    </div>
+  -->
 </body>
