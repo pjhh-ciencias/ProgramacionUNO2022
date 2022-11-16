@@ -88,6 +88,52 @@
 
   <body class="fondo-body" >
     <h1 class="number-title flexbox"> Ejercicios propuestos segundo parcial </h1>   
+
+    
+   
+
+      
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que lea un número entero positivo $n$ (validar entrada) y
+         sume los primeros $n$ números naturales impares.
+      </p>
+    </div>
+
+       
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que lea un número entero positivo $n$ (validar entrada)
+        e imprima  la tabla de multiplicar del número $n$.
+      </p>
+
+      <p>Por ejemplo si $n=3$, se debe imprimir  la tabla:
+        \begin{align*}
+          1 &\times 3 = 3\\
+          2 &\times 3 = 6\\
+          3 &\times 3 = 9\\
+          4 &\times 3 = 12\\
+          5 &\times 3 = 15\\
+          6 &\times 3 = 18\\
+          7 &\times 3 = 21\\
+          8 &\times 3 = 24\\
+          9 &\times 3 = 27\\
+          10 &\times 3 = 30\\
+        \end{align*}
+      </p>
+    </div>
+      
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que lea un límite superior (entero positivo) $a$ (validar entrada) y una 
+        base (entero positivo) $b$ (validar entrada)  e  imprima todas las potencias de la base que sean menores que
+        el valor especificado el límite superior.
+      </p>
+      </div>
+    
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que lea un número entero positivo (validar entrada) 
+        y calcule su factorial,  mediante un ciclo for (para), un ciclo while (mientras) y
+         mediante un ciclo do-while (hacer-mientras). En todos los casos imprimir el resultado.
+      </p>
+    </div>
     
    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
     <p>Un profesor tiene un salario inicial de $\$1500$, y recibe un incremento de $10\%$
@@ -170,50 +216,14 @@
         </p>
     </div>
 
-    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-
-      <p>
-        <b>Conjetura de  ULAM</b>. Recibe su nombre en honor del matemático S. Ulam.
-        <ol>
-          <li>Inicia con cualquier número entero positivo.</li>
-          <li>Si el número es par, divídelo entre $2$. Si es impar, multiplícalo por $3$ y sumale  $1$.</li>
-          <li>Obtenga sucesivamente números enteros repitiendo el proceso. A esta sucesión se le 
-            llama <b>sucesión de Ulam</b>.
-          </li>
-        </ol>
-      </p>
-      <p>Al final, obtendra el número $1$, independientemente del entero inicial.</p>
-      
-      <p>Por ejemplo cuando el entero inicial es $26$ la sucesion de Ulam es: 
-        $$26,13,40,20,10,5, 16,8,4,2,1$$ 
-      </p>
-
-      <p>Escribir el pseudocódigo de un algoritmo que solicite un número entero positivo $n$ 
-        (Validar entrada), e imprima la <b>sucesión de ULAM</b> correspondiente a $n$.
-      </p>
-     
-    </div>
-
+   
       <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
         <p>Escribir el pseudocódigo de un algoritmo que solicite un número  entero positivo $n$ (Validar entrada),
           e imprima los primeros $n$ términos de la sucesión de Fibonacci.
         </p>
       </div>
       
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>El INE desea construir un programa para contabilizar los votos. En la elección hay cinco
-        candidatos, los cuales se representan con los valores comprendidos de $1$ a $5$.
-     
-        Escribir el pseudocódigo de un algoritmo que determine el número de
-        votos de cada candidato y el porcentaje que obtuvo respecto al total de los votantes.
-        El usuario ingresará los votos de manera desorganizada, tal y como se obtienen
-        en la elección, el final de datos se representa por un cero.</p>
-
-      <p>
-        Un  ejemplo del ingreso de los votos es el siguiente:
-       $$2 \, 5 \, 5\,  4\,  3\,  4\,  4\, 5\, 1\, 2\,  4\, 3\, 1\, 2\, 4\, 5\,  0$$
-      </p>
-      </div>
+      
 
       
   <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
@@ -225,94 +235,24 @@
       número de términos especificados por el usuario</p>
   </div>
 
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-        <p>El valor de $\pi$ se puede aproximar mediante la <b>serie de Liebniz</b>.</p>
-
-
-        <p>Consideremos la sucesión de número reales $\displaystyle{\left\{(-1)^{k}\frac{4}{2k+1}\right\}_{k=0}^{\infty}}$.        
-        Para cada  $n \in \mathbb{N}\cup \{0\}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> como:
-        
-         
-        $$S_{n}:=\sum_{k=0}^{n} (-1)^{k}\frac{4}{2k+1} = \frac{4}{1} - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9}+ \cdots + (-1)^{n}\frac{4}{2n+1}$$
-        
-         
-        A la sucesión de sumas parciales $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión $\displaystyle{\left\{(-1)^{k}\frac{4}{2k+1}\right\}_{k=0}^{\infty}}$
-         se le llama <b>Serie de Liebniz</b>. Se puede demostrar que la serie de Liebniz es convergente y converge a $\pi$. Esto es,
-
-         $$\lim_{n \to \infty} S_{n}= \pi.$$
-
-         Denotamos esto de la siguiente manera: $$\sum_{k=0}^{\infty} (-1)^{k}\frac{4}{2k+1}= \pi$$
-        </p>
-
-        <p>
-         Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero positivo $n$ (validar la entrada) y calcule e imprima  la  aproximación a $\pi$ dada por la $n$-ésima suma parcial $S_{n}$ de la serie de Liebniz.
-        </p>
       
-      </div>
 
 
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-        <p>El valor de $\pi$ se puede aproximar mediante la <b>serie de Nilakantha</b>.</p>
+     
 
+  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+    <p>Escribir el pseudocódigo de un algoritmo que
+       lea dos números enteros positivos (validar entradas) y
+       calcule e imprima el mínimo común múltiplo (mcm) de los dos números.
+    </p>
 
-        <p>Consideremos la sucesión de números reales $\{x_{k}\}_{k=0}^{\infty}$ cuyos términos  estan dados por:
-        
-        \begin{align*}
-        x_{0}&:=3\\
-        x_{k}&:= \frac{4}{2k \cdot (2k+1) \cdot (2k+2)},  \, \, \, \, \text{ para cada  } k\in \mathbb{N}
-        \end{align*}
-        
-        Esto es,  los primeros  términos de la sucesión son: 
-          $$3, \, \, \frac{4}{2\cdot 3\cdot 4},\, \,  \frac{4}{  4\cdot 5\cdot 6},\, \, 
-           \frac{4}{ 6\cdot 7 \cdot 8} ,\, \, \frac{4}{  8\cdot 9\cdot 10}, \ldots $$       
-        Para cada  $n \in \mathbb{N}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> como:
-        
-         
-        $$S_{n}:=3 + \sum_{k=1}^{n} \frac{4}{2k \cdot (2k+1) \cdot (2k+2)} = 3 +
-         \frac{4}{2\cdot 3\cdot 4} +  \frac{4}{  4\cdot 5\cdot 6} +  
-        \frac{4}{ 6\cdot 7 \cdot 8}+ \frac{4}{  8\cdot 9\cdot 10}+ \cdots $$
-        
-         
-        A la sucesión de sumas parciales $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión $\{x_{k}\}_{k=0}^{\infty}$ definida como antes se le llama <b>Serie de Nilakantha </b>. Se puede demostrar que la serie de Nilakantha es convergente y converge a $\pi$, i.e. 
-        $$\displaystyle{\lim_{n \to \infty} S_{n}}= \pi.$$
-        </p>
+    <p>Se denota el Mínimo Común Multiplo de $a$ y $b$ por $\mathrm{mcm}(a,b)$  </p>
 
-        <p>
-         Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero positivo $n$ (validar la entrada) y calcule e imprima  la  aproximación a $\pi$ dada por la $n$-ésima suma parcial $S_{n}$ de la serie de Nilakantha.
-        </p>
-      </div>
-
-
+    <p><b>Hint:</b> Por resultado conocido de la Teoría de Números sabemos que:
+      $$a\cdot b= \mathrm{mcm}(a,b) \cdot \mathrm{MCM}(a,b)$$
+     </p>
+  </div>
       
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p> El matemático italiano <b>Leonardo Fibonacci</b> propuso el siguiente problema. 
-        Supongamos que un par de conejos tiene un par de crías cada mes y cada nueva pareja se hace
-        fértil a la edad de un mes. Si se dispone de una pareja fértil y ninguno de
-        los conejos muere (vida infinita para los conejos). ¿Cuantos conejos se tienen transcurrido 
-        un determinado número de meses? Este problema genera la conocida <b>sucesion de Fibonacci:</b>
-        
-        $$1,1,2,3,5,8,13,21,34,55,89,\ldots$$
-        
-        Observemos que la sucesión comienza con los números $1$ y $1$. Luego​ a partir de estos,
-        cada término es la suma de los dos anteriores.
-      </p>
-      <p>
-        <ol>
-          <li>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero 
-            positivo $k$, e imprima los primeros $k$ terminos de la sucesion de Fibonacci.
-          </li>
-          <li>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero 
-            positivo $n$, determine e  imprima ¿cuántas parejas de conejos habrá después de $n$ años?
-          </li>
-          <li>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero 
-            positivo par $m$ (validar entrada), determine e imprima el número de meses necesarios 
-            para producir $m$  parejas de conejos.
-
-          </li>          
-        </ol>
-       </p>
-        
-      </div>
 
      
   <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
@@ -339,30 +279,7 @@
         </p>
       </div>
 
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-
-        <p>Sea $x \in \mathbb{R}$. Consideremos la sucesión de número reales 
-          $\displaystyle{\left\{(-1)^{k}\frac{x^{2k+1}}{(2k+1)!}\right\}_{k=0}^{\infty}}$. 
-          Para cada  $n \in \mathbb{N}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> 
-          como:
-        
-         
-        $$S_{n}:=\sum_{k=0}^{n} (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} = x -   \frac{x^{3}}{3!} +
-         \frac{x^{5}}{5!}+ \cdots +  (-1)^{n} \frac{x^{2n+1}}{(2n+1)!}$$
-        
-         
-        La sucesión de sumas parciales  $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión
-        $\displaystyle{\left\{(-1)^{k}\frac{x^{2k+1}}{(2k+1)!}\right\}_{k=0}^{\infty}}$ 
-        es la <b>serie de Taylor</b> de la función $\mathrm{Sen}(x)$. Se puede demostrar
-        que esta serie  <b>es convergente</b> y converge a $\mathrm{Sen}(x)$.
-        </p>
-
-        <p>
-          Escribir el pseudocódigo de un algoritmo que solicite al usuario un número 
-          entero positivo $n$ (validar la entrada) y calcule e imprima  la $n$-ésima 
-          suma parcial $S_{n}$ de la <b>serie de Taylor</b> de la función $\mathrm{Sen}(x)$.
-        </p>
-      </div>
+     
 
       <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
 
@@ -449,7 +366,7 @@
         </div>
 
         <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-          <p>A la clase de Programación del profesor Pablo Jorge asiste un grupo numeroso de
+          <p>A la clase de Programación del profesor Watson asiste un grupo numeroso de
             alumnos. Escribir el pseudocódigo de un algoritmo que lea la matrícula, las 
             calificaciones de los tres parciales y la calificacion del ordinario de cada
             alumno (pedir primero la matricula y luego las calificaciones), el fin del
@@ -458,24 +375,19 @@
           </p>
         </div> 
         
-        
-        
-        
         <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
           <p> Un número entero positivo $n$ es <b>perfecto</b> si  la suma de todos sus 
             divisores positivos (excluido el mismo) es igual a $n$.El primer número perfecto 
             es $6$, ya que los divisores positivos de $6$ son $1, 2, 3$ y $1 + 2 + 3 = 6$.</p>
           
+            
           <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario un número entero
               positivo $n$ (validar la entrada) y determine e imprima si $n$ es un número perfecto.
             
           </p>
           </div>
-
-          <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-          <p>Escribir un programa que encuentre los tres primeros 
-            números perfectos pares y los tres primeros números perfectos imp</p>
-          </div>
+        
+       
                 
         <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
           <p>Sean $n,m$ números enteros positivos diremos que $n$ y $m$ son  <b>primos gemelos</b> si 
@@ -489,15 +401,6 @@
         
         </div>
 
-    
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-        <p>Construye un diagrama de flujo y el correspondiente programa en C que calcule
-          el máximo común divisor (MCD) de dos números naturales N1 y N2. El MCD
-          entre dos números es el natural más grande que divide a ambos. 
-          Datos: N1, N2 (variables de tipo entero que representan los números que se
-          ingresan)
-        </p>
-      </div>
 
 
 
@@ -512,14 +415,6 @@
 
  
  
-
-
-  <div class="ejercicio-box">
-    <h2 class="number-title"> Ejercicio</h2>
-    <p>Escribir el pseudocódigo de un  algoritmo que calcule el máximo común divisor de dos 
-      números.</p>
-      
-  </div>
 
 
   
@@ -560,7 +455,8 @@
   
   <div class="ejercicio-box">
     <h2 class="number-title"> Ejercicio</h2>
-  <p>Escriba el  pseudocodigo  de un algoritmo que imprima  todos los número naturales hasta un numero que es introducido por teclado </p>
+  <p>Escriba el  pseudocodigo  de un algoritmo que imprima  todos los número naturales hasta
+     un numero que es introducido por teclado </p>
       
   </div>
 
@@ -662,14 +558,7 @@
     </p>
   </div>
   
-      
-  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-    <p>Escriba un algoritmo que encuentre e imprima  todos los números de $4$ cifras 
-      que cumplen la condición de que la suma de las cifras de 
-      orden impar es igual a la suma de las cifras de orden 
-      par. 
-    </p>
-  </div>
+ 
   
   <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
     <p>Escriba un algoritmo que encuentre todos los números de tres 
@@ -678,41 +567,6 @@
     </p>
   </div>
   
-  <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-    <p>Escribir un programa que visualice el siguiente dibujo
-    </p>
-    <pre>
-      *
-    * * *
-  * * * * *
-* * * * * * *
-* * * * * * * * *
-* * * * * * *
-  * * * * *
-    * * *
-      *
-    </pre>
-  </div>
-  
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero 
-          positivo $n$,  e imprima  una figura como la que se muestra a continuación: Por ejemplo 
-          para $n = 6$ 
-        </p>
-        <pre>
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-1 2 3 4 5 6
-1 2 3 4 5
-1 2 3 4 
-1 2 3 
-1 2 
-1
-    </pre>
-  </div>
 
       <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
         <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero 
@@ -764,43 +618,28 @@
   </div>
 
 
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero
-          positivo $n$,e imprima  una figura como la que se muestra a continuación: por ejemplo  
-          para $n = 7$ 
-        </p>
-
-  <pre>
-1 2 3 4 5 6 7   7 6 5 4 3 2 1
-1 2 3 4 5 6       6 5 4 3 2 1
-1 2 3 4 5           5 4 3 2 1
-1 2 3 4               4 3 2 1
-1 2 3                   3 2 1
-1 2                       2 1
-1                           1
-</pre>
-  </div>
+  
 
 
   
-
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-        <p> Escribir el pseudocódigo de un algoritmo que solicite al usuario  un número entero
-          positivo $n$, e imprima  la figura  que se muestra a continuación:
-        </p>
-  <pre>
-                1
-              2 3 2
-            3 4 5 4 3
-          4 5 6 7 6 5 4
-        5 6 7 8 9 8 7 6 5
-      6 7 8 9 0 1 0 8 7 6
-    7 8 9 0 1 2 3 2 1 0 9 8 7
-  8 9 0 1 2 3 4 5 4 3 2 1 0 9 8
-9 0 1 2 3 4 5 6 7 6 5 4 3 2 1 0 9
+<div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+  <p> Escribir el pseudocódigo de un algoritmo que   imprima  la figura  que se muestra a continuación:
+  </p>
+<pre>
+                  1
+                2 3 2
+              3 4 5 4 3
+            4 5 6 7 6 5 4
+          5 6 7 8 9 8 7 6 5
+        6 7 8 9 0 1 0 9 8 7 6
+      7 8 9 0 1 2 3 2 1 0 9 8 7
+    8 9 0 1 2 3 4 5 4 3 2 1 0 9 8
+  9 0 1 2 3 4 5 6 7 6 5 4 3 2 1 0 9
 0 1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1 0
 </pre>
-  </div>
+</div>
+
+     
 
   <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
     <p>
