@@ -268,18 +268,18 @@
         
         \begin{align*}
         x_{0}&:=3\\
-        x_{k}&:= \frac{4}{2k \cdot (2k+1) \cdot (2k+2)},  \, \, \, \, \text{ para cada  } k\in \mathbb{N}
+        x_{k}&:= (-1)^{k+1}\frac{4}{2k \cdot (2k+1) \cdot (2k+2)},  \, \, \, \, \text{ para   } k\in \mathbb{N}
         \end{align*}
         
         Esto es,  los primeros  términos de la sucesión son: 
-          $$3, \, \, \frac{4}{2\cdot 3\cdot 4},\, \,  \frac{4}{  4\cdot 5\cdot 6},\, \, 
-           \frac{4}{ 6\cdot 7 \cdot 8} ,\, \, \frac{4}{  8\cdot 9\cdot 10}, \ldots $$       
+          $$3, \, \, \frac{4}{2\cdot 3\cdot 4},\, \,  -\frac{4}{  4\cdot 5\cdot 6},\, \, 
+           \frac{4}{ 6\cdot 7 \cdot 8} ,\, \, -\frac{4}{  8\cdot 9\cdot 10}, \ldots $$       
         Para cada  $n \in \mathbb{N}$, se define la <b>$n$-ésima suma parcial de la sucesión</b> como:
         
          
         $$S_{n}:=3 + \sum_{k=1}^{n} \frac{4}{2k \cdot (2k+1) \cdot (2k+2)} = 3 +
-         \frac{4}{2\cdot 3\cdot 4} +  \frac{4}{  4\cdot 5\cdot 6} +  
-        \frac{4}{ 6\cdot 7 \cdot 8}+ \frac{4}{  8\cdot 9\cdot 10}+ \cdots $$
+         \frac{4}{2\cdot 3\cdot 4} -  \frac{4}{  4\cdot 5\cdot 6} +  
+        \frac{4}{ 6\cdot 7 \cdot 8} - \frac{4}{  8\cdot 9\cdot 10}+ \cdots $$
         
          
         A la sucesión de sumas parciales $\{ S_{n}\}_{n=1}^{\infty}$ de la sucesión $\{x_{k}\}_{k=0}^{\infty}$ definida como antes se le llama <b>Serie de Nilakantha </b>. Se puede demostrar que la serie de Nilakantha es convergente y converge a $\pi$, i.e. 
@@ -311,7 +311,7 @@
 
         <p>
           Escribir el pseudocódigo de un algoritmo que solicite al usuario un número 
-          entero positivo $n$ (validar la entrada) y calcule e imprima  la $n$-ésima 
+          real $x$, un número entero positivo $n$ (validar la entrada) y calcule e imprima  la $n$-ésima 
           suma parcial $S_{n}$ de la <b>serie de Taylor</b> de la función $\mathrm{Sen}(x)$.
         </p>
       </div>
