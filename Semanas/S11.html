@@ -97,7 +97,7 @@
 
     <div class="nota-box"><h2 class="number-title"> Otras funciones</h2>
       <p>
-        Esta función limpia la pantalla de cualquier objeto en el interprete
+        En PSeInt podemos encontrar algunas otras funciones tales como:
       </p>
 
       <center>        
@@ -112,13 +112,13 @@
           </thead>
             <tbody>
             <tr >
-              <td>$\mathrm{Borrar pantalla}$</td>
+              <td>$\mathrm{Borrar\, pantalla}$</td>
               <td>Esta función limpia la pantalla de cualquier objeto en el interprete</td>
               
             </tr>
   
             <tr>
-              <td>$\mathrm{Esperar tecla}$</td>
+              <td>$\mathrm{Esperar \,tecla}$</td>
               <td>Detiene la ejecución del algoritmo hasta que el usuario presione cualquier tecla.</td>
            
             </tr>
@@ -143,86 +143,146 @@
           </table>
         </center>
     </div>
-    
+
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+      <p>
+        Escribir el pseudocodigo de un algoritmo que simule una ruleta con números entre $0$ y $100$,
+        el algoritmo debe cumplir con lo siguiente:
+        <ul>
+          <li>El algoritmo debe mandar un mensaje al usuario indicandole que 
+            presione cualquier tecla para comenzar a girar la ruleta.</li>
+          <li>El numero  obtenido al hacer girar la ruleta, es
+            generado por el algoritmo de forma pseudoaleatoria.</li> 
+          <li>El algoritmo  debe imprimir puntos sucesivos simulando el suspenso 
+        (la espera mientras termina de girar la ruleta), entre punto y punto Esperar $150$ Milisegundos.   
+          </li>
+          <li>Cuando se termine de imprimir los puntos suspensivos limpiar la pantalla e imprimir un mensaje 
+            mostrando cual fue  el número obtenido en la ruleta.</li>
+        </ul>
+      </p>
+    </div>
+
+   
+
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+      <p>
+        Escribir el pseudocodigo de un algoritmo que genere dos números aleatorios entre $0$ y $99$, 
+        e imprima dichos números en forma de resta (por ejemplo: $25 - 10 = \,\,\,\,$), el usuario debe intentar 
+        resolverlo correctamente  y escribir el resultado. En caso de ser correcto imprimir 
+        <b>“Felicidades, tu resultado es correcto”</b>, en caso contrario imprimir 
+        <b>“Lo siento, el resultado era:_____”</b> e imprimir 
+        el resultado correcto. El proceso se llevará a cabo hasta que el usuario conteste correctamente.
+      </p>
+    </div>
+
   
 
 
     <h1 class="title flexbox_">   Funciones de cadenas de caracteres </h1>
 
-    <div class="nota-box"><h2 class="number-title"> Funciones de cadenas de caracteres  </h2>
-
-    <center>        
-      <table class="info" style="width:80%" >
-        
-    <!-- <caption><b><font size="4">Funciones matemáticas</font></b></caption>-->
-        <thead>
-        <tr>
-          <th style="width:35%"><center><b>Nombre de la función</b></center></th>
-          <th style="width:65%"><center><b>Descripcion</b></center></th>
-        </tr>
-        </thead>
-          <tbody>
-          <tr >
-            <td>$\mathrm{Longitud}(s)$</td>
-            <td>Devuelve el número de caracteres de la cadena $s$</td>
+      <div class="nota-box"><h2 class="number-title"> Funciones de cadenas de caracteres  </h2>
+        <p>PSeInt cuenta con funciones para trabajar con cadenas de caracteres:</p>
+        <center>        
+          <table class="info" style="width:80%" >
             
-          </tr>
+             <!-- <caption><b><font size="4">Funciones matemáticas</font></b></caption>-->
+            <thead>
+            <tr>
+              <th style="width:35%"><center><b>Nombre de la función</b></center></th>
+              <th style="width:65%"><center><b>Descripcion</b></center></th>
+            </tr>
+            </thead>
+              <tbody>
+              <tr >
+                <td>$\mathrm{Longitud}(s)$</td>
+                <td>Devuelve el número de caracteres de la cadena $s$</td>
+                
+              </tr>
 
-          <tr>
-            <td>$\mathrm{Subcadena}(s,i,j)$</td>
-            <td>Devuelve la subcadena desde la posición $i$ hasta la posición $j$</td>
-         
-          </tr>
+              <tr>
+                <td>$\mathrm{Subcadena}(s,i,j)$</td>
+                <td>Devuelve la subcadena desde la posición $i$ hasta la posición $j$</td>
+            
+              </tr>
 
-          <tr>
-            <td>$\mathrm{Concatenar}(s_{1},s_{2})$</td>
-            <td>Devuelve una cadena con los contenidos de $s_{1}$  y $s_{2}$ unidos</td>
-           
-          </tr>
+              <tr>
+                <td>$\mathrm{Concatenar}(s_{1},s_{2})$</td>
+                <td>Devuelve una cadena con los contenidos de $s_{1}$  y $s_{2}$ unidos</td>
+              
+              </tr>
 
-          <tr>
-            <td>$\mathrm{ConvertirANumero}(s)$</td>
-            <td> Devuelve el valor de  $s$ convertido de texto a número </td>
-          </tr>
+              <tr>
+                <td>$\mathrm{ConvertirANumero}(s)$</td>
+                <td> Devuelve el valor de  $s$ convertido de texto a número </td>
+              </tr>
 
-          <tr>
-            <td>$\mathrm{ConvertirATexto}(n)$</td>
-            <td> Devuelve el valor de $n$ convertido de  número a texto</td>
-          </tr>
+              <tr>
+                <td>$\mathrm{ConvertirATexto}(n)$</td>
+                <td> Devuelve el valor de $n$ convertido de  número a texto</td>
+              </tr>
 
-          <tr>
-            <td>$\mathrm{Mayusculas}(s)$</td>
-            <td>Devuelve el contenido de $s$ convertido a Mayusculas</td>
-          </tr>
+              <tr>
+                <td>$\mathrm{Mayusculas}(s)$</td>
+                <td>Devuelve el contenido de $s$ convertido a Mayusculas</td>
+              </tr>
 
-          <tr>
-            <td>$\mathrm{Minusculas}(s)$</td>
-            <td>Devuelve el contenido de $s$ convertido a Minusculas</td></tr>
-        </tbody>
-        </table>
-      </center>
+              <tr>
+                <td>$\mathrm{Minusculas}(s)$</td>
+                <td>Devuelve el contenido de $s$ convertido a Minusculas</td></tr>
+            </tbody>
+            </table>
+          </center>
+        </div>
+
+        
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+    <p>Escriba el pesudocodigo de un algoritmo  que lea una línea de texto, e imprima 
+      la línea de texto con letras mayúsculas y luego con letras minúsculas.</p>
+    </div>        
+
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+      <p>Escriba el pesudocodigo de un algoritmo que lea dos cadenas de texto introducidas por el usuario  y 
+        determine si la longitud de la primera  cadena es menor, igual o mayor que la segunda.
+      </p>
     </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+      <p>Escriba el pesudocodigo de un algoritmo que lea una cadena de texto introducida por el usuario y 
+        determine e  imprima el número total de espacios que aparecen la cadena.        
+      </p>
+    </div>
+    
+   
+
 
     <h1 class="title flexbox_">   Funciones / Subprocesos en pseint </h1>
 
 
     <div class="nota-box"><h2 class="number-title"> Introducción</h2>
       <p>
-        Las funciones también llamadas Subproceso o SubAlgoritmo, es una instrucción
+        Las <b>funciones</b> también llamadas Subproceso o SubAlgoritmo, es una instrucción
         que permite agrupar variables y sentencias, cuya finalidad es la de ejecutar 
         una tarea especifica, se pueden añadir una o varias  funciones, en un algoritmo, 
         las funciones son subprogramas dentro de un programa, que se pueden invocar
         (ejecutar) desde cualquier  parte  del  programa,  es  decir,  desde  otra  función,
         desde  la  misma función  o  desde  el programa principal, cuantas veces sea necesario.
       </p>
+      
+      <p>
+
+      
+      </p>
+   
     </div>
     
     <h1 class="title flexbox_"> Arreglos</h1>
 
-    <h1 class="title flexbox_"> Arreglos unidimensionales: Vectores</h1>
+    <h1 class="title flexbox_">Vectores</h1>
 
     
-    <div class="nota-box"><h2 class="number-title"> Arreglos unidimensionales: Vectores</h2>
+    <div class="nota-box"><h2 class="number-title"> Introducción</h2>
       <p>
         Un <b>vector</b> $V$ es un conjunto <b>finito</b> y <b>homogeneo</b> de datos, es decir, del <b>mismo tipo de dato</b>.  Se almacenan 
         bajo un mismo nombre, que se diferencian por la posición que tiene cada elemento dentro del arreglo.
@@ -287,9 +347,9 @@
 
 
 
-    <h1 class="title flexbox_"> Arreglos bidimensionales: matrices</h1>
+    <h1 class="title flexbox_"> Matrices</h1>
 
-    <div class="nota-box"><h2 class="number-title"> Arreglos bidimensionales: matrices</h2>
+    <div class="nota-box"><h2 class="number-title"> Introducción</h2>
       <p>
         Una <b>matriz</b> $M$ de tamaño $m \times n$ es un conjunto <b>finito</b> y <b>homogeneo</b> de datos,
         es decir, del <b>mismo tipo de dato</b> que  se almacenan 
