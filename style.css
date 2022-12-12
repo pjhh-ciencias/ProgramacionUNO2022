@@ -570,7 +570,7 @@ tr:nth-child(odd) {
 }
 
 /*//// Listas//////*/
-
+/*
 ol {
   list-style: none;
   counter-reset: my-counter;
@@ -585,4 +585,4 @@ ol li::before {
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 20px;
-}
+}*/
