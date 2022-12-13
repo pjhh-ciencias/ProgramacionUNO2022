@@ -91,6 +91,259 @@
     <h1 class="number-title flexbox"> Notitas </h1>   
 
   
+    <h1 class="title flexbox_">   Funciones / Subprocesos en pseint </h1>
+
+
+    <div class="nota-box"><h2 class="number-title"> Introducción</h2>
+      
+      
+      <p>En programación es muy frecuente hacer  uso del algoritmo "<em>Divide y venceras</em>", 
+        el cual consiste en resolver un problema  difícil, dividiéndolo en
+        subproblemas  más sencillos de resolver (tantas veces como sea necesario), 
+        cada uno de estos subproblemas realizan una tarea especifica a la vez y 
+        su implementación es mediante   <em>funciones</em> dentro del algoritmo.
+      </p>
+
+
+      <p>
+        En PSeInt las <b>funciones</b> son  también llamadas  <b>Subprocesos</b>
+        <img src="../Imagenes/Icono_funciones_pseint.JPG" alt="", width="10%" height="auto">. 
+        Un subproceso es una instrucción que permite agrupar variables y sentencias, cuya finalidad es la de ejecutar 
+        una tarea especifica, se pueden añadir una o varias  funciones, en un algoritmo, 
+        en esencia las funciones son subprogramas dentro de un programa, que se pueden invocar
+        (ejecutar) desde cualquier  parte  del  programa,  es  decir,  desde  otra  función,
+        desde  la  misma función  o  desde  el programa principal, cuantas veces sea necesario.
+        En general, la sintaxis de un subproceso en PSeInt es: 
+      </p>
+
+      
+      <p>
+        <div class="flexbox">  
+          <img src="../Imagenes/Sintaxis_funcion_pseint.JPG" alt="", width="50%" height="auto">
+        </div>
+
+      </p>
+
+    </div>
+
+
+
+      <div class="nota-box"><h2 class="number-title"> Definición</h2>
+      <p>
+        <ul>
+          <li>Si el subproceso no retorna ningun valor, se puede omitir la <em>variable de retorno</em> 
+              y el operador de asignación <img src="../Imagenes/Operador_asignacion.JPG" alt="", width="1.5%" height="auto">. 
+              En este caso se le conoce como <b>procedimiento</b>.
+              <p>
+                <div class="flexbox">  
+                  <img src="../Imagenes/Procedimiento.JPG" alt="", width="40%" height="auto">
+                </div>             
+              </p>
+            </li>
+          <li> Si el subproceso retorna un valor se le conoce como <b>función</b>.</li> 
+          <p>
+            <div class="flexbox">  
+              <img src="../Imagenes/funcion.JPG" alt="", width="60%" height="auto">
+            </div>             
+          </p>
+          <li>Si el subproceso no recibe <b>parametro</b> se pueden colocar los parentesis vacios u omitirse:
+            <p>
+              <div class="flexbox">  
+                <img src="../Imagenes/funcion_sin_argumentos.JPG" alt="", width="50%" height="auto">
+             </div>             
+            </p>
+            <p>
+              <div class="flexbox">  
+                <img src="../Imagenes/funcion_sin_argumentos_.JPG" alt="", width="50%" height="auto">
+             
+              </div>             
+            </p>
+          </li>
+        </ul>
+      </p>
+
+    </div>
+
+    
+
+    <div class="nota-box"><h2 class="number-title"> Observación</h2>
+
+      <p><b>Llamar a un subproceso</b> significa que usa su nombre para atraerlo, causando que  se ejecute. 
+        Para <b>invocar o llamar a un subproceso</b>  se debe utilizar el nombre del subproceso y 
+        entre parentesis sus argumentos (en 
+        caso de requerir).</p>
+        
+        <p><b>Los argumentos deben coincidir con los parametros en cantidad tipo y orden</b>.
+        De igual manera, entre la <em>variable de retorno</em> con la variable que recoge o almacena dicho valor. 
+        
+      </p>
+        
+      <p>
+        Cuando las instrucciones del subproceso  se han realizado, el control regresa al punto desde el que se llamo 
+        en el programa principal o utro subproceso.
+      </p>
+
+    </div>
+
+    
+    <div class="nota-box"><h2 class="number-title"> Observación</h2>
+
+      <p>
+        <b>Los argumentos de un subproceso serán definidos en el proceso que realice la llamada</b>, y por lo tanto 
+        el subproceso los recibira con el mismo tipo de dato ya definido. Por esta razon, <b>no se debe volver 
+        a definir el tipo de dato de la variable que es argumento dentro del subproceso.</b> 
+      </p>
+    </div>
+
+    
+    <h1 class="title flexbox_"> Arreglos</h1>
+
+    <h1 class="title flexbox_">Vectores</h1>
+
+    
+    <div class="nota-box"><h2 class="number-title"> Introducción</h2>
+      <p>
+        Un <b>vector</b> $V$ es un conjunto <b>finito</b> y <b>homogeneo</b> de datos, es decir, del <b>mismo tipo de dato</b>.  Se almacenan 
+        bajo un mismo nombre, que se diferencian por la posición que tiene cada elemento dentro del arreglo.
+      </p>
+
+      <ul>
+        <li>El primer elemento tendrá el índice $0$: $V(0)$  </li>
+        <li>El segundo de ellos el índice $1$: $V(1)$</li>
+        <li>En general, el $i$-ésimo elemento en el vector $V$ es: $V(i-1)$ </li> 
+      </ul>
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Observación </h2>
+
+      <p>
+        Un vector de longitud $10$ se representa gráficamente como:
+      </p>
+        <p>
+          <center>
+          <table   style="width:40%">
+          
+             <thead>
+            </thead>
+            <tbody>
+            <tr>              
+              <th>$V(0)$</th>
+              <th>$V(1)$</th>
+              <th>$V(2)$</th>
+              <th>$V(3)$</th>
+              <th>$V(4)$</th>
+              <th>$V(5)$</th> 
+              <th>$V(6)$</th>
+              <th>$V(7)$</th>
+              <th>$V(8)$</th> 
+              <th>$V(9)$</th>
+              </tr>
+            </tbody>
+           
+           
+          </table>
+        </center>
+         
+        </p>
+     
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Sintaxis </h2>
+
+
+      <p>
+        En PsEint para <b>declarar un vector</b> utilizamos las palabras reservadas
+        <code>Definir</code> y <code>Dimension</code>. Por ejemplo, si queremos crear un vector $V$
+        de tamaño $10$ para almacenar valores enteros, escribimos:
+      </pre>
+
+      <p>
+        <div class="flexbox">  
+          <img src="../Imagenes/Sintaxis_Vector.JPG" alt="", width="80%" height="auto">
+        </div>
+      </p>
+    </div>
+
+
+
+    <h1 class="title flexbox_"> Matrices</h1>
+
+    <div class="nota-box"><h2 class="number-title"> Introducción</h2>
+      <p>
+        Una <b>matriz</b> $M$ de tamaño $m \times n$ es un conjunto <b>finito</b> y <b>homogeneo</b> de datos,
+        es decir, del <b>mismo tipo de dato</b> que  se almacenan 
+        bajo un mismo nombre, y se diferencian por la posición que tiene cada elemento dentro del arreglo
+        el cual tiene forma rectangular o cuadrada. Una matriz de tamaño $m \times n$ tiene $m$ filas y $n$ 
+        columnas. 
+      </p>
+      
+      <p>
+        Para cada $0\leq i \leq n-1 $ y $0\leq j \leq m-1$, el elemento $M(i,j)$ hace referencia
+        a el  elemento de la matriz que se encuentra en la fila $i-1$ y  columna $j-1$. 
+       </p>
+
+      
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Observación </h2>
+
+      <p>
+        Un matriz de tamaño $3\times 5$ se representa gráficamente como:
+        
+        <p>
+          <center>
+          <table style="width:40%">
+            <thead>
+            </thead>
+            <tbody>
+            <tr>
+                <tr>
+                  <th>$M(0,1)$</th>
+                  <th>$M(0,2)$</th>
+                  <th>$M(0,3)$</th>
+                  <th>$M(0,4)$</th>
+                  <th>$M(0,5)$</th> 
+                </tr>
+              </tr>
+              <tr>
+                <th>$M(1,1)$</th>
+                <th>$M(1,2)$</th>
+                <th>$M(1,3)$</th>
+                <th>$M(1,4)$</th>
+                <th>$M(1,5)$</th> 
+              </tr>
+              <tr>
+                <th>$M(2,1)$</th>
+                <th>$M(2,2)$</th>
+                <th>$M(2,3)$</th>
+                <th>$M(2,4)$</th>
+                <th>$M(2,5)$</th> 
+              </tr>
+           </tbody>
+          </table>
+        </center>
+        </p>
+
+       
+    </div>
+
+    <div class="nota-box"><h2 class="number-title"> Sintaxis </h2>
+
+
+      <p>
+        En PsEint para <b>declarar una matriz</b> utilizamos las palabras reservadas
+        <code>Definir</code> y <code>Dimension</code>. Por ejemplo, para definir (crear)
+        un matriz $M$ de tamaño $2\times 3$ de enteros  y  almacenar ahí seis números enteros 
+        utilizamos las siguientes instrucciones:
+      </pre>
+
+      <p>
+        <div class="flexbox">  
+          <img src="../Imagenes/matriz_codigo.jpg" alt="", width="60%" height="auto">
+        </div>
+      </p>
+    </div>
+  
     
   <div class="nota-box">
     <h2 class="number-title"> Transformación del algoritmo en un programa</h2>   
