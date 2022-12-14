@@ -124,6 +124,18 @@
 
       </p>
 
+      <ul>
+        <li><b>variable_de_retorno</b>: si el subproceso  o función, calcula y devuelve un valor,
+           se debe colocar el nombre de la variable que se utilizará para almacenar ese valor;
+          si el subproceso o función no devuelve nada se puede eliminar la variable con su  
+          operador  de asignación <img src="../Imagenes/Operador_asignacion.JPG" alt="", width="1.5%" height="auto">.
+        </li>
+        <li><b>nombre</b>: es el nombre que recibirá el subproceso o función.</li>
+        <li><b>Argumentos</b>: los argumentos son variables que requiere la función, 
+          utilizando comas para separarlos,  si el subproceso o función no requiere 
+          argumentos puede dejarse en blanco, y de manera opcional omitir los paréntesis.</li>
+      </ul>
+
     </div>
 
 
@@ -131,9 +143,7 @@
       <div class="nota-box"><h2 class="number-title"> Definición</h2>
       <p>
         <ul>
-          <li>Si el subproceso no retorna ningun valor, se puede omitir la <em>variable de retorno</em> 
-              y el operador de asignación <img src="../Imagenes/Operador_asignacion.JPG" alt="", width="1.5%" height="auto">. 
-              En este caso se le conoce como <b>procedimiento</b>.
+          <li>Si el subproceso no retorna ningun valor, se dice que es un  <b>procedimiento</b>.
               <p>
                 <div class="flexbox">  
                   <img src="../Imagenes/Procedimiento.JPG" alt="", width="40%" height="auto">
@@ -167,21 +177,28 @@
     
 
     <div class="nota-box"><h2 class="number-title"> Observación</h2>
+     <p>Enseguida se enlistan algunos aspectos importantes que debemos tener en cuenta 
+      cuando se utilizan subprocesos:
+     </p>
+      
+      <ul>
+          <li>Para <b>invocar o llamar a un subproceso</b>  se debe utilizar el nombre del subproceso y 
+            entre parentesis sus argumentos  (en caso de ser necesarios) separados por comas.</li><br>
 
-      <p><b>Llamar a un subproceso</b> significa que usa su nombre para atraerlo, causando que  se ejecute. 
-        Para <b>invocar o llamar a un subproceso</b>  se debe utilizar el nombre del subproceso y 
-        entre parentesis sus argumentos (en 
-        caso de requerir).</p>
-        
-        <p><b>Los argumentos deben coincidir con los parametros en cantidad tipo y orden</b>.
-        De igual manera, entre la <em>variable de retorno</em> con la variable que recoge o almacena dicho valor. 
-        
-      </p>
-        
-      <p>
-        Cuando las instrucciones del subproceso  se han realizado, el control regresa al punto desde el que se llamo 
-        en el programa principal o utro subproceso.
-      </p>
+            <li><b>Llamar a un subproceso</b> provoca que este  se ejecute. 
+           </li><br>
+  
+            
+          <li><b>Los argumentos deben coincidir con los parametros en cantidad y tipo</b>.
+            De igual manera, <b>la <em>variable de retorno</em>  debe coincidir  con la <em>variable 
+              que recoge</em>  dicho valor</b> en el proceso desde el cual fue invocado el subproceso.   
+          </li><br>
+            
+    
+          <li>Cuando las instrucciones del subproceso  se han realizado, el control regresa 
+            al punto desde el que se llamo en el programa principal o utro subproceso.
+          </li>
+      </ul>
 
     </div>
 
