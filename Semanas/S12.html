@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 10 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 10 cardCounter ;
+        }
+      </style>
+  
+
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Programación UNO</h1>
+       <nav class="top-nav">
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Home.html"> Inicio  </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Informacion_General.html"> Información general </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Notas.html"> Notas </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Ejercicios.html"> Ejercicios </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Semana 11   </title>
+    
+  </head>
+
+
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Semana 11 </h1>   
+
+
+    <h1 class="title flexbox_"> Otras funciones en PSeInt</h1>
+    
+
+    <div class="nota-box"><h2 class="number-title"> Otras funciones</h2>
+      <p>
+        En PSeInt podemos encontrar algunas otras funciones tales como:
+      </p>
+
+      <center>        
+        <table class="info" style="width:100%" >
+          
+      <!-- <caption><b><font size="4">Funciones matemáticas</font></b></caption>-->
+          <thead>
+          <tr>
+            <th style="width:40%"><center><b>Nombre de la función</b></center></th>
+            <th style="width:60%"><center><b>Descripcion</b></center></th>
+          </tr>
+          </thead>
+            <tbody>
+            <tr >
+              <td>$\mathrm{Borrar\, pantalla}$</td>
+              <td>Esta función limpia la pantalla de cualquier objeto en el interprete</td>
+              
+            </tr>
+  
+            <tr>
+              <td>$\mathrm{Esperar \,tecla}$</td>
+              <td>Detiene la ejecución del algoritmo hasta que el usuario presione cualquier tecla.</td>
+           
+            </tr>
+  
+            <tr>
+              <td>$\mathrm{Esperar }\, n\,  \{\mathrm{ Segundos,Milisegundos}\}$</td>
+              <td>Espera un tiempo de $n$ segundos o milisegundos para continuar con el algoritmo</td>
+             
+            </tr>
+  
+            <tr>
+              <td>$\mathrm{Azar}(n)$</td>
+              <td> Devuelve un número aleatorio entre $0$ y $n-1$ </td>
+            </tr>
+
+            <tr>
+              <td>$\mathrm{Aleatorio}(n,m)$</td>
+              <td> Devuelve un número aleatorio entre $n$ y $m$ </td>
+            </tr>
+            
+          </tbody>
+          </table>
+        </center>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+      <p>
+        Escribir el pseudocodigo de un algoritmo que simule una ruleta con números entre $0$ y $100$,
+        el algoritmo debe cumplir con lo siguiente:
+        <ul>
+          <li>El algoritmo debe mandar un mensaje al usuario indicandole que 
+            presione cualquier tecla para comenzar a girar la ruleta.</li>
+          <li>El numero  obtenido al hacer girar la ruleta, es
+            generado por el algoritmo de forma pseudoaleatoria.</li> 
+          <li>El algoritmo  debe imprimir $50$ puntos sucesivos simulando el suspenso 
+        (la espera mientras termina de girar la ruleta), entre punto y punto Esperar $150$ Milisegundos.   
+          </li>
+          <li>Cuando se termine de imprimir los puntos suspensivos limpiar la pantalla e imprimir un mensaje 
+            mostrando cual fue  el número obtenido en la ruleta.</li>
+        </ul>
+      </p>
+    </div>
+
+   
+
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+      <p>
+        Escribir el pseudocodigo de un algoritmo que genere dos números aleatorios entre $0$ y $99$, 
+        e imprima dichos números en forma de resta (por ejemplo: $25 - 10 = \,\,\,\,$), el usuario debe intentar 
+        resolverlo correctamente  y escribir el resultado. En caso de ser correcto imprimir 
+        <b>“Felicidades, tu resultado es correcto”</b>, en caso contrario imprimir 
+        <b>“Lo siento, el resultado era:_____”</b> e imprimir 
+        el resultado correcto. El proceso se llevará a cabo hasta que el usuario conteste correctamente.
+      </p>
+    </div>
+
+  
+
+
+    <h1 class="title flexbox_">   Funciones de cadenas de caracteres </h1>
+
+      <div class="nota-box"><h2 class="number-title"> Funciones de cadenas de caracteres  </h2>
+        <p>PSeInt cuenta con funciones para trabajar con cadenas de caracteres:</p>
+        <center>        
+          <table class="info" style="width:80%" >
+            
+            
+            <thead>
+            <tr>
+              <th style="width:35%"><center><b>Nombre de la función</b></center></th>
+              <th style="width:65%"><center><b>Descripcion</b></center></th>
+            </tr>
+            </thead>
+              <tbody>
+              <tr >
+                <td>$\mathrm{Longitud}(s)$</td>
+                <td>Devuelve el número de caracteres de la cadena $s$</td>
+                
+              </tr>
+
+              <tr>
+                <td>$\mathrm{Subcadena}(s,i,j)$</td>
+                <td>Devuelve la subcadena desde la posición $i$ hasta la posición $j$</td>
+            
+              </tr>
+
+              <tr>
+                <td>$\mathrm{Concatenar}(s_{1},s_{2})$</td>
+                <td>Devuelve una cadena con los contenidos de $s_{1}$  y $s_{2}$ unidos</td>
+              
+              </tr>
+
+              <tr>
+                <td>$\mathrm{ConvertirANumero}(s)$</td>
+                <td> Devuelve el valor de  $s$ convertido de texto a número </td>
+              </tr>
+
+              <tr>
+                <td>$\mathrm{ConvertirATexto}(n)$</td>
+                <td> Devuelve el valor de $n$ convertido de  número a texto</td>
+              </tr>
+
+              <tr>
+                <td>$\mathrm{Mayusculas}(s)$</td>
+                <td>Devuelve el contenido de $s$ convertido a Mayusculas</td>
+              </tr>
+
+              <tr>
+                <td>$\mathrm{Minusculas}(s)$</td>
+                <td>Devuelve el contenido de $s$ convertido a Minusculas</td></tr>
+            </tbody>
+            </table>
+          </center>
+        </div>
+
+        
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+    <p>Escriba el pesudocodigo de un algoritmo  que lea una línea de texto, e imprima 
+      la línea de texto con letras mayúsculas y luego con letras minúsculas.</p>
+    </div>        
+
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+      <p>Escriba el pesudocodigo de un algoritmo que lea dos cadenas de texto introducidas por el usuario  y 
+        determine si la longitud de la primera  cadena es menor, igual o mayor que la segunda.
+      </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+      <p>Escriba el pesudocodigo de un algoritmo que lea una cadena de texto introducida por el usuario y 
+        determine e  imprima el número total de espacios que aparecen la cadena.        
+      </p>
+    </div>
+    
+   
+
+    <h1 class="title flexbox_">   Funciones / Subprocesos en pseint </h1>
+
+
+    <div class="nota-box"><h2 class="number-title"> Introducción</h2>
+      
+      
+      <p>En programación es muy frecuente hacer  uso del algoritmo "<em>Divide y venceras</em>", 
+        el cual consiste en resolver un problema  difícil, dividiéndolo en
+        subproblemas  más sencillos de resolver (tantas veces como sea necesario), 
+        cada uno de estos subproblemas realizan una tarea especifica a la vez y 
+        su implementación es mediante   <em>funciones</em> dentro del algoritmo.
+      </p>
+
+
+      <p>
+        En PSeInt las <b>funciones</b> son  también llamadas  <b>Subprocesos</b>
+        <img src="../Imagenes/Icono_funciones_pseint.JPG" alt="", width="10%" height="auto">. 
+        Un subproceso es una instrucción que permite agrupar variables y sentencias, cuya finalidad es la de ejecutar 
+        una tarea especifica, se pueden añadir una o varias  funciones, en un algoritmo, 
+        en esencia las funciones son subprogramas dentro de un programa, que se pueden invocar
+        (ejecutar) desde cualquier  parte  del  programa,  es  decir,  desde  otra  función,
+        desde  la  misma función  o  desde  el programa principal, cuantas veces sea necesario.
+        En general, la sintaxis de un subproceso en PSeInt es: 
+      </p>
+
+      
+      <p>
+        <div class="flexbox">  
+          <img src="../Imagenes/Sintaxis_funcion_pseint.JPG" alt="", width="50%" height="auto">
+        </div>
+
+      </p>
+
+      <ul>
+        <li><b>variable_de_retorno</b>: si el subproceso  o función, calcula y devuelve un valor,
+           se debe colocar el nombre de la variable que se utilizará para almacenar ese valor;
+          si el subproceso o función no devuelve nada se puede eliminar la variable con su  
+          operador  de asignación <img src="../Imagenes/Operador_asignacion.JPG" alt="", width="1.5%" height="auto">.
+        </li>
+        <li><b>nombre</b>: es el nombre que recibirá el subproceso o función.</li>
+        <li><b>Argumentos</b>: los argumentos son variables que requiere la función, 
+          utilizando comas para separarlos,  si el subproceso o función no requiere 
+          argumentos puede dejarse en blanco, y de manera opcional omitir los paréntesis.</li>
+      </ul>
+
+    </div>
+
+
+
+      <div class="nota-box"><h2 class="number-title"> Definición</h2>
+      <p>
+        <ul>
+          <li>Si el subproceso no retorna ningun valor, se dice que es un  <b>procedimiento</b>.
+              <p>
+                <div class="flexbox">  
+                  <img src="../Imagenes/Procedimiento.JPG" alt="", width="40%" height="auto">
+                </div>             
+              </p>
+            </li>
+          <li> Si el subproceso retorna un valor se le conoce como <b>función</b>.</li> 
+          <p>
+            <div class="flexbox">  
+              <img src="../Imagenes/funcion.JPG" alt="", width="60%" height="auto">
+            </div>             
+          </p>
+          <li>Si el subproceso no recibe <b>parametro</b> se pueden colocar los parentesis vacios u omitirse:
+            <p>
+              <div class="flexbox">  
+                <img src="../Imagenes/funcion_sin_argumentos.JPG" alt="", width="50%" height="auto">
+             </div>             
+            </p>
+            <p>
+              <div class="flexbox">  
+                <img src="../Imagenes/funcion_sin_argumentos_.JPG" alt="", width="50%" height="auto">
+             
+              </div>             
+            </p>
+          </li>
+        </ul>
+      </p>
+
+    </div>
+   
+
+    <div class="nota-box"><h2 class="number-title"> Observación</h2>
+     <p>Enseguida se enlistan algunos aspectos importantes que debemos tener en cuenta 
+      cuando se utilizan subprocesos:
+     </p>
+      
+      <ul>
+          <li>Para <b>invocar o llamar a un subproceso</b>  se debe utilizar el nombre del subproceso y 
+            entre parentesis sus argumentos  (en caso de ser necesarios) separados por comas.</li><br>
+
+            <li><b>Llamar a un subproceso</b> provoca que este  se ejecute. 
+           </li><br>
+  
+            
+          <li><b>Los argumentos deben coincidir con los parametros en cantidad y tipo</b>.
+            De igual manera, <b>la <em>variable de retorno</em>  debe coincidir  con la <em>variable 
+              que recoge</em>  dicho valor</b> en el proceso desde el cual fue invocado el subproceso.   
+          </li><br>
+            
+    
+          <li>Cuando las instrucciones del subproceso  se han realizado, el control regresa 
+            al punto desde el que se llamo en el programa principal o utro subproceso.
+          </li>
+      </ul>
+
+    </div>
+
+    
+    <div class="nota-box"><h2 class="number-title"> Observación</h2>
+
+      <p>
+        <b>Los argumentos de un subproceso serán definidos en el proceso que realice la llamada</b>, y por lo tanto 
+        el subproceso los recibira con el mismo tipo de dato ya definido. Por esta razon, <b>no se debe volver 
+        a definir el tipo de dato de la variable que es argumento dentro del subproceso.</b> 
+      </p>
+    </div>
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+
+      <p>Un <b>palindromo</b> es una palabra o frase que se lee igual de izquierda a derecha que
+         de derecha a izquierda. Por ejemplo, las siguientes oraciones son palindromos:
+          <ul>
+            <li>Anita lava la tina</li>
+            <li>Di clases al Cid.</li>
+            <li>Dabale arroz a la zorra el abad</li>
+            <li>Arriba la birra</li>
+            <li>Anula la luna</li>
+            <li>Atar a la rata</li>
+            <li>Ella te da detalle</li>
+            <li>Ateo poco poeta</li>
+            <li>La tele letal</li>
+            <li>La ruta natural</li>
+            <li>La ruta nos aporto otro paso natural</li>
+            <li>Ligar es ser agil</li>
+            <li>Luz azul</li>
+          </ul>
+        </p>
+      
+
+      <p>Escribir el pseudocódigo de un algoritmo que lea una cadena introducida 
+        por el usuario y determine si es palindromo. Imprima un mensaje adecuado.  
+        Utiliza subprocesos.
+      </p>
+      
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
+        <p>Escribir el pseudocódigo de un algoritmo  que  solicite al usuario  tres números reales,
+           determine el mayor y el menor de ellos y los imprima con un mensaje adecuado. Define y utiliza 
+           un subproceso que determine  el mayor de dos numeros reales.
+        </p>
+      </div>
+
+      
+      <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+        <p>Escribir el pseudocódigo de un algoritmo  que  solicite al usuario las coordenadas de dos puntos
+          en el plano: $A(x_1,y_1)$ y $B(x_2,y_2)$. Solicitar primero las coordenas del punto $A$ y enseguida 
+          las coordenadas del punto $B$, luego determine e imprima la pendiente de la recta que
+          pasa por los puntos. Utilice un subproceso para determinar la pendiente de la recta que pasa por dos
+          puntos. 
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+        <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de tres puntos
+          en el plano:  $A(x_1,y_1), B(x_2,y_2)$ y  $C(x_3,y_3)$. Pedir primero las 
+          coordenas del punto $A$, luego las del punto $B$, y finalmente las coordenadas 
+          del punto $C$ y luego determine e imprima si los puntos con colineales. Implementa 
+          subprocesos.
+        </p>
+
+        <p><b>Hint:</b> Tres puntos son colineales si se encuentran en una misma linea recta. 
+          Considera los casos en los que los tres puntos o  un par de puntos sean iguales.</p>
+      </div>
+
+
+      <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+        <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de dos puntos
+          distintos:  $A(x_1,y_1)$ y $ B(x_2,y_2)$.  Solicitar primero las coordenas del punto $A$ y enseguida 
+          las coordenadas del punto $B$, utiliza una función para validar que en efecto 
+          los puntos ingresados son puntos distintos. Luego, determine e imprima  la distancia entre
+          $A$ y $B$. Utiliza un subproceso para determinar la distancia entre dos puntos. 
+          
+        </p>
+
+        <p><b>Hint:</b> Si  $A(x_1,y_1)$, $B(x_2,y_2)$ puntos en el plano. Entonces, la distancia
+          entre los puntos $A$ y $B$  se determina mediante la siguiente fórmula:
+        
+        $$d(A,B)=\sqrt{(x_{1}-x_{2})^{2} +  (y_{1}-y_{2})^{2}}$$
+        </p>
+      </div>
+ 
+</body>
