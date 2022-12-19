@@ -139,5 +139,63 @@
       </p>
 
       </div>
+
+      <h1 class="title flexbox_">   Variable globales y locales</h1>
+      
+      <div class="nota-box"><h2 class="number-title"> Introducción</h2>
+
+        <p>Las <b>variables</b> son objetos que pueden cambiar su valor durante la ejecución de
+          un algoritmo. En general se  distinguen dos tipos de variables: <b>locales</b> y <b>globales</b>.
+        </p>
+
+        <ul>
+      <li>Las <b>variables locales</b> son objetos definidos en el proceso principal así como en los  subprocesos y su alcance está
+        limitado solamente al proceso principal o a los  sunprocesos en la cual están definidas. Esto es, 
+        las variables son <b>locales</b> a cada proceso o subproceso donde han sido definidas o declaradas, y se pueden usar 
+        solamente en ese proceso o subproceso. Si se intenta hacer uso de dicha variable en otro proceso o subproceso donde no 
+        ha sido declarado, PSeInt mostrara  un mensaje de error. Por ejemplo, cada variable local definida en un subproceso comienza a existir sólo cuando se llama a ese subproceso,
+        y desaparece cuando el control regresa al proceso principal.
+      </li><br>
+      <li>Por otra parte, las  <b>variables globales</b> son objetos definidos antes del inicio del
+        proceso principal y su alcance es muy amplio, ya que tienen influencia tanto en el proceso principal 
+        como en todas las funciones o subprocesos i.e. una variable global puede ser vista y manipulada por el proceso principal y 
+        todos los subprocesos del algoritmo. Sin embargo, hasta  este momento en  PSeInt no existe el concepto de variable global.
+        </li>
+      </ul>
+      </div>
+
+
+      <h1 class="title flexbox_">   Parámetros por valor y por referencia</h1>
+      <div class="nota-box"><h2 class="number-title"> Introducción</h2>
+        <p>En PSeInt la comunicación entre las funciones/subprocesos y el proceso principal, o bien entre los
+          mismos subprocesos, se lleva a cabo mediante  <em>parámetros por valor</em> y <em>por referencia</em>. 
+        </p>
+
+
+        <p>En la definición de los parámetros de un proceso o subproceso se pueden agregar las palabras clave: 
+          <b>Por Valor</b> o <b>Por Referencia</b> para indicar como se pasa cada parámetro.  Si se omiten,
+           estas palabras clave por defecto  el paso será <em>por valor</em> a excepción de los <em>arreglos</em> que 
+           se pasan siempre por referencia. </p>
+
+        <p>
+          Los <b>parámetros por valor</b> permiten pasar datos entre el programa principal y las
+          funciones, e incluso entre las mismas funciones.  En este método,
+          en el parámetro se almacena una copia de la variable original. Si el parámetro sufre 
+          una alteración en la función/subproceso que lo recibe, la variable original no se ve afectada, 
+          i.e. se trabaja sobre una copia del a variable (diferente espacio de memoria). 
+        </p>
+
+        <p>
+          Los <b>parámetros por referencia</b> también permiten la comunicación entre el programa
+          principal y las funciones/subprocesos, o entre las mismas funciones. Sin embargo, en
+          este caso, en lugar de escribir una copia de la variable en el parámetro se escribe
+          la dirección de la misma. Si el parámetro sufre una alteración en la función que
+          lo recibe, la variable original también se ve afectada, i.e. se opera sobre la variable original
+          (se trabaja en el mismo espacio de memoria). 
+          En PSeInt, el paso de variables  por referencia se realiza agregando las palabras clave: <b>Por referencia</b>
+          </p>
+        
+      
+      </div>
  
 </body>
