@@ -99,27 +99,36 @@
       <p>Escribir el pseudocódigo de un algoritmo  que  solicite al usuario las coordenadas de dos puntos
         en el plano: $A(x_1,y_1)$ y $B(x_2,y_2)$. Solicitar primero las coordenas del punto $A$ y enseguida 
         las coordenadas del punto $B$, luego determine e imprima la pendiente de la recta que
-        pasa por los puntos. Utilice un subproceso para determinar la pendiente de la recta que pasa por dos
+        pasa por estos puntos. Utilice un subproceso para determinar la pendiente de la recta que pasa por dos
         puntos. 
       </p>
+      <button class="respButton hvr-grow ">  Solución       </button>
+        <div class="resp-box flexbox">
+          <div class="flexbox">  
+            <a href="../Ejercicios/Pendiente.psc" target="_blank"> <font size="5"> <b> Pendiente</b></font></a>
+          </div>
+        </div>
     </div>
 
     <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
       <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de tres puntos
         en el plano:  $A(x_1,y_1), B(x_2,y_2)$ y  $C(x_3,y_3)$. Pedir primero las 
         coordenas del punto $A$, luego las del punto $B$, y finalmente las coordenadas 
-        del punto $C$ y luego determine e imprima si los puntos con colineales. Implementa 
+        del punto $C$, luego determine e imprima si los puntos con colineales. Implementa 
         subprocesos.
       </p>
 
       <p><b>Hint:</b> Tres puntos son colineales si se encuentran en una misma linea recta. 
         Considera los casos en los que los tres puntos o  un par de puntos sean iguales.</p>
+
+        
     </div>
+    
 
 
     <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
-      <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de dos puntos
-        distintos:  $A(x_1,y_1)$ y $ B(x_2,y_2)$.  Solicitar primero las coordenas del punto $A$ y enseguida 
+      <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de dos puntos: 
+        $A(x_1,y_1)$ y $ B(x_2,y_2)$.  Solicitar primero las coordenas del punto $A$ y enseguida 
         las coordenadas del punto $B$, utiliza una función para validar que en efecto 
         los puntos ingresados son puntos distintos. Luego, determine e imprima  la distancia entre
         $A$ y $B$. Utiliza un subproceso para determinar la distancia entre dos puntos. 
@@ -145,16 +154,16 @@
 
         <ul>
       <li>Las <b>variables locales</b> son objetos definidos en el proceso principal así como en los  subprocesos y su alcance está
-        limitado solamente al proceso principal o a los  sunprocesos en la cual están definidas. Esto es, 
+        limitado solamente al proceso principal o a los  subprocesos donde están definidas. Esto es, 
         las variables son <b>locales</b> a cada proceso o subproceso donde han sido definidas o declaradas, y se pueden usar 
         solamente en ese proceso o subproceso. Si se intenta hacer uso de dicha variable en otro proceso o subproceso donde no 
-        ha sido declarado, PSeInt mostrara  un mensaje de error. Por ejemplo, cada variable local definida en un subproceso comienza a existir sólo cuando se llama a ese subproceso,
+        ha sido declarada, PSeInt mostrara  un mensaje de error. Por ejemplo, cada variable local definida en un subproceso comienza a existir sólo cuando se llama a ese subproceso,
         y desaparece cuando el control regresa al proceso principal.
       </li><br>
       <li>Por otra parte, las  <b>variables globales</b> son objetos definidos antes del inicio del
         proceso principal y su alcance es muy amplio, ya que tienen influencia tanto en el proceso principal 
         como en todas las funciones o subprocesos i.e. una variable global puede ser vista y manipulada por el proceso principal y 
-        todos los subprocesos del algoritmo. Sin embargo, hasta  este momento en  PSeInt no existe el concepto de variable global.
+        todos los subprocesos del algoritmo. <b>Sin embargo, hasta  este momento en  PSeInt no existe el concepto de variable global.</b>
         </li>
       </ul>
       </div>
@@ -169,8 +178,8 @@
 
         <p>En la definición de los parámetros de un proceso o subproceso se pueden agregar las palabras clave: 
           <b>Por Valor</b> o <b>Por Referencia</b> para indicar como se pasa cada parámetro.  Si se omiten,
-           estas palabras clave por defecto  el paso será <em>por valor</em> a excepción de los <em>arreglos</em> que 
-           se pasan siempre por referencia. </p>
+          estas palabras clave por defecto  el paso será <em>por valor</em> a excepción de los <em>arreglos</em> que 
+          se pasan siempre por referencia. </p>
 
         <p>
           Los <b>parámetros por valor</b> permiten pasar datos entre el programa principal y las
