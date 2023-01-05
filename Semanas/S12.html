@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 11 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 11 cardCounter ;
+        }
+      </style>
+  
+
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Programación UNO</h1>
+       <nav class="top-nav">
+        <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Home.html"> Inicio  </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Informacion_General.html"> Información general </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Notas.html"> Notas </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Ejercicios.html"> Ejercicios </a> </li>
+        <li> <a href="https://pjhh-ciencias.github.io/ProgramacionUNO/Enlaces_externos.html"> Links </a> </li>
+        </ul>
+
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Semana 12   </title>
+    
+  </head>
+
+
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Semana 12 </h1>   
+
+
+    <h1 class="title flexbox_"> Practicando con funciones </h1>
+    
+    
+    <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo  que  solicite al usuario las coordenadas de dos puntos
+        en el plano: $A(x_1,y_1)$ y $B(x_2,y_2)$. Solicitar primero las coordenas del punto $A$ y enseguida 
+        las coordenadas del punto $B$, luego determine e imprima la pendiente de la recta que
+        pasa por estos puntos. Utilice un subproceso para determinar la pendiente de la recta que pasa por dos
+        puntos. 
+      </p>
+      <button class="respButton hvr-grow ">  Solución       </button>
+        <div class="resp-box flexbox">
+          <div class="flexbox">  
+            <a href="../Ejercicios/Pendiente.psc" target="_blank"> <font size="5"> <b> Pendiente</b></font></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de tres puntos
+        en el plano:  $A(x_1,y_1), B(x_2,y_2)$ y  $C(x_3,y_3)$. Pedir primero las 
+        coordenas del punto $A$, luego las del punto $B$, y finalmente las coordenadas 
+        del punto $C$, luego determine e imprima si los puntos con colineales. Implementa 
+        subprocesos.
+      </p>
+
+      <p><b>Hint:</b> Tres puntos son colineales si se encuentran en una misma linea recta. 
+        Considera los casos en los que los tres puntos o  un par de puntos sean iguales.</p>
+
+        
+    </div>
+    
+
+
+    <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
+      <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de dos puntos: 
+        $A(x_1,y_1)$ y $ B(x_2,y_2)$.  Solicitar primero las coordenas del punto $A$ y enseguida 
+        las coordenadas del punto $B$, utiliza una función para validar que en efecto 
+        los puntos ingresados son puntos distintos. Luego, determine e imprima  la distancia entre
+        $A$ y $B$. Utiliza un subproceso para determinar la distancia entre dos puntos. 
+        
+      </p>
+
+      <p><b>Hint:</b> Si  $A(x_1,y_1)$, $B(x_2,y_2)$ puntos en el plano. Entonces, la distancia
+        entre los puntos $A$ y $B$  se determina mediante la siguiente fórmula:
+      
+      $$d(A,B)=\sqrt{(x_{1}-x_{2})^{2} +  (y_{1}-y_{2})^{2}}$$
+      </p>
+    </div>
+
+    
+
+      <h1 class="title flexbox_">   Variable globales y locales</h1>
+      
+      <div class="nota-box"><h2 class="number-title"> Introducción</h2>
+
+        <p>Las <b>variables</b> son objetos que pueden cambiar su valor durante la ejecución de
+          un algoritmo. En general se  distinguen dos tipos de variables: <b>locales</b> y <b>globales</b>.
+        </p>
+
+        <ul>
+      <li>Las <b>variables locales</b> son objetos definidos en el proceso principal así como en los  subprocesos y su alcance está
+        limitado solamente al proceso principal o a los  subprocesos donde están definidas. Esto es, 
+        las variables son <b>locales</b> a cada proceso o subproceso donde han sido definidas o declaradas, y se pueden usar 
+        solamente en ese proceso o subproceso. Si se intenta hacer uso de dicha variable en otro proceso o subproceso donde no 
+        ha sido declarada, PSeInt mostrara  un mensaje de error. Por ejemplo, cada variable local definida en un subproceso comienza a existir sólo cuando se llama a ese subproceso,
+        y desaparece cuando el control regresa al proceso principal.
+      </li><br>
+      <li>Por otra parte, las  <b>variables globales</b> son objetos definidos antes del inicio del
+        proceso principal y su alcance es muy amplio, ya que tienen influencia tanto en el proceso principal 
+        como en todas las funciones o subprocesos i.e. una variable global puede ser vista y manipulada por el proceso principal y 
+        todos los subprocesos del algoritmo. <b>Sin embargo, hasta  este momento en  PSeInt no existe el concepto de variable global.</b>
+        </li>
+      </ul>
+      </div>
+
+
+      <h1 class="title flexbox_">   Parámetros por valor y por referencia</h1>
+      <div class="nota-box"><h2 class="number-title"> Introducción</h2>
+        <p>En PSeInt la comunicación entre las funciones/subprocesos y el proceso principal, o bien entre los
+          mismos subprocesos, se lleva a cabo mediante  <em>parámetros por valor</em> y <em>por referencia</em>. 
+        </p>
+
+
+        <p>En la definición de los parámetros de un proceso o subproceso se pueden agregar las palabras clave: 
+          <b>Por Valor</b> o <b>Por Referencia</b> para indicar como se pasa cada parámetro.  Si se omiten,
+          estas palabras clave por defecto  el paso será <em>por valor</em> a excepción de los <em>arreglos</em> que 
+          se pasan siempre por referencia. </p>
+
+        <p>
+          Los <b>parámetros por valor</b> permiten pasar datos entre el programa principal y las
+          funciones, e incluso entre las mismas funciones.  En este método,
+          en el parámetro se almacena una copia de la variable original. Si el parámetro sufre 
+          una alteración en la función/subproceso que lo recibe, la variable original no se ve afectada, 
+          i.e. se trabaja sobre una copia del a variable (diferente espacio de memoria). 
+        </p>
+
+        <p>
+          Los <b>parámetros por referencia</b> también permiten la comunicación entre el programa
+          principal y las funciones/subprocesos, o entre las mismas funciones. Sin embargo, en
+          este caso, en lugar de escribir una copia de la variable en el parámetro se escribe
+          la dirección de la misma. Si el parámetro sufre una alteración en la función que
+          lo recibe, la variable original también se ve afectada, i.e. se opera sobre la variable original
+          (se trabaja en el mismo espacio de memoria). 
+          En PSeInt, el paso de variables  por referencia se realiza agregando las palabras clave: <b>Por referencia</b>
+          </p>
+        
+      
+      </div>
+ 
+</body>

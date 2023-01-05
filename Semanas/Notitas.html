@@ -92,80 +92,6 @@
   <body class="fondo-body" >
     <h1 class="number-title flexbox"> Notitas </h1>   
     
-     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-
-      <p>Un <b>palindromo</b> es una palabra o frase que se lee igual de izquierda a derecha que
-         de derecha a izquierda. Por ejemplo, las siguientes oraciones son palindromos:
-          <ul>
-            <li>Anita lava la tina</li>
-            <li>Di clases al Cid.</li>
-            <li>Dabale arroz a la zorra el abad</li>
-            <li>Arriba la birra</li>
-            <li>Anula la luna</li>
-            <li>Atar a la rata</li>
-            <li>Ella te da detalle</li>
-            <li>Ateo poco poeta</li>
-            <li>La tele letal</li>
-            <li>La ruta natural</li>
-            <li>La ruta nos aporto otro paso natural</li>
-            <li>Ligar es ser agil</li>
-            <li>Luz azul</li>
-          </ul>
-        </p>
-      
-
-      <p>Escribir el pseudocódigo de un algoritmo que lea una cadena introducida 
-        por el usuario y determine si es palindromo. Imprima un mensaje adecuado.  
-        Utiliza subprocesos.
-      </p>
-      
-      </div>
-
-      <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
-        <p>Escribir el pseudocódigo de un algoritmo  que  solicite al usuario  tres números reales,
-           determine el mayor y el menor de ellos y los imprima con un mensaje adecuado. Define y utiliza 
-           un subproceso que determine  el mayor de dos numeros reales.
-        </p>
-      </div>
-
-      
-      <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
-        <p>Escribir el pseudocódigo de un algoritmo  que  solicite al usuario las coordenadas de dos puntos
-          en el plano: $A(x_1,y_1)$ y $B(x_2,y_2)$. Solicitar primero las coordenas del punto $A$ y enseguida 
-          las coordenadas del punto $B$, luego determine e imprima la pendiente de la recta que
-          pasa por los puntos. Utilice un subproceso para determinar la pendiente de la recta que pasa por dos
-          puntos. 
-        </p>
-      </div>
-
-      <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
-        <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de tres puntos
-          en el plano:  $A(x_1,y_1), B(x_2,y_2)$ y  $C(x_3,y_3)$. Pedir primero las 
-          coordenas del punto $A$, luego las del punto $B$, y finalmente las coordenadas 
-          del punto $C$ y luego determine e imprima si los puntos con colineales. Implementa 
-          subprocesos.
-        </p>
-
-        <p><b>Hint:</b> Tres puntos son colineales si se encuentran en una misma linea recta. 
-          Considera los casos en los que los tres puntos o  un par de puntos sean iguales.</p>
-      </div>
-
-
-      <div class="ejercicio-box"><h2 class="number-title">  Ejercicio</h2>
-        <p>Escribir el pseudocódigo de un algoritmo que solicite al usuario las coordenadas de dos puntos
-          distintos:  $A(x_1,y_1)$ y $ B(x_2,y_2)$.  Solicitar primero las coordenas del punto $A$ y enseguida 
-          las coordenadas del punto $B$, utiliza una función para validar que en efecto 
-          los puntos ingresados son puntos distintos. Luego, determine e imprima  la distancia entre
-          $A$ y $B$. Utiliza un subproceso para determinar la distancia entre dos puntos. 
-          
-        </p>
-
-        <p><b>Hint:</b> Si  $A(x_1,y_1)$, $B(x_2,y_2)$ puntos en el plano. Entonces, la distancia
-          entre los puntos $A$ y $B$  se determina mediante la siguiente fórmula:
-        
-        $$d(A,B)=\sqrt{(x_{1}-x_{2})^{2} +  (y_{1}-y_{2})^{2}}$$
-        </p>
-      </div>
   
       <div class="ejercicio-box"><h2 class="number-title"> Práctica</h2>
         <p>Escribir el pseudocódigo de un algoritmo  que  solicite al usuario dos números enteros, determine
@@ -205,59 +131,7 @@
       </p>
     </div>
            
-      <h1 class="title flexbox_">   Variable globales y locales</h1>
       
-      <div class="nota-box"><h2 class="number-title"> Introducción</h2>
-
-        <p>Las <b>variables</b> son objetos que pueden cambiar su valor durante la ejecución de
-          un algoritmo. En general se  distinguen dos tipos de variables: <b>locales</b> y <b>globales</b>.
-        </p>
-
-        <ul>
-      <li>Las <b>variables locales</b> son objetos definidos en el proceso principal así como en los  subprocesos y su alcance está
-        limitado solamente al proceso principal o a los  sunprocesos en la cual están definidas. Esto es, 
-        las variables son <b>locales</b> a cada proceso o subproceso donde han sido definidas o declaradas, y se pueden usar 
-        solamente en ese proceso o subproceso. Si se intenta hacer uso de dicha variable en otro proceso o subproceso donde no 
-        ha sido declarado, PSeInt mostrara  un mensaje de error. Por ejemplo, cada variable local definida en un subproceso comienza a existir sólo cuando se llama a ese subproceso,
-        y desaparece cuando el control regresa al proceso principal.
-      </li><br>
-      <li>Por otra parte, las  <b>variables globales</b> son objetos definidos antes del inicio del
-        proceso principal y su alcance es muy amplio, ya que tienen influencia tanto en el proceso principal 
-        como en todas las funciones o subprocesos i.e. una variable global puede ser vista y manipulada por el proceso principal y 
-        todos los subprocesos del algoritmo. Sin embargo, hasta  este momento en  PSeInt no existe el concepto de variable global.
-        </li>
-      </ul>
-      </div>
-
-
-      <h1 class="title flexbox_">   Parámetros por valor y por referencia</h1>
-      <div class="nota-box"><h2 class="number-title"> Introducción</h2>
-        <p>La comunicación entre las funciones/subprocesos y el proceso principal, o bien entre los
-          mismos subprocesos, se lleva a cabo mediante <em>variables globales</em> y <em>parámetros
-          por valor</em> y <em>por referencia</em>. El uso de variables se estudió ampliamente en la
-          sección anterior, y en ésta nos concentraremos en los parámetros por valor y por
-          referencia.
-        </p>
-
-        <p>
-          Los parámetros por valor permiten pasar datos entre el programa principal y las
-          funciones, e incluso entre las mismas funciones. En el parámetro se escribe una
-          copia de la variable original. Si el parámetro sufre una alteración en la función
-          que lo recibe, la variable original no se ve afectada.
-        </p>
-
-        <p>
-          Los parámetros por referencia también permiten la comunicación entre el programa
-          principal y las funciones, o entre las mismas funciones. Sin embargo, en
-          este caso, en lugar de escribir una copia de la variable en el parámetro se escribe
-          la dirección de la misma. Si el parámetro sufre una alteración en la función que
-          lo recibe, la variable original también se ve afectada. En C, las llamadas por referencia
-          se realizan mediante apuntadores. Un apuntador es una variable que contiene
-          la dirección de otra variable y se representa por medio de operadores de
-          dirección (&) e indirección (*).</p>
-        
-      
-      </div>
 
     
     <h1 class="title flexbox_"> Arreglos</h1>
@@ -287,14 +161,14 @@
           <center>
           <table   style="width:40%">
           
-             <thead>
+            <thead>
             </thead>
             <tbody>
             <tr>              
               <th>$V(0)$</th>
               <th>$V(1)$</th>
               <th>$V(2)$</th>
-              <th>$V(3)$</th>
+                <th>$V(3)$</th>
               <th>$V(4)$</th>
               <th>$V(5)$</th> 
               <th>$V(6)$</th>
@@ -378,7 +252,7 @@
                 <th>$M(2,5)$</th> 
               </tr>
            </tbody>
-          </table>
+        </table>
         </center>
         </p>
 
