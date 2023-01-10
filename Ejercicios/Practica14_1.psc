@@ -24,11 +24,11 @@ Algoritmo Practica14_1
 		VA(i)<- 0;
 	FinPara
 	
-	Escribir 'El vector V es:';
+	Escribir 'El vector V  es:', Sin Saltar;
 	imprimir_vector(10,V);
 	
-	Escribir 'El vector auxiliar VA es:';
-	imprimir_vector(10,VA);
+	//Escribir 'El vector auxiliar VA es:';
+	//imprimir_vector(10,VA);
 
 	
 	Repetir
@@ -44,12 +44,12 @@ Algoritmo Practica14_1
 		FinSi
 	FinPara
 	
-	Escribir 'El vector auxiliar VA MODIFICADO  es:';
-	imprimir_vector(10,VA);
+	//Escribir 'El vector auxiliar VA MODIFICADO  es:';
+	//imprimir_vector(10,VA);
 	
 	Si bandera = Verdadero Entonces
-		Escribir 'El numero ', n, 'si se encuentra en el vector V';
-		Escribir 'Y se encuentra en las posiciones:', Sin Saltar;
+		Escribir 'El numero ', n, ' si se encuentra en el vector V';
+		Escribir 'Y se encuentra en las posiciones: ', Sin Saltar;
 		
 		Para i<- 0 Hasta  9 Hacer
 			Si VA(i)=1 Entonces
@@ -57,7 +57,7 @@ Algoritmo Practica14_1
 			FinSi
 		FinPara
 	SiNo
-		Escribir 'El numero ', n, 'NO se encuentra en el vector V :(';
+		Escribir 'El numero ', n, ' NO se encuentra en el vector V :(';
 		
 	FinSi
 	
