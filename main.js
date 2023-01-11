@@ -4,7 +4,7 @@ $(document).ready(function() {
     });
   });
   
-    function myFunction() {
+    function myFunction(){
     var elementInfo = document.querySelectorAll("div.info-box");
     var elementDef= document.querySelectorAll("div.definicion-box");
     var elementEjer=document.querySelectorAll("div.ejercicio-box");
