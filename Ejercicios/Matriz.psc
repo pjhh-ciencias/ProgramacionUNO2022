@@ -12,10 +12,12 @@ Proceso sin_titulo
 	
 	Escribir 'La matriz es: ';
 	
+	
 	Para i<- 0 Hasta 1 Hacer
+		Escribir '| ', Sin Saltar;
 		Para j<- 0 Hasta 2 Hacer
 			Escribir M(i,j), ' ',  Sin Saltar;
 		FinPara
-		Escribir ' ';
+		Escribir '| ';
 	FinPara
 FinProceso
