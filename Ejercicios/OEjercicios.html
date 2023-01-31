@@ -91,22 +91,81 @@
     
     
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>Supongamos que queremos  leer una lista de cadenas de caracteres, reordenadas alfabéticamente y escribir la lista reordenada.
+      <p>Escribir el pseudocodigo de un algoritmo que solicite al usuario $10$ cadenas
+        de caracteres de longitud arbitraria. Considerando que el usuario pudo haber cometido 
+        errores de dedo, para cada cadena elimine los espacios extras que se encuentren 
+        al principio y al final, luego imprima las palabras una por línea. Finalmente reordene
+        alfabéticamente la colección de palabras e imprima la lista ordenada alfabeticamente.
       </p>
     </div>
     
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>Se dice que un número es cubifinito cuando al elevar todos sus dígitos al cubo y sumarlos el resultado o bien es 1 o bien es un número cubifinito.
+      <p><b>Definición:</b> Se dice que un número es <b>cubifinito</b> cuando al elevar todos sus dígitos al cubo y sumarlos el resultado o bien es $1$ o
+        bien es un número cubifinito.
+      </p>
+      <p>Por ejemplo, el número $1243$ es cubifinito, pues al elevar todos sus dígitos al cubo obtenemos $100$ que es cubifinito.        
+        Por su parte, el número $513$ no es cubifinito, pues al elevar al cubo sus dígitos conseguimos el $153$ que nunca podrá 
+        ser cubifinito, pues la suma de los cubos de sus dígitos vuelve a dar $153$.
+      </p>
 
-        Por ejemplo, el número 1243 es cubifinito, pues al elevar todos sus dígitos al cubo obtenemos 100 que es cubifinito.
-        
-        Por su parte, el 513 no es cubifinito, pues al elevar al cubo sus dígitos conseguimos el 153 que nunca podrá ser cubifinito, pues la suma de los cubos de sus dígitos vuelve a dar 153.
-        
-        Dado un número, se trata de determinar si éste es o no cubifinito.
+      <p>Escribir el pseudocodigo de un algoritmo que solicite al usuario un número entero positivo, y determine e 
+        imprima si éste es o no un número  cubifinito.
       </p>
     </div>
 
     
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocodigo de un algoritmo que lea una linea de texto de longitud arbitraria y realice lo siguiente:
+        <ol>
+          <li>Sustituir todaslas secuencias de dos o más espacios por un sólo espacio e imprimir la linea de texto resultante.</li>
+          <li>Imprimir cada palabra dentro de la frase en una columna, seguido del número de letras que compone dicha palabra.</li>
+          <li>Contar el número de palabras con exactamente cuatro letras</li>
+          <li>Sustituir cada palabra de cuatro letras por una cadena de cuatro asteriscos e imprimir la nueva cadena.</li>
+      </p>
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocodigo de un algoritmo que codifique mensajes de la siguiente manera: sustituye cada una de las letras
+        del mensaje original  por la letra que se encuentra a un número fijo (generar e imprimir este número aleatoriamente
+        de entre $-27$ y $27$) de posiciones más adelante en el alfabeto.
+      </p>
+      <p>Así, si utilizamos un desplazamiento de $2$, las apariciones de la letra 'a' se sustituyen por la 'c', 
+        todas las apariciones de la 'b' por 'd', etc. Cuando se llegue al final del alfabeto, se comienza de nuevo de forma que con el desplazamiento de $2$, 
+        la 'y' se sustituye por la 'a' y la 'z' se sustituye por la 'b'. Mientras que se se obtiene un desplazamiento negativo, 
+        por ejemplo si utilizamos un desplazamiento de -1, la 'E' se convertirá en 'D', mientras que la 'a' pasará a ser 'z'.
+      </p>
+
+      <p> No se  codificaran los caracteres que no sean letras del alfabeto:
+        $$\mathrm{a,b,c,d,e,f,g,h,i,j,k,l,m,ñ,o,p,q,r,s,t,u,v,w,x,y,z}$$
+        De esta manera, por ejemplo los espacios o los símbolos de puntuación no sufrirán cambio alguno.
+      </p>
+    </div>
+
+
+        
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+      <p>Escribir el pseudocodigo de un algoritmo que genere una matriz cuadrada de tamaño $10 \times 10$ con números 
+        aleatorios entre 1 y 9, siguiendo el siguiente criterio: Las entradas de la matriz se llenarán con números acordes 
+        a la posicion en la que se encuentren: en la entrada $i,j$ de la matriz se debe  colocar un número impar $(1,3,5,\ldots)$ 
+        si $i+j$ es un número impar mientras que se debe colocar un  número par $(0,2,4,\ldots)$ si la suma  $i+j$ 
+        resulta ser un número par. Luego, imprimir la matriz obtenida y realizar lo siguiente:
+      </p>
+      <p>
+        <ol>
+        <li>Crear un vector que almacene el máximo elemento de cada columna de la matriz. 
+          Imprimir la posicion en la que se encuentre e imprimir  vector.</li>
+        <li>Crear un vector que almacene el máximo elemento de cada fila de la matriz.
+          Imprimir la posicion en la que se encuentre e imprimir  vector.</li>
+        <li>Crear un vector que almacene el máximo elemento de toda la matriz. Imprimir dicho vector.</li>
+
+
+      </ol>
+      </p>
+    </div>
+
+
+
+
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
       <p>Aunque existieron antecedentes previos, el juego Buscaminas comenzó a ser famoso cuando se incluyó en la versión 3.1 de Windows, en el lejano 1992. Corre el rumor de que fue incluído para que los usuarios se entretuvieran mientras, sin saberlo, cogían práctica utilizando un dispositivo por aquel tiempo apenas conocido: el ratón.
 
@@ -118,16 +177,6 @@
     </div>
 
     
-    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>Uno de los métodos más antiguos para codificar mensajes es el conocido como cifrado Cesar. Su funcionamiento es simple: cada una de las letras del mensaje original es sustituida por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
-
-        Así, si utilizamos un desplazamiento de 2, las apariciones de la letra 'a' se sustituyen por la 'c', todas las apariciones de la 'b' por 'd', etc. El método tradicional comienza de nuevo al llegar al final del alfabeto, de forma que, con el desplazamiento de 2, la 'y' se sustituye por la 'a' y la 'z' se sustituye por la 'b'.
-        
-        Los desplazamientos también pueden ser negativos; si utilizamos un desplazamiento de -1, la 'E' se convertirá en 'D', mientras que la 'a' pasará a ser 'z'.
-        
-        Nuestro cifrado Cesar no codifica los caracteres que no sean letras anglosajonas. Así, por ejemplo, los espacios o los símbolos de puntuación no sufrirán cambio alguno
-      </p>
-    </div>
 
     
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
@@ -138,25 +187,6 @@
     </div>
 
     
-    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>Escribir un programa que lea una colección de cadenas
-        de caracteres de longitud arbitraria. Por cada cadena
-        leída, su programa hará lo siguiente:
-        a) Imprimir la longitud de la cadena.
-        b) Contar el número de ocurrencia de palabras de cuatro letras.
-        c) Sustituir cada palabra de cuatro letras por una cadena
-        de cuatro asteriscos e imprimir la nueva cadena.
-      </p>
-
-      Escribir un programa que lea una frase, sustituya todas
-las secuencias de dos o más blancos por un solo blanco
-y visualice la frase restante.
-
-Escribir un programa que lea una frase y a continuación
-visualice cada palabra de la frase en columna, seguido
-del número de letras que compone cada palabra
-    </div>
-
     
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
       <p>
@@ -165,16 +195,6 @@ visualice la línea de tal forma que las vocales sean sustituidas por el carác
       </p>
     </div>
 
-    
-    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p>Genere una matriz cuadrada (máximo 10310) con números aleatorios entre 1 y 50, manejando el 
-        siguiente criterio: las filas se llenarán con números acordes a ellas, si son filas impares (1,3,5,etc.) con 
-        números impares y si son las filas pares (0,2,4,etc.) con números pares. Al final imprimir dicha matriz
-        
-      </p>
-      <p> generar un vector que almacene el máximo 
-        elemento de cada columna de la matriz. Imprimir dicho vector.</p>
-    </div>
 
     
     <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
