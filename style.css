@@ -159,7 +159,6 @@ h1.number-subtitle:before{
 h1.number-title:before{
  counter-increment: sectionCounter;
  /*content:"Semana " counter(sectionCounter) " ";*/
- content:" " counter(sectionCounter) " ";
  font-family: "Muli";
  color: rgb(255, 255, 255);
 }
